@@ -1,9 +1,9 @@
 # main text of home
-name: '@mjbrender'
+name: 'Matthew Brender Broberg'
 bio: Technical community builder.
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: A simple sight to highlight projects.
 
 # if it's an external image, update below for true
 # better with square images
@@ -26,7 +26,7 @@ highlighter: rouge
 # analytics-piwik-id: 1
 
 # if you don't want comments in your posts, set to false
-disqus: mjbrender
+disqus: false
 
 # if you don't have any of social below, comment the line
 #facebook: myfacebook
@@ -48,7 +48,7 @@ email: mjbrender@gmail.com
 authors:
     mjbrender:
         name: '@mjbrender'
-        bio: This guy
+        bio: Technical community builder
         external-image: false
         picture: assets/images/profile.jpg
         twitter: mjbrender
@@ -63,17 +63,17 @@ width: normal
 # paginate_path: "blog/:num/"
 
 # if you don't need projects, comment the *projects* configs below
-projects: true
+# projects: true
 
 # if you don't need "about" or "blog", comment them out below
 about: true
-blog: true
+# blog: true
 
 # do you want to show the "read time" of the posts?
-read-time: true
+# read-time: true
 
 # do you want to show the "tags" inside the posts?
-show-tags: true
+# show-tags: true
 
 # related posts inside a post?
 related: true

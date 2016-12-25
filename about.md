@@ -2,21 +2,14 @@
 title: About
 layout: page
 ---
+Hey 👋. I'm Matt.
+
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>What should I say about myself?</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<quote>Life-long learner, not afraid of trying new things/roles, systems thinker/big picture/synthesizer, prefer clarity and plan of action to ambiguity (but able to roll w punches & unexpected change), super fair/egalitarian/empathetic and kind, good explainer, good visual sense - likes things put together. You might have some perfectionist tendencies but not sure if that makes you stuck - if go you seem to be able to pulse out of it and get stuff done. 
+</quote>
 
 <h2>Skills</h2>
 
