@@ -1,5 +1,5 @@
 # main text of home
-name: @mjbrender
+name: '@mjbrender'
 bio: Technical community builder.
 
 # twitter summary info
@@ -41,13 +41,13 @@ github: mjbrender
 stackoverflow: 581665/mjb
 #quora: userquora
 reddit: mjbrender
-medium: @mjbrender
+medium: mjbrender
 #vimeo: myvimeo
 email: mjbrender@gmail.com
 
 authors:
     mjbrender:
-        name: @mjbrender
+        name: '@mjbrender'
         bio: This guy
         external-image: false
         picture: assets/images/profile.jpg
