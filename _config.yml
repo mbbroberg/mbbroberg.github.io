@@ -1,5 +1,5 @@
 # main text of home
-name: 'Matthew Brender Broberg'
+name: 'Matthew Broberg'
 bio: Technical community builder.
 
 # twitter summary info
@@ -10,8 +10,7 @@ description: A simple sight to highlight projects.
 external-image: false
 picture: assets/images/profile.jpg
 
-url: http://mjbrender.github.io
-# your url: http://mjbrender.github.io
+url: http://mbbroberg.github.io
 
 permalink: /:title/
 
@@ -30,28 +29,28 @@ disqus: false
 
 # if you don't have any of social below, comment the line
 #facebook: myfacebook
-twitter: mjbrender
+twitter: mbbroberg
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
-# linkedin: mylinkedin
+linkedin: mbbroberg
 # youtube: myyoutube
 # spotify: myspotify
-github: mjbrender
-stackoverflow: 581665/mjb
+github: mbbroberg
+stackoverflow: 581665/mbb
 #quora: userquora
-reddit: mjbrender
-medium: mjbrender
+# reddit:
+medium: mbbroberg
 #vimeo: myvimeo
 email: mjbrender@gmail.com
 
 authors:
-    mjbrender:
-        name: '@mjbrender'
+    mbbroberg:
+        name: 'Matt Broberg'
         bio: Technical community builder
         external-image: false
         picture: assets/images/profile.jpg
-        twitter: mjbrender
+        twitter: mbbroberg
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
