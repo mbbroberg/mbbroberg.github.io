@@ -1,6 +1,6 @@
 # main text of home
 name: 'Matthew Broberg'
-bio: Technical community builder.
+bio: technical community builder.
 
 # twitter summary info
 description: A simple sight to highlight projects.
@@ -47,7 +47,7 @@ email: mjbrender@gmail.com
 authors:
     mbbroberg:
         name: 'Matt Broberg'
-        bio: Technical community builder
+        bio: technical community builder
         external-image: false
         picture: assets/images/profile.jpg
         twitter: mbbroberg
