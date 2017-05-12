@@ -3,7 +3,7 @@ title: Home
 layout: page
 ---
 ## Hey 👋. I'm Matt.
-I loving working with technology communities to build, support and sustain further contribution.
+I loving working with technology communities to build software and develop practices that invite effective contribution.
 
 ### Projects I've Helped Build:
 * **[The Geek Whisperers podcast](http://geek-whisperers.com/)** as a co-creator and co-host.
