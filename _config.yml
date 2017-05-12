@@ -42,11 +42,11 @@ stackoverflow: 581665/mbb
 # reddit:
 medium: mbbroberg
 #vimeo: myvimeo
-email: mjbrender@gmail.com
+email: matthewbbroberg+io@gmail.com
 
 authors:
     mbbroberg:
-        name: 'Matt Broberg'
+        name: 'Matthew Broberg'
         bio: technical community builder
         external-image: false
         picture: assets/images/profile.jpg

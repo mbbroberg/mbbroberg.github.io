@@ -2,25 +2,16 @@
 title: About
 layout: page
 ---
-<h2>Hey 👋. I'm Matt.</h2>
+## Hey 👋. I'm Matt.
+I loving working with technology communities to build, support and sustain further contribution.
 
-I loving working with communities to build, improve and support products.
+## Projects I've Helped Build:
+* **[The Geek Whisperers podcast](http://geek-whisperers.com/)** as a co-creator and co-host.
+* **[Snap: the open telemetry framework](http://snap-telemetry.io)** designing the branding, documentation and contributing strategies.
+* **[WADE: we are developer evangelists](https://evangelistcollective.github.io)** as an admin and by creating the website.
+* **[Commitmas: learning GitHub socially](https://github.com/commitmas)** as the founder and continued supporter of it.
+* **[The Basho Community](https://github.com/basho-labs/the-basho-community)** as the community leader and maintainer.
 
-![Profile Image]({{ site.url }}/{{ site.picture }})
+## Projects I've Contributed to:
 
-
-<h2>Projects I've Helped Build:</h2>
-
-<ul>
-	<li><a href="http://geek-whisperers.com/">The Geek Whisperers Podcast</a></li>
-	<li><a href="http://snap-telemetry.io">Snap: the open telemetry framework</a></li>
-	<li><a href="https://evangelistcollective.github.io">WADE: We Are Developer Evangelists</a></li>
-	<li><a href="https://github.com/commitmas">Commitmas: Learning GitHub Socially</a></li>
-</ul>
-
-<h2>Projects I've Contributed to:</h2>
-
-<ul>
-	<li><a href="https://github.com/basho-labs/the-basho-community">The Basho Community</a></li>
-	<li><a href="https://github.com/Homebrew/brew/commits?author=mbbroberg&since=2016-10-01T07:00:00Z&until=2016-11-01T07:00:00Z">Homebrew</a></li>
-</ul>
+* [Homebrew](https://github.com/Homebrew/brew/commits?author=mbbroberg&since=2016-10-01T07:00:00Z&until=2016-11-01T07:00:00Z)'s documentation, because I ❤️ them.
