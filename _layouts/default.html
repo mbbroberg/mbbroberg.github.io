@@ -13,11 +13,8 @@ layout: compress
     <meta name=author content="{{ site.name }}">
 
     {% seo %}
-    
-    {% include favicon.html %}
 
-    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}{{ "/feed.xml" }}" />
+    {% include favicon.html %}
 
     <style>
     {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
