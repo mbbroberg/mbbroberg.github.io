@@ -14,4 +14,4 @@ I loving working with technology communities to build software and develop pract
 
 ### Projects I've Contributed to:
 
-I open PRs as I work through new problem or as a way of saying thank you to a project.. That's lead to contributions to a [Slack API Tutorial](https://github.com/slackapi/Slack-Ruby-Onboarding-Tutorial/pull/2), [Go GitHub library](https://github.com/google/go-github/pull/323) and [Homebrew](https://github.com/Homebrew/brew/commits?author=mbbroberg&since=2016-10-01T07:00:00Z&until=2016-11-01T07:00:00Z)'s documentation, because I ❤️ them.
+I open PRs as I work through new problem or as a way of saying thank you to a project.. That's led to contributions to a [Slack API Tutorial](https://github.com/slackapi/Slack-Ruby-Onboarding-Tutorial/pull/2), [Go GitHub library](https://github.com/google/go-github/pull/323) and [Homebrew](https://github.com/Homebrew/brew/commits?author=mbbroberg&since=2016-10-01T07:00:00Z&until=2016-11-01T07:00:00Z)'s documentation, because I ❤️ them.
