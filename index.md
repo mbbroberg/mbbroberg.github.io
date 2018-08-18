@@ -3,13 +3,13 @@ title: Home
 layout: page
 ---
 ## Hey 👋. I'm Matt.
-I loving working with technology communities to build software and develop practices that invite effective contribution.
+I loving working with technology communities to develop products that invite delightful engagement.
 
 ### Projects I've Helped Build:
+* **[DevRel Collective](https://devrelcollective.fun)** as an admin, designing the rebrand, and creating the website.
 * **[The Geek Whisperers podcast](http://geek-whisperers.com/)** as a co-creator and co-host.
-* **[Snap: the open telemetry framework](http://snap-telemetry.io)** designing the branding, documentation and contributing strategies.
-* **[WADE: we are developer evangelists](https://evangelistcollective.github.io)** as an admin and by creating the website.
-* **[Commitmas: learning GitHub socially](https://github.com/commitmas)** as the founder and continued supporter of it.
+* **[Snap: the open telemetry framework](http://snap-telemetry.io)** designing the branding, documentation, maintainer and contributor practices.
+* **[Commitmas: learning GitHub socially](https://github.com/commitmas)** to collaborative learn Git and GitHub with the vBrownBag community.
 * **[The Basho Community](https://github.com/basho-labs/the-basho-community)** as the community leader and maintainer.
 
 ### Projects I've Contributed to:
