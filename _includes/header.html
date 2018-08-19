@@ -10,8 +10,8 @@
                 <img class="selfie" href="{{ site.url }}" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
             </span>
 
-        <h1 class="title">{{ site.name }}</h1>
-        <h2 class="description">{{ site.bio }}</h2>
+        <h1 class="title">{{ site.authors.mbbroberg.name }}</h1>
+        <h2 class="description">{{ site.authors.mbbroberg.bio }}</h2>
 
         {% include social-links.html %}
     </header>
