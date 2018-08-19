@@ -3,7 +3,8 @@ name: 'Matthew Broberg'
 bio: technical community builder.
 
 # twitter summary info
-description: A simple sight to highlight projects.
+description: Website of Matthew (Brender) Broberg. Matt loves working with technology communities to develop products that invite delightful engagement.
+
 
 # if it's an external image, update below for true
 # better with square images
@@ -66,10 +67,10 @@ width: large
 
 # if you don't need "about" or "blog", comment them out below
 # about: true
-# blog: true
+blog: true
 
 # do you want to show the "read time" of the posts?
-# read-time: true
+read-time: true
 
 # do you want to show the "tags" inside the posts?
 # show-tags: true

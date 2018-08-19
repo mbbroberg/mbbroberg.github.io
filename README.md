@@ -1,6 +1,6 @@
-# mjbrender.github.io
+# mbbroberg.github.io
 
-A simple site extended from [this Jekyll theme](http://sergiokopplin.github.io/indigo/)
+A simple site extended from [this Jekyll theme](http://sergiokopplin.github.io/indigo/). If you'd like to extend your own, I recommend starting with the original theme.
 
 ## How to:
 
