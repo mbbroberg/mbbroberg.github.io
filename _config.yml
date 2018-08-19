@@ -1,7 +1,3 @@
-# main text of home
-name: 'Matthew Broberg'
-bio: technical community builder.
-
 # twitter summary info
 description: Website of Matthew (Brender) Broberg. Matt loves working with technology communities to develop products that invite delightful engagement.
 
@@ -12,9 +8,7 @@ external-image: false
 picture: assets/images/profile.jpg
 
 url: http://mbbroberg.github.io
-
 permalink: /:title/
-
 markdown: kramdown
 highlighter: rouge
 
@@ -47,7 +41,7 @@ email: matthewbbroberg+io@gmail.com
 
 authors:
     mbbroberg:
-        name: 'Matthew Broberg'
+        name: Matthew Broberg
         bio: technical community builder
         external-image: false
         picture: assets/images/profile.jpg
@@ -91,7 +85,7 @@ sass:
     sass_dir: _sass
     style: :compressed
 
-gems:
+plugins:
   - jemoji
   - jekyll-mentions
   - jekyll-seo-tag
