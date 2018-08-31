@@ -7,8 +7,8 @@ I loving working with technology communities to develop products that invite del
 
 ### Projects I've Helped Build:
 * **[DevRel Collective](https://devrelcollective.fun)** as an admin, designing the rebrand, and creating the website.
-* **[The Geek Whisperers podcast](http://geek-whisperers.com/)** as a co-creator and co-host.
-* **[Snap: the open telemetry framework](http://snap-telemetry.io)** designing the branding, documentation, maintainer and contributor practices.
+* **[The Geek Whisperers podcast](https://geek-whisperers.com/)** as a co-creator and co-host.
+* **[Snap: the open telemetry framework](https://snap-telemetry.io)** designing the branding, documentation, maintainer and contributor practices.
 * **[Commitmas: learning GitHub socially](https://github.com/commitmas)** to collaborative learn Git and GitHub with the vBrownBag community.
 * **[The Basho Community](https://github.com/basho-labs/the-basho-community)** as the community leader and maintainer.
 
