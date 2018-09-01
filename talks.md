@@ -62,7 +62,7 @@ This keynote answered the question "what do you get when you cross career advice
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Cool breakdown by <a href="https://twitter.com/mbbroberg?ref_src=twsrc%5Etfw">@mbbroberg</a> around jobs by company type and job visibility as part of the <a href="https://twitter.com/hashtag/BosVMUG?src=hash&amp;ref_src=twsrc%5Etfw">#BosVMUG</a> opening keynote. <a href="https://twitter.com/MyVMUG?ref_src=twsrc%5Etfw">@MyVMUG</a> <a href="https://twitter.com/BostonVMUG?ref_src=twsrc%5Etfw">@BostonVMUG</a> <a href="https://t.co/QEzW7DdqnH">pic.twitter.com/QEzW7DdqnH</a></p>&mdash; Andrew Miller (@andriven) <a href="https://twitter.com/andriven/status/921006622197022720?ref_src=twsrc%5Etfw">October 19, 2017</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Slides are on my old slideshare account: ["Where do we go from here?"](https://www.slideshare.net/MatthewBrender/where-do-we-go-from-here-80988705) - [Boston VMUG  2017](https://community.vmug.com/communities/localcommunityhome?CommunityKey=d1b6647d-9717-4563-a535-fd3b2f0111fb).
+Slides are on my old Slideshare account: ["Where do we go from here?"](https://www.slideshare.net/MatthewBrender/where-do-we-go-from-here-80988705).
 
 ---
 
@@ -78,7 +78,7 @@ Slides are on my old slideshare account: ["Where do we go from here?"](https://w
 * Other 2015 events: Nginx Summit, [QCon](https://qconnewyork.com/ny2015/ny2015/users/matthew-brender.html), Big Data TechCon, OSCON BOF
 * ["Storage Workload Generation"](https://twitter.com/kylemurley/status/504356050041319424) at the vBrownBag VMworld 2014
 * "Implementing Gamification at EMC" at [GSummit 2012](https://twitter.com/search?q=mjbrender%20gsummit&src=spxr)
-* "High Availability Architectures for VNXe" at EMC World 2014 (my first public talk 😅)
+* "High Availability Architectures for VNXe" at EMC World 2012 (my first public talk 😅)
 * and many DevOps, VMware, Spiceworks, Basho, and other types of meetups.
 
 ---
