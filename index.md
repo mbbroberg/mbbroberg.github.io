@@ -9,7 +9,7 @@ I loving working with technology communities to develop products that invite del
 
 * **[The Sensu Community](https://sensu.io/community)** designing community programs from maintainer practices to events like [Sensu Summit](https://sensu.io/summit).
 * **[DevRel Collective](https://devrelcollective.fun)** as a maintainer, designing the rebrand, and creating the website.
-* **[Snap: the open telemetry framework](https://snap-telemetry.io)** designing the branding, documentation, maintainer and contributor practices.
+* **[Snap: the open telemetry framework](https://snap-telemetry.io)** designing the brand, documentation, maintainer and contributor strategy.
 * **[The Geek Whisperers podcast](https://geek-whisperers.com/)** as a co-creator and co-host.
 * **[Commitmas: learning GitHub socially](https://github.com/commitmas)** to collaborative learn Git and GitHub with the [vBrownBag](https://vbrownbag.com/) community.
 * **[The Basho Community](https://github.com/basho-labs/the-basho-community)** as the community leader and maintainer.
