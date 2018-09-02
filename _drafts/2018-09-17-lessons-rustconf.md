@@ -1,18 +1,51 @@
 ---
-title: How to Use Markdown Everywhere
+title: Community Lessons from RustConf
 layout: post
 blog: true
 author: mbbroberg
 tag:
-- markdown
+- productivity
 - guides
 description: All the tools I know to make Markdown your default means to writing.
 ---
 
-I haven't always loved plain text syntax. Once I embraced git as the _langua franca_ of IT Operations, I knew that made Markdown required knowledge. Fast forward a few years and many thousands of lines later and I'm in love.
+Never used rust but told to watch the keynote for Community learning. 
 
-For instance, the fact that `**bold**` renders as **bold** no matter where I type it and no amount of copy-and-pasting will make the format change is just too tempting to pass up. With that in mind, here's my collection of handy applications and conversion tools I keep around. The meaty part comes from **converting** from non-Markdown to Markdown, so dive right into that if you're interested.
+Learned open source by serendipity vs on purpose. Serendipity attracts a certain kind of contribution, one that's prone to being privileged and self serving. On purpose attracts everyone. 
 
+Roadmap, enablement, getting out of others way. 
+
+Still need to leave some room for serendity. 
+
+Pluralism - coexistence as a practice.
+
+# How to write a task
+
+Slightly-cheesy-but-thoughtful [post from the creators of Todoist](https://blog.doist.com/the-life-changing-magic-of-tidying-up-your-todoist-8413b3e06473) changed my philosophy on how to write a useful task.
+
+# Projects
+
+I nest under three top-level concepts:
+
+* Work
+* Side
+* Responsibility - some call these 
+
+
+## Priorities
+
+P1—Important and urgent. Do these now.
+P2—Important but not urgent. Must have a due date. Move to P1 on or before due date.
+P3—Not important but urgent. Delegate to others, or change priority to P2 or P4.
+P4—Not important and not urgent. Only do if time permits. No due date.
+
+Borrowed from my friend Christian [over at vNinja](https://vninja.net/workflow/how-i-use-todoist/).
+
+## Filters
+
+
+
+<!--
 ## Writing in Markdown
 
 {:refdef: style="text-align: center;"}
@@ -37,11 +70,12 @@ For instance, the fact that `**bold**` renders as **bold** no matter where I typ
 
 ## References when you get stuck
 
-Markdown takes time to internalize, and there's no shame in looking it up (I _still_ look up how to link to an image on a regular basis). My frequently visited sites:
+Markdown takes time to internalize and there's no shame in looking it up (I _still_ look up how to link to an image on a regular basis). My frequently visited sites:
 
 * http://daringfireball.net/projects/Markdown/basics
 * https://guides.github.com/features/mastering-Markdown/
 * https://www.Markdownguide.org/
-* http://Markdowntutorial.com/
+* Great practice for beginners - [Markdown Tutorial](http://Markdowntutorial.com/) -->
+
 
 What are you using Markdown to do? Share tools or recommendations [with me](https://twitter.com/mbbroberg)!
