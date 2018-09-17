@@ -90,6 +90,6 @@ Events require brief profiles about speakers. Here's my default for when those r
 You can download [this picture of me](/assets/images/profile.jpg) for any event pages.
 
 ### Profile
-Matt is VP of Community for Sensu Inc focused on the incredible community around [Sensu, the open source monitoring event pipeline](https://sensu.io). He's a serial podcaster, best known for the [Geek Whisperers podcast](https://geek-whisperers.com/), is on the board of the [Influence Marketing Council](https://medium.com/influence-marketing-council), co-maintains [the DevRel Collective](https://devrelcollective.fun/), and often shares his thoughts on Twitter [@mbbroberg](https://twitter.com/mbbroberg). He's also a fan of tattoos and cats, though remains unsure of Schrödinger's.
+Matt loves working with technology communities to develop products and content that invite delightful engagement. He's a serial podcaster, best known for the [Geek Whisperers podcast](https://geek-whisperers.com/), is on the board of the [Influence Marketing Council](https://medium.com/influence-marketing-council), co-maintains [the DevRel Collective](https://devrelcollective.fun/), and often shares his thoughts on Twitter and GitHub [@mbbroberg](https://twitter.com/mbbroberg). He's also a fan of tattoos and cats, though remains unsure of Schrödinger's.
 
 ---
