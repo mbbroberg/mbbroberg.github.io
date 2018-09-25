@@ -37,9 +37,6 @@ Another challenge I have learned to work around comes from scheduling. Years of 
 * Have fewer, more effective meetings. I like to challenge myself to drive decisions asynchronously and to keep meetings focused unless they are explicitly for brainstorming or team building.
 * Default to public. I aim for sharing communications as broadly as possible. At my previous job, that meant answering individual requests to public channel when appropriate. Defaulting to public channels helps everyone have a shared context in a way I find beneficial to asynchronous decision making.
 
-
-
-
 ## The Benefits of Working From Home
 
 
