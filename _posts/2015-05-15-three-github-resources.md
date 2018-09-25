@@ -4,7 +4,6 @@ layout: post
 blog: true
 author: mbbroberg
 tag:
-- career development
 - github
 description: Getting deeper into git? Check out these links.
 ---

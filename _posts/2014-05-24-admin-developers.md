@@ -4,8 +4,8 @@ layout: post
 blog: true
 author: mbbroberg
 tag:
-- career development
 - github
+- community
 description: Are you along for the ride of operators becoming developers?
 ---
 > _A note: This post was created on a previous domain and migrated in 2018_{: style="color:gray; font-size: 80%; text-align: center;"}

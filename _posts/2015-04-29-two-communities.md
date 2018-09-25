@@ -4,8 +4,8 @@ layout: post
 blog: true
 author: mbbroberg
 tag:
-- career development
 - experimentation
+- community
 description: What does Reddit and StackOverflow have to do with career success?
 ---
 > _A note: This post was created on a previous domain and migrated in 2018_{: style="color:gray; font-size: 80%; text-align: center;"}
