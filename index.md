@@ -3,11 +3,11 @@ title: Home
 layout: page
 ---
 ## Hey 👋. I'm Matt.
-I loving working with technology communities to develop products and content that invite delightful engagement.
+I love working with technology communities to develop products and content that invite delightful engagement.
 
 ### Communities I've Helped Build:
 
-* **[The Sensu Community](https://sensu.io/community)** designing community programs from maintainer practices to events like [Sensu Summit](https://sensu.io/summit).
+* **[The Sensu Community](https://sensu.io/community)** leading community initiatives from maintainer practices to user summits.
 * **[DevRel Collective](https://devrelcollective.fun)** as a maintainer, designing the rebrand, and creating the website.
 * **[Snap: the open telemetry framework](https://snap-telemetry.io)** designing the brand, documentation, maintainer and contributor strategy.
 * **[The Geek Whisperers podcast](https://geek-whisperers.com/)** as a co-creator and co-host.
