@@ -7,14 +7,14 @@ I love working with technology communities to develop products and content that 
 
 ## Job Hunting
 
-I'm also **interested in finding my next role.** [Review my LinkedIn for background](https://www.linkedin.com/in/mbbroberg/) and [reach out](mailto:matthewbbroberg+io@gmail.com) if you have a recommendation.
+I'm also interested in finding my next role. [Review my LinkedIn for background](https://www.linkedin.com/in/mbbroberg/) and [reach out](mailto:matthewbbroberg+io@gmail.com) if you have a recommendation.
 
 Here are a few things on my mind as I plan for what's next:
 
 * **I'm a leader**, open to IC or management positions. I make a significant impact on organizations with an eye on honest communication, streamlined processes, and by building relationships (internally and externally).
-* **I measure business value**, and thrive in organizations that respect measurement of even tough stuff like Community ([including stickers](https://medium.com/@mbbroberg/community-metrics-whats-the-roi-of-stickers-640d93b73cd3) if we need to). I'd like to nurture my data curiosity by learning more advanced statistics and data science practices.
+* **I measure business value**, and thrive in organizations that respect measurement and use it to make decisions (even the tricky stuff, [like Community stickers](https://medium.com/@mbbroberg/community-metrics-whats-the-roi-of-stickers-640d93b73cd3)). I'd like to nurture my data curiosity by learning more advanced statistics and data practices.
 * **I want to focus on maintainers and their experiences**. I would love to build better products for open source maintainers or to be the voice of a company that does.
-* **I plan to work remotely**. I respect companies like GitHub, Buffer, and Zapier who put the effort into distributed and remote work. I will be based out of Minneapolis, though hope to manage or be part of a remote team.
+* **I plan to work remotely**. I respect companies like GitHub, Buffer, and Zapier who put the effort into distributed and remote work. I will be based out of Minneapolis, though plan to manage or lead as a member of a remote team.
 
 ### Communities I've Helped Build:
 
