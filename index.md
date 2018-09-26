@@ -11,7 +11,7 @@ I'm also **interested in finding my next role.** [Review my LinkedIn for backgro
 
 Here are a few things on my mind as I plan for what's next:
 
-* **I'm a leader**, open to IC or management positions. I make a significant impact on organizations with an eye on clean communication, improved processes, and by building relationships (internally and externally).
+* **I'm a leader**, open to IC or management positions. I make a significant impact on organizations with an eye on honest communication, streamlined processes, and by building relationships (internally and externally).
 * **I measure business value**, and thrive in organizations that respect measurement of even tough stuff like Community ([including stickers](https://medium.com/@mbbroberg/community-metrics-whats-the-roi-of-stickers-640d93b73cd3) if we need to). I'd like to nurture my data curiosity by learning more advanced statistics and data science practices.
 * **I want to focus on maintainers and their experiences**. I would love to build better products for open source maintainers or to be the voice of a company that does.
 * **I plan to work remotely**. I respect companies like GitHub, Buffer, and Zapier who put the effort into distributed and remote work. I will be based out of Minneapolis, though hope to manage or be part of a remote team.
