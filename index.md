@@ -18,13 +18,13 @@ Here are a few things on my mind as I plan for what's next:
 
 ### Communities I've Helped Build:
 
-* **[The Sensu Community](https://sensu.io/community)** leading community initiatives from maintainer practices to user summits.
+* **[The Basho Community](https://github.com/basho-labs/the-basho-community)** as the community leader and a maintainer.
 * **[DevRel Collective](https://devrelcollective.fun)** as a maintainer, designing the rebrand, and creating the website.
-* **[Snap: the open telemetry framework](https://snap-telemetry.io)** designing the brand, documentation, maintainer and contributor strategy.
-* **[The Geek Whisperers podcast](https://geek-whisperers.com/)** as a co-creator and co-host.
-* **[Commitmas: learning GitHub socially](https://github.com/commitmas)** to collaborative learn Git and GitHub with the [vBrownBag](https://vbrownbag.com/) community.
-* **[The Basho Community](https://github.com/basho-labs/the-basho-community)** as the community leader and maintainer.
 * **[The EMC Elect](https://community.emc.com/community/connect/dell_emc_elect)** (EOL 2017) as program lead, designing the business plan, brand, and community engagement.
+* **[The Sensu Community](https://sensu.io/community)** leading community initiatives from maintainer practices to user summits.
+* **[Snap: the open telemetry framework](https://snap-telemetry.io)** designing the brand, documentation, maintainer and contributor strategy.
+* **[Commitmas: learning GitHub socially](https://github.com/commitmas)** to collaborative learn Git and GitHub with the [vBrownBag](https://vbrownbag.com/) community.
+* **[The Geek Whisperers podcast](https://geek-whisperers.com/)** as a co-creator and co-host.
 
 ### Projects I've Contributed to:
 
