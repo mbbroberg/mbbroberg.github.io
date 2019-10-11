@@ -90,6 +90,8 @@ Events require brief profiles about speakers. Here's my default for when those r
 You can download [this picture of me](/assets/images/profile.jpg) for any event pages.
 
 ### Profile
-Matt loves working with technology communities to develop products and content that invite delightful engagement. He's a serial podcaster, best known for the [Geek Whisperers podcast](https://geek-whisperers.com/), is on the board of the [Influence Marketing Council](https://medium.com/influence-marketing-council), co-maintains [the DevRel Collective](https://devrelcollective.fun/), and often shares his thoughts on Twitter and GitHub [@mbbroberg](https://twitter.com/mbbroberg). He's also a fan of tattoos and cats, though remains unsure of Schrödinger's.
+Matt is an advocate for open source software and currently the Technical Editor of Opensource.com. He specializes in designing technology communities that develop products and content in a way that tells a powerful story. 
+
+Matt is a retired EMC storage admin, vExpert, and former fan of other proprietary technologies. He is a serial podcaster, best known for the [Geek Whisperers podcast](https://geek-whisperers.com/), co-built the [the DevRel Collective](https://devrelcollective.fun/), and often shares his thoughts on Twitter and GitHub [@mbbroberg](https://twitter.com/mbbroberg). He’s also a fan of tattoos and cats, though remains unsure of Schrödinger’s.
 
 ---
