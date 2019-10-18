@@ -7,7 +7,7 @@ description: Website of Matthew (Brender) Broberg. Matt loves working with techn
 external-image: false
 picture: assets/images/profile.jpg
 
-url: https://mbbroberg.github.io
+baseurl: '/'
 permalink: /:title/
 markdown: kramdown
 highlighter: rouge
