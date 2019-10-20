@@ -1,5 +1,5 @@
 # twitter summary info
-description: Website of Matthew (Brender) Broberg. Matt loves working with technology communities to develop products that invite delightful engagement.
+description: Website of Matthew (Brender) Broberg. Matt is an advocate for open source software. He specializes in designing technology communities that develop products and content in a way that tells a powerful story.
 
 
 # if it's an external image, update below for true
@@ -13,7 +13,7 @@ markdown: kramdown
 highlighter: rouge
 
 # To enable google analytics, supply your token below
-# analytics-google: 'UA-MYANALYTICS'
+analytics-google: 'UA-150450064-1'
 
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
