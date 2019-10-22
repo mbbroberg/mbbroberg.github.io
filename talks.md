@@ -7,6 +7,26 @@ layout: page
 
 ---
 
+# 2019 Favorites
+
+## All Things Open
+
+The metrics behind Community and DevRel programs continues to be a curiosity of mine. Our field has seemed to define the internal improvement mentrics quite effectively, yet struggles to provide external business value to those who aren't deep "in it."
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">All models are wrong - ask these questions. <a href="https://twitter.com/mbbroberg?ref_src=twsrc%5Etfw">@mbbroberg</a> <a href="https://twitter.com/hashtag/AllThingsOpen?src=hash&amp;ref_src=twsrc%5Etfw">#AllThingsOpen</a> <a href="https://t.co/cGky0er8HK">pic.twitter.com/cGky0er8HK</a></p>&mdash; Jeff Mackanic (@mackanic) <a href="https://twitter.com/mackanic/status/1183775730666278917?ref_src=twsrc%5Etfw">October 14, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+I'm proudest of the use of an analogy: that our use of data is similar to behaviorist psychology, which can provide incentive but has no explanation for human experience. An effective metric is like Gestalt psychology, where the whole is more than the sum of its parts.
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/3e7b783c0f2b47e5aaf7e499adf6cd7e" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
+
+## VTUG
+
+I had the honor of keynoting the final Virtualization Technology User Group, which was the first community event I ever volunteered at. I was given the "tough love" spot where I was asked to make people think about what they need to learn to build there careers beyond virtualization. From the feedback received, I succeeded with **Cloud, DevOps, Coding, and other Sysadmin fads**. 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">First keynote of the last <a href="https://twitter.com/NE_VTUG?ref_src=twsrc%5Etfw">@NE_VTUG</a> , and <a href="https://twitter.com/mbbroberg?ref_src=twsrc%5Etfw">@mbbroberg</a> is killing it. <a href="https://twitter.com/hashtag/VTUG?src=hash&amp;ref_src=twsrc%5Etfw">#VTUG</a> <a href="https://t.co/ql4ACHU3nd">pic.twitter.com/ql4ACHU3nd</a></p>&mdash; Kanji Bates (@kanjibates) <a href="https://twitter.com/kanjibates/status/1151843718430908417?ref_src=twsrc%5Etfw">July 18, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+A big thanks to [Chris Williams](https://twitter.com/mistwire) for the invitation.
+
 # 2018 Favorites
 
 ## REdeploy
