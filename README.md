@@ -28,5 +28,5 @@ docker build --rm -t mbbroberg:blog . && docker run -it -d -p 80:80 --name blog 
 ### Stop the container
 
 ```bash
-docker stop blog
+docker stop blog && docker rm blog
 ```
