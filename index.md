@@ -3,7 +3,7 @@ title: Home
 layout: page
 ---
 ## Hey 👋. I'm Matt.
-I love working with technology communities to develop products and content that invite delightful engagement.
+I love working with technology communities to develop products and content to inspire open source adoption.
 
 ### Communities I've Helped Build:
 
