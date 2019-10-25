@@ -6,8 +6,8 @@ RUN chmod 777 /src
 RUN bundle install
 
 COPY . .
-RUN mkdir /src/_site
-RUN chmod 777 /src/_site
+RUN mkdir -p /src/_site
+RUN chmod 777 -R /src/_site
 RUN bundle exec jekyll build --baseurl ''
 
 FROM nginx:alpine
