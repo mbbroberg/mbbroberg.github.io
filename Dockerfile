@@ -2,7 +2,7 @@ FROM jekyll/jekyll as build-env
 
 WORKDIR /src
 COPY Gemfile* ./
-RUN chmod 777 /src
+RUN chmod 777 -R /src
 RUN bundle install
 
 COPY . .
