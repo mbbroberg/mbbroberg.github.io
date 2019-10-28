@@ -6,7 +6,7 @@ title: Tags
 <section class="list">
     <h1 class="title">Status: In Progress</h1>
 
-    I am in the process of resharing some favorite articles of mine from the past 10 years of writing. My latest posts can be found <a href="https://medium.com/@mbbroberg">on Medium</a>. 
+    I am in the process of resharing some favorite articles of mine from the past 10 years of writing. My latest posts can be found <a href="https://medium.com/@mbbroberg">on Medium</a>.
 
 </section>
 <section class="list">
@@ -39,7 +39,7 @@ title: Tags
             {% if post.title != null %}
                 {% if group == null or group == post.group %}
                     <li class="item">
-                        <a class="url" href="{{ site.url }}{{ post.url }}">
+                        <a class="url" href="{{ site.baseurl }}{{ post.url }}">
                             <aside class="date"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
                             <h3 class="title">{{ post.title }}</h3>
                         </a>

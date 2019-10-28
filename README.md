@@ -12,3 +12,21 @@ A simple site extended from [this Jekyll theme](http://sergiokopplin.github.io/i
 - [Syncing a Fork](https://help.github.com/articles/syncing-a-fork/)
 - [Tests with Travis CI - Tutorial](http://www.raywenderlich.com/109418/travis-ci-tutorial)
 - [Why Sass?](https://github.com/sergiokopplin/indigo/issues/117)
+
+##  Docker
+
+### Build and run a container
+
+- Run in the shell:
+
+```bash
+docker build --rm -t mbbroberg:blog . && docker run -it -d -p 80:80 --name blog mbbroberg:blog
+```
+
+- Open a web browser on [localhost](http://localhost)
+
+### Stop the container
+
+```bash
+docker stop blog && docker rm blog
+```
