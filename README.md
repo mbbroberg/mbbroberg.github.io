@@ -20,7 +20,7 @@ A simple site extended from [this Jekyll theme](http://sergiokopplin.github.io/i
 - Run in the shell:
 
 ```bash
-docker build --rm -t mbbroberg:blog . && docker run -it -d -p 80:80 --name blog mbbroberg:blog
+docker build --rm -t mbbroberg:blog . && docker run -it -d -p 4000:80 --name blog mbbroberg:blog
 ```
 
 - Open a web browser on [localhost](http://localhost)
