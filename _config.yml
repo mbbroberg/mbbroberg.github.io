@@ -93,6 +93,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-paginate
+  - rake
+  - rouge
+  - html-proofer
 
 jekyll-mentions:
     base_url: https://github.com
