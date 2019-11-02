@@ -1,10 +1,18 @@
 # mbbroberg.github.io
 
-A simple site extended from [this Jekyll theme](http://sergiokopplin.github.io/indigo/). If you'd like to extend your own, I recommend starting with the original theme.
+A reasonably simple site extended from [this Jekyll theme](http://sergiokopplin.github.io/indigo/). If you'd like to extend your own, I recommend starting with the original theme. There be dragons here 🐉.
 
-## How to:
+## Notes to self
 
-(From the original repo and references I will use)
+If you are running Jekyll locally, update some things:
+
+- This runs with updated versions of Ruby (2.6.3 worked well)
+- Use [rbenv](https://github.com/rbenv/rbenv) to manage local environments
+- Serve it up with `bundle install` and `bundle exec jekyll serve --watch --force_polling --livereload`
+
+### What's in the box? 📦
+
+Here are links from the original project:
 
 - Article: How to Install Jekyll - by [Arti Annaswamy](https://github.com/aannasw). [Part 1](http://artiannaswamy.com/build-a-github-blog-part-1) and [Part 2](http://artiannaswamy.com/build-a-github-blog-part-2)
 - [Emojis in the projects list?](https://github.com/sergiokopplin/indigo/issues/72)
