@@ -4,7 +4,6 @@ layout: post
 blog: true
 author: mbbroberg
 tag:
-- experimentation
 - community
 description: What does Reddit and StackOverflow have to do with career success?
 ---

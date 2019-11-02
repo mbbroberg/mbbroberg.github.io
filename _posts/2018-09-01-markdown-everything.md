@@ -1,8 +1,6 @@
 ---
 title: How to Use Markdown Everywhere
 layout: post
-blog: true
-author: mbbroberg
 tag:
 - markdown
 - guides

@@ -1,8 +1,6 @@
 ---
 title: "My Latest Obsession: Admins becoming Developers"
 layout: post
-blog: true
-author: mbbroberg
 tag:
 - github
 - community

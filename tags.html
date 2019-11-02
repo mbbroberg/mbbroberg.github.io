@@ -4,24 +4,28 @@ title: Tags
 ---
 
 <section class="list">
-    <h1 class="title">Status: In Progress</h1>
+    <h1 class="title">Articles I've written</h1>
 
-    I am in the process of resharing some favorite articles of mine from the past 10 years of writing. My latest posts can be found <a href="https://medium.com/@mbbroberg">on Medium</a>. 
+    A mentor of mine once said 'Anything you need to explain more than once is a blog post.' That guidance changed my
+    career. I've been sharing my thoughts through writing since I started my career, and I will forever do so. Here are
+    some of those thoughts recovered from a few retired websites and pulled from Medium.
 
 </section>
+
+
 <section class="list">
-    <h1 class="title">Articles by tag</h1>
+    <h2 class="title" align="center">Find by tag</h2>
 
     {% assign tags_list = site.tags %}
 
     {% if tags_list.first[0] == null %}
-        {% for tag in tags_list %}
-            <a class="item" href="#{{ tag | slugify }}">{{ tag }}</a>
-        {% endfor %}
+    {% for tag in tags_list %}
+    <a class="item" href="#{{ tag | slugify }}">{{ tag }}</a>
+    {% endfor %}
     {% else %}
-        {% for tag in tags_list %}
-            <a class="item" href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
-        {% endfor %}
+    {% for tag in tags_list %}
+    <a class="item" href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+    {% endfor %}
     {% endif %}
 
     {% assign tags_list = nil %}
@@ -36,16 +40,17 @@ title: Tags
     <ul class="list">
         {% assign pages_list = tag[1] %}
         {% for post in pages_list reversed %}
-            {% if post.title != null %}
-                {% if group == null or group == post.group %}
-                    <li class="item">
-                        <a class="url" href="{{ site.url }}{{ post.url }}">
-                            <aside class="date"><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
-                            <h3 class="title">{{ post.title }}</h3>
-                        </a>
-                    </li>
-                {% endif %}
-            {% endif %}
+        {% if post.title != null %}
+        {% if group == null or group == post.group %}
+        <li class="item">
+            <a class="url" href="{{ site.url }}{{ post.url }}">
+                <aside class="date"><time
+                        datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
+                <h3 class="title">{{ post.title }}</h3>
+            </a>
+        </li>
+        {% endif %}
+        {% endif %}
         {% endfor %}
         {% assign pages_list = nil %}
         {% assign group = nil %}
