@@ -14,7 +14,7 @@ In the few weeks [since I’ve joined](https://medium.com/@mbbroberg/building-co
 
 While this event came up in many of the conversations I’ve had with contributors to the Sensu Plugins project from around the world, there was one even more consistent message: every one of our contributors had positive things to say about the Sensu Community as a whole. There’s something really special in the consistency of this feedback, and I love that my job is to cultivate what makes us special and brings us together.
 
-A huge thanks to those who have taken the time to speak with me about their experience in the Sensu community. For those who haven’t yet or want to again, you can schedule some time on my calendar [using Calendly](https://calendly.com/mbb). And thank you to everyone, past and present, who has been involved in Sensu. You keep the #monitoringlove running strong.
+A huge thanks to those who have taken the time to speak with me about their experience in the Sensu community. For those who haven’t yet or want to again, you can schedule some time on my calendar [using Calendly](https://calendly.com/mbb). And thank you to everyone, past and present, who has been involved in Sensu.
 
 ### Our Next Challenge
 
