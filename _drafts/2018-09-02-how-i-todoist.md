@@ -73,3 +73,15 @@ I extensively
 {:refdef: style="text-align: center;"}
 ![Todoist is Markdown Magic]({{ site.baseimg }}/assets/posts/markdown-render-todoist.gif)
 {: refdef}
+
+## Calendar synchronization
+
+Essential part of the process for me. 
+
+## What the flow feels like 
+
+I know my system is working when I exhibit the following behavior: 
+
+- I see a limited amount of work to get done on a given day that reflects my calendar and my priorities. 
+- If there's a task I want to complete right now, but it's not a priority or as urgent as I'm thinking it feels, I instead **schedule time on the calendar to complete the task**. That extra step helps me stay on (the right) task.
+- All work that I would like to get done today has time blocked on the calendar to complete it. 
