@@ -50,20 +50,21 @@ Each one of these has a different color and 2-5 sub-projects that are specific t
 - **Admin** for overhead tasks like actually scheduling a meeting or completing expenses
 - **Writing** for my writing assignments
 
-## Priorities
+## Prioritizing 
+
 
 Another helpful functionality of Todoist involves prioritization, which you can easily add to a task with a `P` and a number between 1-4. It took me a while to know what these priorities meant to me. I eventually fully stole from my friend Christian [over at vNinja](https://vninja.net/workflow/how-i-use-todoist/):
-
-- P1 — Important and urgent. Do these now.
-- P2 — Important but not urgent. Must have a due date. Move to P1 on or before due date.
-- P3 — Not important but urgent. Delegate to others, or change priority to P2 or P4.
-- P4 — Not important and not urgent. Only do if time permits. I will add a due date to start, but it's okay to remove or move it without too much concern.
 
 Okay, that's not the whole story. I don't use Priorities like this. I mostly use tags to signify what I'm working on.
 
 ## Tags
 
 All about the 1-3-5 method. 
+
+* Ps mean urgency. 
+    * The higher the P, the sooner I should schedule it for completion.
+* @s mean energy.
+    * The higher the @, the closer to my pique hours I should schedule it, and the fewer distractions are allowed.
 
 ## Filters
 
