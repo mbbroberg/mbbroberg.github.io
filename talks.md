@@ -7,6 +7,28 @@ layout: page
 
 ---
 
+# 2020 Favorites 
+
+## FOSDEM
+
+I checked a career goal checkbox with my first talk at this internationally-reknown show. It was my first draft of explaining the importance of accepting open source contributors no matter where they come from and what tools they are comfortable using. To do that, we need to stop defaulting to IRC as the primary communication channel and shift toward beautiful and simple asynchronous options. 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Excellent talk, <a href="https://twitter.com/mbbroberg?ref_src=twsrc%5Etfw">@mbbroberg</a>! Slides: <a href="https://t.co/QsDiU1bcL9">https://t.co/QsDiU1bcL9</a><a href="https://twitter.com/hashtag/FOSDEM2020?src=hash&amp;ref_src=twsrc%5Etfw">#FOSDEM2020</a></p>&mdash; julia ferraioli (@juliaferraioli) <a href="https://twitter.com/juliaferraioli/status/1223901276544602112?ref_src=twsrc%5Etfw">February 2, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+I enjoyed the reception&mdash;in favor and against&mdash;as I find a way to advocate for inclusivity and acceptance that open source is not reserved for those who use any single platform.
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/e63e2d55aeac4451ad6a5960c8e8be97" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
+
+## CHAOSScon
+
+In a revision to the metric talk from ATO, I focus in on the importance of comparison to make an effective argument for communities. 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I knew it! Stickers are 76x more valuable than content 🏆🥇 <a href="https://twitter.com/mbbroberg?ref_src=twsrc%5Etfw">@mbbroberg</a> <a href="https://twitter.com/hashtag/CHAOSScon?src=hash&amp;ref_src=twsrc%5Etfw">#CHAOSScon</a> <a href="https://t.co/piHC2d2K87">pic.twitter.com/piHC2d2K87</a></p>&mdash; Josh Dzielak @ FOSDEM 👨‍💻🇧🇪 (@dzello) <a href="https://twitter.com/dzello/status/1223243731807154178?ref_src=twsrc%5Etfw">January 31, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+The updated version is here: 
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/3e7b783c0f2b47e5aaf7e499adf6cd7e" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
+
 # 2019 Favorites
 
 ## All Things Open
