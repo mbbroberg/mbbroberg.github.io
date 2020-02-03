@@ -23,11 +23,13 @@ Here are a few favorites from the last season:
 
 I've been hopping onto quite a few  incredible podcasts over the years. Here are a few of them:
 
+- [Full Stack Journey 037: The Influence Of Open Source In A Tech Career With Matt Broberg](https://packetpushers.net/podcast/full-stack-journey-037-the-influence-of-open-source-in-a-tech-career-with-matt-broberg/)
 - [11 awesome lightning chats ⚡️](https://changelog.com/jsparty/100) on JS Party (from [The Changelog](https://changelog.com))
 - [The Anatomy of Developer Advocacy with Matt Broberg](https://www.screaminginthecloud.com/episodes/the-anatomy-of-developer-advocacy-with-matt-broberg) on Screaming In The Cloud
 - [Developer Relations with Matt Broberg](https://podcasts.apple.com/us/podcast/innovate-open/id498373813) on Innovate @Open
 - [When live punches you in the nose, part 1](https://www.thectoadvisor.com/podcast/2018/10/22/when-life-punches-you-in-the-nose) and [part 2](https://www.thectoadvisor.com/podcast/2019/4/8/punched-in-the-nose-part-2) on The CTO Advisor
 - [Hiring a DevRel Team](http://communitypulse.io/22-hiring-devrel-team/) on Community Pulse
+- [Connecting Community Back with Business - Influencer Marketing Podcast](https://podcasts.apple.com/us/podcast/connecting-community-back-business-amy-lewis-matt-broberg/id1243637070?i=1000400292092)
 - [Beyond the Hugs: A Ratio for Valuing Open Source Contributions](https://thenewstack.io/beyond-the-hugs-a-ratio-for-valuing-open-source-contributions/) on The New Stack
 - [Cloud Careers](https://www.thecloudcast.net/2017/08/the-cloudcast-307-cloud-careers-after.html) on The Cloudcast
 - [Open source: a beginner's guide](https://soundcloud.com/buzzword-bingo/open-source-beginners-guide)
