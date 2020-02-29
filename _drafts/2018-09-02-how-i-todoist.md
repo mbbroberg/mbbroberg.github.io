@@ -10,11 +10,15 @@ description: Todoist is the single most helpful productivity tool I use.
 
 Todoist is a freemium application I have consistently used for a few years now. Before that, I had been switching between an endless supply of options. But before we get into the tool, there's a more important question of the routine.
 
-## My productivity routine
+## My productivity practice
 
-Before I found my flow, I spent everyday looking at tasks with a sense of wide-eyed overwhelm. What will I tackle next? A "quick win" or do I "swallow the toad" by starting with something challenging? Most importantly, I never felt confident saying "no" to a request, because I couldn't quite say what I was going to work on instead and I didn't know when I could potentially help them. 
+Before I found my flow, I spent everyday looking at tasks with a sense of wide-eyed overwhelm. What will I tackle next? A "quick win" or do I "swallow the toad" by starting with something challenging? Most importantly, I never felt confident saying "no" to a request, because I couldn't quite say what I was going to work on instead and I didn't know when I could potentially help them.
 
-It all started to make sense when I found a framework that helped me effectively limit my work. 
+It all started to make sense when I found a framework that helped me effectively limit my work. That's made up of a practice more than a software system, which seems to make all the difference. No todo task manager will help you define how you spend your time. It will, at best, offer a way to manage the work gracefully.  
+
+1-3-5 strategy 
+
+### My productivity routine
 
 
 
