@@ -1,5 +1,5 @@
 ---
-title: Job hunting tips for non-linear careers
+title: Job hunting tips for nonlinear careers
 layout: post
 blog: true
 author: mbbroberg
@@ -9,13 +9,9 @@ tag:
 description: Job hunting can be a terrible experience filled with panic. Use data to calm your nerves.
 ---
 
-I originally wrote this post while job hunting in 2018. 
+I originally wrote this post while job hunting in 2018. I knew I needed a change from the work I was doing, and I developed a tool (read: spreadsheet) that helped reinforce a few lessons from the process. 
 
-I knew I needed a change from the work I was doing, and I developed a tool (read: spreadsheet) that helped reinforce a few lessons from the process. 
-
-You can [make a copy of it over here](https://bit.ly/JobPipelineBrueprint). I hope it helps you out. 
-
-If knowing your not along helps, here's some of my story.
+You can [make a copy of it over here](https://bit.ly/JobPipelineBrueprint). I hope it helps you out. If knowing your not along helps, here's some of my story.
 
 ## The difficulty of job timelines and titles 
 
@@ -29,7 +25,7 @@ I found a pattern of job hunting that helped me get out of that train of thought
 
 ## Step 1, prioritize your why and your what
 
-I have a non-linear career path, with time in support, engineering, marketing, and a little sales. Over the years, I've focused on exciting roles at companies I believe in more than a given title I'm looking to perfect. I'm not saying that's the best strategy, but it's been mine to date.
+I have a nonlinear career path, with time in support, engineering, marketing, and a little sales. Over the years, I've focused on exciting roles at companies I believe in more than a given title I'm looking to perfect. I'm not saying that's the best strategy, but it's been mine to date.
 
 So when I was let go by my last gig, I knew my startup itch was scratched for a while. Startups, in my three tries and ~5 years of experience, have been a lesson on the importance of revenue. It's the master all venture-seeking companies serve, and it's ultimately the only thing that matters unless you're making a lot of it already. I'm good with taking a breather from that rat race while I make up for lost 401k contributions and a work/life balance that left me disappointed in my priorities of late. That leads to my why: I'm interested in working for a mature organization, which gives me space to have focused learning that will refine my core skill set while spending more time outside of work.
 
