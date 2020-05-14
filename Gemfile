@@ -6,6 +6,7 @@ gem 'rouge'
 
 group :jekyll_plugins do
     gem 'html-proofer'
+    gem 'jekyll-compose'
     gem 'jemoji'
     gem 'jekyll-mentions'
     gem 'jekyll-seo-tag'

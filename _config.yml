@@ -99,3 +99,13 @@ plugins:
 
 jekyll-mentions:
     base_url: https://github.com
+
+jekyll_compose:
+  default_front_matter:
+    posts:
+      title: 
+      layout: post
+      blog: true
+      author: mbbroberg
+      description:
+      tags:
