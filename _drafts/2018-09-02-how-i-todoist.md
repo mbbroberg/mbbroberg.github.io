@@ -34,7 +34,7 @@ I think about how I frame my tasks, especially keeping in mind these tricks:
 
 - **Keep each task actionable.** For instance, changing "Hear back from Mary" to "Check for an email from Mary."
 - **Repeat tasks until their done.** Outstanding tasks may take a while when they depend on others, but we should still get our daily dopamine for checking the box. Use the syntax `repeat daily` or `repeat workday` to keep track of it every day or just during the work week.
-- 
+- Severely limit auto-generation of tasks. I'm opposed to this entirely and I think it should be used sparingly. Part of GTD, in my opinion is that the collection and processing of tasks is part of the work itself. It allows your brain to assess the task, decide it's current priority, future value, etc. When you start to outsource the process to automation, you lose the ability to manage your own system and you wind up where you are now. I've seen it many times.
 
 This slightly-cheesy-but-thoughtful [post from the creators of Todoist](https://blog.doist.com/the-life-changing-magic-of-tidying-up-your-todoist-8413b3e06473) changed my philosophy on how to write a useful task. It's worth a read as well.
 
@@ -53,6 +53,13 @@ Each one of these has a different color and 2-5 sub-projects that are specific t
 - **Community** for tasks related to building community
 - **Admin** for overhead tasks like actually scheduling a meeting or completing expenses
 - **Writing** for my writing assignments
+
+### Project tips 
+
+
+- **Separate habit tracking from productivity and task management.** Your list will get crowded if you have all your "be a better person" type tasks alongside your productivity tasks on a daily basis. Separate these into different Projects, and ultimately use a filter to see only important work. 
+- 
+
 
 ## Prioritizing 
 
@@ -77,6 +84,14 @@ I extensively
 {:refdef: style="text-align: center;"}
 ![Todoist is Markdown Magic]({{ site.baseimg }}/assets/posts/markdown-render-todoist.gif)
 {: refdef}
+
+
+Powerful advice from another [Reddit thread](https://www.reddit.com/r/todoist/comments/a4vn2i/automatically_reschedule_overdue_to_today/). 
+
+> 1. Todoist is made for people that actually use their to do list! Daily! We don't let the day end without checking if every task is done or at least handled in some way. One does not simply walk into Mordor without checking Todoist! Some of use even have a recurring task that reminds them every evening to process their inbox and their remaining tasks. Some of us have the Todoist widget on their home screen (Android). Also, we open Todoist every morning anyways. 😃
+> 2. We try not to schedule tasks for today if it is not necessary to complete the task today - so we don't have to postpone it in the first place. Many have a custom filtered view that in addition to today's tasks also shows tasks that could be completed soon. Like: Today | @soon or @focus & no date, Today
+> 3. If you'd automatically reschedule all overdue tasks, then why schedule them? You don't have to schedule at all! Instead you could just use Priority1 for your "kinda-today" tasks and again use a filtered view. You could see the priorities as P1=now, P2=today-ish, P3=soon, p4=someday/maybe. Then set up your custom today view with filter: P1, P2, P3 And instead of re-scheduling daily you just re-prioritize every couple of days.
+> 4. Remember, you can still set reminders for tasks that aren't scheduled! You can even set a recurring reminder to remind you every day of those open P1 tasks until you complete them.
 
 ## Calendar synchronization
 
