@@ -132,8 +132,10 @@ Events require brief profiles about speakers. Here's my default for when those r
 You can download [this picture of me](/assets/images/profile.jpg) for any event pages.
 
 ### Profile
-Matt is an advocate for open source software and currently the Technical Editor of Opensource.com. He specializes in designing technology communities that develop products and content in a way that tells a powerful story. 
+Matt is an advocate for open source software and currently the Managing Editor of [Enable Architect](https://redhat.com/architect) for Red Hat. He specializes in designing technology communities that develop products and content in a way that tells a powerful story. 
 
-Matt is a retired EMC storage admin, vExpert, and former fan of other proprietary technologies. He is a serial podcaster, best known for the [Geek Whisperers podcast](https://geek-whisperers.com/), co-built the [the DevRel Collective](https://devrelcollective.fun/), and often shares his thoughts on Twitter and GitHub [@mbbroberg](https://twitter.com/mbbroberg). He’s also a fan of tattoos and cats, though remains unsure of Schrödinger’s.
+_// Optional for longer profiles_
+
+Matt is a maintainer and contributor in the [Kubernetes](https://k8s.dev) and [CHAOSS](https://chaoss.community) communities. He is a serial podcaster, best known for the [Geek Whisperers podcast](https://geek-whisperers.com/), co-built the [the DevRel Collective](https://devrelcollective.fun/), and often shares his thoughts on Twitter and GitHub [@mbbroberg](https://twitter.com/mbbroberg). He’s also a fan of tattoos and cats, though remains unsure of Schrödinger’s.
 
 ---
