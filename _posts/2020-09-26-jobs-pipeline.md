@@ -51,7 +51,7 @@ It's not uncommon to apply to dozens of job postings before you land on the perf
 
 The recommended tracker has all the main details, but then levels it up with the Type of Role and Stage dropdowns. We will see how they power the rest of the Blueprint next.
 
-![Example Tracker][assets/images/job-hunting-pipeline-blueprint-example-tracker-mbbroberg.png]
+![Example Tracker](../assets/images/job-hunting-pipeline-blueprint-example-tracker-mbbroberg.png)
 
 I also like to add Lessons to the mix. Maybe I missed out on a role due to a hiring freeze, or perhaps I bombed a specific question. These tidbits help me think about the next rounds more effectively.
 
@@ -59,7 +59,7 @@ I also like to add Lessons to the mix. Maybe I missed out on a role due to a hir
 
 I call the final tab the Pipeline since we're following through with the funnel analogy. Here is where the work of this spreadsheet becomes worth it. 
 
-![Example Tracker][assets/images/job-hunting-pipeline-blueprint-example-pipeline-mbbroberg.png]
+![Example Tracker](../assets/images/job-hunting-pipeline-blueprint-example-pipeline-mbbroberg.png)
 
 I designed an accumulating percentage funnel; as you succeed in each stage listed in Stages, you see the percentage increase of results. The trick is, the percentages are divided by job title. You have four buckets: the three you set at the start, and Other (since we all end up applying to some randoms along the way). 
 
