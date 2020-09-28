@@ -16,6 +16,8 @@ Before you ever get a chance to pitch yourself, your resume speaks for you. Some
 
 I’ve edited well over 40 resumes for myself, friends, and mentees over the years, and I’ve found one section keeps coming up as the part the gets me to an interview. I call it “competencies.” 
 
+To be clear, I don't assume to be the inventor of this section. I do diligently leverage it and recommend you do the same.
+
 ## What’s a competency section? 
 
 Competencies is the laundry list section where you help resume reviewers and automated ATS (applicatant tracking systems) see you’re at least worth an interview. Here’s what mine looks like as a technically-inclined marketer these days: 
