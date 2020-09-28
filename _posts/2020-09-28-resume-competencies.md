@@ -12,7 +12,7 @@ Job hunting as terrible. I keep writing about it in the hopes of your experience
 
 Before you ever get a chance to pitch yourself, your resume speaks for you. Sometimes the resume speaks better than others. Thankfully, the bar isn’t too high if you know the tricks.
 
-{% twitter https://twitter.com/jilljubs/status/1268932063803117568?s=21 %} 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">ive literally never heard someone say &#39;i love this resume&#39;, but I have heard someone say &#39;this candidate looks amazing&#39;. Help recruiters clearly see your qualifications.</p>&mdash; jill wohlner (@jilljubs) <a href="https://twitter.com/jilljubs/status/1268932063803117568?ref_src=twsrc%5Etfw">June 5, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I’ve edited well over 40 resumes for myself, friends, and mentees over the years, and I’ve found one section keeps coming up as the part the gets me to an interview. I call it “competencies.” 
 
