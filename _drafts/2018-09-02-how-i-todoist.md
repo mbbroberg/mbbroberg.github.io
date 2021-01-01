@@ -8,7 +8,7 @@ tag:
 description: Todoist is the single most helpful productivity tool I use. 
 ---
 
-Todoist is a freemium application I have consistently used for a few years now. Before that, I had been switching between an endless supply of options. But before we get into the tool, there's a more important question of the routine.
+Todoist is a freemium application I had consistently used for a few years. Before that, I had been switching between an endless supply of options. But before we get into the tool, there's a more important question of the routine.
 
 ## My productivity practice
 
