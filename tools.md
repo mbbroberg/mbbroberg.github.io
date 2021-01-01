@@ -1,5 +1,5 @@
 ---
-title: Tools I Use
+title: Tools
 layout: page
 ---
 
@@ -7,22 +7,25 @@ layout: page
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Intensity:<br>-run a marathon<br>-write a book in 30 days<br>-silent meditation retreat<br><br>Consistency:<br>-don’t miss a workout for 2 years<br>-write every week<br>-daily silence<br><br>Intensity makes a good story. Consistency makes progress.<br><br>~ From a newsletter by <a href="https://twitter.com/augustbradley?ref_src=twsrc%5Etfw">@augustbradley</a></p>&mdash; Matt Broberg (@mbbroberg) <a href="https://twitter.com/mbbroberg/status/1321452897637421056?ref_src=twsrc%5Etfw">October 28, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-Here are the tools I use right now in order of frequency of use. I have a [Changelog](###changelog) at the bottom for reference on the big shifts.
-
----
+The core of my system falls into two groupings: principles and tools.
 
 # Principles <!-- omit in toc -->
 
 Tools are less meaningful without practices that guide their usage. Here is a shortlist of principles I do my best to follow. Some are goals I may never achieve ultimately. Ask me any questions you have in the meantime [on Twitter](https://twitter.com/mbbroberg).
 
-- Visualize all work (see yourself as a whole person: work, life, growth).
+- Visualize all work. 
 - Limit work in progress.
-- Version control and [Markdown](https://opensource.com/article/19/8/markdown-beginners-cheat-sheet) for everything.
 - Verbalize the stories I'm telling myself: write them down, adapt them when they're not serving me.
 - Build systems of habits that will outlast the highs and lows of urgency.
 - Build systems that become stronger when they break (antifragile).
+- Use version control and [Markdown](https://opensource.com/article/19/8/markdown-beginners-cheat-sheet) for everything.
+- Have a bias toward open source, but always be willing to use the best tool for the job.
+
+The resulting choices are as follows.
 
 # Tools <!-- omit in toc -->
+
+Here are the tools I use right now in order of frequency of use. I have a [Changelog](###changelog) at the bottom for reference on the big shifts.
 
 - [Notion](#notion)
 - [Evernote](#evernote)
@@ -39,6 +42,8 @@ Tools are less meaningful without practices that guide their usage. Here is a sh
   - [Linux-specific config](#linux-specific-config)
   - [iPad productivity system](#ipad-productivity-system)
 - [Changelog](#changelog)
+
+
 
 ## Notion 
 
@@ -165,24 +170,5 @@ I occasionally doodle as well, mostly in Notes but sometimes in **Adobe Draw**, 
 # Changelog
 
 - **Jan 1, 2021**: Initial release. I've officially let go of Todoist, though I hope the Notion API will allow them to integrate in a meaningful way since it's better at notifications on due dates and input of action items than Notion.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
