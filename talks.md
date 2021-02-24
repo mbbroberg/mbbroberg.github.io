@@ -3,15 +3,40 @@ title: Talks
 layout: page
 ---
 
-**I love sharing and growing as a public speaker.** Recent talks center around the human aspects of Open Source software contribution, though my favorite to date is on the data side of Community programs. Please [reach out](mailto:matthewbbroberg+io@gmail.com) if you'd like to have me as a featured speaker. My [speaker biography is here](#speaker-profile).
+**I love sharing and growing as a public speaker.** Recent talks center around the human aspects of open source software contribution, though my favorite to date is on the data side of Community programs. Please [reach out](mailto:matthewbbroberg+io@gmail.com) if you'd like to have me as a featured speaker. My [speaker biography is here](#speaker-profile).
 
 ---
+
+# 2021 Favorites 
+
+A year fully at home was a strange transition for all of us. While the online conferences did not quite work for me, I had the opportunity to share a few ideas with communities I greatly admire.
+
+## KubeCon
+
+One of the main ways I coped with being away from in-person events was by stepping up my contribution to the Kubernetes community. That week-over-week showing up grew into us forming a subgroup to the SIG Contributor Experience where we bring Marketing expertise to the upstream project. It also resulted in an opportunity to share that vision at KubeCon NA on the maintainer track.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eFIUtCnZg3g?start=15" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## State of the Source
+
+I was proud to be able to speak at the first conference hosted by the Open Source Initiative (OSI), who do such great work to support the open source ecosystem.
+
+This talk was an update to my vision on communication channels, acknowledging IRC is not where future contributors will be lingering for most open source projects. It includes communication maps with the ideas around linking sync, async, in-person, and news events into a complete communication vision.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/odvDEM6rVSI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Slides are available here:
+
+<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/mbbroberg/the-next-generation-of-open-source-contributors-are-not-on-irc-v2?slide=30" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
+
 
 # 2020 Favorites 
 
 ## FOSDEM
 
 I checked a career goal checkbox with my first talk at this internationally-reknown show. It was my first draft of explaining the importance of accepting open source contributors no matter where they come from and what tools they are comfortable using. To do that, we need to stop defaulting to IRC as the primary communication channel and shift toward beautiful and simple asynchronous options. 
+
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Excellent talk, <a href="https://twitter.com/mbbroberg?ref_src=twsrc%5Etfw">@mbbroberg</a>! Slides: <a href="https://t.co/QsDiU1bcL9">https://t.co/QsDiU1bcL9</a><a href="https://twitter.com/hashtag/FOSDEM2020?src=hash&amp;ref_src=twsrc%5Etfw">#FOSDEM2020</a></p>&mdash; julia ferraioli (@juliaferraioli) <a href="https://twitter.com/juliaferraioli/status/1223901276544602112?ref_src=twsrc%5Etfw">February 2, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
@@ -132,7 +157,7 @@ Events require brief profiles about speakers. Here's my default for when those r
 You can download [this picture of me](/assets/images/profile.jpg) for any event pages.
 
 ### Profile
-Matt is an advocate for open source software and currently the Managing Editor of [Enable Architect](https://redhat.com/architect) for Red Hat. He specializes in designing technology communities that develop products and content in a way that tells a powerful story. 
+Matt is an advocate for open source software and currently the Managing Editor of [Enable Architect](https://redhat.com/architect) for Red Hat. He specializes in designing technology communities that develop that collaboratively tell stories.
 
 _// Optional for longer profiles_
 

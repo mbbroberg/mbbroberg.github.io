@@ -11,6 +11,11 @@ I'm interested in joining an established show as a guest or co-host. Please [rea
 
 ## Hosted
 
+I co-launched a podcast for the Linux Foundation [CHAOSS project](https://chaoss.community/), focused on open source community metrics. We call it [**the CHAOSScast**](https://podcast.chaoss.community/) and I now occasionally join as a guest panelist. My favorites include: 
+
+- [In Defense of Vanity Metrics](https://podcast.chaoss.community/9)
+- [DevRel Metrics with Mary Thengvall](https://podcast.chaoss.community/18)
+
 I co-created [The Geek Whisperers](https://geek-whisperers.com) in 2013 and co-host and edited it for four wonderful years. We originally set out to talk to Marketers about how to connect more authentically with IT professionals, but we ended up finding Sysadmins who wanted to develop other marketable skills to grow in their career. So we pivoted, interviewing incredible guests about their nonlinear career paths.
 
 Here are a few favorites from the last season:
@@ -21,7 +26,7 @@ Here are a few favorites from the last season:
 
 ## Guest episodes
 
-I've been hopping onto quite a few  incredible podcasts over the years. Here are a few of them:
+I've hopped on quite a few  incredible podcasts over the years. Here are a few of them:
 
 - [Full Stack Journey 037: The Influence Of Open Source In A Tech Career With Matt Broberg](https://packetpushers.net/podcast/full-stack-journey-037-the-influence-of-open-source-in-a-tech-career-with-matt-broberg/)
 - [11 awesome lightning chats ⚡️](https://changelog.com/jsparty/100) on JS Party (from [The Changelog](https://changelog.com))

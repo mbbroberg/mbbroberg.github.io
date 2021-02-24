@@ -18,6 +18,7 @@ I work hard to connect and contribute to a broad range of communities of practic
 
 ### Communities I've Helped Build:
 
+* **[Enable Architect](https://redhat.com/architect)** as the founding editorial lead.
 * **[Opensource.com](https://opensource.com)** as a Technical Editor and designer of the [Correspondent program](https://opensource.com/correspondent-program).
 * **[DevRel Collective](https://devrelcollective.fun)** as a maintainer, designer of the rebrand, and creator of the website.
 * **[The Geek Whisperers podcast](https://geek-whisperers.com/)** as a co-creator and co-host.
