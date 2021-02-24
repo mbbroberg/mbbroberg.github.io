@@ -64,7 +64,7 @@ You achieve WFH equality when:
 
 --
 
-# Diversity and Inclusion 
+# Diversity and Inclusion for Women in Tech
 
 No amount of research can make me understand the experience of being underrepresented in the technology space, but that is not an excuse to stop trying. This work is inspired by [Diversity and inclusion: Stop talking and do your homework](https://opensource.com/article/17/9/diversity-and-inclusion-innovation), and I find the more I read, the more I find myself advocating for those that do not look like me, think like me, or experience the world in the same way as I do.
 
