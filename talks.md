@@ -28,8 +28,7 @@ This talk was an update to my vision on communication channels, acknowledging IR
 
 Slides are available here:
 
-<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/mbbroberg/the-next-generation-of-open-source-contributors-are-not-on-irc-v2?slide=30" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
-
+<script async class="speakerdeck-embed" data-id="f6366959fb4d438983cfb9b18f4b7482" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 # 2020 Favorites 
 
