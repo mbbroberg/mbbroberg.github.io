@@ -5,7 +5,7 @@ layout: page
 
 ## Hey 👋. I'm Matt.
 
-I love working with technology communities to develop products and organic content to inspire open source adoption.
+I love connecting with technology communities to develop products and organic content to inspire open source adoption.
 
 ### Communities I'm a part of:
 
@@ -25,7 +25,7 @@ I work hard to connect and contribute to a broad range of communities of practic
 * **[The Geek Whisperers podcast](https://geek-whisperers.com/)** as a co-creator and co-host for 5 years.
 * **[Commitmas: learning GitHub socially](https://github.com/commitmas)** to collaborative learn Git and GitHub with the [vBrownBag](https://vbrownbag.com/) community.
 * **[The Sensu Community](https://sensu.io/community)** leading community initiatives from maintainer practices to user summits.
-* **[Snap: the open telemetry framework](https://snap-telemetry.io)** (EOL 2018) designing the brand, documentation, maintainer and contributor strategy.
+* **[Snap: the open telemetry framework](https://snap-telemetry.io)** (EOL 2018) building brand, documentation, maintainer and contributor strategy.
 * **[The EMC Elect](https://community.emc.com/community/connect/dell_emc_elect)** (EOL 2017) as program lead, designing the business plan, brand, and community engagement.
 * **[The Basho Community](https://github.com/basho-labs/the-basho-community)** (EOL 2017) as the community leader and a maintainer.
 
