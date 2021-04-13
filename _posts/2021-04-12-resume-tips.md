@@ -43,7 +43,7 @@ The heart of your career-oriented resume is your career section (or Experience, 
 
 > Accomplished [X] as measured by [Y] by doing [Z]
 
-Formula. Get specific and be crisp about your **business value** as I go into [detail in this post](./2020-09-29-writing-resume.md).
+Formula. Get specific and be crisp about your **business value** as I go into [detail in this post](https://mbbroberg.fun/writing-resume/).
 
 ### 2a Get into the technical bits 
 
@@ -59,7 +59,7 @@ Don't settle for generic work. Be as specific about the technology as is warrant
 
 ## 3. Build in keywords with competencies
 
-Getting to an interview usually means getting past application tracking systems (ATS) as well as a deserning eye of a recruiter. To do so, use a [a competencies section](2020-09-28-resume-competencies.md). It will help you outline a ton of specifics that you can't (or shouldn't try to) fit into your Career section yet it will catch the robotic eye of ATS. 
+Getting to an interview usually means getting past application tracking systems (ATS) as well as a deserning eye of a recruiter. To do so, use a [a competencies section](https://mbbroberg.fun/resume-competencies/). It will help you outline a ton of specifics that you can't (or shouldn't try to) fit into your Career section yet it will catch the robotic eye of ATS. 
 
 Here's an example from a Data Engineer coming from a webdev background that I mentored.
 

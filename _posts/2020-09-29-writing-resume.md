@@ -26,7 +26,7 @@ The articles have plenty of good examples. Check them out.
 
 Getting to an interview usually means getting past application tracking systems (ATS) as well as a deserning eye of a recruiter. Choose your pitch to include keywords that fit the specific job you're after, like described in [resume keywords to use and avoid](http://www.smarttalent.net/2015/01/16/kirkland-resume-keywords/). 
 
-Another great strategy for keywords includes using [a competencies section](2020-09-28-resume-competencies.md). I hope the combination helps you land an interview. Then the real fun begins. 
+Another great strategy for keywords includes using [a competencies section](https://mbbroberg.fun/resume-competencies/). I hope the combination helps you land an interview. Then the real fun begins. 
 
 If you're actively looking, I put together a helpful spreadsheet system I call the [Job Hunting Pipeline Blueprint](https://bit.ly/JobPipelineBrueprint). Let me know if it works for you by saying hello [on Twitter](https://twitter.com/mbbroberg).
 
