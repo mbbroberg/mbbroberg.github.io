@@ -3,6 +3,7 @@ date: "2016-07-01T00:00:00Z"
 tag:
 - monitoring
 title: Introduction to ad hoc telemetry with Snap and Grafana
+slug: ../intro-to-ad-hoc-telemetry-snap-grafana
 ---
 
   *What makes Snap different?*

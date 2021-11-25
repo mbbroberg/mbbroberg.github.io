@@ -6,6 +6,7 @@ description: Find your perfect fit.
 tag:
 - github
 title: 10 Job Titles and Why You Might Like Them (Or Won't)
+slug: ../your-next-job-title
 ---
 
 > _A note: This post was created on a previous domain and migrated in 2018_

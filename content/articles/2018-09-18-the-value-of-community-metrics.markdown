@@ -3,6 +3,7 @@ date: "2018-09-18T00:00:00Z"
 tag:
 - community
 title: The Value of Community Metrics
+slug: ../value-community-metrics
 ---
 
   What does it look like for Community to be a quantifiable value to a company? How does that differ from it being a corporate obligation?

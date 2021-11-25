@@ -7,6 +7,7 @@ description: Tracking down Python install errors can be a mess. Here's one I hun
 tag:
 - python
 title: Mac error on pip install ends up being clang and xcode
+slug: ../clang-error-in-pip/
 ---
 
 I have been having intermittent installation errors with Python packages on my Mac. They occur on anything Python 3.7.x or 3.8.x after I set up a virtual environment and `pip install` after that (note that I manage my Python versions with [pyenv](https://github.com/pyenv/pyenv)).

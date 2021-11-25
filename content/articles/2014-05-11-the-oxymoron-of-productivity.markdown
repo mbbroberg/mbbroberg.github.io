@@ -4,6 +4,7 @@ description: Productivity is a double-edged sword.
 tag:
 - productivity
 title: The Oxymoron of Productivity
+slug: ../oxymoron-of-productivity
 ---
 
     

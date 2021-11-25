@@ -3,6 +3,7 @@ date: "2016-04-21T00:00:00Z"
 tag:
 - monitoring
 title: 'The Guts of Tasks: How Snap Runs'
+slug: ../snap-tasks
 ---
 
   My [last post](https://medium.com/intel-sdi/my-how-to-for-the-snap-telemetry-framework-e3bb641bc740) dug into the how-to of running Snap. The steps are worth outlining as we continue to get familiar with the project:

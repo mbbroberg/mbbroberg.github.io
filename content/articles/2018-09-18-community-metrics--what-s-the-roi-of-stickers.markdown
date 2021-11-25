@@ -4,6 +4,7 @@ date: "2018-09-18T00:00:00Z"
 tag:
 - community
 title: 'Community Metrics: What’s the ROI of Stickers?'
+slug: ../rio-stickers-community-metrics
 ---
 
   *To start *[*this series on metrics*](https://medium.com/@mbbroberg/the-value-of-community-metrics-4945dc752d42)* off right, an aside is needed.*

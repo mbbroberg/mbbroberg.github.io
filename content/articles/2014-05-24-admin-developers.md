@@ -5,6 +5,7 @@ tag:
 - github
 - community
 title: 'My Latest Obsession: Admins becoming Developers'
+slug: ../admins-becoming-developers
 ---
 > _A note: This post was created on a previous domain and migrated in 2018_{: style="color:gray; font-size: 80%; text-align: center;"}
 

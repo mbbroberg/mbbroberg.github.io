@@ -7,6 +7,7 @@ description: Job hunting can be a terrible experience filled with panic. Use dat
 tag:
 - career
 title: Sharing the Job Hunting Pipeline Blueprint
+slug: ../jobs-pipeline/
 ---
 
 There is nothing like some unexpected job hunting to send a reasonably confident person into a spiral of panic. I recounted my own experience with [recently in this post](2020-05-03-nonlinear-job-hunting.md). 

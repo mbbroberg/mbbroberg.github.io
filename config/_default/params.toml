@@ -16,7 +16,7 @@ doNotLoadAnimation = false
 # Form Spree Contact Form
 #contactFormAction = "https://formspree.io/f/your-form-hash-here"
 # Google Fonts
-#googleFonts = ["Indie+Flower", "Roboto:ital,wght@0,100;0,400;0,700;1,400"]
+googleFonts = ["Outfit"]
 # Google Site Verify
 #googleSiteVerify = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 singleDateFormat = "Jan 2, 2006"
@@ -27,6 +27,9 @@ listDateFormat = "Jan 2, 2006"
 # Read More links for truncated summaries
 # readMore = true
 # postSectionName = "blog"
+
+[permalinks]
+posts = '{{ replace .Name "-" " " | title }}'
 
 ## Math settings
 [math]

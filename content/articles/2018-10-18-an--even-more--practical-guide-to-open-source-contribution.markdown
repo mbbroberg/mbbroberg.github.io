@@ -3,6 +3,7 @@ date: "2018-10-18T00:00:00Z"
 tag:
 - opensource
 title: An (even more) practical guide to open source contribution
+slug: ../practical-open-source
 ---
 
   I had the pleasure of [speaking at DevOps Minneapolis](https://www.meetup.com/DevOps-Minneapolis/) to a great group of people. In it we explored why I’m fascinated by open source, how it’s growing as a career opportunity, and then dove deep into the terminology that can be confusing at times. I called the talk a “practical guide” because it includes all the lesser-discussed parts of the effort: understanding terminology, feeling okay practicing, offering PRs for small improvements like correcting a typo. It was a great time and many came up to discuss it afterward.

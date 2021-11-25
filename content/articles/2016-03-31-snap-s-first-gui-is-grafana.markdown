@@ -3,6 +3,7 @@ date: "2016-03-31T00:00:00Z"
 tag:
 - monitoring
 title: Snap’s first GUI is Grafana!
+slug: ../snap-gui-grafana
 ---
 
   Snap has been a beautiful CLI-based tool for 4 months now. I [shared how to get up and running](https://medium.com/@mjbrender/my-how-to-for-the-snap-telemetry-framework-e3bb641bc740#.ylr8am8il) last time and there’s more command-line tutorials to come (or you can always [checkout the README](https://github.com/intelsdi-x/snap#getting-started)). Today, however, is a special day for a totally different reason.

@@ -3,6 +3,7 @@ date: "2018-10-01T00:00:00Z"
 tag:
 - community
 title: 'Community Metrics: Share of Voice'
+slug: ../community-metrics-sov
 ---
 
 #### One of the dark arts of measurement

@@ -1,6 +1,7 @@
 ---
 date: "2017-01-01T00:00:00Z"
 title: I Have a Maiden Name
+slug: ../maiden-name
 ---
 
   *An exploration of surnames, beliefs and actions.*

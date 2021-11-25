@@ -6,6 +6,7 @@ description: What does Reddit and StackOverflow have to do with career success?
 tag:
 - community
 title: What two communities taught me about my expectations for community
+slug: /two-communities/
 ---
 > _A note: This post was created on a previous domain and migrated in 2018_{: style="color:gray; font-size: 80%; text-align: center;"}
 

@@ -3,6 +3,7 @@ date: "2018-10-09T00:00:00Z"
 tag:
 - opensource
 title: Creating a Contributor Experience for Humans
+slug: ../contributor-experience
 ---
 
   In preparation for the wonderful [Open Source 101](http://opensource101.com), I wanted to challenge my assumptions on what makes a great contributor experience by asking.

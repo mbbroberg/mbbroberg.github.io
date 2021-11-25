@@ -31,3 +31,8 @@ I work hard to connect and contribute to a broad range of communities of practic
 ### Projects I've Contributed To:
 
 I often open small PRs as I work through new problem or as a way of saying thank you to a project. That's led to contributions to [Kubernetes](https://github.com/kubernetes/community/tree/master/communication/marketing-team#purpose), the [CHAOSS community](https://github.com/chaoss/wg-value#contributors), [iPython](https://github.com/ipython/ipython-in-depth), [Chezmoi](https://github.com/twpayne/chezmoi/pull/821), [this Notion wrapper for Linux](https://github.com/puneetsl/lotion/pull/96), [Slack API Tutorial](https://github.com/slackapi/Slack-Ruby-Onboarding-Tutorial/pull/2), [Go GitHub library](https://github.com/google/go-github/pull/323), [Slack Go library](https://github.com/nlopes/slack/pull/170), [Leeroy from Docker](https://github.com/docker/leeroy/pull/40), [Awesome Maintainers](https://github.com/nayafia/awesome-maintainers), [The Lita project](https://github.com/litaio/lita.io/pull/11), [Homebrew](https://github.com/Homebrew/brew/pull/1281), [CHAOSS project](https://github.com/chaoss/grimoirelab-tutorial/pull/3), the [CNCF Landscape](https://github.com/cncf/landscape/pull/759), and many more. I also consulted behind-the-scenes for [Exercism](https://exercism.io) and continue to recommend joining their community because I ❤️ them.
+
+### Articles 
+
+Some of my more popular articles are off domain, like [The right and wrong way to set Python 3 as default on a Mac](https://opensource.com/article/19/5/python-3-default-mac). Here are some more: 
+

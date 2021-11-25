@@ -5,6 +5,7 @@ tag:
 - markdown
 - guides
 title: How to Use Markdown Everywhere
+slug: ../markdown-everywhere
 ---
 
 I haven't always loved plain text syntax. Once I embraced git as the _langua franca_ of IT Operations, I knew that made Markdown required knowledge. Fast forward a few years and many thousands of lines later and I'm in love.

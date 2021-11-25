@@ -3,6 +3,7 @@ date: "2016-06-07T00:00:00Z"
 tag:
 - monitoring
 title: What I mean by “Telemetry”
+slug: ../what-i-mean-by-telemetry
 ---
 
   [Snap](https://github.com/intelsdi-x/snap) is titled “the open telemetry framework.” I’ve been focused on getting us all [comfortable using Snap](https://medium.com/intel-sdi), but I (rightfully) keep getting asked the bigger question.

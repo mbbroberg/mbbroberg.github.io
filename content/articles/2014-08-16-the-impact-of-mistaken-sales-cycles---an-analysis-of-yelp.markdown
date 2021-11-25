@@ -3,6 +3,7 @@ date: "2014-08-16T00:00:00Z"
 tag:
 - business
 title: The Impact of Mistaken Sales Cycles — An Analysis of Yelp
+slug: ../impact-of-mistaken-sales-cycle
 ---
 
     

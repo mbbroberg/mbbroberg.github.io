@@ -7,6 +7,7 @@ description: If you don't have the right keywords, competencies, and business va
 tag:
 - career
 title: 3 tech resume tips to get seen by the hiring manager
+slug: ../resume-tips/
 ---
 
 I recently reviewed a handful of resumes for friends and mentees, and I saw the same pattern in each. I have seen the pattern hundreds of times now, and that's great! That means it's time to write it down. 

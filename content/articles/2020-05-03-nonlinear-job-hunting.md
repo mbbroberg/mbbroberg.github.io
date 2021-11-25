@@ -8,6 +8,7 @@ tag:
 - career
 - guides
 title: Job hunting tips for nonlinear careers
+slug: ../nonlinear-job-hunting/
 ---
 
 I originally wrote this post while job hunting in 2018. I knew I needed a change from the work I was doing, and I developed a tool (read: spreadsheet) that helped reinforce a few lessons from the process. 

@@ -6,6 +6,7 @@ description: Getting deeper into git? Check out these links.
 tag:
 - github
 title: 3 Resources to Learn (More) about GitHub Commits
+slug: ../three-github-resources/
 ---
 > _A note: This post was created on a previous domain and migrated in 2018_{: style="color:gray; font-size: 80%; text-align: center;"}
 

@@ -7,6 +7,7 @@ description: Software, open source and otherwise, keeps me sane and organized. H
 tag:
 - productivity
 title: Sharing the tools that I use to stay productive
+slug: ../tools-i-use/
 ---
 
 It's a new year (allegedly*), and I'm finding new ways to share who I am and what kind of work I love to do. I call it [Tools I Use](../tools). Check it out, or read more about why I wrote it up. 

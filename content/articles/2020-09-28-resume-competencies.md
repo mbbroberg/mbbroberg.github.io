@@ -6,6 +6,7 @@ description: This small section makes both interviewers and resume robots happy.
 tag:
 - career
 title: Add competencies to your resume
+slug: ../resume-competencies/
 ---
 
 Job hunting as terrible. I keep writing about it in the hopes of your experience being a little less terrible based on some lessons I’ve learned. 
