@@ -1,5 +1,4 @@
 ---
-title: Podcasts
 layout: page
 ---
 

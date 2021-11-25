@@ -1,5 +1,5 @@
 +++
-aliases = ["posts", "articles", "blog", "docs"]
+aliases = ["posts", "articles", "blog"]
 url = "/articles/"
 author = "Matt Broberg"
 tags = ["index"]
