@@ -5,16 +5,16 @@
   url = "/"
 
   [[main]]
-  name = "Posts"
+  name = "Articles"
   weight = 200
-  identifier = "posts"
-  url = "/post/"
+  identifier = "articles"
+  url = "/articles/"
 
-  [[main]]
-  name = "About"
-  weight = 300
-  identifier = "about"
-  url = "/about/"
+  # [[main]]
+  # name = "About"
+  # weight = 300
+  # identifier = "about"
+  # url = "/about/"
 
   [[main]]
   name = "Contact"

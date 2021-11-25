@@ -6,12 +6,13 @@ profilePicture = "images/profile.jpg"
 keywords = ""
 favicon = "favicons/"
 # example ["css/custom.css"]
-customCss = []
+# customCss = ["css/404.css"]
 # example ["js/custom.js"]
-customJs = [] 
-mainSections = ["post"]
+#customJs = []
+mainSections = ["articles"]
+# set this to have a default image for social sharing
 #images = ["images/site-feature-image.png"]
-doNotLoadAnimations = false
+doNotLoadAnimation = false
 # Form Spree Contact Form
 #contactFormAction = "https://formspree.io/f/your-form-hash-here"
 # Google Fonts

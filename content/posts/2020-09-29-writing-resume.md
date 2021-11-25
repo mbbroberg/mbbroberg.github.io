@@ -1,12 +1,10 @@
-
 ---
-title: A must-follow rule of resume building
-layout: post
-blog: true
 author: mbbroberg
+blog: true
+description: Stick with this formula to write a meaningful resume.
 tag:
 - career
-description: Stick with this formula to write a meaningful resume.
+title: A must-follow rule of resume building
 ---
 
 I have helped a lot of people refine a pitch: a one-liner that helps them effectively message who they are and what they do well. It started as part of [The Geek Whisperers](http://geek-whisperers.com/2016/04/investing-in-career-insurance-vmware-user-group-recap-episode-110/), where we met with people to help them take the next step in their career. We were terribly underqualified, but that's never a concern. People need to talk to others--anyone--to refine their pitch. It's more a need for practice more than guidance.
