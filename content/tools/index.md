@@ -1,6 +1,7 @@
 ---
 title: Tools
 layout: page
+slug: tools/
 ---
 
 **I love systems.** I know the tools and strategies I use to navigate each day of my life will fundamentally define who I am. I frequently think of this quote from James Clear that hits that point so well.

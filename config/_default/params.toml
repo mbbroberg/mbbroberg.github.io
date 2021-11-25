@@ -1,7 +1,7 @@
 
 author = "Matt Broberg"
-title = "Website of Matthew (Brender) Broberg"
-description = "Website of Matthew (Brender) Broberg. Matt is an advocate for open source software. He specializes in designing technology communities that develop products and content in a way that tells a powerful story."
+title = "Matthew (Brender) Broberg"
+description = "Matt is an advocate for open source software. He specializes in designing technology communities that develop products and content in a way that tells a powerful story."
 profilePicture = "images/profile.jpg"
 keywords = ""
 favicon = "favicons/"
@@ -46,6 +46,11 @@ title = "Linkedin"
 url = "https://linkedin.com/in/mbbroberg/"
 
 [[socialIcons]]
+icon = "fas fa-envelope"
+title = "e-mail"
+url = "mailto:matthewbbroberg+io@gmail.com"
+
+[[socialIcons]]
 icon = "fab fa-github"
 title = "GitHub"
 url = "https://github.com/mbbroberg/"
@@ -54,8 +59,3 @@ url = "https://github.com/mbbroberg/"
 icon = "fab fa-stackoverflow"
 title = "Stackoverflow"
 url = "https://stackoverflow.com/users/581665/mbb"
-
-[[socialIcons]]
-icon = "fas fa-envelope"
-title = "e-mail"
-url = "mailto:matthewbbroberg+io@gmail.com"

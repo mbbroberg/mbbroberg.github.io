@@ -1,5 +1,6 @@
 ---
 title: Talks
+slug: talks/
 layout: page
 ---
 

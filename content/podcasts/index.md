@@ -1,4 +1,6 @@
 ---
+title: Podcasts
+slug: podcasts/
 layout: page
 ---
 
