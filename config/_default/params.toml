@@ -20,7 +20,7 @@ googleFonts = ["Outfit"]
 #googleSiteVerify = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 singleDateFormat = "Jan 2, 2006"
 indexDateFormat = "Jan 2, 2006"
-listDateFormat = "Jan 2, 2006"
+listDateFormat = "Jan 2"
 # Commento Comments
 # CommentoURL = "https://commento.example.com/js/commento.js"
 # Read More links for truncated summaries

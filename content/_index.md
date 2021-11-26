@@ -2,7 +2,7 @@
 layout: page
 ---
 
-## Hey 👋. I'm Matt.
+## Hey 👋. I'm Matt. 
 
 I love connecting with technology communities to develop products and organic content to inspire open source adoption.
 
