@@ -1,0 +1,25 @@
+baseURL = "https://mbbroberg.fun"
+languageCode = "en"
+DefaultContentLanguage = "en"
+theme = "anatole"
+summarylength = 10
+enableEmoji = true
+enableRobotsTXT = true
+
+# Google Analytics
+googleAnalytics = "UA-150450064-1"
+
+# Syntax highlighting
+pygmentsUseClasses = true   
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+        unsafe=true
+
+[taxonomies]
+    category = "categories"
+#    series = "series"
+    tag = "tags"

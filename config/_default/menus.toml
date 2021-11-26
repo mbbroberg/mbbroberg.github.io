@@ -1,0 +1,35 @@
+  [[main]]
+  name = "Home"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[main]]
+  name = "Articles"
+  weight = 200
+  identifier = "articles"
+  url = "/articles/"
+
+  [[main]]
+  name = "Podcasts"
+  weight = 300
+  identifier = "podcasts"
+  url = "/podcasts/"
+
+  [[main]]
+  name = "Talks"
+  weight = 400
+  identifier = "talks"
+  url = "/talks/"
+
+  [[main]]
+  name = "Tools"
+  weight = 500
+  identifier = "tools"
+  url = "/tools/"
+
+  [[footer]]
+  name = "imprint"
+  weight = 1
+  identifier = "imprint"
+  url = "/imprint/"
