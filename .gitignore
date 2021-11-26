@@ -3,5 +3,6 @@ _site
 .sass-cache
 *.log
 Gemfile.lock
+.hugo*
 .ruby-version
 .jekyll*
