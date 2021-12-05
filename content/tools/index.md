@@ -48,6 +48,8 @@ Here are the tools I use right now in order of frequency of use. I have a [Chang
 
 ## Notion 
 
+![Notion](notion-pic.png "My Notion setup")
+
 I've gone all-in on the weird and wonderful world of Notion. I find it as revolutionary as the spreadsheet once was, and its ability to share templates with others gives it a virality that is sure to pay off. For new users, however, it's a blank slate similar to any superpower of a tool. I fell into the [work of August Bradley](https://www.youtube.com/user/augustbradley) and find his system to be the right foundation for me. I even paid to take his course and found that it set a foundation for me well worth the cost.
 
 I keep every random note, meeting note, action item, and article I plan to read in Notion using (many) embedded and interlinked databases. Notion also has a rapidly maturing webclipper that I use on nearly every page I read on the internet (and then I organize into the system). It sounds complicated, but it feels fluid and interwoven. 
@@ -57,6 +59,8 @@ More importantly, I have a system of projects that align with personal objective
 Most important about Notion is that it can organize and interlink information in a way I haven't found before. I'm using it to build a knowledge management system to feel like I'm growing knowledge over time rather than hiding it away in unlinked notes.
 
 ## Obsidian
+
+![Obsidian](obsidian-pic.png "My Obsidian setup, using Readwise to sync book notes like Accelerate.")
 
 I switched out Obsidian for Evernote as a means to quick notes that synchronize across operating systems. I used to depend on the Evernote Webclipper, but Notion has a solid enough one to cover the need of plucking knowledge from the internet into a forever file. Obsidian is blazingly fast, incredibly smart with its conversion from HTML to markdown, and has a growing [community plugin ecosystem](https://obsidian.md/community). I rigged it up to share data via iCloud so I don't pay another monthly fee for a service I already have. I then set up a private git repo that syncs here and there to get it working on Linux as well. 
 
@@ -171,7 +175,7 @@ I occasionally doodle as well, mostly in Notes but sometimes in **Adobe Draw**, 
 
 # Changelog
 
-- **Dec 4, 2021**: Subtitutions on notes, passwords, and browsers. See 
+- **Dec 4, 2021**: A few big ones: officially let go of Evernote and split it across Notion and Obsidian as my "slow" and "fast" brain respectively. Dashlane is out for 1Password. 
 - **Jan 1, 2021**: Initial release. I've officially let go of Todoist, though I hope the Notion API will allow them to integrate in a meaningful way since it's better at notifications on due dates and input of action items than Notion.
 
 

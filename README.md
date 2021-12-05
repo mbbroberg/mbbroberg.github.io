@@ -13,7 +13,9 @@ Scripts to write:
 
 ## Notes to self 📝
 
-- Keep the theme updated wih `git submodule update --remote --merge`
+- Keep the theme updated wih `git submodule update --remote --merge`... but I forked it to make some customizations.
+- Publish a new version by running 
+- Using `bundle` logic in Hugo allows me to store imagaes with the post and address it as the same namespace.
 
 ### What's in the box? 📦
 
