@@ -48,6 +48,8 @@ Here are the tools I use right now in order of frequency of use. I have a [Chang
 
 ## Notion 
 
+![Notion](notion-pic.png "My Notion setup")
+
 I've gone all-in on the weird and wonderful world of Notion. I find it as revolutionary as the spreadsheet once was, and its ability to share templates with others gives it a virality that is sure to pay off. For new users, however, it's a blank slate similar to any superpower of a tool. I fell into the [work of August Bradley](https://www.youtube.com/user/augustbradley) and find his system to be the right foundation for me. I even paid to take his course and found that it set a foundation for me well worth the cost.
 
 I keep every random note, meeting note, action item, and article I plan to read in Notion using (many) embedded and interlinked databases. Notion also has a rapidly maturing webclipper that I use on nearly every page I read on the internet (and then I organize into the system). It sounds complicated, but it feels fluid and interwoven. 
@@ -56,29 +58,32 @@ More importantly, I have a system of projects that align with personal objective
 
 Most important about Notion is that it can organize and interlink information in a way I haven't found before. I'm using it to build a knowledge management system to feel like I'm growing knowledge over time rather than hiding it away in unlinked notes.
 
-## Evernote
+## Obsidian
 
-Evernote continues to be the path of least resistance for quick notes that synchronize across operating systems, but that's not why I keep it around. The Evernote Webclipper is still the most effective way to pluck knowledge from the internet into a forever file. Notion is getting closer with its webclipper, but it's way of structuring inputs as blocks doesn't always capture website output without manual copy and pasting of links. For that reason, Evernote remains a must have.
+![Obsidian](obsidian-pic.png "My Obsidian setup, using Readwise to sync book notes like Accelerate.")
 
-I have tried to adopt an [open source alternative](https://opensource.com/alternatives/evernote) (specifically [Joplin](https://joplinapp.org/faq/), [Simple Notes](https://simplenote.com/), and [Standard Notes](https://standardnotes.org/)), but I haven't quite landed on an architecture for cross-operational sync and a good web clipper. I bet I'll adopt one of these with time.
+I switched out Obsidian for Evernote as a means to quick notes that synchronize across operating systems. I used to depend on the Evernote Webclipper, but Notion has a solid enough one to cover the need of plucking knowledge from the internet into a forever file. Obsidian is blazingly fast, incredibly smart with its conversion from HTML to markdown, and has a growing [community plugin ecosystem](https://obsidian.md/community). I rigged it up to share data via iCloud so I don't pay another monthly fee for a service I already have. I then set up a private git repo that syncs here and there to get it working on Linux as well. 
 
-## Dashlane
+Obsidian is not free or open source, but does [promise to stay free](https://obsidian.md/pricing). I hope one day they'll go open source. I have tried to adopt an [open source alternative](https://opensource.com/alternatives/evernote) (specifically [Joplin](https://joplinapp.org/faq/), [Simple Notes](https://simplenote.com/), and [Standard Notes](https://standardnotes.org/)), but I haven't quite landed on an architecture for cross-operational sync and a good web clipper. I bet I'll adopt one of these with time.
+
+
+## 1Password
 
 A password management tool that sync across devices is the single best "hack" any of us can do for ourselves. As this [Mozilla article](https://blog.mozilla.org/firefox/myths-about-password-managers/) puts it so well:
 
 | The alternative to using a password manager is to rely on your own memory to remember all your credentials — or worse yet — writing them down. This inevitably leads to recycling passwords or using variations — a bad habit that hackers love.
 
-Maybe more importantly is that I don't ever (re)write my name, address, phone number, or email over and over again on websites. Whenever a prompt comes up, I click and it's filled out.
+I finally switched away from Dashlane, which stopped maintaining its OS-native apps. That app made for a great user experience for family members, and they've stopped using it as often since. That's a problem. 1Password has an exceptional app so I moved that direction. 
 
-I've relied on Dashlane for quite a few years now. It works 95% of the time, and comes in at a fair price (for now). I'm cautious about the latest round of [VC funding](https://techcrunch.com/2019/05/30/dashlane-series-d/), but it hasn't been enough to change. If I do, it will be to either 1Password or an open source alternative. The gotcha is that I need my loved ones to join me on the transition, and that can be a challenge.
+Here's the tradeoff: Dashlane has a very solid autofill function for name, address, phone number, or email. Whenever a prompt comes up, I click and it's filled out like magic. What it lacks is a native app experience and a reasonable "share a password" workflow. Sharing requires clicking share for the owner, then the share-acceptor receiving an email, confirming it, then clicking buttons in the web app to confirm again. It's a lot of friction. 1Password lacks a line-by-line form filler to the best of my knowledge, but it has an incredibly straightforward sharing function. Their latest release includes an easy share with non-1P users, which ups its value to me. 
 
-Paid accounts include a VPN that I frequently use on my phone.
+All in, I'm not settled here but it's working. 
 
-## Firefox and Brave 
+## Firefox and Edge 
 
-I try to use a non-Chrome-based browser as my primary web browser. It's... inconvenient at times, but I believe enough of us doing so is the only way to avoid a [monopoly](https://www.hackthebow.com/2020/08/google-chrome-building-browser-monopoly/). I believe in the [mission of Mozilla](https://www.mozilla.org/en-US/mission/), and I hope the little I can contribute as a user can help that mission along. 
+I try to use a non-Chrome-based browser as my primary web browser. It's... inconvenient at times, but I believe enough of us doing so is the only way to avoid a [monopoly](https://www.hackthebow.com/2020/08/google-chrome-building-browser-monopoly/). I believe in the [mission of Mozilla](https://www.mozilla.org/en-US/mission/), and I hope the little I can contribute as a user can help that mission along. I hope they help push toward a better business model for the internet. 
 
-That said, Chrome-based browsers do work quite a lot better for Google Drive work, which I use for my day job. I have been using [Brave](https://brave.com/about/) for that purpose because of their privacy stance. I hope they help push toward a better business model for the internet. 
+That said, Chrome-based browsers do work quite a lot better for Google Drive work, which I use for my day job. I switched from using [Brave](https://brave.com/about/) to Microsoft's [Edge](https://www.microsoft.com/en-us/edge) because I got sick of the cryptocurrenty prompts. While I love the [vision of a universal currency](https://dci.mit.edu/), I don't contribute to the [environmental harm](https://news.climate.columbia.edu/2021/09/20/bitcoins-impacts-on-climate-and-the-environment/) that is crypto. 
 
 ## Dotfile and application management 
 
@@ -170,6 +175,7 @@ I occasionally doodle as well, mostly in Notes but sometimes in **Adobe Draw**, 
 
 # Changelog
 
+- **Dec 4, 2021**: A few big ones: officially let go of Evernote and split it across Notion and Obsidian as my "slow" and "fast" brain respectively. Dashlane is out for 1Password. 
 - **Jan 1, 2021**: Initial release. I've officially let go of Todoist, though I hope the Notion API will allow them to integrate in a meaningful way since it's better at notifications on due dates and input of action items than Notion.
 
 
