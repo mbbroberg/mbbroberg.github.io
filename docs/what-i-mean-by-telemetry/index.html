@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+><head>
+  <title>
+    Matt Broberg
+      |
+      What I mean by “Telemetry”
+
+
+    
+
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.93.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta
+    name="description"
+    content="
+      Matt is an advocate for open source software. He specializes in designing technology communities that develop products and content in a way that tells a powerful story.
+
+
+    "
+  />
+  
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/main.min.6b6216cbca690986c821055feb84deac8cfba07e3d1deec188cdc8ae6582c27d.css"
+    integrity="sha256-a2IWy8ppCYbIIQVf64TerIz7oH49He7BiM3IrmWCwn0="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.058b31f17db60602cc415fd63b0427e7932fbf35c70d8e341a4c39385f5f6f3e.css"
+    integrity="sha256-BYsx8X22BgLMQV/WOwQn55MvvzXHDY40Gkw5OF9fbz4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
+  
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&amp;display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="/what-i-mean-by-telemetry/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.d0408165d31a17f17bba83038bf54e86121f85021bdf936382e636f0f77a952f.js"
+    integrity="sha256-0ECBZdMaF/F7uoMDi/VOhhIfhQIb35NjguY28Pd6lS8="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.65e936b591bf81484a5ac438c8e4ae6454fb25516d58ce911e4888d7f230bdc5.js"
+      integrity="sha256-Zek2tZG/gUhKWsQ4yOSuZFT7JVFtWM6RHkiI1/IwvcU="
+      crossorigin="anonymous"
+    ></script>
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="What I mean by “Telemetry”"/>
+<meta name="twitter:description" content="Snap is titled “the open telemetry framework.” I’ve been focused on getting us all comfortable using Snap, but I (rightfully) keep getting asked the bigger question."/>
+
+
+
+  
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "articles",
+        "name": "What I mean by “Telemetry”",
+        "headline": "What I mean by “Telemetry”",
+        "alternativeHeadline": "",
+        "description": "
+      
+        Snap is titled “the open telemetry framework.” I’ve been focused on getting us all comfortable using Snap, but I (rightfully) keep getting asked the bigger question.
+
+
+      
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/mbbroberg.fun\/what-i-mean-by-telemetry\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "copyrightYear" : "2016",
+        "dateCreated": "2016-06-07T00:00:00.00Z",
+        "datePublished": "2016-06-07T00:00:00.00Z",
+        "dateModified": "2016-06-07T00:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Matt Broberg",
+            "url": "https://mbbroberg.fun",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/mbbroberg.fun\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/mbbroberg.fun\/what-i-mean-by-telemetry\/",
+        "wordCount" : "678",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+</head>
+<body>
+    <header><div
+  class="page-top 
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
+  <nav>
+    <ul class="nav__list" id="navMenu">
+      <div class="nav__links">
+        
+        
+          
+          <li>
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/articles/"
+              
+              title=""
+              >Articles</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/podcasts/"
+              
+              title=""
+              >Podcasts</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/talks/"
+              
+              title=""
+              >Talks</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/tools/"
+              
+              title=""
+              >Tools</a
+            >
+          </li>
+
+        
+      </div>
+      <ul>
+        
+        
+          <li>
+            <a class="theme-switch" title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </li>
+
+        
+      </ul>
+    </ul>
+  </nav>
+</div>
+</header>
+    <div class="wrapper">
+      <aside><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="logo-title">
+      <div class="title">
+        <img src="/images/profile.jpg" alt="profile picture" />
+        <h3 title=""><a href="/">Matthew Broberg</a></h3>
+        <div class="description">
+          <p>Matt is an advocate for open source software. He specializes in designing technology communities that develop products and content in a way that tells a powerful story.</p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+      
+        <li>
+          <a href="https://twitter.com/mbbroberg/" rel="me" aria-label="Twitter" title="Twitter">
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="https://linkedin.com/in/mbbroberg/" rel="me" aria-label="Linkedin" title="Linkedin">
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="mailto:matthewbbroberg&#43;io@gmail.com" rel="me" aria-label="e-mail" title="e-mail">
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="https://github.com/mbbroberg/" rel="me" aria-label="GitHub" title="GitHub">
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="https://stackoverflow.com/users/581665/mbb" rel="me" aria-label="Stackoverflow" title="Stackoverflow">
+            <i class="fab fa-stackoverflow fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer--sidebar">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          Matt Broberg
+          2022
+
+
+        
+      </li>
+      
+    </ul>
+  </div>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.4a40b20209bc12e56cf77caff5feaa93fecd6b0d97d51b33afb0265a732ce636.js"
+    integrity="sha256-SkCyAgm8EuVs93yv9f6qk/7Naw2X1Rszr7AmWnMs5jY="
+    crossorigin="anonymous"
+  ></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-150450064-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</div>
+</aside>
+      <main>
+        <div class="autopagerize_page_element">
+          <div class="content">
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    <div class="post-content">
+      
+      <div class="post-title">
+        <h1>What I mean by “Telemetry”</h1>
+        
+      </div><p><a href="https://github.com/intelsdi-x/snap">Snap</a> is titled “the open telemetry framework.” I’ve been focused on getting us all <a href="https://medium.com/intel-sdi">comfortable using Snap</a>, but I (rightfully) keep getting asked the bigger question.</p>
+<p><em><strong>What is Telemetry?</strong></em></p>
+<p>Telemetry is the stuff you can measure and the process of capturing it: from the heat generated on a CPU core to the throughput of Nginx running in a Docker container on a Kubernetes cluster. It’s all measurable and it’s all summarized in that one word.</p>
+<p><img src="/img/1*vKb9rIDuHnXB2sKyI7jK8g.png" alt="">Telemetry and Analytics are part of a common goal, but they hold distinct places in the process.Telemetry is awesome once we differentiate it from other terms. Here is how I separate it out, with some help from <a href="http://www.merriam-webster.com">Webster</a>:</p>
+<ul>
+<li>Telemetry — <em>the process of using equipment to take measurements of something and send them to another place</em></li>
+<li>Metrics — <em>measurements of facts throughout the data center</em></li>
+<li>Analytics — <em>the method of logical analysis that determines the consequences of information</em>
+Telemetry is a superset of what we are used to calling “metrics:” measurements of facts throughout your infrastructure that includes the process by which its collected, processed and published to somewhere.</li>
+</ul>
+<p><img src="/img/1*RmE6OvxuvXOj03ljPZrz0w.png" alt="">Snap’s major value comes in its one API for all telemetry.These facts we want to gather are everywhere. They come in the form of flags in /proc (which is <a href="http://tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html">fun to explore</a>), CPU temperature levels from Intel Node Manager (and its <a href="https://github.com/intelsdi-x/snap-plugin-collector-node-manager#snap-collector-plugin---intel-node-manager">plugin</a>), or tallies of networks counters from ethtool (through the Snap <a href="https://github.com/intelsdi-x/snap-plugin-collector-ethtool#snap-collector-plugin---ethtool">plugin</a>) and that’s just part of the story. All types of hardware and every layer of software has a story to share. The telemetry in your data center is massive in breadth and depth when you consider the diversity of information you care about and the many layers of tech used in your applications.</p>
+<p>No value is derived from telemetry without analytics. Said another way, process of collecting and publishing metrics does not lead to value until it’s analyzed. To know what’s most effective as an indicator, you often have to gather much more information than is immediately available. The challenge of doing so can be a fun experiment, digging into new APIs, time-series databases and every little indicator along the way.</p>
+<p><img src="/img/1*kqIu3YRFM5Ua6jsYWy9BHQ.jpeg" alt="">A literal piles of metrics.All that said, telemetry gathering is not for the fun of having the numbers. There are amazing stories of companies achieving massive profits from understanding their systems. <a href="http://www.nextplatform.com/2015/10/07/the-aws-machine-turns-your-former-datacenter-into-its-money/">GE is noted</a> as saving $1 billion over 5 years by understanding their data. I find it fascinating how <a href="http://www.retailtouchpoints.com/retail-store-ops/402-target-uses-guest-intelligence-to-drive-marketing-strategies.html">Target optimizes its marketing</a> through analytics. Many more companies in industries far outside of obvious “Software Companies” categorization will benefit from the same, especially when it’s easier to do in your own data center.</p>
+<p>That’s a big part of it, too. What you want to measure and how you measure it has not been, historically speaking, simple. It’s actually a huge pain. Every potential indicator has its own set of tools that don’t necessarily fit into other tools. That’s a pain the <a href="https://github.com/intelsdi-x">Software Defined Infrastructure team at Intel</a> has observed and decided to simplify with Snap.</p>
+<h4 id="standardizing-on-a-single-api">Standardizing on a single API</h4>
+<p>By standardizing <strong>telemetry</strong>, we can enable greater democratization of <strong>metrics</strong>, leading to valuable <strong>analytics.</strong></p>
+<p>Snap is about the simplification of how to manage telemetry. Every layer — even every piece of hardware! — had its own opinionated view of how to expose this data. There have been tools out there that can consume it (from collectd to heka) and common pipelines to do so (see <a href="https://vimeo.com/monitorama">Monitorama presentations</a> for some of the most thoughtful), but there hasn’t been a lot of attention on improvement. We want you to gather statistics from your data center so that you can build smarter, better utilized systems.</p>
+<p>That’s a large reason why Snap, the open telemetry framework, was created. The team took the best behaviors of collection tools and standardized how it could be done across all cases.</p>
+<p>If metrics in all their unique forms interest you, <a href="https://github.com/intelsdi-x/snap">get involved in the project</a> or just <a href="http://gitter.im/intelsdi-x/snap">hangout with us in Gitter</a>. We would be happy to have you involved.</p>
+<p><em>This article was originally published <a href="https://medium.com/@mbbroberg">on Medium</a></em></p>
+</div>
+    <div class="post-footer">
+      <div class="info">
+        
+
+        
+      </div>
+    </div>
+
+    
+  </div>
+
+
+          </div>
+        </div>
+      </main>
+    </div><footer class="footer footer--base">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          Matt Broberg
+          2022
+
+
+        
+      </li>
+      
+    </ul>
+  </div>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.4a40b20209bc12e56cf77caff5feaa93fecd6b0d97d51b33afb0265a732ce636.js"
+    integrity="sha256-SkCyAgm8EuVs93yv9f6qk/7Naw2X1Rszr7AmWnMs5jY="
+    crossorigin="anonymous"
+  ></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-150450064-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</body>
+</html>

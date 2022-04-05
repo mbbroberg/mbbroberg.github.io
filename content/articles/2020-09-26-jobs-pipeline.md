@@ -18,7 +18,7 @@ I call it the [Job Hunting Pipeline Blueprint](https://bit.ly/JobPipelineBruepri
 
 Suppose you're on the lookout for a new role, [make a copy](https://bit.ly/JobPipelineBrueprint) and give it a try. This post will be a companion piece, meant to share some guidelines to make the most of it. 
 
-## A no doesn't mean what you think it means
+## A "no" doesn't mean what you think it means
 
 If you're like me and tend to live in the gaps of the org chart, you might find yourself applying to a diverse set of companies for a wide range of job titles. There's nothing wrong with that. What is a challenge, however, is seeing the pattern in chaos. 
 

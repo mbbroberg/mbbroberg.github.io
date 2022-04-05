@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+><head>
+  <title>
+    Matt Broberg
+      |
+      Snap’s first GUI is Grafana!
+
+
+    
+
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.93.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta
+    name="description"
+    content="
+      Matt is an advocate for open source software. He specializes in designing technology communities that develop products and content in a way that tells a powerful story.
+
+
+    "
+  />
+  
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/main.min.6b6216cbca690986c821055feb84deac8cfba07e3d1deec188cdc8ae6582c27d.css"
+    integrity="sha256-a2IWy8ppCYbIIQVf64TerIz7oH49He7BiM3IrmWCwn0="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.058b31f17db60602cc415fd63b0427e7932fbf35c70d8e341a4c39385f5f6f3e.css"
+    integrity="sha256-BYsx8X22BgLMQV/WOwQn55MvvzXHDY40Gkw5OF9fbz4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
+  
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&amp;display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="/snap-gui-grafana/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.d0408165d31a17f17bba83038bf54e86121f85021bdf936382e636f0f77a952f.js"
+    integrity="sha256-0ECBZdMaF/F7uoMDi/VOhhIfhQIb35NjguY28Pd6lS8="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.65e936b591bf81484a5ac438c8e4ae6454fb25516d58ce911e4888d7f230bdc5.js"
+      integrity="sha256-Zek2tZG/gUhKWsQ4yOSuZFT7JVFtWM6RHkiI1/IwvcU="
+      crossorigin="anonymous"
+    ></script>
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Snap’s first GUI is Grafana!"/>
+<meta name="twitter:description" content="Snap has been a beautiful CLI-based tool for 4 months now."/>
+
+
+
+  
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "articles",
+        "name": "Snap’s first GUI is Grafana!",
+        "headline": "Snap’s first GUI is Grafana!",
+        "alternativeHeadline": "",
+        "description": "
+      
+        Snap has been a beautiful CLI-based tool for 4 months now.
+
+
+      
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/mbbroberg.fun\/snap-gui-grafana\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "copyrightYear" : "2016",
+        "dateCreated": "2016-03-31T00:00:00.00Z",
+        "datePublished": "2016-03-31T00:00:00.00Z",
+        "dateModified": "2016-03-31T00:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Matt Broberg",
+            "url": "https://mbbroberg.fun",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/mbbroberg.fun\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/mbbroberg.fun\/snap-gui-grafana\/",
+        "wordCount" : "636",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+</head>
+<body>
+    <header><div
+  class="page-top 
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
+  <nav>
+    <ul class="nav__list" id="navMenu">
+      <div class="nav__links">
+        
+        
+          
+          <li>
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/articles/"
+              
+              title=""
+              >Articles</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/podcasts/"
+              
+              title=""
+              >Podcasts</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/talks/"
+              
+              title=""
+              >Talks</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/tools/"
+              
+              title=""
+              >Tools</a
+            >
+          </li>
+
+        
+      </div>
+      <ul>
+        
+        
+          <li>
+            <a class="theme-switch" title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </li>
+
+        
+      </ul>
+    </ul>
+  </nav>
+</div>
+</header>
+    <div class="wrapper">
+      <aside><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="logo-title">
+      <div class="title">
+        <img src="/images/profile.jpg" alt="profile picture" />
+        <h3 title=""><a href="/">Matthew Broberg</a></h3>
+        <div class="description">
+          <p>Matt is an advocate for open source software. He specializes in designing technology communities that develop products and content in a way that tells a powerful story.</p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+      
+        <li>
+          <a href="https://twitter.com/mbbroberg/" rel="me" aria-label="Twitter" title="Twitter">
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="https://linkedin.com/in/mbbroberg/" rel="me" aria-label="Linkedin" title="Linkedin">
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="mailto:matthewbbroberg&#43;io@gmail.com" rel="me" aria-label="e-mail" title="e-mail">
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="https://github.com/mbbroberg/" rel="me" aria-label="GitHub" title="GitHub">
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="https://stackoverflow.com/users/581665/mbb" rel="me" aria-label="Stackoverflow" title="Stackoverflow">
+            <i class="fab fa-stackoverflow fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer--sidebar">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          Matt Broberg
+          2022
+
+
+        
+      </li>
+      
+    </ul>
+  </div>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.4a40b20209bc12e56cf77caff5feaa93fecd6b0d97d51b33afb0265a732ce636.js"
+    integrity="sha256-SkCyAgm8EuVs93yv9f6qk/7Naw2X1Rszr7AmWnMs5jY="
+    crossorigin="anonymous"
+  ></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-150450064-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</div>
+</aside>
+      <main>
+        <div class="autopagerize_page_element">
+          <div class="content">
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    <div class="post-content">
+      
+      <div class="post-title">
+        <h1>Snap’s first GUI is Grafana!</h1>
+        
+      </div><p>Snap has been a beautiful CLI-based tool for 4 months now. I <a href="https://medium.com/@mjbrender/my-how-to-for-the-snap-telemetry-framework-e3bb641bc740#.ylr8am8il">shared how to get up and running</a> last time and there’s more command-line tutorials to come (or you can always <a href="https://github.com/intelsdi-x/snap#getting-started">checkout the README</a>). Today, however, is a special day for a totally different reason.</p>
+<p><img src="/img/1*K80FOEGoX4KUnub0OVfzcg.png" alt="">The awesome graphic of Grafana and Snap’s new mascot, Snappy the Snapping Turtle.While we all love CLI, we’re all visual creators in the end. That’s why this post hypothetically gets 94% more reads because it has pictures (<a href="https://blog.kissmetrics.com/visual-content-you-need-to-use-in-your-marketing-campaign/">source</a>).</p>
+<p>Visuals engage us, and from a practical standpoint, visualization scales. I would rather review a dashboard of 10 servers over running <em>top</em> across each of them any day. That’s why I’m thrilled to say that **Grafana’s upcoming release includes interactive administration over Snap **daemons, plugins and tasks.</p>
+<p><img src="/img/1*4ve7A5FVP9gki_zBavax4g.png" alt="">Me configuring a Snap task that watches CPU idle time across multiple systemsThere are two particularly cool parts of this announcement:</p>
+<ol>
+<li>Anything Snap can measure can be made immediately visible in Grafana</li>
+<li>Anything you’re troubleshooting in Grafana can be immediately measured at greater depth through Snap
+Anthony from raintank <a href="https://blog.raintank.io/using-grafana-with-intels-snap-for-ad-hoc-metric-exploration/">writes about this ad hoc approach</a> to troubleshooting that’s powered by Snap. His emphasis hits one of the key reasons the team took this journey in the first place: <strong>telemetry frameworks need a unified API.</strong></li>
+</ol>
+<p>Everything that talks to Snap, whether *snapctl *or other, uses the RESTful API to do so, enabling a consistent method of administration over the growing amount of data it can collect. All behaviors can be queried over an endpoint. From listing plugins to creating new tasks or even watch running tasks collect telemetry: it’s all there in the API.</p>
+<p>This consistency leads way to the Snap Data Source that allows Grafana to stream any metric live, at high resolution, directly from your Snap servers without leaving Grafana.</p>
+<blockquote>
+<p>“Combining Snap’s watch feature with Grafana Live provides a new twist to ad hoc queries. Not only can the query be ad hoc, but the actual telemetry data being collected can be ad hoc.”This all comes out at part of <a href="http://grafana.net">Grafana.net</a> the Open SaaS platform the team at raintank has announced today. The Snap Data Store <a href="https://github.com/raintank/snap-app">source code is here</a> if you’re curious. We’re really excited to see the raintank team use Snap in this way. You should definitely check out co-founder <a href="https://blog.raintank.io/using-grafana-with-intels-snap-for-ad-hoc-metric-exploration/">Anthony Woods’ deep dive</a> on the topic and <a href="https://gitter.im/intelsdi-x/snap">share your thoughts</a> with us.</p>
+</blockquote>
+<h3 id="collect-from-more-sources-with-new-plugins">Collect from more sources with new plugins</h3>
+<p>While the team at raintank developed Snap into a data store, our small team continued to expand the breadth and depth of metrics gathered by the framework. We created 24 new plugins coming to the Snap framework this week, adding tons of value to our growing ecosystem. A couple highlights:</p>
+<ul>
+<li>We add MySQL &amp; kairosdb publishers to our growing list of databases</li>
+<li>We join the OpenStack ecosystem with Cinder, Nova, Keystone and Neutron collectors</li>
+<li>Even more OS statistics ranging from CPU numbers to a list of logged in users or processes
+And the list is continuing to grow. I had some fun thoughts about use cases based on all these. You can collect usage statistics from NFS servers along with your system stats to find what’s slowing your down your NAS. You can keep an eye on stats from your HAProxy service and the Docker contain it runs in. You can collect statistics from RabbitMQ and publish it to RabbitMQ (because why not?). Snap is expanding its usefulness no matter your workflow.</li>
+</ul>
+<p>You can see the full list of plugins in the <a href="https://github.com/intelsdi-x/snap/blob/master/docs/PLUGIN_CATALOG.md">Plugin Catalog</a> and download the <a href="https://github.com/intelsdi-x/snap/releases/tag/v0.13.0-beta">latest release of Snap</a>, v0.13.0.</p>
+<p>I hope to see you jump in with both feet and start using Snap and visualizing it with Grafana.net. If you need a hand along the way, don’t be shy about reaching out.</p>
+<p><em>This article was originally published <a href="https://medium.com/@mbbroberg">on Medium</a></em></p>
+</div>
+    <div class="post-footer">
+      <div class="info">
+        
+
+        
+      </div>
+    </div>
+
+    
+  </div>
+
+
+          </div>
+        </div>
+      </main>
+    </div><footer class="footer footer--base">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          Matt Broberg
+          2022
+
+
+        
+      </li>
+      
+    </ul>
+  </div>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.4a40b20209bc12e56cf77caff5feaa93fecd6b0d97d51b33afb0265a732ce636.js"
+    integrity="sha256-SkCyAgm8EuVs93yv9f6qk/7Naw2X1Rszr7AmWnMs5jY="
+    crossorigin="anonymous"
+  ></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-150450064-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</body>
+</html>

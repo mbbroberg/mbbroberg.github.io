@@ -45,7 +45,7 @@ The heart of your career-oriented resume is your career section (or Experience, 
 
 > Accomplished [X] as measured by [Y] by doing [Z]
 
-Formula. Get specific and be crisp about your **business value** as I go into [detail in this post](https://mbbroberg.fun/writing-resume/).
+Formula. Get specific and be crisp about your **business value** as I go into [detail in this post](https://mbbroberg.fun/resume-formula/).
 
 ### 2a Get into the technical bits 
 
