@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+><head>
+  <title>
+    Matt Broberg
+      |
+      Introduction to ad hoc telemetry with Snap and Grafana
+
+
+    
+
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.93.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta
+    name="description"
+    content="
+      Matt is an advocate for open source software. He specializes in designing technology communities that develop products and content in a way that tells a powerful story.
+
+
+    "
+  />
+  
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/main.min.6b6216cbca690986c821055feb84deac8cfba07e3d1deec188cdc8ae6582c27d.css"
+    integrity="sha256-a2IWy8ppCYbIIQVf64TerIz7oH49He7BiM3IrmWCwn0="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.058b31f17db60602cc415fd63b0427e7932fbf35c70d8e341a4c39385f5f6f3e.css"
+    integrity="sha256-BYsx8X22BgLMQV/WOwQn55MvvzXHDY40Gkw5OF9fbz4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
+  
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&amp;display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="/intro-to-ad-hoc-telemetry-snap-grafana/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.d0408165d31a17f17bba83038bf54e86121f85021bdf936382e636f0f77a952f.js"
+    integrity="sha256-0ECBZdMaF/F7uoMDi/VOhhIfhQIb35NjguY28Pd6lS8="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.65e936b591bf81484a5ac438c8e4ae6454fb25516d58ce911e4888d7f230bdc5.js"
+      integrity="sha256-Zek2tZG/gUhKWsQ4yOSuZFT7JVFtWM6RHkiI1/IwvcU="
+      crossorigin="anonymous"
+    ></script>
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Introduction to ad hoc telemetry with Snap and Grafana"/>
+<meta name="twitter:description" content="What makes Snap different?
+That’s the right question to ask and one I answered hundreds of times in the last couple weeks."/>
+
+
+
+  
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "articles",
+        "name": "Introduction to ad hoc telemetry with Snap and Grafana",
+        "headline": "Introduction to ad hoc telemetry with Snap and Grafana",
+        "alternativeHeadline": "",
+        "description": "
+      
+        What makes Snap different?\nThat’s the right question to ask and one I answered hundreds of times in the last couple weeks.
+
+
+      
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/mbbroberg.fun\/intro-to-ad-hoc-telemetry-snap-grafana\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "copyrightYear" : "2016",
+        "dateCreated": "2016-07-01T00:00:00.00Z",
+        "datePublished": "2016-07-01T00:00:00.00Z",
+        "dateModified": "2016-07-01T00:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Matt Broberg",
+            "url": "https://mbbroberg.fun",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/mbbroberg.fun\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/mbbroberg.fun\/intro-to-ad-hoc-telemetry-snap-grafana\/",
+        "wordCount" : "812",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+</head>
+<body>
+    <header><div
+  class="page-top 
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
+  <nav>
+    <ul class="nav__list" id="navMenu">
+      <div class="nav__links">
+        
+        
+          
+          <li>
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/articles/"
+              
+              title=""
+              >Articles</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/podcasts/"
+              
+              title=""
+              >Podcasts</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/talks/"
+              
+              title=""
+              >Talks</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/tools/"
+              
+              title=""
+              >Tools</a
+            >
+          </li>
+
+        
+      </div>
+      <ul>
+        
+        
+          <li>
+            <a class="theme-switch" title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </li>
+
+        
+      </ul>
+    </ul>
+  </nav>
+</div>
+</header>
+    <div class="wrapper">
+      <aside><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="logo-title">
+      <div class="title">
+        <img src="/images/profile.jpg" alt="profile picture" />
+        <h3 title=""><a href="/">Matthew Broberg</a></h3>
+        <div class="description">
+          <p>Matt is an advocate for open source software. He specializes in designing technology communities that develop products and content in a way that tells a powerful story.</p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+      
+        <li>
+          <a href="https://twitter.com/mbbroberg/" rel="me" aria-label="Twitter" title="Twitter">
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="https://linkedin.com/in/mbbroberg/" rel="me" aria-label="Linkedin" title="Linkedin">
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="mailto:matthewbbroberg&#43;io@gmail.com" rel="me" aria-label="e-mail" title="e-mail">
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="https://github.com/mbbroberg/" rel="me" aria-label="GitHub" title="GitHub">
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="https://stackoverflow.com/users/581665/mbb" rel="me" aria-label="Stackoverflow" title="Stackoverflow">
+            <i class="fab fa-stackoverflow fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer--sidebar">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          Matt Broberg
+          2022
+
+
+        
+      </li>
+      
+    </ul>
+  </div>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.4a40b20209bc12e56cf77caff5feaa93fecd6b0d97d51b33afb0265a732ce636.js"
+    integrity="sha256-SkCyAgm8EuVs93yv9f6qk/7Naw2X1Rszr7AmWnMs5jY="
+    crossorigin="anonymous"
+  ></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-150450064-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</div>
+</aside>
+      <main>
+        <div class="autopagerize_page_element">
+          <div class="content">
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    <div class="post-content">
+      
+      <div class="post-title">
+        <h1>Introduction to ad hoc telemetry with Snap and Grafana</h1>
+        
+      </div><p><em>What makes Snap different?</em></p>
+<p>That’s the right question to ask and one I answered hundreds of times in the last couple weeks. It began at O’Reilly Velocity as Ops-minded teams were curious about the introduction of Snap to the Open Source toolkit. The conversations continue this week at (my first) <a href="http://monitorama.com">Monitorama</a>, which is the most amazing Operations-centric conference I’ve ever attended. There are a lot of familiar faces across the two and for good reason: people want to understand the how and why of data center operations.</p>
+<p>But to the question at hand: <strong>why Snap</strong> vs this or that?</p>
+<p><img src="/img/1*MaYIUQGtqyU1cdTut7BuDA.jpeg" alt="">Me making hand motions while I demo Snap at Velocity Conf 2016.<strong>It’s about the API.</strong> The design of Snap allows for the collection, processing and publishing of telemetry AND the administration of it to be managed. And that makes all the difference.</p>
+<p><em>“Give me a for instance.”</em></p>
+<p>Okay, let’s get concrete. You have a site outage. Your monitoring shows that you have an issue with your database, but your day-to-day view of the problem is at a lower granularity than you need to find the culprit. That’s common — most people monitor at a 1 to 5 minute fidelity, but like to get down to 1 *second or less *during an issue. How do you add this greater visibility into the database? Well, you usually need to setup an entirely new telemetry system to even see the same stats at a greater granularity (let alone *new *metrics). That means installing software on servers that are in production and having issues as we speak. Alternatively, with Snap, we can stream stats directly to Grafana.</p>
+<p><img src="/img/1*ilxjE2d2iOAqqOU_pEhtjg.png" alt="">#### Configuring my environment for *ad hoc *queries</p>
+<p>Let’s set something up and take a look around. We need Grafana and Snap running at a minimum, so here is the quick way to see the power of the API.</p>
+<p>I’ve covered how to get Snap running in a few different ways, so I’ll skipping repeating it here. If you’d like to take this part step-by-step, <a href="https://medium.com/intel-sdi/my-how-to-for-the-snap-telemetry-framework-e3bb641bc740#.vgodp7djb">see this tutorial</a>. If you want to take the source code route, <a href="https://medium.com/intel-sdi/setting-up-your-snap-development-environment-ab010e861cab#.a13ejl65l">run through this refresher</a> on environment configuration for Go development. You can also follow practices outlined under <a href="https://github.com/intelsdi-x/snap#running-snap">Running Snap</a> to install <em>snapd</em> and load the psutil plugin that way. With all those options outlined, we’ll move on.</p>
+<p>With Snap installed, we can start the daemon and load a collector. This time we’ll use the psutil plugin:</p>
+<p>$ cd ~/Desktop/snap-v0.14.0-beta/bin<br>
+$ ./snapd -t 0 &amp;<br>
+$ ./snapctl plugin load ../plugin/snap-plugin-collector-psutil<strong>Disclaimer</strong>: these paths are relative, so be sure to point to wherever you put <em>snapd</em> and the plugin.</p>
+<p>Snap is running and loaded with the only plugin in we need for this example. Let’s get Grafana up locally. If you’re comfortable with Go development, you can build from source:</p>
+<p>$ go get github.com/grafana/grafanaOr if you have the good fortune to be on OS X, use <a href="http://docs.grafana.org/installation/mac/">homebrew</a>:</p>
+<p>brew install grafana/grafana/grafanaGrafana has an app model to extend its functionality. We need the Snap App (<a href="https://github.com/raintank/snap-app">source</a>), which is easily installed on the command-line:</p>
+<p>$ grafana-cli &ndash;pluginsDir=”/usr/local/var/lib/grafana” plugins install raintank-snap-appinstalling raintank-snap-app @ 0.0.3<br>
+from url: <a href="https://grafana.net/api/plugins/raintank-snap-app/versions/0.0.3/download">https://grafana.net/api/plugins/raintank-snap-app/versions/0.0.3/download</a><br>
+into: /usr/local/var/lib/grafana✔ Installed raintank-snap-app successfullyRestart grafana after installing plugins . <service grafana-server restart>Now we can start Grafana and point to the app along with our other default configuration requirements:</p>
+<p>$ grafana-server &ndash;config=/usr/local/etc/grafana/grafana.ini &ndash;homepath /usr/local/share/grafana cfg:default.paths.logs=/usr/local/var/log/grafana cfg:default.paths.data=/usr/local/var/lib/grafana cfg:default.paths.plugins=/usr/local/var/lib/grafanaAnd we see from the output that it installs the app and is up and running:</p>
+<p>2016/06/28 10:32:47 [I] Starting Grafana&hellip; truncated &hellip; 2016/06/28 10:32:47 [I] Plugins: Adding route /public/plugins/raintank-snap-datasource -&gt; /usr/local/var/lib/grafana/raintank-snap-app/dist/datasource<br>
+2016/06/28 10:32:47 [I] Plugins: Adding route /public/plugins/raintank-snap-app -&gt; /usr/local/var/lib/grafana/raintank-snap-app/dist<br>
+2016/06/28 10:32:47 [I] Listen: <a href="http://0.0.0.0:3000">http://0.0.0.0:3000</a>Now we can <a href="http://127.0.0.1:3000">login to Grafana at port 3000</a>. From there:</p>
+<ol>
+<li>Click the top-left icon and open Plugins</li>
+<li>Click the Apps tab, open Snap App, Enable it</li>
+<li>From the top-left icon again, go to Data Sources</li>
+<li>Add a new data source of type Snap DS pointing to your <em>snapd</em> instance (including port, which is 8181 by default)</li>
+<li>Start a new Dashboard with a Graph panel, select Snap DS as the data source</li>
+<li>Create the task! Name it, choose an interval and metrics, then start it</li>
+<li>Click watch to see live data stream from Snap to the graph just like you would using <em>snapctl task watch</em>
+<img src="/img/1*sXlgFQpongx-8cn-6TPWwg.png" alt="">By taking these steps, you configured a Task in Snap all through the API.</li>
+</ol>
+<p>I’ve already wrote about how <a href="https://medium.com/intel-sdi/the-guts-of-tasks-how-snap-runs-8c5d2405ea61#.y8jibkpg3">Tasks are a powerful abstraction</a> for telemetry, but they take on a life of their own once you bring them to a GUI like Grafana.</p>
+<h4 id="what-will-you-measure-next">What will you measure next?</h4>
+<p>Telemetry is exciting when you have the right data in the right format and sent to the right places. I would love to see more examples of what you measure for day-to-day Ops. If there isn’t a collector for it in the <a href="https://github.com/intelsdi-x/snap/blob/master/docs/PLUGIN_CATALOG.md">Plugin Catalog</a>, I would love to see you <a href="https://github.com/intelsdi-x/snap/blob/master/docs/PLUGIN_AUTHORING.md">build your own</a>!</p>
+<p><em>This article was originally published <a href="https://medium.com/@mbbroberg">on Medium</a></em></p>
+</div>
+    <div class="post-footer">
+      <div class="info">
+        
+
+        
+      </div>
+    </div>
+
+    
+  </div>
+
+
+          </div>
+        </div>
+      </main>
+    </div><footer class="footer footer--base">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          Matt Broberg
+          2022
+
+
+        
+      </li>
+      
+    </ul>
+  </div>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.4a40b20209bc12e56cf77caff5feaa93fecd6b0d97d51b33afb0265a732ce636.js"
+    integrity="sha256-SkCyAgm8EuVs93yv9f6qk/7Naw2X1Rszr7AmWnMs5jY="
+    crossorigin="anonymous"
+  ></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-150450064-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</body>
+</html>

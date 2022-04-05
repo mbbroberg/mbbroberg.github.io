@@ -2,110 +2,101 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://mbbroberg.fun/</loc>
     <lastmod>2021-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/</loc>
+    <loc>https://mbbroberg.fun/articles/</loc>
     <lastmod>2021-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/resume-tips/</loc>
+    <loc>https://mbbroberg.fun/resume-tips/</loc>
     <lastmod>2021-04-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tools-i-use/</loc>
+    <loc>https://mbbroberg.fun/tools-i-use/</loc>
     <lastmod>2021-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/resume-formula/</loc>
+    <loc>https://mbbroberg.fun/resume-formula/</loc>
     <lastmod>2020-09-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/resume-competencies/</loc>
+    <loc>https://mbbroberg.fun/resume-competencies/</loc>
     <lastmod>2020-09-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/jobs-pipeline/</loc>
+    <loc>https://mbbroberg.fun/jobs-pipeline/</loc>
     <lastmod>2020-09-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/nonlinear-job-hunting/</loc>
+    <loc>https://mbbroberg.fun/nonlinear-job-hunting/</loc>
     <lastmod>2020-05-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/clang-error-in-pip/</loc>
+    <loc>https://mbbroberg.fun/clang-error-in-pip/</loc>
     <lastmod>2020-02-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/practical-open-source/</loc>
+    <loc>https://mbbroberg.fun/practical-open-source/</loc>
     <lastmod>2018-10-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/contributor-experience/</loc>
+    <loc>https://mbbroberg.fun/contributor-experience/</loc>
     <lastmod>2018-10-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/community-metrics-sov/</loc>
+    <loc>https://mbbroberg.fun/community-metrics-sov/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/draft/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/draft/2018-09-21-remote-work-resources/</loc>
-    <lastmod>2018-09-21T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/rio-stickers-community-metrics/</loc>
+    <loc>https://mbbroberg.fun/rio-stickers-community-metrics/</loc>
     <lastmod>2018-09-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/the-value-community-metrics/</loc>
+    <loc>https://mbbroberg.fun/the-value-community-metrics/</loc>
     <lastmod>2018-09-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/draft/2018-09-02-how-i-todoist/</loc>
-    <lastmod>2018-09-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/markdown-everywhere/</loc>
+    <loc>https://mbbroberg.fun/markdown-everywhere/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/kubernetes-culture-kubecon-2017/</loc>
+    <loc>https://mbbroberg.fun/kubernetes-culture-kubecon-2017/</loc>
     <lastmod>2017-12-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/maiden-name/</loc>
+    <loc>https://mbbroberg.fun/maiden-name/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/2016-11-17-the-open-source-monitoring-stack-at-staples/</loc>
+    <loc>https://mbbroberg.fun/articles/2016-11-17-the-open-source-monitoring-stack-at-staples/</loc>
     <lastmod>2016-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/intro-to-ad-hoc-telemetry-snap-grafana/</loc>
+    <loc>https://mbbroberg.fun/intro-to-ad-hoc-telemetry-snap-grafana/</loc>
     <lastmod>2016-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/what-i-mean-by-telemetry/</loc>
+    <loc>https://mbbroberg.fun/what-i-mean-by-telemetry/</loc>
     <lastmod>2016-06-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/snap-tasks/</loc>
+    <loc>https://mbbroberg.fun/snap-tasks/</loc>
     <lastmod>2016-04-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/snap-gui-grafana/</loc>
+    <loc>https://mbbroberg.fun/snap-gui-grafana/</loc>
     <lastmod>2016-03-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/how-to-snap-telemetry/</loc>
+    <loc>https://mbbroberg.fun/how-to-snap-telemetry/</loc>
     <lastmod>2016-03-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/your-next-job-title/</loc>
+    <loc>https://mbbroberg.fun/your-next-job-title/</loc>
     <lastmod>2015-10-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/three-github-resources/</loc>
+    <loc>https://mbbroberg.fun/three-github-resources/</loc>
     <lastmod>2015-05-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/articles/two-communities/</loc>
+    <loc>https://mbbroberg.fun/articles/two-communities/</loc>
     <lastmod>2015-04-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/impact-of-mistaken-sales-cycle/</loc>
+    <loc>https://mbbroberg.fun/impact-of-mistaken-sales-cycle/</loc>
     <lastmod>2014-08-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/admins-becoming-developers/</loc>
+    <loc>https://mbbroberg.fun/admins-becoming-developers/</loc>
     <lastmod>2014-05-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/oxymoron-of-productivity/</loc>
+    <loc>https://mbbroberg.fun/oxymoron-of-productivity/</loc>
     <lastmod>2014-05-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://mbbroberg.fun/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/podcasts/</loc>
+    <loc>https://mbbroberg.fun/podcasts/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://mbbroberg.fun/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/talks/</loc>
+    <loc>https://mbbroberg.fun/talks/</loc>
   </url><url>
-    <loc>http://localhost:1313/tools/</loc>
+    <loc>https://mbbroberg.fun/tools/</loc>
   </url>
 </urlset>

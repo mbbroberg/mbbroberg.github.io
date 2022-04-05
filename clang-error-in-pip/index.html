@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme=""
+><head>
+  <title>
+    Matt Broberg
+      |
+      Mac error on pip install ends up being clang and xcode
+
+
+    
+
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.93.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta
+    name="description"
+    content="
+      Tracking down Python install errors can be a mess. Here&#39;s one I hunted down so you don&#39;t have to.
+
+
+    "
+  />
+  
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/main.min.6b6216cbca690986c821055feb84deac8cfba07e3d1deec188cdc8ae6582c27d.css"
+    integrity="sha256-a2IWy8ppCYbIIQVf64TerIz7oH49He7BiM3IrmWCwn0="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.058b31f17db60602cc415fd63b0427e7932fbf35c70d8e341a4c39385f5f6f3e.css"
+    integrity="sha256-BYsx8X22BgLMQV/WOwQn55MvvzXHDY40Gkw5OF9fbz4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"
+  />
+  
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&amp;display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="/clang-error-in-pip/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.d0408165d31a17f17bba83038bf54e86121f85021bdf936382e636f0f77a952f.js"
+    integrity="sha256-0ECBZdMaF/F7uoMDi/VOhhIfhQIb35NjguY28Pd6lS8="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.65e936b591bf81484a5ac438c8e4ae6454fb25516d58ce911e4888d7f230bdc5.js"
+      integrity="sha256-Zek2tZG/gUhKWsQ4yOSuZFT7JVFtWM6RHkiI1/IwvcU="
+      crossorigin="anonymous"
+    ></script>
+
+  
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Mac error on pip install ends up being clang and xcode"/>
+<meta name="twitter:description" content="Tracking down Python install errors can be a mess. Here&#39;s one I hunted down so you don&#39;t have to."/>
+
+
+
+  
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "articles",
+        "name": "Mac error on pip install ends up being clang and xcode",
+        "headline": "Mac error on pip install ends up being clang and xcode",
+        "alternativeHeadline": "",
+        "description": "
+      Tracking down Python install errors can be a mess. Here\u0027s one I hunted down so you don\u0027t have to.
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/mbbroberg.fun\/clang-error-in-pip\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "mbbroberg"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "mbbroberg"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "mbbroberg"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "mbbroberg"
+        },
+        "copyrightYear" : "2020",
+        "dateCreated": "2020-02-29T00:00:00.00Z",
+        "datePublished": "2020-02-29T00:00:00.00Z",
+        "dateModified": "2020-02-29T00:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "mbbroberg",
+            "url": "https://mbbroberg.fun",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/mbbroberg.fun\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/mbbroberg.fun\/clang-error-in-pip\/",
+        "wordCount" : "1054",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+</head>
+<body>
+    <header><div
+  class="page-top 
+    animated fadeInDown
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
+  <nav>
+    <ul class="nav__list" id="navMenu">
+      <div class="nav__links">
+        
+        
+          
+          <li>
+            <a
+              
+              href="/"
+              
+              title=""
+              >Home</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/articles/"
+              
+              title=""
+              >Articles</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/podcasts/"
+              
+              title=""
+              >Podcasts</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/talks/"
+              
+              title=""
+              >Talks</a
+            >
+          </li>
+
+        
+          
+          <li>
+            <a
+              
+              href="/tools/"
+              
+              title=""
+              >Tools</a
+            >
+          </li>
+
+        
+      </div>
+      <ul>
+        
+        
+          <li>
+            <a class="theme-switch" title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </li>
+
+        
+      </ul>
+    </ul>
+  </nav>
+</div>
+</header>
+    <div class="wrapper">
+      <aside><div
+  class="sidebar
+    animated fadeInDown
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="logo-title">
+      <div class="title">
+        <img src="/images/profile.jpg" alt="profile picture" />
+        <h3 title=""><a href="/">Matthew Broberg</a></h3>
+        <div class="description">
+          <p>Matt is an advocate for open source software. He specializes in designing technology communities that develop products and content in a way that tells a powerful story.</p>
+        </div>
+      </div>
+    </div>
+    <ul class="social-links">
+      
+        <li>
+          <a href="https://twitter.com/mbbroberg/" rel="me" aria-label="Twitter" title="Twitter">
+            <i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="https://linkedin.com/in/mbbroberg/" rel="me" aria-label="Linkedin" title="Linkedin">
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="mailto:matthewbbroberg&#43;io@gmail.com" rel="me" aria-label="e-mail" title="e-mail">
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="https://github.com/mbbroberg/" rel="me" aria-label="GitHub" title="GitHub">
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li>
+          <a href="https://stackoverflow.com/users/581665/mbb" rel="me" aria-label="Stackoverflow" title="Stackoverflow">
+            <i class="fab fa-stackoverflow fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer--sidebar">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          Matt Broberg
+          2022
+
+
+        
+      </li>
+      
+    </ul>
+  </div>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.4a40b20209bc12e56cf77caff5feaa93fecd6b0d97d51b33afb0265a732ce636.js"
+    integrity="sha256-SkCyAgm8EuVs93yv9f6qk/7Naw2X1Rszr7AmWnMs5jY="
+    crossorigin="anonymous"
+  ></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-150450064-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</div>
+</aside>
+      <main>
+        <div class="autopagerize_page_element">
+          <div class="content">
+  <div
+    class="post 
+      animated fadeInDown
+
+    "
+  >
+    <div class="post-content">
+      
+      <div class="post-title">
+        <h1>Mac error on pip install ends up being clang and xcode</h1>
+        
+      </div><p>I have been having intermittent installation errors with Python packages on my Mac. They occur on anything Python 3.7.x or 3.8.x after I set up a virtual environment and <code>pip install</code> after that (note that I manage my Python versions with <a href="https://github.com/pyenv/pyenv">pyenv</a>).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="o">~/</span><span class="n">Develop</span><span class="o">/</span><span class="n">chaoss</span>
+</span></span><span class="line"><span class="cl"><span class="err">❯</span> <span class="n">which</span> <span class="n">python</span>
+</span></span><span class="line"><span class="cl"><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">mbbroberg</span><span class="o">/.</span><span class="n">pyenv</span><span class="o">/</span><span class="n">shims</span><span class="o">/</span><span class="n">python</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">~/</span><span class="n">Develop</span><span class="o">/</span><span class="n">chaoss</span>
+</span></span><span class="line"><span class="cl"><span class="err">❯</span> <span class="n">python</span> <span class="o">-</span><span class="n">V</span>
+</span></span><span class="line"><span class="cl"><span class="n">Python</span> <span class="mf">3.7.3</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">~/</span><span class="n">Develop</span><span class="o">/</span><span class="n">chaoss</span>
+</span></span><span class="line"><span class="cl"><span class="err">❯</span> <span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">venv</span> <span class="n">venv</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">~/</span><span class="n">Develop</span><span class="o">/</span><span class="n">chaoss</span>
+</span></span><span class="line"><span class="cl"><span class="err">❯</span> <span class="n">activate</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">~/</span><span class="n">Develop</span><span class="o">/</span><span class="n">chaoss</span>
+</span></span><span class="line"><span class="cl"><span class="n">venv</span> <span class="err">❯</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">pip</span>
+</span></span><span class="line"><span class="cl"><span class="n">Collecting</span> <span class="n">pip</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Using</span> <span class="n">cached</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">files</span><span class="o">.</span><span class="n">pythonhosted</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">packages</span><span class="o">/</span><span class="mi">54</span><span class="o">/</span><span class="mi">0</span><span class="n">c</span><span class="o">/</span><span class="n">d01aa759fdc501a58f431eb594a17495f15b88da142ce14b5845662c13f3</span><span class="o">/</span><span class="n">pip</span><span class="o">-</span><span class="mf">20.0.2</span><span class="o">-</span><span class="n">py2</span><span class="o">.</span><span class="n">py3</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="nb">any</span><span class="o">.</span><span class="n">whl</span>
+</span></span><span class="line"><span class="cl"><span class="n">Installing</span> <span class="n">collected</span> <span class="n">packages</span><span class="p">:</span> <span class="n">pip</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Found</span> <span class="n">existing</span> <span class="n">installation</span><span class="p">:</span> <span class="n">pip</span> <span class="mf">19.0.3</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Uninstalling</span> <span class="n">pip</span><span class="o">-</span><span class="mf">19.0.3</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">      <span class="n">Successfully</span> <span class="n">uninstalled</span> <span class="n">pip</span><span class="o">-</span><span class="mf">19.0.3</span>
+</span></span><span class="line"><span class="cl"><span class="n">Successfully</span> <span class="n">installed</span> <span class="n">pip</span><span class="o">-</span><span class="mf">20.0.2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">~/</span><span class="n">Develop</span><span class="o">/</span><span class="n">chaoss</span>
+</span></span><span class="line"><span class="cl"><span class="n">venv</span> <span class="err">❯</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">perceval</span>
+</span></span><span class="line"><span class="cl"><span class="n">Collecting</span> <span class="n">perceval</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Downloading</span> <span class="n">perceval</span><span class="o">-</span><span class="mf">0.12.24</span><span class="o">-</span><span class="n">py3</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="nb">any</span><span class="o">.</span><span class="n">whl</span> <span class="p">(</span><span class="mi">183</span> <span class="n">kB</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">     <span class="o">|</span><span class="err">████████████████████████████████</span><span class="o">|</span> <span class="mi">183</span> <span class="n">kB</span> <span class="mf">1.2</span> <span class="n">MB</span><span class="o">/</span><span class="n">s</span>
+</span></span><span class="line"><span class="cl"><span class="n">Collecting</span> <span class="n">feedparser</span><span class="o">&gt;=</span><span class="mf">5.1.3</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Downloading</span> <span class="n">feedparser</span><span class="o">-</span><span class="mf">5.2.1</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">bz2</span> <span class="p">(</span><span class="mi">192</span> <span class="n">kB</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">     <span class="o">|</span><span class="err">████████████████████████████████</span><span class="o">|</span> <span class="mi">192</span> <span class="n">kB</span> <span class="mf">3.3</span> <span class="n">MB</span><span class="o">/</span><span class="n">s</span>
+</span></span><span class="line"><span class="cl"><span class="n">Collecting</span> <span class="n">python</span><span class="o">-</span><span class="n">dateutil</span><span class="o">&gt;=</span><span class="mf">2.6.0</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Using</span> <span class="n">cached</span> <span class="n">python_dateutil</span><span class="o">-</span><span class="mf">2.8.1</span><span class="o">-</span><span class="n">py2</span><span class="o">.</span><span class="n">py3</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="nb">any</span><span class="o">.</span><span class="n">whl</span> <span class="p">(</span><span class="mi">227</span> <span class="n">kB</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Collecting</span> <span class="n">grimoirelab</span><span class="o">-</span><span class="n">toolkit</span><span class="o">&gt;=</span><span class="mf">0.1.4</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Downloading</span> <span class="n">grimoirelab_toolkit</span><span class="o">-</span><span class="mf">0.1.10</span><span class="o">-</span><span class="n">py3</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="nb">any</span><span class="o">.</span><span class="n">whl</span> <span class="p">(</span><span class="mi">19</span> <span class="n">kB</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Collecting</span> <span class="n">beautifulsoup4</span><span class="o">&gt;=</span><span class="mf">4.3.2</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Downloading</span> <span class="n">beautifulsoup4</span><span class="o">-</span><span class="mf">4.8.2</span><span class="o">-</span><span class="n">py3</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="nb">any</span><span class="o">.</span><span class="n">whl</span> <span class="p">(</span><span class="mi">106</span> <span class="n">kB</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">     <span class="o">|</span><span class="err">████████████████████████████████</span><span class="o">|</span> <span class="mi">106</span> <span class="n">kB</span> <span class="mf">4.4</span> <span class="n">MB</span><span class="o">/</span><span class="n">s</span>
+</span></span><span class="line"><span class="cl"><span class="n">Collecting</span> <span class="n">dulwich</span><span class="o">&lt;</span><span class="mf">0.19</span><span class="p">,</span><span class="o">&gt;=</span><span class="mf">0.18.5</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Downloading</span> <span class="n">dulwich</span><span class="o">-</span><span class="mf">0.18.6</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">gz</span> <span class="p">(</span><span class="mi">331</span> <span class="n">kB</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">     <span class="o">|</span><span class="err">████████████████████████████████</span><span class="o">|</span> <span class="mi">331</span> <span class="n">kB</span> <span class="mf">3.2</span> <span class="n">MB</span><span class="o">/</span><span class="n">s</span>
+</span></span><span class="line"><span class="cl"><span class="n">Collecting</span> <span class="n">urllib3</span><span class="o">&gt;=</span><span class="mf">1.22</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Using</span> <span class="n">cached</span> <span class="n">urllib3</span><span class="o">-</span><span class="mf">1.25.8</span><span class="o">-</span><span class="n">py2</span><span class="o">.</span><span class="n">py3</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="nb">any</span><span class="o">.</span><span class="n">whl</span> <span class="p">(</span><span class="mi">125</span> <span class="n">kB</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Collecting</span> <span class="n">requests</span><span class="o">&gt;=</span><span class="mf">2.7.0</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Using</span> <span class="n">cached</span> <span class="n">requests</span><span class="o">-</span><span class="mf">2.23.0</span><span class="o">-</span><span class="n">py2</span><span class="o">.</span><span class="n">py3</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="nb">any</span><span class="o">.</span><span class="n">whl</span> <span class="p">(</span><span class="mi">58</span> <span class="n">kB</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Collecting</span> <span class="n">six</span><span class="o">&gt;=</span><span class="mf">1.5</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Using</span> <span class="n">cached</span> <span class="n">six</span><span class="o">-</span><span class="mf">1.14.0</span><span class="o">-</span><span class="n">py2</span><span class="o">.</span><span class="n">py3</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="nb">any</span><span class="o">.</span><span class="n">whl</span> <span class="p">(</span><span class="mi">10</span> <span class="n">kB</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Collecting</span> <span class="n">soupsieve</span><span class="o">&gt;=</span><span class="mf">1.2</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Downloading</span> <span class="n">soupsieve</span><span class="o">-</span><span class="mf">2.0</span><span class="o">-</span><span class="n">py2</span><span class="o">.</span><span class="n">py3</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="nb">any</span><span class="o">.</span><span class="n">whl</span> <span class="p">(</span><span class="mi">32</span> <span class="n">kB</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Collecting</span> <span class="n">certifi</span><span class="o">&gt;=</span><span class="mf">2017.4.17</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Using</span> <span class="n">cached</span> <span class="n">certifi</span><span class="o">-</span><span class="mf">2019.11.28</span><span class="o">-</span><span class="n">py2</span><span class="o">.</span><span class="n">py3</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="nb">any</span><span class="o">.</span><span class="n">whl</span> <span class="p">(</span><span class="mi">156</span> <span class="n">kB</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Collecting</span> <span class="n">chardet</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">,</span><span class="o">&gt;=</span><span class="mf">3.0.2</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Using</span> <span class="n">cached</span> <span class="n">chardet</span><span class="o">-</span><span class="mf">3.0.4</span><span class="o">-</span><span class="n">py2</span><span class="o">.</span><span class="n">py3</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="nb">any</span><span class="o">.</span><span class="n">whl</span> <span class="p">(</span><span class="mi">133</span> <span class="n">kB</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Collecting</span> <span class="n">idna</span><span class="o">&lt;</span><span class="mi">3</span><span class="p">,</span><span class="o">&gt;=</span><span class="mf">2.5</span>
+</span></span><span class="line"><span class="cl">  <span class="n">Using</span> <span class="n">cached</span> <span class="n">idna</span><span class="o">-</span><span class="mf">2.9</span><span class="o">-</span><span class="n">py2</span><span class="o">.</span><span class="n">py3</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="nb">any</span><span class="o">.</span><span class="n">whl</span> <span class="p">(</span><span class="mi">58</span> <span class="n">kB</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Installing</span> <span class="n">collected</span> <span class="n">packages</span><span class="p">:</span> <span class="n">feedparser</span><span class="p">,</span> <span class="n">six</span><span class="p">,</span> <span class="n">python</span><span class="o">-</span><span class="n">dateutil</span><span class="p">,</span> <span class="n">grimoirelab</span><span class="o">-</span><span class="n">toolkit</span><span class="p">,</span> <span class="n">soupsieve</span><span class="p">,</span> <span class="n">beautifulsoup4</span><span class="p">,</span> <span class="n">dulwich</span><span class="p">,</span> <span class="n">urllib3</span><span class="p">,</span> <span class="n">certifi</span><span class="p">,</span> <span class="n">chardet</span><span class="p">,</span> <span class="n">idna</span><span class="p">,</span> <span class="n">requests</span><span class="p">,</span> <span class="n">perceval</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Running</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span> <span class="k">for</span> <span class="n">feedparser</span> <span class="o">...</span> <span class="n">done</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Running</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">install</span> <span class="k">for</span> <span class="n">dulwich</span> <span class="o">...</span> <span class="n">error</span>
+</span></span><span class="line"><span class="cl">    <span class="n">ERROR</span><span class="p">:</span> <span class="n">Command</span> <span class="n">errored</span> <span class="n">out</span> <span class="k">with</span> <span class="n">exit</span> <span class="n">status</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">     <span class="n">command</span><span class="p">:</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">mbbroberg</span><span class="o">/</span><span class="n">Develop</span><span class="o">/</span><span class="n">chaoss</span><span class="o">/</span><span class="n">venv</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">python</span> <span class="o">-</span><span class="n">u</span> <span class="o">-</span><span class="n">c</span> <span class="s1">&#39;import sys, setuptools, tokenize; sys.argv[0] = &#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;/private/var/folders/5l/c1y1gcw97szdywgf9rk1100m0000gn/T/pip-install-py8u_n_f/dulwich/setup.py&#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;; __file__=&#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;/private/var/folders/5l/c1y1gcw97szdywgf9rk1100m0000gn/T/pip-install-py8u_n_f/dulwich/setup.py&#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;;f=getattr(tokenize, &#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;open&#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;, open)(__file__);code=f.read().replace(&#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;, &#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;);f.close();exec(compile(code, __file__, &#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;exec&#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;))&#39;</span> <span class="n">install</span> <span class="o">--</span><span class="n">record</span> <span class="o">/</span><span class="n">private</span><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="mi">5</span><span class="n">l</span><span class="o">/</span><span class="n">c1y1gcw97szdywgf9rk1100m0000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">pip</span><span class="o">-</span><span class="n">record</span><span class="o">-</span><span class="mi">3</span><span class="n">dd124km</span><span class="o">/</span><span class="n">install</span><span class="o">-</span><span class="n">record</span><span class="o">.</span><span class="n">txt</span> <span class="o">--</span><span class="n">single</span><span class="o">-</span><span class="n">version</span><span class="o">-</span><span class="n">externally</span><span class="o">-</span><span class="n">managed</span> <span class="o">--</span><span class="nb">compile</span> <span class="o">--</span><span class="n">install</span><span class="o">-</span><span class="n">headers</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">mbbroberg</span><span class="o">/</span><span class="n">Develop</span><span class="o">/</span><span class="n">chaoss</span><span class="o">/</span><span class="n">venv</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">site</span><span class="o">/</span><span class="n">python3</span><span class="mf">.7</span><span class="o">/</span><span class="n">dulwich</span>
+</span></span><span class="line"><span class="cl">         <span class="n">cwd</span><span class="p">:</span> <span class="o">/</span><span class="n">private</span><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="mi">5</span><span class="n">l</span><span class="o">/</span><span class="n">c1y1gcw97szdywgf9rk1100m0000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">pip</span><span class="o">-</span><span class="n">install</span><span class="o">-</span><span class="n">py8u_n_f</span><span class="o">/</span><span class="n">dulwich</span><span class="o">/</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Complete</span> <span class="n">output</span> <span class="p">(</span><span class="mi">274</span> <span class="n">lines</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">running</span> <span class="n">install</span>
+</span></span><span class="line"><span class="cl">    <span class="n">running</span> <span class="n">build</span>
+</span></span><span class="line"><span class="cl">    <span class="n">running</span> <span class="n">build_py</span>
+</span></span><span class="line"><span class="cl">    <span class="n">creating</span> <span class="n">build</span>
+</span></span><span class="line"><span class="cl">    <span class="n">creating</span> <span class="n">build</span><span class="o">/</span><span class="n">lib</span><span class="o">.</span><span class="n">macosx</span><span class="o">-</span><span class="mf">10.14</span><span class="o">-</span><span class="n">x86_64</span><span class="o">-</span><span class="mf">3.7</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># ... skipping 100 lines of compiling output ...</span>
+</span></span><span class="line"><span class="cl">    <span class="n">clang</span> <span class="o">-</span><span class="n">Wno</span><span class="o">-</span><span class="n">unused</span><span class="o">-</span><span class="n">result</span> <span class="o">-</span><span class="n">Wsign</span><span class="o">-</span><span class="n">compare</span> <span class="o">-</span><span class="n">Wunreachable</span><span class="o">-</span><span class="n">code</span> <span class="o">-</span><span class="n">DNDEBUG</span> <span class="o">-</span><span class="n">g</span> <span class="o">-</span><span class="n">fwrapv</span> <span class="o">-</span><span class="n">O3</span> <span class="o">-</span><span class="n">Wall</span> <span class="o">-</span><span class="n">I</span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">mbbroberg</span><span class="o">/</span><span class="n">Develop</span><span class="o">/</span><span class="n">chaoss</span><span class="o">/</span><span class="n">venv</span><span class="o">/</span><span class="n">include</span> <span class="o">-</span><span class="n">I</span><span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">mbbroberg</span><span class="o">/.</span><span class="n">pyenv</span><span class="o">/</span><span class="n">versions</span><span class="o">/</span><span class="mf">3.7.3</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">python3</span><span class="mf">.7</span><span class="n">m</span> <span class="o">-</span><span class="n">c</span> <span class="n">dulwich</span><span class="o">/</span><span class="n">_objects</span><span class="o">.</span><span class="n">c</span> <span class="o">-</span><span class="n">o</span> <span class="n">build</span><span class="o">/</span><span class="n">temp</span><span class="o">.</span><span class="n">macosx</span><span class="o">-</span><span class="mf">10.14</span><span class="o">-</span><span class="n">x86_64</span><span class="o">-</span><span class="mf">3.7</span><span class="o">/</span><span class="n">dulwich</span><span class="o">/</span><span class="n">_objects</span><span class="o">.</span><span class="n">o</span>
+</span></span><span class="line"><span class="cl">    <span class="n">xcrun</span><span class="p">:</span> <span class="n">error</span><span class="p">:</span> <span class="n">invalid</span> <span class="n">active</span> <span class="n">developer</span> <span class="n">path</span> <span class="p">(</span><span class="o">/</span><span class="n">Library</span><span class="o">/</span><span class="n">Developer</span><span class="o">/</span><span class="n">CommandLineTools</span><span class="p">),</span> <span class="n">missing</span> <span class="n">xcrun</span> <span class="n">at</span><span class="p">:</span> <span class="o">/</span><span class="n">Library</span><span class="o">/</span><span class="n">Developer</span><span class="o">/</span><span class="n">CommandLineTools</span><span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">xcrun</span>
+</span></span><span class="line"><span class="cl">    <span class="n">error</span><span class="p">:</span> <span class="n">command</span> <span class="s1">&#39;clang&#39;</span> <span class="n">failed</span> <span class="k">with</span> <span class="n">exit</span> <span class="n">status</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="o">----------------------------------------</span>
+</span></span><span class="line"><span class="cl"><span class="n">ERROR</span><span class="p">:</span> <span class="n">Command</span> <span class="n">errored</span> <span class="n">out</span> <span class="k">with</span> <span class="n">exit</span> <span class="n">status</span> <span class="mi">1</span><span class="p">:</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">mbbroberg</span><span class="o">/</span><span class="n">Develop</span><span class="o">/</span><span class="n">chaoss</span><span class="o">/</span><span class="n">venv</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">python</span> <span class="o">-</span><span class="n">u</span> <span class="o">-</span><span class="n">c</span> <span class="s1">&#39;import sys, setuptools, tokenize; sys.argv[0] = &#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;/private/var/folders/5l/c1y1gcw97szdywgf9rk1100m0000gn/T/pip-install-py8u_n_f/dulwich/setup.py&#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;; __file__=&#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;/private/var/folders/5l/c1y1gcw97szdywgf9rk1100m0000gn/T/pip-install-py8u_n_f/dulwich/setup.py&#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;;f=getattr(tokenize, &#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;open&#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;, open)(__file__);code=f.read().replace(&#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;</span><span class="se">\r\n</span><span class="s1">&#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;, &#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;);f.close();exec(compile(code, __file__, &#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;exec&#39;</span><span class="s2">&#34;&#39;&#34;</span><span class="s1">&#39;))&#39;</span> <span class="n">install</span> <span class="o">--</span><span class="n">record</span> <span class="o">/</span><span class="n">private</span><span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="mi">5</span><span class="n">l</span><span class="o">/</span><span class="n">c1y1gcw97szdywgf9rk1100m0000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">pip</span><span class="o">-</span><span class="n">record</span><span class="o">-</span><span class="mi">3</span><span class="n">dd124km</span><span class="o">/</span><span class="n">install</span><span class="o">-</span><span class="n">record</span><span class="o">.</span><span class="n">txt</span> <span class="o">--</span><span class="n">single</span><span class="o">-</span><span class="n">version</span><span class="o">-</span><span class="n">externally</span><span class="o">-</span><span class="n">managed</span> <span class="o">--</span><span class="nb">compile</span> <span class="o">--</span><span class="n">install</span><span class="o">-</span><span class="n">headers</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">mbbroberg</span><span class="o">/</span><span class="n">Develop</span><span class="o">/</span><span class="n">chaoss</span><span class="o">/</span><span class="n">venv</span><span class="o">/</span><span class="n">include</span><span class="o">/</span><span class="n">site</span><span class="o">/</span><span class="n">python3</span><span class="mf">.7</span><span class="o">/</span><span class="n">dulwich</span> <span class="n">Check</span> <span class="n">the</span> <span class="n">logs</span> <span class="k">for</span> <span class="n">full</span> <span class="n">command</span> <span class="n">output</span><span class="o">.</span>
+</span></span></code></pre></div><p>I tried to find the logs mentioned, but gave up on them and decided to cycle through some sane troubleshooting steps.</p>
+<p>My default assumption is that I am (a) on an outdated version of Python, so I cycled through every one I can think through. My second assumption is that my shell is causing an issue, so I hopped out of <code>fish</code> shell into <code>bash</code> and <code>zsh</code>, both of which had the same issue. I finally centered in on the exit command: <code>clang</code>, the C language compiler pip appears to use by default. So I gave that a spin:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~/Develop/chaoss
+</span></span><span class="line"><span class="cl">venv ❯ which clang
+</span></span><span class="line"><span class="cl">/usr/bin/clang
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">~/Develop/chaoss
+</span></span><span class="line"><span class="cl">venv ❯ clang
+</span></span><span class="line"><span class="cl">xcrun: error: invalid active developer path <span class="o">(</span>/Library/Developer/CommandLineTools<span class="o">)</span>, missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun
+</span></span></code></pre></div><p>Ah-ha! There&rsquo;s something off with <code>clang</code>&rsquo;s dependencies that gets bundled into the ever-important xcode-select installation. Let&rsquo;s run a fresh install:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~/Develop/chaoss
+</span></span><span class="line"><span class="cl">venv ❯ xcode-select --install
+</span></span><span class="line"><span class="cl">xcode-select: note: install requested <span class="k">for</span> <span class="nb">command</span> line developer tools
+</span></span></code></pre></div><p>And see if <code>clang</code> still errors.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~/Develop/chaoss
+</span></span><span class="line"><span class="cl">venv ❯ clang
+</span></span><span class="line"><span class="cl">clang: error: no input files
+</span></span></code></pre></div><p>Nope. Then I tried to install my package through pip again.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">~/Develop/chaoss
+</span></span><span class="line"><span class="cl">venv ❯ pip install perceval
+</span></span><span class="line"><span class="cl">Collecting perceval
+</span></span><span class="line"><span class="cl">  Using cached perceval-0.12.24-py3-none-any.whl <span class="o">(</span><span class="m">183</span> kB<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Requirement already satisfied: grimoirelab-toolkit&gt;<span class="o">=</span>0.1.4 in ./venv/lib/python3.7/site-packages <span class="o">(</span>from perceval<span class="o">)</span> <span class="o">(</span>0.1.10<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Requirement already satisfied: python-dateutil&gt;<span class="o">=</span>2.6.0 in ./venv/lib/python3.7/site-packages <span class="o">(</span>from perceval<span class="o">)</span> <span class="o">(</span>2.8.1<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Collecting dulwich&lt;0.19,&gt;<span class="o">=</span>0.18.5
+</span></span><span class="line"><span class="cl">  Using cached dulwich-0.18.6.tar.gz <span class="o">(</span><span class="m">331</span> kB<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Requirement already satisfied: feedparser&gt;<span class="o">=</span>5.1.3 in ./venv/lib/python3.7/site-packages <span class="o">(</span>from perceval<span class="o">)</span> <span class="o">(</span>5.2.1<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Collecting urllib3&gt;<span class="o">=</span>1.22
+</span></span><span class="line"><span class="cl">  Using cached urllib3-1.25.8-py2.py3-none-any.whl <span class="o">(</span><span class="m">125</span> kB<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Requirement already satisfied: beautifulsoup4&gt;<span class="o">=</span>4.3.2 in ./venv/lib/python3.7/site-packages <span class="o">(</span>from perceval<span class="o">)</span> <span class="o">(</span>4.8.2<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Collecting requests&gt;<span class="o">=</span>2.7.0
+</span></span><span class="line"><span class="cl">  Using cached requests-2.23.0-py2.py3-none-any.whl <span class="o">(</span><span class="m">58</span> kB<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Requirement already satisfied: six&gt;<span class="o">=</span>1.5 in ./venv/lib/python3.7/site-packages <span class="o">(</span>from python-dateutil&gt;<span class="o">=</span>2.6.0-&gt;perceval<span class="o">)</span> <span class="o">(</span>1.14.0<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Requirement already satisfied: soupsieve&gt;<span class="o">=</span>1.2 in ./venv/lib/python3.7/site-packages <span class="o">(</span>from beautifulsoup4&gt;<span class="o">=</span>4.3.2-&gt;perceval<span class="o">)</span> <span class="o">(</span>2.0<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Collecting idna&lt;3,&gt;<span class="o">=</span>2.5
+</span></span><span class="line"><span class="cl">  Using cached idna-2.9-py2.py3-none-any.whl <span class="o">(</span><span class="m">58</span> kB<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Collecting certifi&gt;<span class="o">=</span>2017.4.17
+</span></span><span class="line"><span class="cl">  Using cached certifi-2019.11.28-py2.py3-none-any.whl <span class="o">(</span><span class="m">156</span> kB<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Collecting chardet&lt;4,&gt;<span class="o">=</span>3.0.2
+</span></span><span class="line"><span class="cl">  Using cached chardet-3.0.4-py2.py3-none-any.whl <span class="o">(</span><span class="m">133</span> kB<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Installing collected packages: dulwich, urllib3, idna, certifi, chardet, requests, perceval
+</span></span><span class="line"><span class="cl">    Running setup.py install <span class="k">for</span> dulwich ... <span class="k">done</span>
+</span></span><span class="line"><span class="cl">Successfully installed certifi-2019.11.28 chardet-3.0.4 dulwich-0.18.6 idna-2.9 perceval-0.12.24 requests-2.23.0 urllib3-1.25.8
+</span></span></code></pre></div><p>Installation happened with no error. There we go ✅</p>
+<h2 id="improving-the-python-pip-user-experience">Improving the Python pip user experience</h2>
+<p>The layers of technology we depend on to run software can humble anyone new to programming. With Python becoming more and more the first language for developers (from software engineer to hobbyist), my hope is that the install, upgrade, and environment management tooling can become friendlier and hide some of this complexity by default.</p>
+<p>If I were to redesign this experience, I would show this level of detail in a <code>--verbose</code> output of pip while it defaults to something more like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">~/Develop/chaoss
+</span></span><span class="line"><span class="cl">❯ pip install perceval
+</span></span><span class="line"><span class="cl">Checking for virtual environments. Don&#39;t see one: do you want to set one up to contain dependencies to this folder (Recommended): Y/N 
+</span></span><span class="line"><span class="cl">Y
+</span></span><span class="line"><span class="cl">What would you like to name the virtual environment (default: venv)? 
+</span></span><span class="line"><span class="cl">venv
+</span></span><span class="line"><span class="cl">  Setting up virtual environment. Python version is 3.7.3
+</span></span><span class="line"><span class="cl">  Upgrading local pip to latest version, pip-20.0.2
+</span></span><span class="line"><span class="cl">Installing perceval
+</span></span><span class="line"><span class="cl">     |████████████████████████ |
+</span></span></code></pre></div><p>More on what that means to the user experience:</p>
+<ul>
+<li>An interactive prompt helps new user by default. This could be introduced gradually, first with an <code>--interactive</code> flag, then slowly adopted as the default with additonal alternative flags and sane behaviors to avoid interactivity. For example:
+<ul>
+<li><code>--venv</code> to name the environment.</li>
+<li><code>-f</code> to override any interactivity and install to the system Python.</li>
+<li>No prompt comes up if there is already an activated environment.</li>
+</ul>
+</li>
+<li>Less information is sufficient for most Python users. Let them see a package as a single package, and start to learn the libraries when they get into the source code, not during installation.
+<ul>
+<li>Make <code>-v</code>/<code>--verbose</code> to be the current level of output.</li>
+<li>Introduce a <code>-vv</code> to replace what is currently <code>-v</code> given its additional details.</li>
+</ul>
+</li>
+</ul>
+<p>Again this can be introduced slowly since it will break behavior people have used for many years. Include Warn prompts and update statuses for at least a few versions before the switch.</p>
+<h2 id="wrapping-up">Wrapping up</h2>
+<p>Dependencies can be tricky. I hope this helps others get out of a similar situation in the future.</p>
+<p>Thinking more broadly: Python has become the predominate beginner language outside of a speciality in front-end development. I hope to see more progress in it being an easy-to-use language in future releases, and I intend to participate where I can to do so.</p>
+</div>
+    <div class="post-footer">
+      <div class="info">
+        
+
+        
+      </div>
+    </div>
+
+    
+  </div>
+
+
+          </div>
+        </div>
+      </main>
+    </div><footer class="footer footer--base">
+  <div class="by_farbox">
+    <ul class="footer__list">
+      <li class="footer__item">
+        &copy;
+        
+          Matt Broberg
+          2022
+
+
+        
+      </li>
+      
+    </ul>
+  </div>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.4a40b20209bc12e56cf77caff5feaa93fecd6b0d97d51b33afb0265a732ce636.js"
+    integrity="sha256-SkCyAgm8EuVs93yv9f6qk/7Naw2X1Rszr7AmWnMs5jY="
+    crossorigin="anonymous"
+  ></script>
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-150450064-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</body>
+</html>
