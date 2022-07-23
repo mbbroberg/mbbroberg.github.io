@@ -28,6 +28,12 @@
   identifier = "tools"
   url = "/tools/"
 
+  [[main]]
+  name = "Disc"
+  weight = 600
+  identifier = "disc"
+  url = "/discgolf/"
+
   # [[footer]]
   # name = "imprint"
   # weight = 1
