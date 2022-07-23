@@ -2,9 +2,16 @@
 layout: page
 ---
 
-## Hey 👋. I'm Matt. 
+## Hey 👋. I'm Matt.
 
-I love connecting with technology communities to develop products and build out operational systems that inspire open source adoption.
+I love connecting with technology communities to develop products and build out operational systems that inspire open source adoption. I also love learning to lead with openness, honesty, and by buildling inspiring systems.
+
+### Teams I've managed: 
+
+* The product management team in Target's Infrastructure team, dedicated to Production Engineering
+* The product, program, and content teams behind Red Hat's digital communities, including [Opensource.com](https://opensource.com)
+* The community and marketing teams at Sensu, from series seed to A
+* A DevRel/product owner team at Intel managing open source projects, including [Snap](https://github.com/intelsdi-x/snap/)
 
 ### Communities I'm a part of:
 
