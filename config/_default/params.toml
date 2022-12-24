@@ -38,9 +38,9 @@ use = "katex"  # options: "katex", "mathjax". default is "katex".
 ## Social links
 # use 'fab' when brand icons, use 'fas' when standard solid icons.
 [[socialIcons]]
-icon = "fab fa-twitter"
-title = "Twitter"
-url = "https://twitter.com/mbbroberg/"
+icon = "fab fa-mastodon"
+title = "Mastodon"
+url = "https://floss.social/@mbbroberg"
 
 [[socialIcons]]
 icon = "fab fa-linkedin"
