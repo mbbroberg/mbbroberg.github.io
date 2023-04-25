@@ -53,7 +53,9 @@ It takes a lot of words to repeatedly be kind to new contributors, and it’s ea
 One of the replies came from the [Shubheksha](https://medium.com/u/c98f56800747), who wrote this incredibly thoughtful piece:
 
 [**How to attract new contributors to your open source project**  
-*It’s hard to attract contributors to your FOSS project — especially contributors who are new to open source.*medium.freecodecamp.org](https://medium.freecodecamp.org/how-to-attract-new-contributors-to-your-open-source-project-46f8b791d787 "https://medium.freecodecamp.org/how-to-attract-new-contributors-to-your-open-source-project-46f8b791d787")[](https://medium.freecodecamp.org/how-to-attract-new-contributors-to-your-open-source-project-46f8b791d787)#### And Thanks
+*It’s hard to attract contributors to your FOSS project — especially contributors who are new to open source.*medium.freecodecamp.org](https://medium.freecodecamp.org/how-to-attract-new-contributors-to-your-open-source-project-46f8b791d787 "https://medium.freecodecamp.org/how-to-attract-new-contributors-to-your-open-source-project-46f8b791d787")[](https://medium.freecodecamp.org/how-to-attract-new-contributors-to-your-open-source-project-46f8b791d787)
+
+#### And Thanks
 
 I’m thankful for everyone’s contribute to this thread. If you have more thoughts on Open Source, check out [opensource.guide](https://opensource.guide/) to dive deeper into recommended practices.
 

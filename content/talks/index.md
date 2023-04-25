@@ -8,7 +8,7 @@ layout: page
 
 ---
 
-# 2021 Favorites 
+# Favorites 
 
 A year fully at home was a strange transition for all of us. While the online conferences did not quite work for me, I had the opportunity to share a few ideas with communities I greatly admire.
 
@@ -31,8 +31,6 @@ Slides are available here:
 
 <script async class="speakerdeck-embed" data-id="f6366959fb4d438983cfb9b18f4b7482" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
-# 2020 Favorites 
-
 ## FOSDEM
 
 I checked a career goal checkbox with my first talk at this internationally-reknown show. It was my first draft of explaining the importance of accepting open source contributors no matter where they come from and what tools they are comfortable using. To do that, we need to stop defaulting to IRC as the primary communication channel and shift toward beautiful and simple asynchronous options. 
@@ -54,8 +52,6 @@ The updated version is here:
 
 <div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.1972%;"><iframe src="https://speakerdeck.com/player/3e7b783c0f2b47e5aaf7e499adf6cd7e" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" allowfullscreen scrolling="no" allow="encrypted-media"></iframe></div>
 
-# 2019 Favorites
-
 ## All Things Open
 
 The metrics behind Community and DevRel programs continues to be a curiosity of mine. Our field has seemed to define the internal improvement mentrics quite effectively, yet struggles to provide external business value to those who aren't deep "in it."
@@ -73,8 +69,6 @@ I had the honor of keynoting the final Virtualization Technology User Group, whi
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">First keynote of the last <a href="https://twitter.com/NE_VTUG?ref_src=twsrc%5Etfw">@NE_VTUG</a> , and <a href="https://twitter.com/mbbroberg?ref_src=twsrc%5Etfw">@mbbroberg</a> is killing it. <a href="https://twitter.com/hashtag/VTUG?src=hash&amp;ref_src=twsrc%5Etfw">#VTUG</a> <a href="https://t.co/ql4ACHU3nd">pic.twitter.com/ql4ACHU3nd</a></p>&mdash; Kanji Bates (@kanjibates) <a href="https://twitter.com/kanjibates/status/1151843718430908417?ref_src=twsrc%5Etfw">July 18, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 A big thanks to [Chris Williams](https://twitter.com/mistwire) for the invitation.
-
-# 2018 Favorites
 
 ## REdeploy
 
@@ -108,8 +102,6 @@ In "Don't Go It Alone: Recruiting Contributors," I give a 40 minute bootcamp in 
 
 Slides for this one are here:
 <script async class="speakerdeck-embed" data-id="08f6f8290e5c445d8ff44fabddec3d1e" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
-
-# 2017 Favorites
 
 ## Community Leadership Summit
 
@@ -157,10 +149,10 @@ Events require brief profiles about speakers. Here's my default for when those r
 You can download [this picture of me](/assets/images/profile.jpg) for any event pages.
 
 ### Profile
-Matt is an advocate for open source software and currently the Managing Editor of [Enable Architect](https://redhat.com/architect) for Red Hat. He specializes in designing technology communities that develop that collaboratively tell stories.
+Matthew is currently the Director of Product Management for Production Engineering at Target scaling systems and psychological safety. He specializes in designing software portfolios that benefit from open and inner source practices.
 
 _// Optional for longer profiles_
 
-Matt is a maintainer and contributor in the [Kubernetes](https://k8s.dev) and [CHAOSS](https://chaoss.community) communities. He is a serial podcaster, best known for the [Geek Whisperers podcast](https://geek-whisperers.com/), co-built the [the DevRel Collective](https://devrelcollective.fun/), and often shares his thoughts on Twitter and GitHub [@mbbroberg](https://twitter.com/mbbroberg). He’s also a fan of tattoos and cats, though remains unsure of Schrödinger’s.
+Matthew has been a maintainer for [Kubernetes](https://k8s.dev) and [CHAOSS](https://chaoss.community) communities, a serial podcaster best known for the [Geek Whisperers podcast](https://geek-whisperers.com/), and co-built the [the DevRel Collective](https://devrelcollective.fun/).
 
 ---

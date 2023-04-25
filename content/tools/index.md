@@ -28,16 +28,6 @@ The resulting choices are as follows.
 
 Here are the tools I use right now in order of frequency of use. I have a [Changelog](###changelog) at the bottom for reference on the big shifts.
 
-- [Notion](#notion)
-- [Evernote](#evernote)
-- [Dashlane](#dashlane)
-- [Firefox and Brave](#firefox-and-brave)
-- [Dotfile and application management](#dotfile-and-application-management)
-  - [Homebrew for applications](#homebrew-for-applications)
-  - [Chezmoi for dotfile management](#chezmoi-for-dotfile-management)
-  - [Fish shell as my terminal emulator](#fish-shell-as-my-terminal-emulator)
-- [Ferdi to aggregate chat applications](#ferdi-to-aggregate-chat-applications)
-- [Honorable mentions I can elaborate on if asked](#honorable-mentions-i-can-elaborate-on-if-asked)
 - [Specific contexts (by operating system)](#specific-contexts-by-operating-system)
   - [Mac-specific config](#mac-specific-config)
   - [Linux-specific config](#linux-specific-config)
@@ -50,13 +40,14 @@ Here are the tools I use right now in order of frequency of use. I have a [Chang
 
 ![Notion](notion-pic.png "My Notion setup")
 
-I've gone all-in on the weird and wonderful world of Notion. I find it as revolutionary as the spreadsheet once was, and its ability to share templates with others gives it a virality that is sure to pay off. For new users, however, it's a blank slate similar to any superpower of a tool. I fell into the [work of August Bradley](https://www.youtube.com/user/augustbradley) and find his system to be the right foundation for me. I even paid to take his course and found that it set a foundation for me well worth the cost.
+I've gone all-in on the weird and wonderful world of Notion. I find it as revolutionary as the spreadsheet once was, and its ability to share templates with others gives it a virality that is sure to pay off. I keep every random note, meeting note, action item, and article I plan to read in Notion using (many) embedded and interlinked databases. Notion also has a rapidly maturing webclipper that I use on nearly every page I read on the internet (and then I organize into the system). Most important about Notion is that it can organize and interlink information in a way I haven't found before. I'm using it to build a knowledge management system to feel like I'm growing knowledge over time rather than hiding it away in unlinked notes.
 
-I keep every random note, meeting note, action item, and article I plan to read in Notion using (many) embedded and interlinked databases. Notion also has a rapidly maturing webclipper that I use on nearly every page I read on the internet (and then I organize into the system). It sounds complicated, but it feels fluid and interwoven. 
+The crux of the design depends on using [PARA](https://fortelabs.co/blog/para) to organize my efforts. I also keep two top-level database for Recipes (cooking) and Resources (web pages) so I can use the web clipper to gather everything in one place.
 
-More importantly, I have a system of projects that align with personal objectives and key results (OKRs) that cascade down from a vision of the person I want to be. (This system is largely a 1:1 to August's work above, so check it out if it sounds of interest). The resulting structure is the first time in my life that I feel I can plan a big picture concept and see it all the way through to completion. It's a huge boost that I'm slowly building out.
+### Previous Implementations
 
-Most important about Notion is that it can organize and interlink information in a way I haven't found before. I'm using it to build a knowledge management system to feel like I'm growing knowledge over time rather than hiding it away in unlinked notes.
+I used to be obsessed with the [work of August Bradley](https://www.youtube.com/user/augustbradley). I even paid to take his course and found that it set a foundation for me worth the cost. He has a fascinating concept for weaving your life around Notion, but I think he fell for the assumption that little maintenance tasks are not a big deal. I found it to be death by a thousand papercuts. I need something resilient and not wasteful of my time, and I can confirm LifeOS systems are not it. No thanks. 
+
 
 ## Obsidian
 
@@ -64,7 +55,7 @@ Most important about Notion is that it can organize and interlink information in
 
 I switched out Obsidian for Evernote as a means to quick notes that synchronize across operating systems. I used to depend on the Evernote Webclipper, but Notion has a solid enough one to cover the need of plucking knowledge from the internet into a forever file. Obsidian is blazingly fast, incredibly smart with its conversion from HTML to markdown, and has a growing [community plugin ecosystem](https://obsidian.md/community). I rigged it up to share data via iCloud so I don't pay another monthly fee for a service I already have. I then set up a private git repo that syncs here and there to get it working on Linux as well. 
 
-Obsidian is not free or open source, but does [promise to stay free](https://obsidian.md/pricing). I hope one day they'll go open source. I have tried to adopt an [open source alternative](https://opensource.com/alternatives/evernote) (specifically [Joplin](https://joplinapp.org/faq/), [Simple Notes](https://simplenote.com/), and [Standard Notes](https://standardnotes.org/)), but I haven't quite landed on an architecture for cross-operational sync and a good web clipper. I bet I'll adopt one of these with time.
+Obsidian is free but not open source, and it [promises to stay free](https://obsidian.md/pricing). I hope one day they'll go open source. I have tried to adopt an [open source alternative](https://opensource.com/alternatives/evernote) (specifically [Joplin](https://joplinapp.org/faq/), [Simple Notes](https://simplenote.com/), and [Standard Notes](https://standardnotes.org/)), but I haven't quite landed on an architecture for cross-operational sync and a good web clipper. I bet I'll adopt one of these with time.
 
 
 ## 1Password
