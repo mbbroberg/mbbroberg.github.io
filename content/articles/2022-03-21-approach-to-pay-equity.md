@@ -1,7 +1,7 @@
 ---
 title: My Approach to Pay Equity as a Manager
 slug: ../my-pay-equity-approach/
-date: "2023-10-20T20:02:41-05:00"
+date: "2022-03-21T20:02:41-05:00"
 description: "I have an increasing say on people’s job titles, responsibilities, and their salaries. Here is how I use that for good."
 tag: Leadership
 ---
