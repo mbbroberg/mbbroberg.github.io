@@ -10,7 +10,7 @@ layout: page
 
 # Favorites 
 
-A year fully at home was a strange transition for all of us. While the online conferences did not quite work for me, I had the opportunity to share a few ideas with communities I greatly admire.
+Here are some personal favorites throughout the years. 
 
 ## KubeCon
 

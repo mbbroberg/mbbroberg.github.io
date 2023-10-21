@@ -7,7 +7,7 @@
   <title>
     Matt Broberg
       |
-      The Guts of Tasks: How Snap Runs
+      Getting started with remote work
 
 
     
@@ -19,8 +19,7 @@
   <meta
     name="description"
     content="
-      Product Manager | Systems Builder |
- Open Source Advocate | People Leader
+      Losing a job to a layoff or firing is a natural part of a career in tech. Here are some tips to keep you moving forward.
 
 
     "
@@ -63,7 +62,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
 
-  <link rel="canonical" href="/snap-tasks/" />
+  <link rel="canonical" href="/remote-work-getting-started/" />
 
   
   
@@ -88,8 +87,8 @@
 
   
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="The Guts of Tasks: How Snap Runs"/>
-<meta name="twitter:description" content="My last post dug into the how-to of running Snap. The steps are worth outlining as we continue to get familiar with the project:"/>
+<meta name="twitter:title" content="Getting started with remote work"/>
+<meta name="twitter:description" content="Losing a job to a layoff or firing is a natural part of a career in tech. Here are some tips to keep you moving forward."/>
 
 
 
@@ -105,15 +104,11 @@
         "@context": "http://schema.org",
         "@type": "BlogPosting",
         "articleSection": "articles",
-        "name": "The Guts of Tasks: How Snap Runs",
-        "headline": "The Guts of Tasks: How Snap Runs",
+        "name": "Getting started with remote work",
+        "headline": "Getting started with remote work",
         "alternativeHeadline": "",
         "description": "
-      
-        My last post dug into the how-to of running Snap. The steps are worth outlining as we continue to get familiar with the project:
-
-
-      
+      Losing a job to a layoff or firing is a natural part of a career in tech. Here are some tips to keep you moving forward.
 
 
     ",
@@ -121,7 +116,7 @@
         "isFamilyFriendly": "true",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/mbbroberg.fun\/snap-tasks\/"
+            "@id": "https:\/\/mbbroberg.fun\/remote-work-getting-started\/"
         },
         "author" : {
             "@type": "Person",
@@ -139,10 +134,10 @@
             "@type": "Person",
             "name": "Matt Broberg"
         },
-        "copyrightYear" : "2016",
-        "dateCreated": "2016-04-21T00:00:00.00Z",
-        "datePublished": "2016-04-21T00:00:00.00Z",
-        "dateModified": "2016-04-21T00:00:00.00Z",
+        "copyrightYear" : "2023",
+        "dateCreated": "2023-07-18T20:46:52.00Z",
+        "datePublished": "2023-07-18T20:46:52.00Z",
+        "dateModified": "2023-07-18T20:46:52.00Z",
         "publisher":{
             "@type":"Organization",
             "name": "Matt Broberg",
@@ -159,8 +154,8 @@
       ]
 
     ,
-        "url" : "https:\/\/mbbroberg.fun\/snap-tasks\/",
-        "wordCount" : "701",
+        "url" : "https:\/\/mbbroberg.fun\/remote-work-getting-started\/",
+        "wordCount" : "521",
         "genre" : [ ],
         "keywords" : [ ]
     }
@@ -376,43 +371,35 @@ if (!doNotTrack) {
     <div class="post-content">
       
       <div class="post-title">
-        <h1>The Guts of Tasks: How Snap Runs</h1>
+        <h1>Getting started with remote work</h1>
         
-      </div><p>My <a href="https://medium.com/intel-sdi/my-how-to-for-the-snap-telemetry-framework-e3bb641bc740">last post</a> dug into the how-to of running Snap. The steps are worth outlining as we continue to get familiar with the project:</p>
-<p><img src="/img/1*h6ybssckrbVHxI56tesSiA.png" alt="">Snappy The Telemetry Snapping Turtle* Download a Snap release (latest is <a href="https://github.com/intelsdi-x/snap/releases">now v0.13.0</a>)</p>
+      </div><p>I have spent over 10 years working primarily remote, and they have taught me practices I will implement from day one of a new job.</p>
+<p>I&rsquo;ve been asked more than once something along the lines of &ldquo;What do you think are some of the challenges of working remotely, and how would you address them?&rdquo;</p>
+<p>So here&rsquo;s a longer answer for future reference:</p>
+<h2 id="trust-takes-more-effort">Trust takes more effort</h2>
+<p>The greatest challenge is one of building trusted relationships, which depends on casual conversation alongside the professional. It’s easy enough to get lunch with a colleague at the office or chat about personal life throughout the day. Being fully remote has taught me that it takes more intention to get those casual interactions that are essential to team building and collaboration going forward. I address this with both short-term and long-term thinking.</p>
+<h2 id="the-default-game-plan">The default game plan</h2>
+<p>First week:</p>
 <ul>
-<li>Start <em>snapd</em>, the Snap daemon</li>
-<li>Use *snapctl *to load plugins and create a task from the <a href="https://github.com/intelsdi-x/snap/tree/master/examples/tasks">examples folder</a></li>
-<li>Watch the running task
-That’s the flow: download, run the daemon, load plugins and create a task. All operational tutorials of the project go through this flow.</li>
+<li>Be open. I find being the first to share details invites others to do so as well. I like to share a few slides or a short loom to introduce myself. The goal is to find common grounds to connect upon, so I start by being open. I will find what fits well with the culture and makes it easier for others to feel comfortable around me.</li>
+<li>Join whatever channels are used to celebrate. I want to learn how Hubbers give non-social cues of affirmation. Whether that’s an internal message thanking someone or a public tweet with all the emojis, I find these little moments are what matter most.</li>
 </ul>
-<p>Now that you’re familiar with it, let’s dive into the guts.</p>
-<p>How do I customize the telemetry I gather? How do I decide where to publish it? At what time interval?</p>
-<p>The answer to each of these is in a <strong>Task Manifest</strong>.</p>
-<h3 id="anatomy-of-a-task-manifest">Anatomy of a Task Manifest</h3>
-<p>A **Task **describes the how, what, and when for a Snap job and this information is expressed in a <strong>Task Manifest</strong>. Here’s a commented version, written in YAML, to learn by example:</p>
-<p>An annotated version of a Snap Task Manifest which collects, processes and publishes.And I dig a little deeper in this example:</p>
-<p>Here we dig a little deeper given the large number of measurements we can gather from psutil### How I Write Task Manifest</p>
-<p>Here’s my flow for authoring a new <strong>Task Manifest</strong>:</p>
-<p>1: Copy/paste a valid task, like the YAML gist above</p>
-<p>2: Start *snapd *and load any collector plugins you would like to collect:</p>
-<p>$ snapd -t 0# In another window:<br>
-$ snapctl plugin load path/to/snap-plugin-collector-psutil# And so on for each plugin you load, then:<br>
-$ snapctl metric list | cut -f 13: Copy/paste the metrics listed after <em>cut</em> and put them into the metrics section as show in our example above.</p>
-<p>4: Meet the JSON-style formatting requirements for each metric listed, appending “: {}” to the end of each line as shown.</p>
-<p><em>Recommendation</em>: Use shortcuts from your favorite IDE to make the formatting painless. I use <a href="https://atom.io/">Atom</a> these days and multi-select lines using the <a href="https://atom.io/packages/Sublime-Style-Column-Selection">Sublime-Style-Column-Selection</a> plugin (which you can also do in Sublime Text 3, as the name suggests).</p>
-<p>5: Save and load your new Task Manifest using <em>snapctl task create -t my-task.yaml</em></p>
-<p><em>Note</em>: As of today, if you want to use the REST API directly through cURL or otherwise, you’ll need to convert the YAML to JSON. I use the *json2yaml *Python utility, which I installed using <em>pip.</em></p>
-<p>Here’s another example of writing a Task Manifest to bring this home:</p>
-<p>Syntax of <strong>task manifests</strong> are explained <a href="https://github.com/intelsdi-x/snap/blob/master/docs/TASKS.md">here in the GitHub repo</a>.### But, Why?</p>
-<h4 id="why-have-a-separation-between-what-you-could-collect-and-what-you-are-collecting">Why have a separation between what you <em>could</em> collect and what you are <em>collecting</em>?</h4>
-<p>The videos give walkthroughs of how, so I’ll focus in on the <em><strong>why</strong></em>.</p>
-<p>An important design decision for Snap came in the division between available metrics and collected metrics. Since Tasks often include multiple collectors, there’s a lot of valuable details available, but it can be overwhelming to see them all at once. For instance, the <a href="https://github.com/intelsdi-x/snap-plugin-collector-psutil">psutil</a> plugin gathers 41 values. Add in a powerful Intel-specific plugin like <a href="https://github.com/intelsdi-x/snap-plugin-collector-pcm">PCM</a> (Intel Performance Counter Monitor) and you have another 29. We could gather all of these measurements, then include a few more from <a href="https://github.com/intelsdi-x/snap-plugin-collector-ethtool">ethtool</a>, <a href="https://github.com/intelsdi-x/snap-plugin-collector-docker">docker</a> and <a href="https://github.com/intelsdi-x/snap-plugin-collector-etcd">etcd</a>, but we soon have hundreds of measurements.</p>
-<p>Tasks define which metrics will be collected allowing us to be precise in choosing exactly what information we want streaming through <em>snapd</em>. This gets particularly important when you look at a plugin like ethtool, which can gather hundreds of network measurements per physical device. Focusing in on meaningful information reduces our noise AND our resource utilization.</p>
-<h3 id="tasks-as-a-powerful-abstraction">Tasks as a Powerful Abstraction</h3>
-<p>Tasks are powerful in how they decouple important details of measurement. Each Task can manage its own workflow of telemetry. Each Task can run on its own schedule. All metrics listed in tasks allow for the pinning of versions of plugins as needed. These decouplings allow for the flexible collection of data while keeping resource use light and administration operationally simple. It’s a tough dichotomy to balance — simplicity and effectiveness — but I think Snap is dead on target.</p>
-<p>I’d enjoy seeing your first Task Manifest. Be sure to share your gists or GitHub repos in <a href="https://gitter.im/intelsdi-x/snap">our Gitter channel!</a></p>
-<p><em>This article was originally published <a href="https://medium.com/@mbbroberg">on Medium</a></em></p>
+<p>First month:</p>
+<ul>
+<li>In the first 30 days, schedule 1:1 virtual coffee talks with everyone I know I will be working within the next quarter. Provide an agenda for those who prefer agendas. Keep it casual and engaging to develop trust.</li>
+</ul>
+<p>First quarter:</p>
+<ul>
+<li>If it&rsquo;s within budget and safe, travel to meet my colleagues in person. The goal can be in the form of a project kickoff, attending the same conference, or be as casual as visiting someone in their hometown. The important part is to get face time when possible. As valuable as remote work is, nothing replaces the trust built by face-to-face communication.</li>
+<li>Find the optimal ways to celebrate both publicly and privately. As a leader at the intersection of multiple teams, I want to ensure I recognize my colleagues in a way that shows my appreciation and respect.</li>
+</ul>
+<h2 id="shift-to-asynchronous">Shift to asynchronous</h2>
+<p>Another challenge I have learned to work around comes from scheduling. Years of remote work taught me to optimize for asynchronous collaboration while leaving time for the right amount of synchronous. A few lessons I keep in mind:</p>
+<ul>
+<li>Have fewer, more effective meetings. I like to challenge myself to drive decisions asynchronously and to keep meetings focused unless they are explicitly for brainstorming or team building.</li>
+<li>Default to public. I aim for sharing communications as broadly as possible. At my previous job, that meant answering individual requests to public channel when appropriate. Defaulting to public channels helps everyone have a shared context in a way I find beneficial to asynchronous decision-making.</li>
+</ul>
+<p>I hope this list helps you as you consider how to approach remote work.</p>
 </div>
     <div class="post-footer">
       <div class="info">

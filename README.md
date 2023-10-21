@@ -16,7 +16,7 @@ Scripts to write:
 - Keep the theme updated wih `git submodule update --remote --merge`... but I forked it to make some customizations.
 - Publish a new version by running 
 - Using `bundle` logic in Hugo allows me to store images with the post and address it as the same namespace.
-- Currently publishing to `docs/` by running `rm -rf docs/ && hugo -d docs/ -gc`
+- Currently publishing to `docs/` by running `rm -rf docs/ && hugo -d docs/`
 
 ### What's in the box? 📦
 

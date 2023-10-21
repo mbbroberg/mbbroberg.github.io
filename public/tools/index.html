@@ -15,7 +15,7 @@
   </title>
 
   
-  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.104.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.119.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
   <meta
     name="description"
     content="
@@ -160,7 +160,7 @@
 
     ,
         "url" : "https:\/\/mbbroberg.fun\/tools\/",
-        "wordCount" : "2320",
+        "wordCount" : "2264",
         "genre" : [ ],
         "keywords" : [ ]
     }
@@ -339,7 +339,7 @@
         &copy;
         
           Matt Broberg
-          2022
+          2023
 
 
         
@@ -399,19 +399,6 @@ if (!doNotTrack) {
 <h1 id="tools----omit-in-toc---">Tools <!-- omit in toc --></h1>
 <p>Here are the tools I use right now in order of frequency of use. I have a <a href="###changelog">Changelog</a> at the bottom for reference on the big shifts.</p>
 <ul>
-<li><a href="#notion">Notion</a></li>
-<li><a href="#evernote">Evernote</a></li>
-<li><a href="#dashlane">Dashlane</a></li>
-<li><a href="#firefox-and-brave">Firefox and Brave</a></li>
-<li><a href="#dotfile-and-application-management">Dotfile and application management</a>
-<ul>
-<li><a href="#homebrew-for-applications">Homebrew for applications</a></li>
-<li><a href="#chezmoi-for-dotfile-management">Chezmoi for dotfile management</a></li>
-<li><a href="#fish-shell-as-my-terminal-emulator">Fish shell as my terminal emulator</a></li>
-</ul>
-</li>
-<li><a href="#ferdi-to-aggregate-chat-applications">Ferdi to aggregate chat applications</a></li>
-<li><a href="#honorable-mentions-i-can-elaborate-on-if-asked">Honorable mentions I can elaborate on if asked</a></li>
 <li><a href="#specific-contexts-by-operating-system">Specific contexts (by operating system)</a>
 <ul>
 <li><a href="#mac-specific-config">Mac-specific config</a></li>
@@ -423,14 +410,14 @@ if (!doNotTrack) {
 </ul>
 <h2 id="notion">Notion</h2>
 <p><img src="notion-pic.png" alt="Notion" title="My Notion setup"></p>
-<p>I&rsquo;ve gone all-in on the weird and wonderful world of Notion. I find it as revolutionary as the spreadsheet once was, and its ability to share templates with others gives it a virality that is sure to pay off. For new users, however, it&rsquo;s a blank slate similar to any superpower of a tool. I fell into the <a href="https://www.youtube.com/user/augustbradley">work of August Bradley</a> and find his system to be the right foundation for me. I even paid to take his course and found that it set a foundation for me well worth the cost.</p>
-<p>I keep every random note, meeting note, action item, and article I plan to read in Notion using (many) embedded and interlinked databases. Notion also has a rapidly maturing webclipper that I use on nearly every page I read on the internet (and then I organize into the system). It sounds complicated, but it feels fluid and interwoven.</p>
-<p>More importantly, I have a system of projects that align with personal objectives and key results (OKRs) that cascade down from a vision of the person I want to be. (This system is largely a 1:1 to August&rsquo;s work above, so check it out if it sounds of interest). The resulting structure is the first time in my life that I feel I can plan a big picture concept and see it all the way through to completion. It&rsquo;s a huge boost that I&rsquo;m slowly building out.</p>
-<p>Most important about Notion is that it can organize and interlink information in a way I haven&rsquo;t found before. I&rsquo;m using it to build a knowledge management system to feel like I&rsquo;m growing knowledge over time rather than hiding it away in unlinked notes.</p>
+<p>I&rsquo;ve gone all-in on the weird and wonderful world of Notion. I find it as revolutionary as the spreadsheet once was, and its ability to share templates with others gives it a virality that is sure to pay off. I keep every random note, meeting note, action item, and article I plan to read in Notion using (many) embedded and interlinked databases. Notion also has a rapidly maturing webclipper that I use on nearly every page I read on the internet (and then I organize into the system). Most important about Notion is that it can organize and interlink information in a way I haven&rsquo;t found before. I&rsquo;m using it to build a knowledge management system to feel like I&rsquo;m growing knowledge over time rather than hiding it away in unlinked notes.</p>
+<p>The crux of the design depends on using <a href="https://fortelabs.co/blog/para">PARA</a> to organize my efforts. I also keep two top-level database for Recipes (cooking) and Resources (web pages) so I can use the web clipper to gather everything in one place.</p>
+<h3 id="previous-implementations">Previous Implementations</h3>
+<p>I used to be obsessed with the <a href="https://www.youtube.com/user/augustbradley">work of August Bradley</a>. I even paid to take his course and found that it set a foundation for me worth the cost. He has a fascinating concept for weaving your life around Notion, but I think he fell for the assumption that little maintenance tasks are not a big deal. I found it to be death by a thousand papercuts. I need something resilient and not wasteful of my time, and I can confirm LifeOS systems are not it. No thanks.</p>
 <h2 id="obsidian">Obsidian</h2>
 <p><img src="obsidian-pic.png" alt="Obsidian" title="My Obsidian setup, using Readwise to sync book notes like Accelerate."></p>
 <p>I switched out Obsidian for Evernote as a means to quick notes that synchronize across operating systems. I used to depend on the Evernote Webclipper, but Notion has a solid enough one to cover the need of plucking knowledge from the internet into a forever file. Obsidian is blazingly fast, incredibly smart with its conversion from HTML to markdown, and has a growing <a href="https://obsidian.md/community">community plugin ecosystem</a>. I rigged it up to share data via iCloud so I don&rsquo;t pay another monthly fee for a service I already have. I then set up a private git repo that syncs here and there to get it working on Linux as well.</p>
-<p>Obsidian is not free or open source, but does <a href="https://obsidian.md/pricing">promise to stay free</a>. I hope one day they&rsquo;ll go open source. I have tried to adopt an <a href="https://opensource.com/alternatives/evernote">open source alternative</a> (specifically <a href="https://joplinapp.org/faq/">Joplin</a>, <a href="https://simplenote.com/">Simple Notes</a>, and <a href="https://standardnotes.org/">Standard Notes</a>), but I haven&rsquo;t quite landed on an architecture for cross-operational sync and a good web clipper. I bet I&rsquo;ll adopt one of these with time.</p>
+<p>Obsidian is free but not open source, and it <a href="https://obsidian.md/pricing">promises to stay free</a>. I hope one day they&rsquo;ll go open source. I have tried to adopt an <a href="https://opensource.com/alternatives/evernote">open source alternative</a> (specifically <a href="https://joplinapp.org/faq/">Joplin</a>, <a href="https://simplenote.com/">Simple Notes</a>, and <a href="https://standardnotes.org/">Standard Notes</a>), but I haven&rsquo;t quite landed on an architecture for cross-operational sync and a good web clipper. I bet I&rsquo;ll adopt one of these with time.</p>
 <h2 id="1password">1Password</h2>
 <p>A password management tool that sync across devices is the single best &ldquo;hack&rdquo; any of us can do for ourselves. As this <a href="https://blog.mozilla.org/firefox/myths-about-password-managers/">Mozilla article</a> puts it so well:</p>
 <p>| The alternative to using a password manager is to rely on your own memory to remember all your credentials — or worse yet — writing them down. This inevitably leads to recycling passwords or using variations — a bad habit that hackers love.</p>
@@ -536,7 +523,7 @@ if (!doNotTrack) {
         &copy;
         
           Matt Broberg
-          2022
+          2023
 
 
         

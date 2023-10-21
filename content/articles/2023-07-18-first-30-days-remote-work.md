@@ -1,6 +1,6 @@
 ---
-title: "Getting started with remote work"
-slug: "../remote-work-getting-started"
+title: "Tips for your first 30 days of remote work"
+slug: "../first-30-days-remote-work"
 date: "2023-07-18T20:46:52-05:00"
 description: Losing a job to a layoff or firing is a natural part of a career in tech. Here are some tips to keep you moving forward.
 tag:
@@ -15,18 +15,18 @@ So here's a longer answer for future reference:
 
 ## Trust takes more effort
 
-The greatest challenge is one of building trusted relationships, which depends on casual conversation alongside the professional. It’s easy enough to get lunch with a colleague at the office or chat about personal life throughout the day. Being fully remote has taught me that it takes more intention to get those casual interactions that are essential to team building and collaboration going forward. I address this with both short-term and long-term thinking.
+One of the most glaring differences is not the lack of a commute, but the slowness of connection. That leads to my greatest challenge for new remote workers: building trusted relationships. We take for granted how much they depend on casual conversation alongside the professional. It’s easy enough to get lunch with a colleague at the office or chat about personal life throughout the day. Being fully remote has taught me that it takes more intention to get those casual interactions that are essential to team building and collaboration going forward. I address this with both short-term and long-term thinking.
 
 ## The default game plan
 
 First week: 
 
-- Be open. I find being the first to share details invites others to do so as well. I like to share a few slides or a short loom to introduce myself. The goal is to find common grounds to connect upon, so I start by being open. I will find what fits well with the culture and makes it easier for others to feel comfortable around me.
-- Join whatever channels are used to celebrate. I want to learn how Hubbers give non-social cues of affirmation. Whether that’s an internal message thanking someone or a public tweet with all the emojis, I find these little moments are what matter most.
+- Be open. I find being the first to share details invites others to do so as well. I like to share a few slides or a short [Loom](https://www.loom.com) to introduce myself. The goal is to find common grounds to connect upon, and I can't ask others to put themselves out there without knowing me so I start by being open. I will find what fits well with the culture and makes it easier for others to feel comfortable with who I am as a result.
+- Join whatever channels are used to celebrate. I want to learn how my team gives non-social cues of affirmation. Whether that’s an internal message thanking someone or a public tweet with all the emojis, I find these little moments are what matter most.
 
 First month: 
 
-- In the first 30 days, schedule 1:1 virtual coffee talks with everyone I know I will be working within the next quarter. Provide an agenda for those who prefer agendas. Keep it casual and engaging to develop trust.
+- In the first 30 days, schedule 1:1 virtual coffee talks with everyone I know I will be working with in the next quarter. Provide an agenda for those who prefer agendas. Keep it casual and engaging to develop trust.
 
 First quarter: 
 
