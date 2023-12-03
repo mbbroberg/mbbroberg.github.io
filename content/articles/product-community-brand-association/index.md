@@ -1,7 +1,7 @@
 ---
 title: "Building Product Community — How to think about brand association"
 slug: "/product-community-brand-association"
-date: "2023-10-20T20:19:11-05:00"
+date: "2022-10-20T20:19:11-05:00"
 description: "I've found two compelling patterns to be most effective for product communities. Here's how they are both valuable but differ in practice." 
 ---
 
