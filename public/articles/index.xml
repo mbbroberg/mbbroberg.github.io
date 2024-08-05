@@ -2,116 +2,138 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>https://mbbroberg.fun/articles/</link>
+    <link>http://localhost:1313/articles/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 Jul 2023 20:46:52 -0500</lastBuildDate><atom:link href="https://mbbroberg.fun/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Jul 2023 20:46:52 -0500</lastBuildDate><atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Getting started with remote work</title>
-      <link>https://mbbroberg.fun/remote-work-getting-started/</link>
+      <title>Tips for your first 30 days of remote work</title>
+      <link>http://localhost:1313/first-30-days-remote-work/</link>
       <pubDate>Tue, 18 Jul 2023 20:46:52 -0500</pubDate>
       
-      <guid>https://mbbroberg.fun/remote-work-getting-started/</guid>
+      <guid>http://localhost:1313/first-30-days-remote-work/</guid>
       
-        <description>I have spent over 10 years working primarily remote, and they have taught me practices I will implement from day one of a new job.</description>
+        <description>Losing a job to a layoff or firing is a natural part of a career in tech. Here are some tips to keep you moving forward.</description>
       
     </item>
     
     <item>
       <title>So You Lost Your Job: Now What?</title>
-      <link>https://mbbroberg.fun/so-you-lost-your-job/</link>
+      <link>http://localhost:1313/so-you-lost-your-job/</link>
       <pubDate>Mon, 24 Apr 2023 20:46:52 -0500</pubDate>
       
-      <guid>https://mbbroberg.fun/so-you-lost-your-job/</guid>
+      <guid>http://localhost:1313/so-you-lost-your-job/</guid>
       
-        <description>Some of the most talented, thoughtful, and effective people I have ever worked with were recently laid off.</description>
+        <description>Losing a job to a layoff or firing is a natural part of a career in tech. Here are some tips to keep you moving forward.</description>
+      
+    </item>
+    
+    <item>
+      <title>Building Product Community — How to think about brand association</title>
+      <link>http://localhost:1313/articles/product-community-brand-association/</link>
+      <pubDate>Thu, 20 Oct 2022 20:19:11 -0500</pubDate>
+      
+      <guid>http://localhost:1313/articles/product-community-brand-association/</guid>
+      
+        <description>I&#39;ve found two compelling patterns to be most effective for product communities. Here&#39;s how they are both valuable but differ in practice.</description>
+      
+    </item>
+    
+    <item>
+      <title>My Approach to Pay Equity as a Manager</title>
+      <link>http://localhost:1313/my-pay-equity-approach/</link>
+      <pubDate>Mon, 21 Mar 2022 20:02:41 -0500</pubDate>
+      
+      <guid>http://localhost:1313/my-pay-equity-approach/</guid>
+      
+        <description>I have an increasing say on people’s job titles, responsibilities, and their salaries. Here is how I use that for good.</description>
       
     </item>
     
     <item>
       <title>3 tech resume tips to get seen by the hiring manager</title>
-      <link>https://mbbroberg.fun/resume-tips/</link>
+      <link>http://localhost:1313/resume-tips/</link>
       <pubDate>Mon, 12 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/resume-tips/</guid>
+      <guid>http://localhost:1313/resume-tips/</guid>
       
-        <description>I recently reviewed a handful of resumes for friends and mentees, and I saw the same pattern in each.</description>
+        <description>If you don&#39;t have the right keywords, competencies, and business value, you&#39;re likely to get filtered out before you make an impression. Use these tips.</description>
       
     </item>
     
     <item>
       <title>Sharing the tools that I use to stay productive</title>
-      <link>https://mbbroberg.fun/tools-i-use/</link>
+      <link>http://localhost:1313/tools-i-use/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/tools-i-use/</guid>
+      <guid>http://localhost:1313/tools-i-use/</guid>
       
-        <description>It&amp;rsquo;s a new year (allegedly*), and I&amp;rsquo;m finding new ways to share who I am and what kind of work I love to do.</description>
+        <description>Software, open source and otherwise, keeps me sane and organized. Here&#39;s my curated list.</description>
       
     </item>
     
     <item>
       <title>A must-follow rule of resume building</title>
-      <link>https://mbbroberg.fun/resume-formula/</link>
+      <link>http://localhost:1313/resume-formula/</link>
       <pubDate>Tue, 29 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/resume-formula/</guid>
+      <guid>http://localhost:1313/resume-formula/</guid>
       
-        <description>I have helped a lot of people refine a pitch: a one-liner that helps them effectively message who they are and what they do well.</description>
+        <description>Stick with this formula to write a meaningful resume.</description>
       
     </item>
     
     <item>
       <title>Add competencies to your resume</title>
-      <link>https://mbbroberg.fun/resume-competencies/</link>
+      <link>http://localhost:1313/resume-competencies/</link>
       <pubDate>Mon, 28 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/resume-competencies/</guid>
+      <guid>http://localhost:1313/resume-competencies/</guid>
       
-        <description>Job hunting as terrible. I keep writing about it in the hopes of your experience being a little less terrible based on some lessons I’ve learned.</description>
+        <description>This small section makes both interviewers and resume robots happy.</description>
       
     </item>
     
     <item>
       <title>Sharing the Job Hunting Pipeline Blueprint</title>
-      <link>https://mbbroberg.fun/jobs-pipeline/</link>
+      <link>http://localhost:1313/jobs-pipeline/</link>
       <pubDate>Sat, 26 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/jobs-pipeline/</guid>
+      <guid>http://localhost:1313/jobs-pipeline/</guid>
       
-        <description>There is nothing like some unexpected job hunting to send a reasonably confident person into a spiral of panic.</description>
+        <description>Job hunting can be a terrible experience filled with panic. Use data to calm your nerves.</description>
       
     </item>
     
     <item>
       <title>Job hunting tips for nonlinear careers</title>
-      <link>https://mbbroberg.fun/nonlinear-job-hunting/</link>
+      <link>http://localhost:1313/nonlinear-job-hunting/</link>
       <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/nonlinear-job-hunting/</guid>
+      <guid>http://localhost:1313/nonlinear-job-hunting/</guid>
       
-        <description>I originally wrote this post while job hunting in 2018. I knew I needed a change from the work I was doing, and I developed a tool (read: spreadsheet) that helped reinforce a few lessons from the process.</description>
+        <description>Job hunting can be a terrible experience filled with panic. Use data to calm your nerves.</description>
       
     </item>
     
     <item>
       <title>Mac error on pip install ends up being clang and xcode</title>
-      <link>https://mbbroberg.fun/clang-error-in-pip/</link>
+      <link>http://localhost:1313/clang-error-in-pip/</link>
       <pubDate>Sat, 29 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/clang-error-in-pip/</guid>
+      <guid>http://localhost:1313/clang-error-in-pip/</guid>
       
-        <description>I have been having intermittent installation errors with Python packages on my Mac.</description>
+        <description>Tracking down Python install errors can be a mess. Here&#39;s one I hunted down so you don&#39;t have to.</description>
       
     </item>
     
     <item>
       <title>An (even more) practical guide to open source contribution</title>
-      <link>https://mbbroberg.fun/practical-open-source/</link>
+      <link>http://localhost:1313/practical-open-source/</link>
       <pubDate>Thu, 18 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/practical-open-source/</guid>
+      <guid>http://localhost:1313/practical-open-source/</guid>
       
         <description>I had the pleasure of speaking at DevOps Minneapolis to a great group of people.</description>
       
@@ -119,10 +141,10 @@
     
     <item>
       <title>Creating a Contributor Experience for Humans</title>
-      <link>https://mbbroberg.fun/contributor-experience/</link>
+      <link>http://localhost:1313/contributor-experience/</link>
       <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/contributor-experience/</guid>
+      <guid>http://localhost:1313/contributor-experience/</guid>
       
         <description>In preparation for the wonderful Open Source 101, I wanted to challenge my assumptions on what makes a great contributor experience by asking.</description>
       
@@ -130,10 +152,10 @@
     
     <item>
       <title>Community Metrics: Share of Voice</title>
-      <link>https://mbbroberg.fun/community-metrics-sov/</link>
+      <link>http://localhost:1313/community-metrics-sov/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/community-metrics-sov/</guid>
+      <guid>http://localhost:1313/community-metrics-sov/</guid>
       
         <description>One of the dark arts of measurement This is part three on a series exploring metrics that can position a Community program as a successful business investment.</description>
       
@@ -141,10 +163,10 @@
     
     <item>
       <title>Community Metrics: What’s the ROI of Stickers?</title>
-      <link>https://mbbroberg.fun/rio-stickers-community-metrics/</link>
+      <link>http://localhost:1313/rio-stickers-community-metrics/</link>
       <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/rio-stickers-community-metrics/</guid>
+      <guid>http://localhost:1313/rio-stickers-community-metrics/</guid>
       
         <description>To start this series on metrics off right, an aside is needed.</description>
       
@@ -152,10 +174,10 @@
     
     <item>
       <title>The Value of Community Metrics</title>
-      <link>https://mbbroberg.fun/the-value-community-metrics/</link>
+      <link>http://localhost:1313/the-value-community-metrics/</link>
       <pubDate>Tue, 18 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/the-value-community-metrics/</guid>
+      <guid>http://localhost:1313/the-value-community-metrics/</guid>
       
         <description>What does it look like for Community to be a quantifiable value to a company?</description>
       
@@ -163,21 +185,21 @@
     
     <item>
       <title>How to Use Markdown Everywhere</title>
-      <link>https://mbbroberg.fun/markdown-everywhere/</link>
+      <link>http://localhost:1313/markdown-everywhere/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/markdown-everywhere/</guid>
+      <guid>http://localhost:1313/markdown-everywhere/</guid>
       
-        <description>I haven&amp;rsquo;t always loved plain text syntax. Once I embraced git as the langua franca of IT Operations, I knew that made Markdown required knowledge.</description>
+        <description>All the tools I know to make Markdown your default means to writing.</description>
       
     </item>
     
     <item>
       <title>Lessons in Culture from KubeCon 2017</title>
-      <link>https://mbbroberg.fun/kubernetes-culture-kubecon-2017/</link>
+      <link>http://localhost:1313/kubernetes-culture-kubecon-2017/</link>
       <pubDate>Mon, 11 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/kubernetes-culture-kubecon-2017/</guid>
+      <guid>http://localhost:1313/kubernetes-culture-kubecon-2017/</guid>
       
         <description>The themes that left me thinking how this community will change our industry.</description>
       
@@ -185,10 +207,10 @@
     
     <item>
       <title>I Have a Maiden Name</title>
-      <link>https://mbbroberg.fun/maiden-name/</link>
+      <link>http://localhost:1313/maiden-name/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/maiden-name/</guid>
+      <guid>http://localhost:1313/maiden-name/</guid>
       
         <description>An exploration of surnames, beliefs and actions.
 I married my wife on May 29th, 2016.</description>
@@ -197,10 +219,10 @@ I married my wife on May 29th, 2016.</description>
     
     <item>
       <title>The Open Source Monitoring Stack at Staples</title>
-      <link>https://mbbroberg.fun/articles/2016-11-17-the-open-source-monitoring-stack-at-staples/</link>
+      <link>http://localhost:1313/articles/2016-11-17-the-open-source-monitoring-stack-at-staples/</link>
       <pubDate>Thu, 17 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/articles/2016-11-17-the-open-source-monitoring-stack-at-staples/</guid>
+      <guid>http://localhost:1313/articles/2016-11-17-the-open-source-monitoring-stack-at-staples/</guid>
       
         <description>Snap has led to a collaboration with the Site Reliability Engineering (SRE) team at Staples.</description>
       
@@ -208,10 +230,10 @@ I married my wife on May 29th, 2016.</description>
     
     <item>
       <title>Introduction to ad hoc telemetry with Snap and Grafana</title>
-      <link>https://mbbroberg.fun/intro-to-ad-hoc-telemetry-snap-grafana/</link>
+      <link>http://localhost:1313/intro-to-ad-hoc-telemetry-snap-grafana/</link>
       <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/intro-to-ad-hoc-telemetry-snap-grafana/</guid>
+      <guid>http://localhost:1313/intro-to-ad-hoc-telemetry-snap-grafana/</guid>
       
         <description>What makes Snap different?
 That’s the right question to ask and one I answered hundreds of times in the last couple weeks.</description>
@@ -220,10 +242,10 @@ That’s the right question to ask and one I answered hundreds of times in the l
     
     <item>
       <title>What I mean by “Telemetry”</title>
-      <link>https://mbbroberg.fun/what-i-mean-by-telemetry/</link>
+      <link>http://localhost:1313/what-i-mean-by-telemetry/</link>
       <pubDate>Tue, 07 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/what-i-mean-by-telemetry/</guid>
+      <guid>http://localhost:1313/what-i-mean-by-telemetry/</guid>
       
         <description>Snap is titled “the open telemetry framework.” I’ve been focused on getting us all comfortable using Snap, but I (rightfully) keep getting asked the bigger question.</description>
       
@@ -231,10 +253,10 @@ That’s the right question to ask and one I answered hundreds of times in the l
     
     <item>
       <title>The Guts of Tasks: How Snap Runs</title>
-      <link>https://mbbroberg.fun/snap-tasks/</link>
+      <link>http://localhost:1313/snap-tasks/</link>
       <pubDate>Thu, 21 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/snap-tasks/</guid>
+      <guid>http://localhost:1313/snap-tasks/</guid>
       
         <description>My last post dug into the how-to of running Snap. The steps are worth outlining as we continue to get familiar with the project:</description>
       
@@ -242,10 +264,10 @@ That’s the right question to ask and one I answered hundreds of times in the l
     
     <item>
       <title>Snap’s first GUI is Grafana!</title>
-      <link>https://mbbroberg.fun/snap-gui-grafana/</link>
+      <link>http://localhost:1313/snap-gui-grafana/</link>
       <pubDate>Thu, 31 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/snap-gui-grafana/</guid>
+      <guid>http://localhost:1313/snap-gui-grafana/</guid>
       
         <description>Snap has been a beautiful CLI-based tool for 4 months now.</description>
       
@@ -253,10 +275,10 @@ That’s the right question to ask and one I answered hundreds of times in the l
     
     <item>
       <title>My How-to for the Snap Telemetry Framework</title>
-      <link>https://mbbroberg.fun/how-to-snap-telemetry/</link>
+      <link>http://localhost:1313/how-to-snap-telemetry/</link>
       <pubDate>Tue, 22 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/how-to-snap-telemetry/</guid>
+      <guid>http://localhost:1313/how-to-snap-telemetry/</guid>
       
         <description>Updated November 30th, 2016 Today was the announcement that Snap reached a 1.</description>
       
@@ -264,43 +286,43 @@ That’s the right question to ask and one I answered hundreds of times in the l
     
     <item>
       <title>10 Job Titles and Why You Might Like Them (Or Won&#39;t)</title>
-      <link>https://mbbroberg.fun/your-next-job-title/</link>
+      <link>http://localhost:1313/your-next-job-title/</link>
       <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/your-next-job-title/</guid>
+      <guid>http://localhost:1313/your-next-job-title/</guid>
       
-        <description>A note: This post was created on a previous domain and migrated in 2018</description>
+        <description>Find your perfect fit.</description>
       
     </item>
     
     <item>
       <title>3 Resources to Learn (More) about GitHub Commits</title>
-      <link>https://mbbroberg.fun/three-github-resources/</link>
+      <link>http://localhost:1313/three-github-resources/</link>
       <pubDate>Fri, 15 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/three-github-resources/</guid>
+      <guid>http://localhost:1313/three-github-resources/</guid>
       
-        <description>A note: This post was created on a previous domain and migrated in 2018{: style=&amp;ldquo;color:gray; font-size: 80%; text-align: center;&amp;rdquo;}</description>
+        <description>Getting deeper into git? Check out these links.</description>
       
     </item>
     
     <item>
       <title>What two communities taught me about my expectations for community</title>
-      <link>https://mbbroberg.fun/articles/two-communities/</link>
+      <link>http://localhost:1313/articles/two-communities/</link>
       <pubDate>Wed, 29 Apr 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/articles/two-communities/</guid>
+      <guid>http://localhost:1313/articles/two-communities/</guid>
       
-        <description>A note: This post was created on a previous domain and migrated in 2018{: style=&amp;ldquo;color:gray; font-size: 80%; text-align: center;&amp;rdquo;}</description>
+        <description>What does Reddit and StackOverflow have to do with career success?</description>
       
     </item>
     
     <item>
       <title>The Impact of Mistaken Sales Cycles — An Analysis of Yelp</title>
-      <link>https://mbbroberg.fun/impact-of-mistaken-sales-cycle/</link>
+      <link>http://localhost:1313/impact-of-mistaken-sales-cycle/</link>
       <pubDate>Sat, 16 Aug 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/impact-of-mistaken-sales-cycle/</guid>
+      <guid>http://localhost:1313/impact-of-mistaken-sales-cycle/</guid>
       
         <description>“You shouldn’t use Yelp,” told a new friend of mine. “Their sales model is extortion that bullies local businesses.</description>
       
@@ -308,23 +330,23 @@ That’s the right question to ask and one I answered hundreds of times in the l
     
     <item>
       <title>My Latest Obsession: Admins becoming Developers</title>
-      <link>https://mbbroberg.fun/admins-becoming-developers/</link>
+      <link>http://localhost:1313/admins-becoming-developers/</link>
       <pubDate>Sat, 24 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/admins-becoming-developers/</guid>
+      <guid>http://localhost:1313/admins-becoming-developers/</guid>
       
-        <description>A note: This post was created on a previous domain and migrated in 2018{: style=&amp;ldquo;color:gray; font-size: 80%; text-align: center;&amp;rdquo;}</description>
+        <description>Are you along for the ride of operators becoming developers?</description>
       
     </item>
     
     <item>
       <title>The Oxymoron of Productivity</title>
-      <link>https://mbbroberg.fun/oxymoron-of-productivity/</link>
+      <link>http://localhost:1313/oxymoron-of-productivity/</link>
       <pubDate>Sun, 11 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/oxymoron-of-productivity/</guid>
+      <guid>http://localhost:1313/oxymoron-of-productivity/</guid>
       
-        <description>How I was more productive in the last 2 weeks without productivity tools than I ever was with them No matter your exact job role, you are a project manager.</description>
+        <description>Productivity is a double-edged sword.</description>
       
     </item>
     

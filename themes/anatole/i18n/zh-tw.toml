@@ -33,4 +33,19 @@ other = "名稱"
 other = "電子郵件"
 
 [message]
-other = "消息" 
+other = "消息"
+
+[warning]
+other = "警告"
+
+[info]
+other = "關於"
+
+[update]
+other = "關於"
+
+[series_posts]
+other = "這個系列的帖子"
+
+[related_posts]
+other = "類似的帖子"

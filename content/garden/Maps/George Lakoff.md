@@ -11,7 +11,7 @@ cssclasses:
 edited: 2024-05-20 17:11:11
 publish: true
 TLDR: The man behind Cognitive Frames
-URL: http://cogweb.ucla.edu/CogSci/Lakoff.html
+external_url: https://cogweb.ucla.edu/CogSci/Lakoff.html
 ---
 
 > [!link]

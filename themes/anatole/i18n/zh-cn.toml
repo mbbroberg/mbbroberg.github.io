@@ -33,4 +33,19 @@ other = "姓名"
 other = "电子邮件"
 
 [message]
-other = "信息" 
+other = "信息"
+
+[warning]
+other = "警告"
+
+[info]
+other = "关于"
+
+[update]
+other = "更新"
+
+[series_posts]
+other = "这个系列的帖子"
+
+[related_posts]
+other = "类似的帖子"

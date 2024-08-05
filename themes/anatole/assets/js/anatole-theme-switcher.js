@@ -1,58 +1,50 @@
-// initialize default value
-function getTheme() {
-  return localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-}
+const getStoredThemeStyle = () => localStorage.getItem('theme');
 
-function setTheme(style) {
-  document.documentElement.setAttribute('data-theme', style);
+const setThemeClass = (style) => {
+  const html = document.documentElement;
+  const prevTheme = [...html.classList].find((c) => c.match(/theme--(light|dark)/));
+  if (!prevTheme) return;
+  html.classList.remove(prevTheme);
+  html.classList.add(`theme--${style}`);
+};
+
+const setThemeStyle = (style) => {
   localStorage.setItem('theme', style);
-}
+  setThemeClass(style);
+};
 
-function init() {
-  // initialize default value
-  const theme = getTheme();
-
-  // check if a preferred color theme is set for users that have never been to our site
-  const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  if (theme === null) {
-    if (userPrefersDark) {
-      setTheme('dark');
-    } else if (!document.documentElement.getAttribute('data-theme')) {
-      setTheme('light');
-    } else {
-      setTheme(document.documentElement.getAttribute('data-theme'));
-    }
-  } else {
-    // load a stored theme
-    if (theme === 'light') {
-      document.documentElement.setAttribute('data-theme', 'light');
-    } else {
-      document.documentElement.setAttribute('data-theme', 'dark');
-    }
+const switchTheme = () => {
+  const currThemeStyle = getStoredThemeStyle();
+  switch (currThemeStyle) {
+    case 'light':
+      setThemeStyle('dark');
+      break;
+    case 'dark':
+      setThemeStyle('light');
+      break;
+    default:
+      setThemeStyle('light');
+      break;
   }
-}
+};
 
-// switch themes
-function switchTheme() {
-  const theme = getTheme();
-  if (theme === 'light') {
-    setTheme('dark');
-  } else {
-    setTheme('light');
-  }
-}
-
-// Manual Switch
 document.addEventListener(
   'DOMContentLoaded',
-  function () {
-    const themeSwitcher = document.querySelector('.theme-switch');
+  () => {
+    const themeSwitcher = document.querySelector('.themeswitch');
     themeSwitcher.addEventListener('click', switchTheme, false);
   },
   false,
 );
 
-// Automatic Switching
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', switchTheme, false);
 
-init();
+const currThemeStyle = getStoredThemeStyle();
+if (currThemeStyle) {
+  setThemeStyle(currThemeStyle);
+} else {
+  const userPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (userPrefersDark) {
+    setThemeStyle('dark');
+  }
+}

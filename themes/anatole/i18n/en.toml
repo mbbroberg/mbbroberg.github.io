@@ -38,3 +38,18 @@ other = "Email"
 
 [message]
 other = "Message" 
+
+[warning]
+other = "Warning"
+
+[info]
+other = "Info"
+
+[update]
+other = "Update"
+
+[series_posts]
+other = "Posts in this series"
+
+[related_posts]
+other = "Related Posts"

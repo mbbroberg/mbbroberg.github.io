@@ -33,4 +33,19 @@ other = "お名前"
 other = "メールアドレス"
 
 [message]
-other = "メッセージ" 
+other = "メッセージ"
+
+[warning]
+other = "警告"
+
+[info]
+other = "概要"
+
+[update]
+other = "更新"
+
+[series_posts]
+other = "このシリーズの投稿"
+
+[related_posts]
+other = "同様の投稿"

@@ -33,4 +33,19 @@ other = "Nombre"
 other = "Correo electrónico"
 
 [message]
-other = "Mensaje" 
+other = "Mensaje"
+
+[warning]
+other = "Advertencia"
+
+[info]
+other = "Acerca de"
+
+[update]
+other = "Actualizar"
+
+[series_posts]
+other = "Publicaciones en esta serie"
+
+[related_posts]
+other = "Publicaciones similares"
