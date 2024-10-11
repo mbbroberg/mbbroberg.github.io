@@ -1,38 +1,26 @@
   [[main]]
-  name = "Home"
+  name = "🏡"
   identifier = "home"
   weight = 100
   url = "/"
 
   [[main]]
-  name = "Articles"
+  name = "Articles 💡"
   weight = 200
   identifier = "articles"
   url = "/articles/"
 
   [[main]]
-  name = "Podcasts"
+  name = "Podcasts 🎙️"
   weight = 300
   identifier = "podcasts"
   url = "/podcasts/"
 
   [[main]]
-  name = "Talks"
+  name = "Talks 📣"
   weight = 400
   identifier = "talks"
   url = "/talks/"
-
-  [[main]]
-  name = "Tools"
-  weight = 500
-  identifier = "tools"
-  url = "/tools/"
-
-  [[main]]
-  name = "Disc"
-  weight = 600
-  identifier = "disc"
-  url = "/discgolf/"
 
   # [[footer]]
   # name = "imprint"
