@@ -6,18 +6,7 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Oct 2023 20:19:11 -0500</lastBuildDate><atom:link href="https://mbbroberg.fun/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Building Product Community — How to think about brand association</title>
-      <link>https://mbbroberg.fun/articles/product-community-brand-association/</link>
-      <pubDate>Fri, 20 Oct 2023 20:19:11 -0500</pubDate>
-      
-      <guid>https://mbbroberg.fun/articles/product-community-brand-association/</guid>
-      
-        <description>Thinking through how close you wish a community to be to your brand–an affinity or upstream community–is an exercise that will pay off in the long run.</description>
-      
-    </item>
-    
+    <lastBuildDate>Tue, 18 Jul 2023 20:46:52 -0500</lastBuildDate><atom:link href="https://mbbroberg.fun/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Tips for your first 30 days of remote work</title>
       <link>https://mbbroberg.fun/first-30-days-remote-work/</link>
@@ -25,7 +14,7 @@
       
       <guid>https://mbbroberg.fun/first-30-days-remote-work/</guid>
       
-        <description>I have spent over 10 years working primarily remote, and they have taught me practices I will implement from day one of a new job.</description>
+        <description>Losing a job to a layoff or firing is a natural part of a career in tech. Here are some tips to keep you moving forward.</description>
       
     </item>
     
@@ -36,7 +25,18 @@
       
       <guid>https://mbbroberg.fun/so-you-lost-your-job/</guid>
       
-        <description>Some of the most talented, thoughtful, and effective people I have ever worked with were recently laid off.</description>
+        <description>Losing a job to a layoff or firing is a natural part of a career in tech. Here are some tips to keep you moving forward.</description>
+      
+    </item>
+    
+    <item>
+      <title>Building Product Community — How to think about brand association</title>
+      <link>https://mbbroberg.fun/articles/product-community-brand-association/</link>
+      <pubDate>Thu, 20 Oct 2022 20:19:11 -0500</pubDate>
+      
+      <guid>https://mbbroberg.fun/articles/product-community-brand-association/</guid>
+      
+        <description>I&#39;ve found two compelling patterns to be most effective for product communities. Here&#39;s how they are both valuable but differ in practice.</description>
       
     </item>
     
@@ -47,7 +47,7 @@
       
       <guid>https://mbbroberg.fun/my-pay-equity-approach/</guid>
       
-        <description>Over the years, I have had more impact on people’s job titles, responsibilities, and–importantly–their salaries.</description>
+        <description>I have an increasing say on people’s job titles, responsibilities, and their salaries. Here is how I use that for good.</description>
       
     </item>
     
@@ -58,7 +58,7 @@
       
       <guid>https://mbbroberg.fun/resume-tips/</guid>
       
-        <description>I recently reviewed a handful of resumes for friends and mentees, and I saw the same pattern in each.</description>
+        <description>If you don&#39;t have the right keywords, competencies, and business value, you&#39;re likely to get filtered out before you make an impression. Use these tips.</description>
       
     </item>
     
@@ -69,7 +69,7 @@
       
       <guid>https://mbbroberg.fun/tools-i-use/</guid>
       
-        <description>It&amp;rsquo;s a new year (allegedly*), and I&amp;rsquo;m finding new ways to share who I am and what kind of work I love to do.</description>
+        <description>Software, open source and otherwise, keeps me sane and organized. Here&#39;s my curated list.</description>
       
     </item>
     
@@ -80,7 +80,7 @@
       
       <guid>https://mbbroberg.fun/resume-formula/</guid>
       
-        <description>I have helped a lot of people refine a pitch: a one-liner that helps them effectively message who they are and what they do well.</description>
+        <description>Stick with this formula to write a meaningful resume.</description>
       
     </item>
     
@@ -91,7 +91,7 @@
       
       <guid>https://mbbroberg.fun/resume-competencies/</guid>
       
-        <description>Job hunting as terrible. I keep writing about it in the hopes of your experience being a little less terrible based on some lessons I’ve learned.</description>
+        <description>This small section makes both interviewers and resume robots happy.</description>
       
     </item>
     
@@ -102,7 +102,7 @@
       
       <guid>https://mbbroberg.fun/jobs-pipeline/</guid>
       
-        <description>There is nothing like some unexpected job hunting to send a reasonably confident person into a spiral of panic.</description>
+        <description>Job hunting can be a terrible experience filled with panic. Use data to calm your nerves.</description>
       
     </item>
     
@@ -113,7 +113,7 @@
       
       <guid>https://mbbroberg.fun/nonlinear-job-hunting/</guid>
       
-        <description>I originally wrote this post while job hunting in 2018. I knew I needed a change from the work I was doing, and I developed a tool (read: spreadsheet) that helped reinforce a few lessons from the process.</description>
+        <description>Job hunting can be a terrible experience filled with panic. Use data to calm your nerves.</description>
       
     </item>
     
@@ -124,7 +124,7 @@
       
       <guid>https://mbbroberg.fun/clang-error-in-pip/</guid>
       
-        <description>I have been having intermittent installation errors with Python packages on my Mac.</description>
+        <description>Tracking down Python install errors can be a mess. Here&#39;s one I hunted down so you don&#39;t have to.</description>
       
     </item>
     
@@ -135,7 +135,7 @@
       
       <guid>https://mbbroberg.fun/practical-open-source/</guid>
       
-        <description>I had the pleasure of speaking at DevOps Minneapolis to a great group of people.</description>
+        <description>&lt;p&gt;I had the pleasure of &lt;a href=&#34;https://www.meetup.com/DevOps-Minneapolis/&#34;&gt;speaking at DevOps Minneapolis&lt;/a&gt; to a great group of people. In it we explored why I’m fascinated by open source, how it’s growing as a career opportunity, and then dove deep into the terminology that can be confusing at times. I called the talk a “practical guide” because it includes all the lesser-discussed parts of the effort: understanding terminology, feeling okay practicing, offering PRs for small improvements like correcting a typo. It was a great time and many came up to discuss it afterward.&lt;/p&gt;</description>
       
     </item>
     
@@ -146,7 +146,7 @@
       
       <guid>https://mbbroberg.fun/contributor-experience/</guid>
       
-        <description>In preparation for the wonderful Open Source 101, I wanted to challenge my assumptions on what makes a great contributor experience by asking.</description>
+        <description>&lt;p&gt;In preparation for the wonderful &lt;a href=&#34;http://opensource101.com&#34;&gt;Open Source 101&lt;/a&gt;, I wanted to challenge my assumptions on what makes a great contributor experience by asking.&lt;/p&gt;</description>
       
     </item>
     
@@ -157,7 +157,8 @@
       
       <guid>https://mbbroberg.fun/community-metrics-sov/</guid>
       
-        <description>One of the dark arts of measurement This is part three on a series exploring metrics that can position a Community program as a successful business investment.</description>
+        <description>&lt;h4 id=&#34;one-of-the-dark-arts-of-measurement&#34;&gt;One of the dark arts of measurement&lt;/h4&gt;
+&lt;p&gt;&lt;em&gt;This is part three on a series exploring metrics that can position a Community program as a successful business investment. &lt;em&gt;&lt;a href=&#34;https://medium.com/@mbbroberg/the-value-of-community-metrics-4945dc752d42&#34;&gt;&lt;em&gt;Part one gives an overview&lt;/em&gt;&lt;/a&gt;&lt;/em&gt; you may want to read first.&lt;/em&gt;&lt;/p&gt;</description>
       
     </item>
     
@@ -168,7 +169,7 @@
       
       <guid>https://mbbroberg.fun/rio-stickers-community-metrics/</guid>
       
-        <description>To start this series on metrics off right, an aside is needed.</description>
+        <description>&lt;p&gt;&lt;em&gt;To start &lt;em&gt;&lt;a href=&#34;https://medium.com/@mbbroberg/the-value-of-community-metrics-4945dc752d42&#34;&gt;&lt;em&gt;this series on metrics&lt;/em&gt;&lt;/a&gt;&lt;/em&gt; off right, an aside is needed.&lt;/em&gt;&lt;/p&gt;</description>
       
     </item>
     
@@ -179,7 +180,7 @@
       
       <guid>https://mbbroberg.fun/the-value-community-metrics/</guid>
       
-        <description>What does it look like for Community to be a quantifiable value to a company?</description>
+        <description>&lt;p&gt;What does it look like for Community to be a quantifiable value to a company? How does that differ from it being a corporate obligation?&lt;/p&gt;</description>
       
     </item>
     
@@ -190,7 +191,7 @@
       
       <guid>https://mbbroberg.fun/markdown-everywhere/</guid>
       
-        <description>I haven&amp;rsquo;t always loved plain text syntax. Once I embraced git as the langua franca of IT Operations, I knew that made Markdown required knowledge.</description>
+        <description>All the tools I know to make Markdown your default means to writing.</description>
       
     </item>
     
@@ -201,7 +202,7 @@
       
       <guid>https://mbbroberg.fun/kubernetes-culture-kubecon-2017/</guid>
       
-        <description>The themes that left me thinking how this community will change our industry.</description>
+        <description>&lt;p&gt;&lt;em&gt;The themes that left me thinking how this community will change our industry.&lt;/em&gt;&lt;/p&gt;</description>
       
     </item>
     
@@ -212,8 +213,8 @@
       
       <guid>https://mbbroberg.fun/maiden-name/</guid>
       
-        <description>An exploration of surnames, beliefs and actions.
-I married my wife on May 29th, 2016.</description>
+        <description>&lt;p&gt;&lt;em&gt;An exploration of surnames, beliefs and actions.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I married my wife on May 29th, 2016. And as of that day, I have legally changed my name to match hers.&lt;/p&gt;</description>
       
     </item>
     
@@ -224,7 +225,7 @@ I married my wife on May 29th, 2016.</description>
       
       <guid>https://mbbroberg.fun/articles/2016-11-17-the-open-source-monitoring-stack-at-staples/</guid>
       
-        <description>Snap has led to a collaboration with the Site Reliability Engineering (SRE) team at Staples.</description>
+        <description>&lt;p&gt;Snap has led to a collaboration with the Site Reliability Engineering (SRE) team at Staples. This group has built what many are chasing: a platform that is ready to support production by monitoring their heterogeneous environment with open source projects.&lt;/p&gt;</description>
       
     </item>
     
@@ -235,8 +236,8 @@ I married my wife on May 29th, 2016.</description>
       
       <guid>https://mbbroberg.fun/intro-to-ad-hoc-telemetry-snap-grafana/</guid>
       
-        <description>What makes Snap different?
-That’s the right question to ask and one I answered hundreds of times in the last couple weeks.</description>
+        <description>&lt;p&gt;&lt;em&gt;What makes Snap different?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;That’s the right question to ask and one I answered hundreds of times in the last couple weeks. It began at O’Reilly Velocity as Ops-minded teams were curious about the introduction of Snap to the Open Source toolkit. The conversations continue this week at (my first) &lt;a href=&#34;http://monitorama.com&#34;&gt;Monitorama&lt;/a&gt;, which is the most amazing Operations-centric conference I’ve ever attended. There are a lot of familiar faces across the two and for good reason: people want to understand the how and why of data center operations.&lt;/p&gt;</description>
       
     </item>
     
@@ -247,7 +248,7 @@ That’s the right question to ask and one I answered hundreds of times in the l
       
       <guid>https://mbbroberg.fun/what-i-mean-by-telemetry/</guid>
       
-        <description>Snap is titled “the open telemetry framework.” I’ve been focused on getting us all comfortable using Snap, but I (rightfully) keep getting asked the bigger question.</description>
+        <description>&lt;p&gt;&lt;a href=&#34;https://github.com/intelsdi-x/snap&#34;&gt;Snap&lt;/a&gt; is titled “the open telemetry framework.” I’ve been focused on getting us all &lt;a href=&#34;https://medium.com/intel-sdi&#34;&gt;comfortable using Snap&lt;/a&gt;, but I (rightfully) keep getting asked the bigger question.&lt;/p&gt;</description>
       
     </item>
     
@@ -258,7 +259,7 @@ That’s the right question to ask and one I answered hundreds of times in the l
       
       <guid>https://mbbroberg.fun/snap-tasks/</guid>
       
-        <description>My last post dug into the how-to of running Snap. The steps are worth outlining as we continue to get familiar with the project:</description>
+        <description>&lt;p&gt;My &lt;a href=&#34;https://medium.com/intel-sdi/my-how-to-for-the-snap-telemetry-framework-e3bb641bc740&#34;&gt;last post&lt;/a&gt; dug into the how-to of running Snap. The steps are worth outlining as we continue to get familiar with the project:&lt;/p&gt;</description>
       
     </item>
     
@@ -269,7 +270,7 @@ That’s the right question to ask and one I answered hundreds of times in the l
       
       <guid>https://mbbroberg.fun/snap-gui-grafana/</guid>
       
-        <description>Snap has been a beautiful CLI-based tool for 4 months now.</description>
+        <description>&lt;p&gt;Snap has been a beautiful CLI-based tool for 4 months now. I &lt;a href=&#34;https://medium.com/@mjbrender/my-how-to-for-the-snap-telemetry-framework-e3bb641bc740#.ylr8am8il&#34;&gt;shared how to get up and running&lt;/a&gt; last time and there’s more command-line tutorials to come (or you can always &lt;a href=&#34;https://github.com/intelsdi-x/snap#getting-started&#34;&gt;checkout the README&lt;/a&gt;). Today, however, is a special day for a totally different reason.&lt;/p&gt;</description>
       
     </item>
     
@@ -280,7 +281,8 @@ That’s the right question to ask and one I answered hundreds of times in the l
       
       <guid>https://mbbroberg.fun/how-to-snap-telemetry/</guid>
       
-        <description>Updated November 30th, 2016 Today was the announcement that Snap reached a 1.</description>
+        <description>&lt;h4 id=&#34;updated-november-30th-2016&#34;&gt;Updated November 30th, 2016&lt;/h4&gt;
+&lt;p&gt;Today was &lt;a href=&#34;https://itpeernetwork.intel.com/announcing-snap-1-0/&#34;&gt;the announcement&lt;/a&gt; that Snap reached a 1.0.0 release. On our journey toward this milestone, we did a rename of the binaries used in Snap (&lt;em&gt;snapd&lt;/em&gt; is now &lt;em&gt;snapteld&lt;/em&gt; and &lt;em&gt;snapctl&lt;/em&gt; is &lt;em&gt;snaptel&lt;/em&gt;) to avoid a conflict with another package. Since this post is the most popular of our series on Snap, so I updated it given this change. Enjoy!&lt;/p&gt;</description>
       
     </item>
     
@@ -291,7 +293,7 @@ That’s the right question to ask and one I answered hundreds of times in the l
       
       <guid>https://mbbroberg.fun/your-next-job-title/</guid>
       
-        <description>A note: This post was created on a previous domain and migrated in 2018</description>
+        <description>Find your perfect fit.</description>
       
     </item>
     
@@ -302,7 +304,7 @@ That’s the right question to ask and one I answered hundreds of times in the l
       
       <guid>https://mbbroberg.fun/three-github-resources/</guid>
       
-        <description>A note: This post was created on a previous domain and migrated in 2018{: style=&amp;ldquo;color:gray; font-size: 80%; text-align: center;&amp;rdquo;}</description>
+        <description>Getting deeper into git? Check out these links.</description>
       
     </item>
     
@@ -313,7 +315,7 @@ That’s the right question to ask and one I answered hundreds of times in the l
       
       <guid>https://mbbroberg.fun/articles/two-communities/</guid>
       
-        <description>A note: This post was created on a previous domain and migrated in 2018{: style=&amp;ldquo;color:gray; font-size: 80%; text-align: center;&amp;rdquo;}</description>
+        <description>What does Reddit and StackOverflow have to do with career success?</description>
       
     </item>
     
@@ -324,7 +326,7 @@ That’s the right question to ask and one I answered hundreds of times in the l
       
       <guid>https://mbbroberg.fun/impact-of-mistaken-sales-cycle/</guid>
       
-        <description>“You shouldn’t use Yelp,” told a new friend of mine. “Their sales model is extortion that bullies local businesses.</description>
+        <description>&lt;p&gt;“You shouldn’t use Yelp,” told a new friend of mine. “Their sales model is extortion that bullies local businesses. And besides, people on there just post when they’re upset.”&lt;/p&gt;</description>
       
     </item>
     
@@ -335,7 +337,7 @@ That’s the right question to ask and one I answered hundreds of times in the l
       
       <guid>https://mbbroberg.fun/admins-becoming-developers/</guid>
       
-        <description>A note: This post was created on a previous domain and migrated in 2018{: style=&amp;ldquo;color:gray; font-size: 80%; text-align: center;&amp;rdquo;}</description>
+        <description>Are you along for the ride of operators becoming developers?</description>
       
     </item>
     
@@ -346,7 +348,7 @@ That’s the right question to ask and one I answered hundreds of times in the l
       
       <guid>https://mbbroberg.fun/oxymoron-of-productivity/</guid>
       
-        <description>How I was more productive in the last 2 weeks without productivity tools than I ever was with them No matter your exact job role, you are a project manager.</description>
+        <description>Productivity is a double-edged sword.</description>
       
     </item>
     
@@ -357,7 +359,7 @@ That’s the right question to ask and one I answered hundreds of times in the l
       
       <guid>https://mbbroberg.fun/discgolf/</guid>
       
-        <description>One non-tech topic I have to cover here: I love disc golf.</description>
+        <description>&lt;p&gt;One non-tech topic I have to cover here: &lt;strong&gt;I love disc golf&lt;/strong&gt;.&lt;/p&gt;</description>
       
     </item>
     
@@ -368,7 +370,7 @@ That’s the right question to ask and one I answered hundreds of times in the l
       
       <guid>https://mbbroberg.fun/podcasts/</guid>
       
-        <description>I love podcasts. They are a perfect combination of intimacy and openness between host, guest, and audience.</description>
+        <description>&lt;p&gt;&lt;strong&gt;I love podcasts.&lt;/strong&gt; They are a perfect combination of intimacy and openness between host, guest, and audience.&lt;/p&gt;</description>
       
     </item>
     
@@ -379,7 +381,7 @@ That’s the right question to ask and one I answered hundreds of times in the l
       
       <guid>https://mbbroberg.fun/talks/</guid>
       
-        <description>I love sharing and growing as a public speaker. Recent talks center around the human aspects of open source software contribution, though my favorite to date is on the data side of Community programs.</description>
+        <description>&lt;p&gt;&lt;strong&gt;I love sharing and growing as a public speaker.&lt;/strong&gt; Recent talks center around the human aspects of open source software contribution, though my favorite to date is on the data side of Community programs. Please &lt;a href=&#34;mailto:matthewbbroberg+io@gmail.com&#34;&gt;reach out&lt;/a&gt; if you&amp;rsquo;d like to have me as a featured speaker. My &lt;a href=&#34;#speaker-profile&#34;&gt;speaker biography is here&lt;/a&gt;.&lt;/p&gt;</description>
       
     </item>
     
@@ -390,7 +392,7 @@ That’s the right question to ask and one I answered hundreds of times in the l
       
       <guid>https://mbbroberg.fun/tools/</guid>
       
-        <description>I love systems. I know the tools and strategies I use to navigate each day of my life will fundamentally define who I am.</description>
+        <description>&lt;p&gt;&lt;strong&gt;I love systems.&lt;/strong&gt; I know the tools and strategies I use to navigate each day of my life will fundamentally define who I am. I frequently think of this quote from James Clear that hits that point so well.&lt;/p&gt;</description>
       
     </item>
     
