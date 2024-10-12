@@ -4,41 +4,44 @@ layout: page
 
 ## Hey 👋. I'm Matt.
 
-I love connecting technology communities to products by building systems that inspire open source adoption. I also love learning to lead with openness, honesty by making the implicit explicit.
+I love connecting technology communities with products they love and finding a path to value through strategic use of metrics. My leadership approach focuses on empowering teams by fostering clarity, transparency, and inspiring everyone to become a catalyst for change.
 
 ### Teams I've managed: 
 
-* The product management team for Production Engineering at Target
+- The product management organization unifying all of engineering through the Target Application Platform (TAP)
+* The product management team for Production Engineering at Target, including DevEx, SRE, and incident response
 * The product, program, and content teams behind Red Hat's digital communities, including [Opensource.com](https://opensource.com)
 * The community and marketing teams at Sensu, from seed to series A
 * Leading the vision for product owners and DevRel in part of Intel managing open source projects, including [Snap](https://github.com/intelsdi-x/snap/)
-* Leading the vision for EMC's advocacy program
+* Leading the vision for EMC first international advocacy program, the EMC Elect
 
 ### Communities I'm a part of:
 
 I work hard to connect and contribute to a broad range of communities of practice. Grouping in order of recency, that includes: 
 
+* **Systems Thinking** through communities of [Team Topologies](https://teamtopologies.com), [Wardley Maps](https://www.wardleymaps.com/), and the thoughtful efforts of [John Cutler](https://cutlefish.substack.com), [Melissa Perri](https://www.produxlabs.com/product-thinking), and others
+* **Product Management** communities through thoughtful podcasts, social posts, and institutions like [Product School](https://productschool.com)
 * **Kubernetes**, **Open Source** (the OSI, GitHub, and CNCF), and **Developer Relations**
 * **Python** programming language and **Go** programming language 
-* **DevOps** (via the monitoring & observability sub-tribe)
+* **DevOps** through the monitoring, observability, and distributed system sub-tribes
 * **Virtualization** (especially VMware), **Infosec**, and **Storage** (especially EMC and NetApp)
 
-### Communities I've Helped Build:
+### Communities I've helped build:
 
 * **[Enable Architect](https://redhat.com/architect)** as the founding editorial lead.
 * **[Opensource.com](https://opensource.com)** as a Technical Editor and designer of the [Correspondent program](https://opensource.com/correspondent-program).
-* The **[CHAOSScast podcast](https://podcast.chaoss.community/)** to highlight the value of open source and common metrics.
+* **[CHAOSScast podcast](https://podcast.chaoss.community/)** to highlight the value of open source and common metrics.
 * **[DevRel Collective](https://devrelcollective.fun)** as a maintainer, designer of the rebrand, and creator of the website (v1).
 * **[The Geek Whisperers podcast](https://geek-whisperers.com/)** as a co-creator and co-host for 5 years.
 * **[Commitmas: learning GitHub socially](https://github.com/commitmas)** to collaborative learn Git and GitHub with the [vBrownBag](https://vbrownbag.com/) community.
-* **[The Sensu Community](https://sensu.io/community)** leading community initiatives from maintainer practices to user summits.
+* **The Sensu Community** leading community initiatives from maintainer practices to user summits.
 * **[Snap: the open telemetry framework](https://snap-telemetry.io)** (EOL 2018) building brand, documentation, maintainer and contributor strategy.
 * **[The EMC Elect](https://community.emc.com/community/connect/dell_emc_elect)** (EOL 2017) as program lead, designing the business plan, brand, and community engagement.
 * **[The Basho Community](https://github.com/basho-labs/the-basho-community)** (EOL 2017) as the community leader and a maintainer.
 
-### Projects I've Contributed To:
+### Projects I've contributed to:
 
-I often open small PRs as I work through new problem or as a way of saying thank you to a project. That's led to contributions to [Kubernetes](https://github.com/kubernetes/community/tree/master/communication/marketing-team#purpose), the [CHAOSS community](https://github.com/chaoss/wg-value#contributors), [iPython](https://github.com/ipython/ipython-in-depth), [Chezmoi](https://github.com/twpayne/chezmoi/pull/821), [this Notion wrapper for Linux](https://github.com/puneetsl/lotion/pull/96), [Slack API Tutorial](https://github.com/slackapi/Slack-Ruby-Onboarding-Tutorial/pull/2), [Go GitHub library](https://github.com/google/go-github/pull/323), [Slack Go library](https://github.com/nlopes/slack/pull/170), [Leeroy from Docker](https://github.com/docker/leeroy/pull/40), [Awesome Maintainers](https://github.com/nayafia/awesome-maintainers), [The Lita project](https://github.com/litaio/lita.io/pull/11), [Homebrew](https://github.com/Homebrew/brew/pull/1281), [CHAOSS project](https://github.com/chaoss/grimoirelab-tutorial/pull/3), the [CNCF Landscape](https://github.com/cncf/landscape/pull/759), and many more. I also consulted behind-the-scenes for [Exercism](https://exercism.io) and continue to recommend joining their community because I ❤️ them.
+I often open small PRs as I work through new problem or as a way of saying thank you to a project. That's led to contributions to [Obsidian](https://github.com/obsidianmd/obsidian-help/pull/729), [Kubernetes](https://github.com/kubernetes/community/tree/master/communication/marketing-team#purpose), the [CHAOSS community](https://github.com/chaoss/wg-value#contributors), [iPython](https://github.com/ipython/ipython-in-depth), [Chezmoi](https://github.com/twpayne/chezmoi/pull/821), [this Notion wrapper for Linux](https://github.com/puneetsl/lotion/pull/96), [Slack API Tutorial](https://github.com/slackapi/Slack-Ruby-Onboarding-Tutorial/pull/2), [Go GitHub library](https://github.com/google/go-github/pull/323), [Slack Go library](https://github.com/nlopes/slack/pull/170), [Leeroy from Docker](https://github.com/docker/leeroy/pull/40), [Awesome Maintainers](https://github.com/nayafia/awesome-maintainers), [The Lita project](https://github.com/litaio/lita.io/pull/11), [Homebrew](https://github.com/Homebrew/brew/pull/1281), [CHAOSS project](https://github.com/chaoss/grimoirelab-tutorial/pull/3), the [CNCF Landscape](https://github.com/cncf/landscape/pull/759), and many more. I also consulted behind-the-scenes for [Exercism](https://exercism.io) and continue to recommend joining their community because I ❤️ them.
 
 ### Articles 
 
