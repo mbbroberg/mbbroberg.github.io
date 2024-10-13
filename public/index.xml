@@ -6,7 +6,18 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 Jul 2023 20:46:52 -0500</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Oct 2024 20:46:52 -0500</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My Product Management Learning Path</title>
+      <link>http://localhost:1313/product-management-learning-path/</link>
+      <pubDate>Sat, 12 Oct 2024 20:46:52 -0500</pubDate>
+      
+      <guid>http://localhost:1313/product-management-learning-path/</guid>
+      
+        <description>A list of resources that fit my style of product thinking.</description>
+      
+    </item>
+    
     <item>
       <title>Tips for your first 30 days of remote work</title>
       <link>http://localhost:1313/first-30-days-remote-work/</link>
