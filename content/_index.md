@@ -4,16 +4,16 @@ layout: page
 
 ## Hey 👋. I'm Matt.
 
-I love connecting technology communities with products they love and finding a path to value through strategic use of metrics. My leadership approach focuses on empowering teams by fostering clarity, transparency, and inspiring everyone to become a catalyst for change.
+I love building products developers love. I thrive as organizations scale by creating systems that keep priorities clear, defining value with metrics that matter, and coaching teams to grow with challenges. My leadership empowers through accountability, builds trust through transparency, and inspires everyone to be a catalyst for change.
 
 ### Teams I've managed: 
 
-- The product management organization unifying all of engineering through the Target Application Platform (TAP)
+* Product management teams unifying all of engineering through the Target Application Platform (TAP)
 * The product management team for Production Engineering at Target, including DevEx, SRE, and incident response
 * The product, program, and content teams behind Red Hat's digital communities, including [Opensource.com](https://opensource.com)
-* The community and marketing teams at Sensu, from seed to series A
-* Leading the vision for product owners and DevRel in part of Intel managing open source projects, including [Snap](https://github.com/intelsdi-x/snap/)
-* Leading the vision for EMC first international advocacy program, the EMC Elect
+* Community and marketing teams at Sensu, from seed to series A
+* Leading the vision for product and DevRel in part of Intel managing open source projects, including [Snap](https://github.com/intelsdi-x/snap/)
+* Leading the vision for EMC's first international community advocacy and gamification programs
 
 ### Communities I'm a part of:
 
