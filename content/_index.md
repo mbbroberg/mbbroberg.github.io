@@ -19,8 +19,8 @@ I love building products developers love. I thrive as organizations scale by cre
 
 I work hard to connect and contribute to a broad range of communities of practice. Grouping in order of recency, that includes: 
 
-* **Systems Thinking** through communities of [Team Topologies](https://teamtopologies.com), [Wardley Maps](https://www.wardleymaps.com/), and the thoughtful efforts of [John Cutler](https://cutlefish.substack.com), [Melissa Perri](https://www.produxlabs.com/product-thinking), and others
-* **Product Management** communities through thoughtful podcasts, social posts, and institutions like [Product School](https://productschool.com)
+* **Systems of Thought** inspired by [Team Topologies](https://teamtopologies.com), [Wardley Maps](https://www.wardleymaps.com/), and [John Cutler](https://cutlefish.substack.com)
+* **Product Management** through podcasts like [Melissa Perri](https://www.produxlabs.com/product-thinking)'s and [Product School](https://productschool.com)
 * **Kubernetes**, **Open Source** (the OSI, GitHub, and CNCF), and **Developer Relations**
 * **Python** programming language and **Go** programming language 
 * **DevOps** through the monitoring, observability, and distributed system sub-tribes
