@@ -12,6 +12,4 @@ I played ultimate (somewhat) competitively from 2004-2012, then took a hiatus fr
 
 In 2022, I signed up for my first tournament and became a member of the professional organization behind the sport, the [PDGA](https://www.pdga.com/). My hope is to be good enough in a few years to compete in an intermediate league, but that's a background goal to the primary one: enjoy a hobby regardless of its utility to my career. 
 
-I'm interested in getting involved in local disc golf community. Please [reach out](mailto:matthewbbroberg+io@gmail.com) if something comes to mind.
-
 ---
