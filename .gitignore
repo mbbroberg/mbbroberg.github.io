@@ -6,3 +6,4 @@ Gemfile.lock
 .hugo*
 .ruby-version
 .jekyll*
+docs/
