@@ -1,7 +1,7 @@
 ---
 up: 
 created: 2024-05-29 Wed 6:41pm
-updated: 2025-01-16 Thu 8:49am
+updated: 2025-01-16 Thu 8:51am
 tags:
   - note/develop🫚
 aliases:
@@ -12,7 +12,7 @@ blog: true
 title: My path to Personal Knowledge Management (PKM)
 slug: ../my-path-to-personal-knowledge-management-pkm
 filename: 2024-05-29-my-path-to-personal-knowledge-management-pkm
-date: '"2024-05-29T00:00:00Z"'
+date: '"2024-05-29"'
 ---
 My summary of a lifetime of effort...
 
