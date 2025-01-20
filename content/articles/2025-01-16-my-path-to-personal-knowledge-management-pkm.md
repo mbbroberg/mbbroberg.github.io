@@ -11,7 +11,7 @@ cssclasses:
 blog: true
 title: My path to Personal Knowledge Management (PKM)
 slug: ../my-path-to-personal-knowledge-management-pkm
-filename: 2024-05-29-my-path-to-personal-knowledge-management-pkm
+filename: 2025-01-16-my-path-to-personal-knowledge-management-pkm
 ---
 My summary of a lifetime of effort...
 

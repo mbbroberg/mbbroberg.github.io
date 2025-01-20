@@ -6,7 +6,31 @@
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 12 Oct 2024 20:46:52 -0500</lastBuildDate><atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Make Obsidian inline dataview properties prettier with this CSS</title>
+      <link>http://localhost:1313/make-obsidian-inline-dataview-properties-prettier-with-this-css/</link>
+      <pubDate>Sun, 19 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/make-obsidian-inline-dataview-properties-prettier-with-this-css/</guid>
+      
+        <description>&lt;p&gt;I&amp;rsquo;ve found it far more useful to use Obsidian properties when I see them. Luckily, dataview makes that simple enough with the &lt;code&gt;property:: value&lt;/code&gt; syntax. I&amp;rsquo;ve become a heavy user of it, aggregating my &lt;code&gt;learning::&lt;/code&gt; and &lt;code&gt;decision::&lt;/code&gt;  making across domains, leading to a far more interesting sense of my emergent understanding of the world than a tagging or folder structure would.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>My path to Personal Knowledge Management (PKM)</title>
+      <link>http://localhost:1313/my-path-to-personal-knowledge-management-pkm/</link>
+      <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/my-path-to-personal-knowledge-management-pkm/</guid>
+      
+        <description>&lt;p&gt;My summary of a lifetime of effort&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;my-why&#34;&gt;My Why&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve learned two corollaries about my memory:&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>My Product Management Learning Path</title>
       <link>http://localhost:1313/product-management-learning-path/</link>

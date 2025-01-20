@@ -3,10 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-10-12T20:46:52-05:00</lastmod>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/articles/</loc>
-    <lastmod>2024-10-12T20:46:52-05:00</lastmod>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/make-obsidian-inline-dataview-properties-prettier-with-this-css/</loc>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/obsidian/</loc>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/my-path-to-personal-knowledge-management-pkm/</loc>
+    <lastmod>2025-01-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/note/develop/</loc>
+    <lastmod>2025-01-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/product-management-learning-path/</loc>
     <lastmod>2024-10-12T20:46:52-05:00</lastmod>
@@ -109,8 +124,6 @@
     <loc>http://localhost:1313/discgolf/</loc>
   </url><url>
     <loc>http://localhost:1313/podcasts/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
   </url><url>
     <loc>http://localhost:1313/talks/</loc>
   </url><url>
