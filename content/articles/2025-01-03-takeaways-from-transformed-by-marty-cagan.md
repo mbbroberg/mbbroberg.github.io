@@ -5,7 +5,7 @@ tags:
   - Product Development
   - Mental Models
 created: 2025-01-03 Fri 2:15pm
-updated: 2025-02-13 Thu 6:36am
+updated: 2025-02-13 Thu 6:37am
 slug: ../takeaways-from-transformed-by-marty-cagan
 filename: 2025-01-03-takeaways-from-transformed-by-marty-cagan
 blog: true
@@ -13,7 +13,7 @@ blog: true
 
 I recently finished ["Transformed" by Marty Cagan and team](https://www.svpg.com/books/transformed-moving-to-the-product-operating-model/), and it's helping me connect some crucial dots about how modern product organizations actually work. Here are the key themes I'm continuing to grapple with afterwards.
 
-![Transformed book cover][https://www.svpg.com/wp-content/uploads/2023/08/TRANSFORMED-2D-2-e1736872246640.jpg]
+![Transformed book cover](https://www.svpg.com/wp-content/uploads/2023/08/TRANSFORMED-2D-2-e1736872246640.jpg)
 
 
 ## The IT vs Product Operating Model
