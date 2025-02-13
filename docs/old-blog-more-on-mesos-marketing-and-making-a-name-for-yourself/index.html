@@ -11,7 +11,7 @@
   <title>
     Matt Broberg
         |
-        Categories
+        More on Mesos, Marketing, and Making a Name for Yourself
       
 
     
@@ -91,10 +91,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
 
-  <link rel="canonical" href="https://mbbroberg.fun/categories/" />
+  <link rel="canonical" href="https://mbbroberg.fun/old-blog-more-on-mesos-marketing-and-making-a-name-for-yourself/" />
 
   
-  <link rel="alternate" type="application/rss+xml" href="/categories/index.xml" title="" />
   
   
   
@@ -124,25 +123,94 @@
   
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Categories">
-  <meta name="twitter:description" content="Product Thinking | Systems Builder |
- Open Source Advocate | People Leader">
+  <meta name="twitter:title" content="More on Mesos, Marketing, and Making a Name for Yourself">
+  <meta name="twitter:description" content="To my Operations Engineers; a few pieces of unsolicited advice:">
 
 
 
   
-  <meta property="og:url" content="https://mbbroberg.fun/categories/">
+  <meta property="og:url" content="https://mbbroberg.fun/old-blog-more-on-mesos-marketing-and-making-a-name-for-yourself/">
   <meta property="og:site_name" content="Matthew Broberg">
-  <meta property="og:title" content="Categories">
-  <meta property="og:description" content="Product Thinking | Systems Builder |
- Open Source Advocate | People Leader">
+  <meta property="og:title" content="More on Mesos, Marketing, and Making a Name for Yourself">
+  <meta property="og:description" content="To my Operations Engineers; a few pieces of unsolicited advice:">
   <meta property="og:locale" content="en">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="articles">
+    <meta property="article:published_time" content="2015-09-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-05-31T15:59:00+00:00">
 
 
 
   
   
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "articles",
+        "name": "More on Mesos, Marketing, and Making a Name for Yourself",
+        "headline": "More on Mesos, Marketing, and Making a Name for Yourself",
+        "alternativeHeadline": "",
+        "description": "
+      
+        \u003cp\u003eTo my Operations Engineers; a few pieces of unsolicited advice:\u003c\/p\u003e
+
+
+      
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/mbbroberg.fun\/old-blog-more-on-mesos-marketing-and-making-a-name-for-yourself\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "copyrightYear" : "2015",
+        "dateCreated": "2015-09-15T00:00:00.00Z",
+        "datePublished": "2015-09-15T00:00:00.00Z",
+        "dateModified": "2024-05-31T15:59:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Matt Broberg",
+            "url": "https://mbbroberg.fun/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/mbbroberg.fun\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/mbbroberg.fun\/old-blog-more-on-mesos-marketing-and-making-a-name-for-yourself\/",
+        "wordCount" : "664",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
 
 </head>
 <body class="body">
@@ -351,10 +419,44 @@
 </div>
 </header>
   <div
-    class="archive 
+    class="post 
       animated fadeInDown
     "
   >
+    
+    <div class="post__content">
+      
+        <h1>More on Mesos, Marketing, and Making a Name for Yourself</h1>
+      
+      <p>To my Operations Engineers; a few pieces of unsolicited advice:</p>
+<ul>
+<li>Don&rsquo;t let anyone call you a &ldquo;DevOps Engineer&rdquo;</li>
+<li>If you&rsquo;re curious about Docker, look more into Kubernetes and a little less at Docker on its own</li>
+<li>If you&rsquo;re as enamored by data centers as I know you are, your open source software project of choice should be Mesos</li>
+</ul>
+<h2 id="interrupting-whale">Interrupting Whale</h2>
+<p>Everyone is pumped about Docker. You can jump on that bandwagon, and it won&rsquo;t hurt to do so. Just <strong>look before you leap</strong>.</p>
+<p>Docker&rsquo;s attraction is to developers, enabling them to build isolated applications without a ton of infrastructure nearby, then get us Ops-y people to help bring it to production. The value proposition I hear is one where these steps get easier. That&rsquo;s great, but that&rsquo;s not an Ops story.</p>
+<p>If I know anything about you vExpert types out there, I know <strong>you&rsquo;re in it for the infrastructure</strong>. I think more opportunity exists in your life as a coordinator of distributed systems. You can understand how to deploy them, learn how to monitor them and connect the many, many dots spread throughout your environment.</p>
+<h2 id="more-of-mesos-and-its-sphere">More of Mesos and Its Sphere</h2>
+<p>The message of Apache Mesos resonates: your collection of servers and services deserve to be treated as a single computer that makes self-healing, fault-tolerance, and scalable solutions simpler.</p>
+<p>Mesosphere, the company productizing the project, created DCOS. The more I see it, the more I see DCOS as aptly named: the data center is due for an operating system. I never got deep into OpenStack, but I can&rsquo;t help but imagine this feels like what it tried to be.</p>
+<h2 id="learn-more-about-distributed-systems">Learn More about Distributed Systems</h2>
+<p>We have to evolve beyond tracking the VM, LUN and container as most significant. The abstraction of the not-so-distant future is one of clusters, whether swarmed or guided by the helmsman. These distributed applications are built on top of other distributed resources: a distributed NoSQL database like Riak KV, a distributed message queue like Kafka. The layers are adding up quickly and the expertise that you should pay attention to is one that emphasizes distributed systems.</p>
+<h2 id="why-marketing-doesnt-suck">Why Marketing Doesn&rsquo;t Suck</h2>
+<p>Speaking of changes we need to accept as a collective: Marketing is a pretty great place to land, career wise. As my friend Dennis Smith inspired me to remind you: <em>&ldquo;If the goal of your job is to educate non-customers in hopes that they will become customers, you&rsquo;re marketing to them.&rdquo;</em></p>
+<p>Many developers I know prefer their title to fall into Marketing: it guarantees a peer-to-peer audience unlike anything you get on a product team. You can hone your speaking skills, refine your writing skills (hopefully) and dip in and out of a great breadth of knowledge you wouldn&rsquo;t have time for as a core developer. Does that make you less knowledgeable on specifics? Absolutely. Does it mean you have to care about leads? Yup, it does. Neither these nor other facts make it any less awesome and valid as a career move.</p>
+<h2 id="the-names-we-earn">The Names We Earn</h2>
+<p>I spent time in San Francisco at VMworld 2015 purely out of the kindness of our enterprise IT community. Multiple people, whom I&rsquo;ve spent only days with in person, shared flights, rooms, meals and passes to events with me. I state this fact feeling honored to have earned such trust and, at the end of the day, friendship from great people.</p>
+<p>It&rsquo;s at times like VMworld when I like to remember that I knew no one in our industry just 6 years ago. Since then, there&rsquo;s only one behavior I&rsquo;ve done exceptionally well: I&rsquo;ve shared. I&rsquo;ve shared blog posts of success and failures. I&rsquo;ve shared short-lived and much longer lived podcasts. I&rsquo;ve always shared my time, often when I didn&rsquo;t think I had any more to share. That has earned me a position within the VMware, vExpert and extended community that anyone could earn.</p>
+<p><strong>First you have to show up</strong>. Then, remember the cardinal rule of community: Create More Value Than You Capture.</p>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
     
   </div>
 
