@@ -14,6 +14,24 @@ pygmentsUseClasses = true
 pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+[[related.indices]]
+  name = 'keywords'
+  weight = 90
+[[related.indices]]
+  name = 'tags'
+  weight = 100
+
+[params]
+displayMode = "dark"
+contentratio = 0.65
+relatedPosts = true
+numberOfRelatedPosts = 3
+disableArchiveTitleStyling  = true
+
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]
