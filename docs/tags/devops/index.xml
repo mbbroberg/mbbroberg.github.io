@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Devops on </title>
+    <link>https://mbbroberg.fun/tags/devops/</link>
+    <description>Recent content in Devops on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 16 Feb 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://mbbroberg.fun/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloud, DevOps, and Other Fads Sysadmins Don&#39;t Need to Care About (Yet)</title>
+      <link>https://mbbroberg.fun/cloud-devops-and-other-fads-sysadmins-dont-need-to-care-about-yet/</link>
+      <pubDate>Sat, 16 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbbroberg.fun/cloud-devops-and-other-fads-sysadmins-dont-need-to-care-about-yet/</guid>
+      
+        <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Talk track from my keynote presented at VTUG Summer Slam 2013&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

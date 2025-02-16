@@ -1,0 +1,588 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme="dark"
+  
+    class="html theme--dark"
+  
+><head>
+  <meta charset="utf-8" />
+  <title>
+    Matt Broberg
+        |
+        Cloud, DevOps, and Other Fads Sysadmins Don&#39;t Need to Care About (Yet)
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.143.1"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Matt Broberg" />
+  <meta
+    name="description"
+    content="Product Thinking | Systems Builder |
+ Open Source Advocate | People Leader"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.8d4fad7e6916ad2e291e8d97ada157c70350d6d7150fea137e7243340967befb.css"
+      integrity="sha256-jU&#43;tfmkWrS4pHo2XraFXxwNQ1tcVD&#43;oTfnJDNAlnvvs="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&amp;display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://mbbroberg.fun/cloud-devops-and-other-fads-sysadmins-dont-need-to-care-about-yet/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js"
+      integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Cloud, DevOps, and Other Fads Sysadmins Don&#39;t Need to Care About (Yet)">
+  <meta name="twitter:description" content="Talk track from my keynote presented at VTUG Summer Slam 2013">
+
+
+
+  
+  <meta property="og:url" content="https://mbbroberg.fun/cloud-devops-and-other-fads-sysadmins-dont-need-to-care-about-yet/">
+  <meta property="og:site_name" content="Matthew Broberg">
+  <meta property="og:title" content="Cloud, DevOps, and Other Fads Sysadmins Don&#39;t Need to Care About (Yet)">
+  <meta property="og:description" content="Talk track from my keynote presented at VTUG Summer Slam 2013">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="articles">
+    <meta property="article:published_time" content="2013-02-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2013-02-16T00:00:00+00:00">
+    <meta property="article:tag" content="Sysadmin">
+    <meta property="article:tag" content="Career">
+    <meta property="article:tag" content="Cloud">
+    <meta property="article:tag" content="Devops">
+    <meta property="article:tag" content="Humor">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "articles",
+        "name": "Cloud, DevOps, and Other Fads Sysadmins Don\u0027t Need to Care About (Yet)",
+        "headline": "Cloud, DevOps, and Other Fads Sysadmins Don\u0027t Need to Care About (Yet)",
+        "alternativeHeadline": "",
+        "description": "
+      
+        \u003cblockquote\u003e\n\u003cp\u003e\u003cem\u003e\u003cstrong\u003eTalk track from my keynote presented at VTUG Summer Slam 2013\u003c\/strong\u003e\u003c\/em\u003e\u003c\/p\u003e
+
+
+      
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/mbbroberg.fun\/cloud-devops-and-other-fads-sysadmins-dont-need-to-care-about-yet\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "copyrightYear" : "2013",
+        "dateCreated": "2013-02-16T00:00:00.00Z",
+        "datePublished": "2013-02-16T00:00:00.00Z",
+        "dateModified": "2013-02-16T00:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Matt Broberg",
+            "url": "https://mbbroberg.fun/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/mbbroberg.fun\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "https:\/\/mbbroberg.fun\/cloud-devops-and-other-fads-sysadmins-dont-need-to-care-about-yet\/",
+        "wordCount" : "704",
+        "genre" : [ ],
+        "keywords" : [ 
+      
+      "sysadmin"
+
+    
+      
+        ,
+
+      
+      "career"
+
+    
+      
+        ,
+
+      
+      "cloud"
+
+    
+      
+        ,
+
+      
+      "devops"
+
+    
+      
+        ,
+
+      
+      "humor"
+
+    ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/profile.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/">Matthew Broberg</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p>Product Thinking | Systems Builder |<br /> Open Source Advocate | People Leader</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://floss.social/@mbbroberg"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Mastodon"
+            title="Mastodon"
+          >
+            <i class="fab fa-mastodon fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://linkedin.com/in/mbbroberg/"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://bsky.app/profile/mbbroberg.fun"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Bluesky"
+            title="Bluesky"
+          >
+            <i class="fab fa-bluesky fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/mbbroberg/"
+            target="_blank"
+            rel="noopener me"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="mailto:matthewbbroberg&#43;io@gmail.com"
+            target="_blank"
+            rel="noopener me"
+            aria-label="e-mail"
+            title="e-mail"
+          >
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Matt Broberg
+        2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/"
+              
+              title=""
+              >🏡</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/articles/"
+              
+              title=""
+              >Articles 💡</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/podcasts/"
+              
+              title=""
+              >Podcasts 🎙️</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/talks/"
+              
+              title=""
+              >Talks 📣</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1>Cloud, DevOps, and Other Fads Sysadmins Don&#39;t Need to Care About (Yet)</h1>
+      
+      <blockquote>
+<p><em><strong>Talk track from my keynote presented at VTUG Summer Slam 2013</strong></em></p></blockquote>
+<p>Look, I get it. Every time you poke your head into /r/sysadmin or glance at a virtualization message board, you see some fresh-faced kid in a Patagonia vest telling you to &ldquo;Learn to Code!&rdquo; or &ldquo;Automate All the Things!&rdquo; And you think to yourself, &ldquo;What a bunch of buzzword-laden bullshit.&rdquo;</p>
+<p>I hear you. Let me reassure you: The internet is full of shiny new things, but your battle-tested knowledge of operating systems and enterprise GUIs will serve you just fine. For now.</p>
+<h2 id="prerequisites-for-reading-this-post">Prerequisites for Reading This Post:</h2>
+<ul>
+<li>A healthy distaste for JavaScript</li>
+<li>Experience yelling at developers</li>
+<li>General saltiness and skepticism about &ldquo;the next big thing&rdquo;</li>
+<li>(Optional) An article of clothing older than I am</li>
+</ul>
+<h2 id="what-youll-get-out-of-this">What You&rsquo;ll Get Out of This:</h2>
+<ul>
+<li>Permission to keep ignoring the hype (temporarily)</li>
+<li>Validation that yes, it&rsquo;s all just Linux boxes with fancy marketing</li>
+<li>A slightly uncomfortable peek at what&rsquo;s actually coming</li>
+</ul>
+<h2 id="the-more-things-change">The More Things Change&hellip;</h2>
+<p>Let&rsquo;s be honest here. When you peel back the layers of these newfangled buzzwords, it all looks pretty familiar:</p>
+<ul>
+<li>We&rsquo;re still slaves to DNS (There&rsquo;s even a poem about it now - print it out and stick it on your cube wall)</li>
+<li>Developers are still over-provisioning everything in sight</li>
+<li>We&rsquo;re all still memorizing IPv4 addresses because IPv6 is &ldquo;just around the corner&rdquo; (ha!)</li>
+<li>The &ldquo;cloud&rdquo; is just someone else&rsquo;s computer</li>
+</ul>
+<p>If you&rsquo;re retiring in the next 5 years, congratulations! You can stop reading here. Go fishing. You&rsquo;ve earned it.</p>
+<p>For everyone else&hellip; we need to talk.</p>
+<h2 id="the-uncomfortable-truth">The Uncomfortable Truth</h2>
+<p>Here&rsquo;s the thing: Each new technology wave is like, well, a wave. And they&rsquo;ve been building up. Remember when virtualization was optional? Yeah, those days are gone.</p>
+<p>The half-life of tech skills is getting shorter. Sure, there will always be COBOL jobs and someone needs to maintain that ancient NAS, but do you really want to be that person?</p>
+<p>Let&rsquo;s look at what&rsquo;s actually happening:</p>
+<ul>
+<li>Cloud isn&rsquo;t eating your lunch - it already ate it while you were busy optimizing that LUN</li>
+<li>Nobody&rsquo;s going to pay top dollar to optimize a single storage array when they can spin up and down entire data centers with a few clicks</li>
+<li>Small businesses aren&rsquo;t even hiring IT anymore - they&rsquo;re using Squarespace and Google Workspace</li>
+</ul>
+<h2 id="but-theres-hope-sort-of">But There&rsquo;s Hope! (Sort of)</h2>
+<p>There will always be organizations that need in-house support. It&rsquo;s just not likely to be a career <em>track</em> like it once was. More like a permanent position at the local manufacturing plant. And there&rsquo;s nothing wrong with that if it makes you happy!</p>
+<p>For the ambitious among you, there are some amazing examples of sysadmins who&rsquo;ve adapted:</p>
+<ul>
+<li>That guy who turned his home lab into a successful blog</li>
+<li>The sysadmin who now writes Ansible playbooks for fun (and profit)</li>
+<li>Yours truly, who sold out to marketing (hey, someone&rsquo;s gotta explain this stuff)</li>
+</ul>
+<h2 id="what-should-you-actually-do">What Should You Actually Do?</h2>
+<p>If you&rsquo;re not ready to retire but also not thrilled about learning JavaScript, here are your options:</p>
+<ol>
+<li>
+<p><strong>Selective Adaptation</strong>: Pick ONE new thing to learn. Just one. Maybe it&rsquo;s containers. Maybe it&rsquo;s infrastructure as code. But for the love of grep, pick something.</p>
+</li>
+<li>
+<p><strong>Leverage What You Know</strong>:</p>
+<ul>
+<li>Technical marketing loves people who can translate sysadmin to English</li>
+<li>Documentation always needs people who actually understand how things work</li>
+<li>Developer relations is basically being a sysadmin who&rsquo;s nice to developers (I know, I know)</li>
+</ul>
+</li>
+<li>
+<p><strong>Double Down on Infrastructure</strong>:</p>
+<ul>
+<li>Learn the boring but essential parts of cloud</li>
+<li>Master the parts of DevOps that don&rsquo;t require programming</li>
+<li>Accept that YAML is technically programming (sorry)</li>
+</ul>
+</li>
+</ol>
+<h2 id="the-bottom-line">The Bottom Line</h2>
+<p>You don&rsquo;t <em>have</em> to change. You can ride out the next few years on what you know. Less learning, more fishing - I respect that.</p>
+<p>But if you&rsquo;re stuck in this career for the long haul (like me), you might want to pick up just one new trick. Think of it like learning to use a GUI after years of command line - painful, possibly unnecessary, but potentially useful.</p>
+<p>Just don&rsquo;t wait too long. These waves of change? They&rsquo;re not getting smaller.</p>
+<blockquote>
+<p><em>Written by that millennial who somehow snuck into your VMware conference. Originally published in 2013, when we all thought cloud was just a passing fad.</em></p></blockquote>
+
+
+  <h3>Related Posts</h3>
+  <ul>
+    
+      <li><a href="/make-obsidian-inline-dataview-properties-prettier-with-this-css/">Make Obsidian inline dataview properties prettier with this CSS</a></li>
+    
+      <li><a href="/my-path-to-personal-knowledge-management-pkm/">My path to Personal Knowledge Management (PKM)</a></li>
+    
+      <li><a href="/takeaways-from-transformed-by-marty-cagan/">Takeaways from reading Transformed by Marty Cagan</a></li>
+    
+  </ul>
+
+</div>
+    <div class="post__footer">
+      
+
+      
+        <span><a class="tag" href="/tags/sysadmin/">sysadmin</a><a class="tag" href="/tags/career/">career</a><a class="tag" href="/tags/cloud/">cloud</a><a class="tag" href="/tags/devops/">devops</a><a class="tag" href="/tags/humor/">humor</a></span>
+
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Matt Broberg
+        2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>
