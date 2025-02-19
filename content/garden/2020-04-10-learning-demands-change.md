@@ -2,14 +2,13 @@
 up: 
 related: 
 created: 2020-04-10 Fri 12:00am
-updated: 2025-02-19 Wed 7:02am
+updated: 2025-02-19 Wed 7:04am
 tags:
   - learning
 aliases: []
 cssclasses: 
 edited: 2024-01-28 11:45:00
 publish: false
-url: https://www.unscrambled.sg/2020/04/18/seth-godin-you-can-learn-just-about-anything-now-so-what-did-you-learn-today/
 title: Learning demands change
 blog: true
 garden: garden
