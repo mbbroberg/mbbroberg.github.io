@@ -32,6 +32,17 @@
     </item>
     
     <item>
+      <title>Takeaways from reading Transformed by Marty Cagan</title>
+      <link>http://localhost:1313/takeaways-from-transformed-by-marty-cagan/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/takeaways-from-transformed-by-marty-cagan/</guid>
+      
+        <description>&lt;p&gt;I recently finished &lt;a href=&#34;https://www.svpg.com/books/transformed-moving-to-the-product-operating-model/&#34;&gt;&amp;ldquo;Transformed&amp;rdquo; by Marty Cagan and team&lt;/a&gt;, and it&amp;rsquo;s helping me connect some crucial dots about how modern product organizations actually work. Here are the key themes I&amp;rsquo;m continuing to grapple with afterwards.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>My Product Management Learning Path</title>
       <link>http://localhost:1313/product-management-learning-path/</link>
       <pubDate>Sat, 12 Oct 2024 20:46:52 -0500</pubDate>
@@ -242,6 +253,17 @@
     </item>
     
     <item>
+      <title>Dev and Ops Personas for Open Source Documentation</title>
+      <link>http://localhost:1313/devops-personas-for-open-source-documentation/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/devops-personas-for-open-source-documentation/</guid>
+      
+        <description>&lt;p&gt;In a previous role, I wore a few different hats throughout my day as a Developer Advocate. One, that I claim no expertise in but did nevertheless, is documentation.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>I Have a Maiden Name</title>
       <link>http://localhost:1313/maiden-name/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
@@ -333,6 +355,29 @@
     </item>
     
     <item>
+      <title>More on Mesos, Marketing, and Making a Name for Yourself</title>
+      <link>http://localhost:1313/old-blog-more-on-mesos-marketing-and-making-a-name-for-yourself/</link>
+      <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/old-blog-more-on-mesos-marketing-and-making-a-name-for-yourself/</guid>
+      
+        <description>&lt;p&gt;To my Operations Engineers; a few pieces of unsolicited advice:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>The Art of Measuring The Wrong Things - Finding Balance in Metrics</title>
+      <link>http://localhost:1313/the-art-of-measuring-the-wrong-things/</link>
+      <pubDate>Wed, 03 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/the-art-of-measuring-the-wrong-things/</guid>
+      
+        <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&amp;ldquo;The minute we choose to measure something, we are essentially choosing to aspire to it. If we happen to measure running style, we would cultivate a nation of gazelles.&amp;rdquo; - Youngme Moon, Different&lt;/em&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>3 Resources to Learn (More) about GitHub Commits</title>
       <link>http://localhost:1313/three-github-resources/</link>
       <pubDate>Fri, 15 May 2015 00:00:00 +0000</pubDate>
@@ -351,6 +396,17 @@
       <guid>http://localhost:1313/articles/two-communities/</guid>
       
         <description>What does Reddit and StackOverflow have to do with career success?</description>
+      
+    </item>
+    
+    <item>
+      <title>On Explorers Villager and Towns Planners of Simon Wardley</title>
+      <link>http://localhost:1313/on-explorers-villager-and-towns-planners-of-simon-wardley/</link>
+      <pubDate>Sat, 03 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/on-explorers-villager-and-towns-planners-of-simon-wardley/</guid>
+      
+        <description>&lt;p&gt;_Note: When I first learned this theory, it was called by another name. I&amp;rsquo;ve updated it here based on Simon&amp;rsquo;s updated work.*&lt;/p&gt;</description>
       
     </item>
     
@@ -384,6 +440,30 @@
       <guid>http://localhost:1313/oxymoron-of-productivity/</guid>
       
         <description>Productivity is a double-edged sword.</description>
+      
+    </item>
+    
+    <item>
+      <title>Infrastructure as a Means, not an End</title>
+      <link>http://localhost:1313/infrastructure-as-a-means-not-an-end/</link>
+      <pubDate>Fri, 25 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/infrastructure-as-a-means-not-an-end/</guid>
+      
+        <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;In philosophy, the term means to an end refers to any action (the means) carried out for the sole purpose of achieving something else (an end)&lt;/em&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Cloud, DevOps, and Other Fads Sysadmins Don&#39;t Need to Care About (Yet)</title>
+      <link>http://localhost:1313/cloud-devops-and-other-fads-sysadmins-dont-need-to-care-about-yet/</link>
+      <pubDate>Sat, 16 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/cloud-devops-and-other-fads-sysadmins-dont-need-to-care-about-yet/</guid>
+      
+        <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Talk track from my keynote presented at VTUG Summer Slam 2013&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</description>
       
     </item>
     

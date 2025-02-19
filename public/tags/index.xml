@@ -29,5 +29,115 @@
       
     </item>
     
+    <item>
+      <title>Mental Models</title>
+      <link>http://localhost:1313/tags/mental-models/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/mental-models/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Product Development</title>
+      <link>http://localhost:1313/tags/product-development/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/product-development/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Clipping</title>
+      <link>http://localhost:1313/tags/clipping/</link>
+      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/clipping/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>More</title>
+      <link>http://localhost:1313/tags/more/</link>
+      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/more/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>http://localhost:1313/tags/test/</link>
+      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/test/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Career</title>
+      <link>http://localhost:1313/tags/career/</link>
+      <pubDate>Sat, 16 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/career/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Cloud</title>
+      <link>http://localhost:1313/tags/cloud/</link>
+      <pubDate>Sat, 16 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/cloud/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Devops</title>
+      <link>http://localhost:1313/tags/devops/</link>
+      <pubDate>Sat, 16 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/devops/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Humor</title>
+      <link>http://localhost:1313/tags/humor/</link>
+      <pubDate>Sat, 16 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/humor/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Sysadmin</title>
+      <link>http://localhost:1313/tags/sysadmin/</link>
+      <pubDate>Sat, 16 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/sysadmin/</guid>
+      
+        <description></description>
+      
+    </item>
+    
   </channel>
 </rss>
