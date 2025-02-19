@@ -63,28 +63,6 @@
     </item>
     
     <item>
-      <title>More</title>
-      <link>http://localhost:1313/tags/more/</link>
-      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/more/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>http://localhost:1313/tags/test/</link>
-      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/test/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
       <title>Career</title>
       <link>http://localhost:1313/tags/career/</link>
       <pubDate>Sat, 16 Feb 2013 00:00:00 +0000</pubDate>

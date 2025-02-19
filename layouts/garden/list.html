@@ -5,7 +5,7 @@
     <!-- Index content -->
     {{ with .Content }}
     <div class="garden-intro">
-        {{ . }}
+        {{ . | markdownify }}
     </div>
     {{ end }}
 

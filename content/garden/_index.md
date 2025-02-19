@@ -5,4 +5,4 @@ aliases: ["digital garden"]
 author: "Matt Broberg"
 ---
 
-Where my ideas grow:
+ 🫚 `my digital garden` of rhizomatic thinking 🍄
