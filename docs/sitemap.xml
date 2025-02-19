@@ -23,10 +23,13 @@
     <loc>https://mbbroberg.fun/tags/note/develop/</loc>
     <lastmod>2025-01-16T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://mbbroberg.fun/garden/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://mbbroberg.fun/tags/future-projects/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mbbroberg.fun/garden/</loc>
+    <loc>https://mbbroberg.fun/garden/garden/</loc>
     <lastmod>2025-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mbbroberg.fun/literate-programming-def/</loc>
@@ -44,7 +47,10 @@
     <loc>https://mbbroberg.fun/product-management-learning-path/</loc>
     <lastmod>2024-10-12T20:46:52-05:00</lastmod>
   </url><url>
-    <loc>https://mbbroberg.fun/clipping/</loc>
+    <loc>https://mbbroberg.fun/garden/clip/</loc>
+    <lastmod>2024-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://mbbroberg.fun/tags/clipping/</loc>
     <lastmod>2024-07-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://mbbroberg.fun/kahneman-on-irrationality/</loc>

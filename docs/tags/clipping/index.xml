@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Clippings on </title>
-    <link>https://mbbroberg.fun/clipping/</link>
-    <description>Recent content in Clippings on </description>
+    <title>Clipping on </title>
+    <link>https://mbbroberg.fun/tags/clipping/</link>
+    <description>Recent content in Clipping on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 31 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://mbbroberg.fun/clipping/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://mbbroberg.fun/tags/clipping/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kahneman on irrationality</title>
       <link>https://mbbroberg.fun/kahneman-on-irrationality/</link>
