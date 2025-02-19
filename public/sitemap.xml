@@ -23,8 +23,29 @@
     <loc>http://localhost:1313/tags/note/develop/</loc>
     <lastmod>2025-01-16T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/mental-models/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/product-development/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/takeaways-from-transformed-by-marty-cagan/</loc>
+    <lastmod>2025-01-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/product-management-learning-path/</loc>
     <lastmod>2024-10-12T20:46:52-05:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/garden/</loc>
+    <lastmod>2024-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/garden/clip/</loc>
+    <lastmod>2024-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/clipping/</loc>
+    <lastmod>2024-07-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/kahneman-on-irrationality/</loc>
+    <lastmod>2024-07-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/first-30-days-remote-work/</loc>
     <lastmod>2023-07-18T20:46:52-05:00</lastmod>
@@ -80,6 +101,9 @@
     <loc>http://localhost:1313/kubernetes-culture-kubecon-2017/</loc>
     <lastmod>2017-12-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/devops-personas-for-open-source-documentation/</loc>
+    <lastmod>2017-01-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/maiden-name/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -104,11 +128,20 @@
     <loc>http://localhost:1313/your-next-job-title/</loc>
     <lastmod>2015-10-19T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/old-blog-more-on-mesos-marketing-and-making-a-name-for-yourself/</loc>
+    <lastmod>2024-05-31T15:59:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/the-art-of-measuring-the-wrong-things/</loc>
+    <lastmod>2015-06-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/three-github-resources/</loc>
     <lastmod>2015-05-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/articles/two-communities/</loc>
     <lastmod>2015-04-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/on-explorers-villager-and-towns-planners-of-simon-wardley/</loc>
+    <lastmod>2015-01-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/impact-of-mistaken-sales-cycle/</loc>
     <lastmod>2014-08-16T00:00:00+00:00</lastmod>
@@ -118,6 +151,27 @@
   </url><url>
     <loc>http://localhost:1313/oxymoron-of-productivity/</loc>
     <lastmod>2014-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/infrastructure-as-a-means-not-an-end/</loc>
+    <lastmod>2014-04-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/career/</loc>
+    <lastmod>2013-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cloud/</loc>
+    <lastmod>2013-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/cloud-devops-and-other-fads-sysadmins-dont-need-to-care-about-yet/</loc>
+    <lastmod>2013-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/devops/</loc>
+    <lastmod>2013-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/humor/</loc>
+    <lastmod>2013-02-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sysadmin/</loc>
+    <lastmod>2013-02-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>

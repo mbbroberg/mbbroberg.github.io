@@ -1,0 +1,232 @@
+{{ define "main" }}
+<div class="archive">
+    {{/*  <h1>Digital Garden</h1>  */}}
+
+    <!-- Index content -->
+    {{ with .Content }}
+    <div class="garden-intro">
+        {{ . | markdownify }}
+    </div>
+    {{ end }}
+
+    <!-- Tag Navigation -->
+    <nav class="tag-navigation" aria-label="Content tags">
+        {{ $pages := where .Site.RegularPages "Section" "garden" }}
+        {{ $allTags := slice }}
+        {{ range $pages }}
+        {{ range .Params.tags }}
+        {{ $allTags = $allTags | append . }}
+        {{ end }}
+        {{ end }}
+        {{ $uniqueTags := uniq $allTags }}
+
+        {{ $tagCount := dict }}
+        {{ range $tag := $uniqueTags }}
+        {{ $count := 0 }}
+        {{ range $pages }}
+        {{ if in .Params.tags $tag }}
+        {{ $count = add $count 1 }}
+        {{ end }}
+        {{ end }}
+        {{ $tagCount = merge $tagCount (dict $tag $count) }}
+        {{ end }}
+
+        <ul class="tag-list">
+            {{ range $tag, $count := $tagCount }}
+            <li>
+                <a href="#{{ $tag }}" class="tag-link">
+                    #{{ $tag }}
+                    <span class="tag-count">{{ $count }}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </nav>
+
+    <!-- Content sections -->
+    {{ range $tag, $count := $tagCount }}
+    <section id="{{ $tag }}" class="tag-section">
+        <h2 class="tag-heading">#{{ $tag }}</h2>
+        <div class="entries-grid">
+            {{ range $pages }}
+            {{ if in .Params.tags $tag }}
+            <article class="garden-entry">
+                <h3>
+                    <a href="{{ .RelPermalink }}" class="entry-link">
+                        {{ .Title }}
+                    </a>
+                </h3>
+                {{ with .Date }}
+                <time datetime="{{ .Format " 2006-01-02" }}">
+                    {{ .Format "January 2, 2006" }}
+                </time>
+                {{ end }}
+            </article>
+            {{ end }}
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+</div>
+
+<style>
+    .garden-intro {
+        margin: 2rem 0;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        border-left: 4px solid rgba(72, 187, 120, 0.5);
+        /* Subtle green accent */
+    }
+
+    .tag-navigation {
+        margin: 2rem 0;
+        padding: 1rem;
+        /* Very subtle green border 
+        border-radius: 8px;
+        border: 1px solid rgba(72, 187, 120, 0.1);
+        background: rgba(255, 255, 255, 0.1);
+        */
+    }
+
+    .tag-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .tag-link {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.5rem 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 20px;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .tag-link::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(72, 187, 120, 0.1);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .tag-link:hover {
+        transform: translateY(-2px);
+    }
+
+    .tag-link:hover::after {
+        opacity: 1;
+    }
+
+    .tag-count {
+        margin-left: 0.5rem;
+        opacity: 0.7;
+        font-size: 0.875rem;
+    }
+
+    .tag-section {
+        margin: 3rem 0;
+        animation: fadeGrow 0.5s ease-out;
+    }
+
+    .tag-heading {
+        border-bottom: 1px solid rgba(72, 187, 120, 0.2);
+        padding-bottom: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .entries-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .garden-entry {
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    .garden-entry:hover {
+        transform: translateY(-2px);
+        background: rgba(72, 187, 120, 0.05);
+        box-shadow: 0 4px 12px rgba(72, 187, 120, 0.1);
+    }
+
+    .entry-link {
+        text-decoration: none;
+        color: inherit;
+        transition: color 0.2s ease;
+    }
+
+    .entry-link:hover {
+        color: rgba(72, 187, 120, 0.9);
+    }
+
+    time {
+        display: block;
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+        opacity: 0.7;
+    }
+
+    @keyframes fadeGrow {
+        from {
+            opacity: 0;
+            transform: translateY(10px) scale(0.98);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+
+    /* Subtle growth animation for garden entries on page load */
+    .garden-entry {
+        animation: growEntry 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        animation-fill-mode: both;
+    }
+
+    @keyframes growEntry {
+        from {
+            opacity: 0;
+            transform: scale(0.96);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    /* Stagger the animation of entries */
+    .garden-entry:nth-child(2) {
+        animation-delay: 0.1s;
+    }
+
+    .garden-entry:nth-child(3) {
+        animation-delay: 0.2s;
+    }
+
+    .garden-entry:nth-child(4) {
+        animation-delay: 0.3s;
+    }
+</style>
+{{ end }}

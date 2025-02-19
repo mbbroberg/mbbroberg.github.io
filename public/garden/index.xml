@@ -1,42 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Garden on </title>
+    <title>🌱 my digital garden on </title>
     <link>http://localhost:1313/garden/</link>
-    <description>Recent content in Garden on </description>
+    <description>Recent content in 🌱 my digital garden on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://localhost:1313/garden/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Wed, 31 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/garden/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>George Lakoff</title>
-      <link>http://localhost:1313/garden/george-lakoff/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Clip</title>
+      <link>http://localhost:1313/garden/clip/</link>
+      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/garden/george-lakoff/</guid>
+      <guid>http://localhost:1313/garden/clip/</guid>
       
-        <description>[!link] This file primarily asks as a connection for Linking My Thinking</description>
-      
-    </item>
-    
-    <item>
-      <title>Recently edited</title>
-      <link>http://localhost:1313/garden/recently-edited/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/garden/recently-edited/</guid>
-      
-        <description>%% update via &amp;ldquo;Update Publish Files&amp;rdquo; template %%
-Note Modified 2004-2021 My history of therapy Jul 4, 2024, 11:03 PM Recent new files Jul 4, 2024, 1:45 PM PARA System May 28, 2024, 3:36 PM Philosophy of Quartz May 28, 2024, 3:36 PM Rhizomes May 28, 2024, 3:36 PM </description>
-      
-    </item>
-    
-    <item>
-      <title>Rhizomes</title>
-      <link>http://localhost:1313/garden/rhizomes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/garden/rhizomes/</guid>
-      
-        <description>While I&amp;rsquo;m still early in my understanding of it, the philosophy of Philosophers – Deleuze and Guattari speaks to me.</description>
+        <description></description>
       
     </item>
     

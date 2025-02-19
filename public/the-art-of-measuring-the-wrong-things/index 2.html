@@ -1,0 +1,514 @@
+<!doctype html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme="dark"
+  
+    class="html theme--dark"
+  
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <title>
+    Matt Broberg
+        |
+        The Art of Measuring The Wrong Things - Finding Balance in Metrics
+      
+
+    
+
+  </title>
+
+  <meta name="generator" content="Hugo 0.141.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Matt Broberg" />
+  <meta
+    name="description"
+    content="Product Thinking | Systems Builder |
+ Open Source Advocate | People Leader"
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.36cc347f9ef17e6277665cea4826f9446016e7a324f22a9b3679ba8895381662.css"
+      integrity="sha256-Nsw0f57xfmJ3ZlzqSCb5RGAW56Mk8iqbNnm6iJU4FmI="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.73ccfdf28df555e11009c13c20ced067af3cb021504cba43644c705930428b00.css"
+    integrity="sha256-c8z98o31VeEQCcE8IM7QZ688sCFQTLpDZExwWTBCiwA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.137b1cf3cea9a8adb7884343a9a5ddddf4280f59153f74dc782fb7f7bf0d0519.css"
+    integrity="sha256-E3sc886pqK23iENDqaXd3fQoD1kVP3TceC&#43;3978NBRk="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.e65dc5b48fb5f39b142360c57c3a215744c94e56c755c929cc3e88fe12aab4d3.css"
+    integrity="sha256-5l3FtI&#43;185sUI2DFfDohV0TJTlbHVckpzD6I/hKqtNM="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/regular.min.6f4f16d58da1c82c0c3a3436e021a3d39b4742f741192c546e73e947eacfd92f.css"
+    integrity="sha256-b08W1Y2hyCwMOjQ24CGj05tHQvdBGSxUbnPpR&#43;rP2S8="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.e10425ad768bc98ff1fb272a0ac8420f9d1ba22f0612c08ff1010c95080ffe7e.css"
+    integrity="sha256-4QQlrXaLyY/x&#43;ycqCshCD50boi8GEsCP8QEMlQgP/n4="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+    
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&amp;display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+
+  <link rel="canonical" href="http://localhost:1313/the-art-of-measuring-the-wrong-things/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.d6d329d93844b162e8bed1e915619625ca91687952177552b9b3e211014a2957.js"
+      integrity="sha256-1tMp2ThEsWLovtHpFWGWJcqRaHlSF3VSubPiEQFKKVc="
+      crossorigin="anonymous"
+    ></script>
+  
+
+  
+
+  
+
+
+  
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Art of Measuring The Wrong Things - Finding Balance in Metrics">
+  <meta name="twitter:description" content="“The minute we choose to measure something, we are essentially choosing to aspire to it. If we happen to measure running style, we would cultivate a nation of gazelles.” - Youngme Moon, Different">
+
+
+
+  
+  <meta property="og:url" content="http://localhost:1313/the-art-of-measuring-the-wrong-things/">
+  <meta property="og:site_name" content="Matthew Broberg">
+  <meta property="og:title" content="The Art of Measuring The Wrong Things - Finding Balance in Metrics">
+  <meta property="og:description" content="“The minute we choose to measure something, we are essentially choosing to aspire to it. If we happen to measure running style, we would cultivate a nation of gazelles.” - Youngme Moon, Different">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="articles">
+    <meta property="article:published_time" content="2015-06-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2015-06-03T00:00:00+00:00">
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "articles",
+        "name": "The Art of Measuring The Wrong Things - Finding Balance in Metrics",
+        "headline": "The Art of Measuring The Wrong Things - Finding Balance in Metrics",
+        "alternativeHeadline": "",
+        "description": "
+      
+        \u003cblockquote\u003e\n\u003cp\u003e\u003cem\u003e\u0026ldquo;The minute we choose to measure something, we are essentially choosing to aspire to it. If we happen to measure running style, we would cultivate a nation of gazelles.\u0026rdquo; - Youngme Moon, Different\u003c\/em\u003e\u003c\/p\u003e
+
+
+      
+
+
+    ",
+        "inLanguage": "en",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/localhost:1313\/the-art-of-measuring-the-wrong-things\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Matt Broberg"
+        },
+        "copyrightYear" : "2015",
+        "dateCreated": "2015-06-03T00:00:00.00Z",
+        "datePublished": "2015-06-03T00:00:00.00Z",
+        "dateModified": "2015-06-03T00:00:00.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Matt Broberg",
+            "url": "http://localhost:1313/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "http:\/\/localhost:1313\/favicons\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+      ]
+
+    ,
+        "url" : "http:\/\/localhost:1313\/the-art-of-measuring-the-wrong-things\/",
+        "wordCount" : "725",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+</head>
+<body class="body">
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+        
+      ><div
+  class="sidebar
+    animated fadeInDown
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/profile.jpg"
+        alt="profile picture"
+      />
+      
+        <div class="sidebar__introduction-title">
+          <a href="/">Matthew Broberg</a>
+        </div>
+      
+      <div class="sidebar__introduction-description">
+        <p>Product Thinking | Systems Builder |<br /> Open Source Advocate | People Leader</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://floss.social/@mbbroberg"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Mastodon"
+            title="Mastodon"
+          >
+            <i class="fab fa-mastodon fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://linkedin.com/in/mbbroberg/"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Linkedin"
+            title="Linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://bsky.app/profile/mbbroberg.fun"
+            target="_blank"
+            rel="noopener me"
+            aria-label="Bluesky"
+            title="Bluesky"
+          >
+            <i class="fab fa-bluesky fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="https://github.com/mbbroberg/"
+            target="_blank"
+            rel="noopener me"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+        <li class="sidebar__list-item">
+          <a
+            href="mailto:matthewbbroberg&#43;io@gmail.com"
+            target="_blank"
+            rel="noopener me"
+            aria-label="e-mail"
+            title="e-mail"
+          >
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Matt Broberg
+        2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+        
+      >
+        <header class="header"><div
+  class="
+    animated fadeInDown
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/"
+              
+              title=""
+              >🏡</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/articles/"
+              
+              title=""
+              >Articles 💡</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/podcasts/"
+              
+              title=""
+              >Podcasts 🎙️</a
+            >
+          </li>
+        
+
+      
+        
+        
+          <li class="nav__list-item">
+            
+            <a
+              
+              href="/talks/"
+              
+              title=""
+              >Talks 📣</a
+            >
+          </li>
+        
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      animated fadeInDown
+    "
+  >
+    
+    <div class="post__content">
+      
+        <h1>The Art of Measuring the Wrong Things - Finding Balance in Metrics</h1>
+      
+      <blockquote>
+<p><em>&ldquo;The minute we choose to measure something, we are essentially choosing to aspire to it. If we happen to measure running style, we would cultivate a nation of gazelles.&rdquo; - Youngme Moon, Different</em></p>
+</blockquote>
+<p>This observation from Moon&rsquo;s seminal work on marketing captures the essence of our relationship with metrics. What we measure shapes not just our understanding, but our very direction.</p>
+<h2 id="audience-matters">Audience Matters</h2>
+<p>This thought is one for those in the Marketing organization—whether your title includes Evangelist, Strategist, or Community Manager. As a marketer living within the modern funnel, a significant part of your value is derived from public activity. Here are guidelines that will make all the difference in your approach to measurement.</p>
+<h2 id="why-metrics-matter">Why Metrics Matter</h2>
+<p>If you can&rsquo;t measure your business value, you have a target on your back. You&rsquo;re one slight reorganization or financial belt-tightening exercise away from losing whatever champion sees value in what your soft skills bring to the business.</p>
+<p>As John Doerr notes in &ldquo;Measure What Matters,&rdquo; objectives and key results (OKRs) serve as a &ldquo;vaccine against fuzzy thinking.&rdquo; Metrics, in the form of measurable and meaningful contributions to your business, are your savior. Without them, you&rsquo;ll turn blue in the face arguing business value—and you&rsquo;ll still lose. With them, you can make rational points on comparative value.</p>
+<h2 id="why-metrics-can-be-misleading">Why Metrics Can Be Misleading</h2>
+<h3 id="anecdotes-sell-products">Anecdotes Sell Products</h3>
+<p>Measurement does little to capture enthusiasm, affinity, or loyalty for brands. To get to these ends, we need anecdotes that are truly powerful (it&rsquo;s helpful to remember people buy products because of stories, not spreadsheets). These less-countable outputs are too often completely overlooked in favor of hard metrics of success. Any business leader worth their salt respects stories, not just numbers.</p>
+<h3 id="the-trap-of-meaningless-measurements">The Trap of Meaningless Measurements</h3>
+<p>Beyond the squishy values, we see totally irrelevant tally marks offered up as key performance indicators. These metrics are particularly divisive as they pretend to measure success without context provided by correlation or measurements of statistical significance.</p>
+<p>As Avinash Kaushik, Digital Marketing Evangelist at Google, warns: &ldquo;Most analytics implementations are a faith-based initiative.&rdquo; In the rare case when statistical rigor is applied, the urge to see success from small numbers is too attractive to the eager.</p>
+<h2 id="finding-a-meaningful-middle-ground">Finding a Meaningful Middle Ground</h2>
+<p>Metrics are most important to the business when they help get beyond gut instinct calculations. It&rsquo;s necessary to complement anecdote with calculation and vice versa.</p>
+<p>It&rsquo;s important to recall that trends are fundamentally a belief. The numbers can show correlations and the events surrounding them. The conclusion still (and forever will be) comes from the gut. At this pivot point, we see that this belief is no different than an anecdote.</p>
+<h3 id="modern-tools-for-measurement">Modern Tools for Measurement</h3>
+<p>Here are a few different angles to measurement in the Influencer Marketing world that I&rsquo;ve found helpful in social media measurement, developer advocacy, and technical marketing:</p>
+<ol>
+<li><strong>Total Unique Impressions</strong>: Answers the question of how many people cared about this message. Tools like Buffer, Hootsuite, or native analytics make this straightforward across platforms.</li>
+<li><strong>Cost Per Impression</strong>: Often measured in time but can be compared against paid efforts. Community-driven organic impressions often show remarkable ROI around product launches and major events.</li>
+<li><strong>Time to Acquisition</strong>: The least-standardized metric I love. Chart how long it takes different approaches to achieve the same goal (e.g., recruiting beta users). The results often validate community-first approaches.</li>
+</ol>
+<h2 id="what-metrics-often-mask">What Metrics Often Mask</h2>
+<p>Numbers aren&rsquo;t the whole story. They can send you down rabbit holes or toward misguided assumptions:</p>
+<ul>
+<li>Wrong content for the right audience</li>
+<li>Right content for the wrong audience</li>
+<li>The imbalance between &ldquo;we&rsquo;ve always done it this way&rdquo; and &ldquo;the next sexy thing&rdquo; (most calculations show past popularity as opposed to potential growth)</li>
+</ul>
+<h2 id="one-last-note">One Last Note</h2>
+<p>Repeat after me: SOCIAL MEDIA ALONE DOES NOT LEAD TO REVENUE.</p>
+<p>It connects.
+It inspires.
+It&rsquo;s a catalyst.</p>
+<p>It accelerates a process of audience acquisition that needs to happen with or without it. Choose to use it or choose to ignore it. The latter will prove challenging with time.</p>
+<p>Find a short list of metrics that mean something to you and your business. Let other measurements come from connecting your metrics into the demand generation and public relations portions of your team. Make that effort and show impactful correlations.</p>
+<p>No matter the goal, measure your impact, or you&rsquo;re doing your skills a disservice. Just remember: what you measure becomes what you value—choose wisely.</p>
+
+
+  <h3>Related Posts</h3>
+  <ul>
+    
+      <li><a href="/make-obsidian-inline-dataview-properties-prettier-with-this-css/">Make Obsidian inline dataview properties prettier with this CSS</a></li>
+    
+      <li><a href="/my-path-to-personal-knowledge-management-pkm/">My path to Personal Knowledge Management (PKM)</a></li>
+    
+      <li><a href="/takeaways-from-transformed-by-marty-cagan/">Takeaways from reading Transformed by Marty Cagan</a></li>
+    
+  </ul>
+
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Matt Broberg
+        2025
+      
+    </li>
+    
+  </ul>
+</footer>
+  
+  <script
+    type="text/javascript"
+    src="/js/medium-zoom.min.1248fa75275e5ef0cbef27e8c1e27dc507c445ae3a2c7d2ed0be0809555dac64.js"
+    integrity="sha256-Ekj6dSdeXvDL7yfoweJ9xQfERa46LH0u0L4ICVVdrGQ="
+    crossorigin="anonymous"
+  ></script></body>
+</html>

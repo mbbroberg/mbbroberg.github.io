@@ -10,6 +10,13 @@
   identifier = "articles"
   url = "/articles/"
 
+
+  [[main]]
+  name = "Digital Garden 🌱"
+  weight = 220
+  identifier = "garden"
+  url = "/garden/"
+
   [[main]]
   name = "Podcasts 🎙️"
   weight = 300
