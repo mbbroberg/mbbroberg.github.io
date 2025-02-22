@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>🌱 my digital garden on </title>
-    <link>http://localhost:1313/garden/</link>
-    <description>Recent content in 🌱 my digital garden on </description>
+    <title>🌱 my mossy mental models on </title>
+    <link>https://mbbroberg.fun/garden/</link>
+    <description>Recent content in 🌱 my mossy mental models on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 31 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/garden/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Clip</title>
-      <link>http://localhost:1313/garden/clip/</link>
-      <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/garden/clip/</guid>
-      
-        <description></description>
-      
-    </item>
-    
+    <lastBuildDate>Fri, 03 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://mbbroberg.fun/garden/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
