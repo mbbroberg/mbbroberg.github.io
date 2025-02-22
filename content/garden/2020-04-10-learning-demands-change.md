@@ -10,7 +10,7 @@ cssclasses:
 edited: 2024-01-28 11:45:00
 title: Learning demands change
 share: true
-slug: ../learning-demands-change
+slug: learning-demands-change
 filename: 2020-04-10-learning-demands-change
 date: 2020-04-10
 datemod: 2025-02-19

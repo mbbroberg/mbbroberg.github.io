@@ -8,7 +8,7 @@ tags:
 title: Literate Programming (def)
 blog: true
 garden: garden
-slug: ../literate-programming-def
+slug: literate-programming-def
 filename: 2025-01-03-literate-programming-def
 date: 2025-01-03
 datemod: 2025-02-19

@@ -6,7 +6,7 @@ created: 2024-06-28 Fri 10:07pm
 updated: 2025-02-22 Sat 9:36am
 title: Objectivity (understanding)
 share: true
-slug: ../objectivity-understanding
+slug: objectivity-understanding
 filename: 2024-06-28-objectivity-understanding
 date: 2024-06-28
 datemod: 2025-02-19

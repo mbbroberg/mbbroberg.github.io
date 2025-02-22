@@ -9,7 +9,7 @@ cssclasses:
 Description: Where my thoughts grow
 edited: 2024-05-19 17:41:4
 title: Digital Garden Home
-slug: ../digital-garden-home
+slug: digital-garden-home
 filename: 2024-05-08-digital-garden-home
 date: 2024-05-08
 share: true

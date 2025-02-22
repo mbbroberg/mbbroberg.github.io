@@ -11,7 +11,7 @@ up:
   - "[Cognitive Frames MOC](Cognitive%20Frames%20MOC.md)"
 TLDR: The man behind Cognitive Frames
 title: George Lakoff on Frames MOC
-slug: ../george-lakoff-on-frames-moc
+slug: george-lakoff-on-frames-moc
 filename: 2020-10-08-george-lakoff-on-frames-moc
 date: 2020-10-08
 type: garden

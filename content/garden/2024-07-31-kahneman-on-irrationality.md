@@ -6,7 +6,7 @@ aliases: []
 tags: ["clipping"]
 garden: clip
 title: Kahneman on irrationality
-slug: ../kahneman-on-irrationality
+slug: kahneman-on-irrationality
 filename: 2024-07-31-kahneman-on-irrationality
 date: 2024-07-31
 blog: true

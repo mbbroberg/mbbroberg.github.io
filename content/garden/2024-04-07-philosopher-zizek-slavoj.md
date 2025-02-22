@@ -12,7 +12,7 @@ cssclasses:
 edited: 2024-04-07 08:00:08
 publish: false
 title: Philosopher – Zizek, Slavoj
-slug: ../philosopher-zizek-slavoj
+slug: philosopher-zizek-slavoj
 filename: 2024-04-07-philosopher-zizek-slavoj
 date: 2024-04-07
 share: true

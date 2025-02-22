@@ -19,17 +19,6 @@
     </item>
     
     <item>
-      <title>Make Obsidian inline dataview properties prettier with this CSS</title>
-      <link>http://localhost:1313/make-obsidian-inline-dataview-properties-prettier-with-this-css/</link>
-      <pubDate>Sun, 19 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/make-obsidian-inline-dataview-properties-prettier-with-this-css/</guid>
-      
-        <description>&lt;p&gt;I&amp;rsquo;ve found it far more useful to use Obsidian properties when I see them. Luckily, dataview makes that simple enough with the &lt;code&gt;property:: value&lt;/code&gt; syntax. I&amp;rsquo;ve become a heavy user of it, aggregating my &lt;code&gt;learning::&lt;/code&gt; and &lt;code&gt;decision::&lt;/code&gt;  making across domains, leading to a far more interesting sense of my emergent understanding of the world than a tagging or folder structure would.&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
       <title>My path to Personal Knowledge Management (PKM)</title>
       <link>http://localhost:1313/my-path-to-personal-knowledge-management-pkm/</link>
       <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
@@ -44,21 +33,10 @@
     
     <item>
       <title>Literate Programming (def)</title>
-      <link>http://localhost:1313/literate-programming-def/</link>
+      <link>http://localhost:1313/garden/literate-programming-def/</link>
       <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/literate-programming-def/</guid>
-      
-        <description>&lt;p&gt;I love that I stumbled across this on &lt;a href=&#34;https://www.curiouslychase.com/posts/literate-programming/&#34;&gt;an old internet friend&amp;rsquo;s site&lt;/a&gt;:&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Literate Programming (def)</title>
-      <link>http://localhost:1313/literate-programming-def/</link>
-      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/literate-programming-def/</guid>
+      <guid>http://localhost:1313/garden/literate-programming-def/</guid>
       
         <description>&lt;p&gt;I love that I stumbled across this on &lt;a href=&#34;https://www.curiouslychase.com/posts/literate-programming/&#34;&gt;an old internet friend&amp;rsquo;s site&lt;/a&gt;:&lt;/p&gt;</description>
       
@@ -88,10 +66,10 @@
     
     <item>
       <title>Kahneman on irrationality</title>
-      <link>http://localhost:1313/kahneman-on-irrationality/</link>
+      <link>http://localhost:1313/garden/kahneman-on-irrationality/</link>
       <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/kahneman-on-irrationality/</guid>
+      <guid>http://localhost:1313/garden/kahneman-on-irrationality/</guid>
       
         <description>&lt;p&gt;It’s almost like the 18th century^1 understanding of human faculties is not holding up.&lt;/p&gt;</description>
       
@@ -99,10 +77,10 @@
     
     <item>
       <title>Objectivity (understanding)</title>
-      <link>http://localhost:1313/objectivity-understanding/</link>
+      <link>http://localhost:1313/garden/objectivity-understanding/</link>
       <pubDate>Fri, 28 Jun 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/objectivity-understanding/</guid>
+      <guid>http://localhost:1313/garden/objectivity-understanding/</guid>
       
         <description>&lt;p&gt;Does not exist as commonly understood.&lt;/p&gt;
 &lt;p&gt;Objectivity is still trapped in human subjectivity. It’s an implicit agreement on “the most true&amp;quot; subjective experience but is susceptible to the relativity of perspective we call (our) &lt;em&gt;truth&lt;/em&gt;.&lt;/p&gt;</description>
@@ -111,10 +89,10 @@
     
     <item>
       <title>Kanban columns for lean publishing model</title>
-      <link>http://localhost:1313/kanban-columns-for-lean-publishing-model/</link>
+      <link>http://localhost:1313/garden/kanban-columns-for-lean-publishing-model/</link>
       <pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/kanban-columns-for-lean-publishing-model/</guid>
+      <guid>http://localhost:1313/garden/kanban-columns-for-lean-publishing-model/</guid>
       
         <description>&lt;p&gt;#product-management #operations&lt;/p&gt;
 &lt;p&gt;What we used to keep Opensource.com flowing smoothly.&lt;/p&gt;</description>
@@ -136,10 +114,10 @@
     
     <item>
       <title>Digital Garden Home</title>
-      <link>http://localhost:1313/digital-garden-home/</link>
+      <link>http://localhost:1313/garden/digital-garden-home/</link>
       <pubDate>Wed, 08 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/digital-garden-home/</guid>
+      <guid>http://localhost:1313/garden/digital-garden-home/</guid>
       
         <description>Where my thoughts grow</description>
       
@@ -147,10 +125,10 @@
     
     <item>
       <title>Philosopher – Zizek, Slavoj</title>
-      <link>http://localhost:1313/philosopher-zizek-slavoj/</link>
+      <link>http://localhost:1313/garden/philosopher-zizek-slavoj/</link>
       <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/philosopher-zizek-slavoj/</guid>
+      <guid>http://localhost:1313/garden/philosopher-zizek-slavoj/</guid>
       
         <description>&lt;p&gt;He challenges my very concept of self through dialectics..&lt;/p&gt;
 &lt;p&gt;🫚&lt;/p&gt;
@@ -226,10 +204,10 @@
     
     <item>
       <title>George Lakoff on Frames MOC</title>
-      <link>http://localhost:1313/george-lakoff-on-frames-moc/</link>
+      <link>http://localhost:1313/garden/george-lakoff-on-frames-moc/</link>
       <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/george-lakoff-on-frames-moc/</guid>
+      <guid>http://localhost:1313/garden/george-lakoff-on-frames-moc/</guid>
       
         <description>&lt;p&gt;&lt;a href=&#34;https://cogweb.ucla.edu/CogSci/Lakoff.html&#34;&gt;George Lakoff&lt;/a&gt; is a huge influence for me (see 2024-02-21-philosophy-my-most-influential-thinkers)&lt;/p&gt;</description>
       
@@ -281,10 +259,10 @@
     
     <item>
       <title>Learning demands change</title>
-      <link>http://localhost:1313/learning-demands-change/</link>
+      <link>http://localhost:1313/garden/learning-demands-change/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/learning-demands-change/</guid>
+      <guid>http://localhost:1313/garden/learning-demands-change/</guid>
       
         <description>&lt;blockquote&gt;
     &lt;p&gt;Unlike education, learning demands change. Learning makes us incompetent just before it enables us to grasp mastery. Learning opens our eyes and changes the way we see, communicate and act.&lt;/p&gt;</description>
