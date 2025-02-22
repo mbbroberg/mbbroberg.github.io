@@ -3,13 +3,15 @@ title: Cloud, DevOps, and Other Fads Sysadmins Don't Need to Care About (Yet)
 slug: ../cloud-devops-and-other-fads-sysadmins-dont-need-to-care-about-yet
 filename: 2025-02-16-cloud-devops-and-other-fads-sysadmins-dont-need-to-care-about-yet
 date: 2013-02-16
-blog: true
+share: true
 tags:
   - sysadmin
   - career
   - cloud
   - devops
   - humor
+created: 2025-02-16 Sun 11:38am
+updated: 2025-02-16 Sun 11:41am
 ---
 
 > _**Talk track from my keynote presented at VTUG Summer Slam 2013**_
