@@ -19,6 +19,17 @@
     </item>
     
     <item>
+      <title>Make Obsidian inline dataview properties prettier with this CSS</title>
+      <link>https://mbbroberg.fun/make-obsidian-inline-dataview-properties-prettier-with-this-css/</link>
+      <pubDate>Sun, 19 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbbroberg.fun/make-obsidian-inline-dataview-properties-prettier-with-this-css/</guid>
+      
+        <description>&lt;p&gt;I&amp;rsquo;ve found it far more useful to use Obsidian properties when I see them. Luckily, dataview makes that simple enough with the &lt;code&gt;property:: value&lt;/code&gt; syntax. I&amp;rsquo;ve become a heavy user of it, aggregating my &lt;code&gt;learning::&lt;/code&gt; and &lt;code&gt;decision::&lt;/code&gt;  making across domains, leading to a far more interesting sense of my emergent understanding of the world than a tagging or folder structure would.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>My path to Personal Knowledge Management (PKM)</title>
       <link>https://mbbroberg.fun/my-path-to-personal-knowledge-management-pkm/</link>
       <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
@@ -28,6 +39,17 @@
         <description>&lt;p&gt;My summary of a lifetime of effort&amp;hellip;&lt;/p&gt;
 &lt;h2 id=&#34;my-why&#34;&gt;My Why&lt;/h2&gt;
 &lt;p&gt;I&amp;rsquo;ve learned two corollaries about my memory:&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Literate Programming (def)</title>
+      <link>https://mbbroberg.fun/literate-programming-def/</link>
+      <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbbroberg.fun/literate-programming-def/</guid>
+      
+        <description>&lt;p&gt;I love that I stumbled across this on &lt;a href=&#34;https://www.curiouslychase.com/posts/literate-programming/&#34;&gt;an old internet friend&amp;rsquo;s site&lt;/a&gt;:&lt;/p&gt;</description>
       
     </item>
     
@@ -50,6 +72,19 @@
       <guid>https://mbbroberg.fun/product-management-learning-path/</guid>
       
         <description>A list of resources that fit my style of product thinking.</description>
+      
+    </item>
+    
+    <item>
+      <title>My path to Personal Knowledge Management (PKM)</title>
+      <link>https://mbbroberg.fun/my-path-to-personal-knowledge-management-pkm/</link>
+      <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbbroberg.fun/my-path-to-personal-knowledge-management-pkm/</guid>
+      
+        <description>&lt;p&gt;My summary of a lifetime of effort&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;my-why&#34;&gt;My Why&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve learned two corollaries about my memory:&lt;/p&gt;</description>
       
     </item>
     
@@ -249,6 +284,17 @@
       <guid>https://mbbroberg.fun/kubernetes-culture-kubecon-2017/</guid>
       
         <description>&lt;p&gt;&lt;em&gt;The themes that left me thinking how this community will change our industry.&lt;/em&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Dev and Ops Personas for Open Source Documentation</title>
+      <link>https://mbbroberg.fun/devops-personas-for-open-source-documentation/</link>
+      <pubDate>Tue, 03 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbbroberg.fun/devops-personas-for-open-source-documentation/</guid>
+      
+        <description>&lt;p&gt;In a previous role, I wore a few different hats throughout my day as a Developer Advocate. One, that I claim no expertise in but did nevertheless, is documentation.&lt;/p&gt;</description>
       
     </item>
     
