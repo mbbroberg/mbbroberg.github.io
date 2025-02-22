@@ -6,7 +6,7 @@ tags:
 updated: 2025-02-13 Thu 6:12am
 slug: ../on-explorers-villager-and-towns-planners-of-simon-wardley
 filename: 2015-01-03-on-explorers-villager-and-towns-planners-of-simon-wardley
-blog: true
+share: true
 created: 2025-01-03 Fri 2:15pm
 ---
 
