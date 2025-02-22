@@ -2,20 +2,20 @@
 up: 
 related: 
 created: 2020-04-10 Fri 12:00am
-updated: 2025-02-19 Wed 7:04am
+updated: 2025-02-22 Sat 9:35am
 tags:
   - learning
 aliases: []
 cssclasses: 
 edited: 2024-01-28 11:45:00
-publish: false
 title: Learning demands change
-blog: true
-garden: garden
+share: true
 slug: ../learning-demands-change
 filename: 2020-04-10-learning-demands-change
 date: 2020-04-10
 datemod: 2025-02-19
+type: garden
+state: sprout
 ---
 
 > [!quote]
