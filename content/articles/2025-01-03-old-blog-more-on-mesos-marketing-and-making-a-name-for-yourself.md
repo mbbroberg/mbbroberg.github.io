@@ -4,7 +4,7 @@ date: 2015-09-15
 lastmod: 2024-05-31T15:59:00-00:00
 slug: ../old-blog-more-on-mesos-marketing-and-making-a-name-for-yourself
 filename: 2025-01-03-old-blog-more-on-mesos-marketing-and-making-a-name-for-yourself
-blog: true
+share: true
 created: 2025-01-03 Fri 2:15pm
 updated: 2025-02-13 Thu 5:23am
 ---

@@ -1,11 +1,11 @@
 ---
 created: 2025-02-14 Fri 8:50pm
-updated: 2025-02-14 Fri 8:54pm
+updated: 2025-02-14 Fri 8:57pm
 title: The Art of Measuring The Wrong Things - Finding Balance in Metrics
 slug: ../the-art-of-measuring-the-wrong-things
 filename: 2015-06-03-the-art-of-measuring-the-wrong-things
 date: 2015-06-03
-blog: true
+share: true
 ---
 
 > *"The minute we choose to measure something, we are essentially choosing to aspire to it. If we happen to measure running style, we would cultivate a nation of gazelles." - Youngme Moon, Different*
