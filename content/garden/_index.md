@@ -1,5 +1,5 @@
 ---
-title: "🌱 my digital garden"
+title: "🌱 mossy mental models"
 layout: garden
 aliases: ["digital garden"]
 author: "Matt Broberg"
