@@ -47,6 +47,16 @@
     type="text/css"
   />
   
+    
+    
+    <link
+      rel="stylesheet"
+      href="/css/custom.min.fe90a020f10926fad504daa32234897df2a7db38c3e186e66a28b35deecb6445.css"
+      integrity="sha256-/pCgIPEJJvrVBNqjIjSJffKn2zjD4YbmaiizXe7LZEU="
+      crossorigin="anonymous"
+      media="screen"
+    />
+  
   
   <link
     rel="stylesheet"
@@ -454,8 +464,11 @@ Anthony from raintank <a href="https://blog.raintank.io/using-grafana-with-intel
 </ol>
 <p>Everything that talks to Snap, whether *snapctl *or other, uses the RESTful API to do so, enabling a consistent method of administration over the growing amount of data it can collect. All behaviors can be queried over an endpoint. From listing plugins to creating new tasks or even watch running tasks collect telemetry: it’s all there in the API.</p>
 <p>This consistency leads way to the Snap Data Source that allows Grafana to stream any metric live, at high resolution, directly from your Snap servers without leaving Grafana.</p>
+
+
 <blockquote>
-<p>“Combining Snap’s watch feature with Grafana Live provides a new twist to ad hoc queries. Not only can the query be ad hoc, but the actual telemetry data being collected can be ad hoc.”This all comes out at part of <a href="http://grafana.net">Grafana.net</a> the Open SaaS platform the team at raintank has announced today. The Snap Data Store <a href="https://github.com/raintank/snap-app">source code is here</a> if you’re curious. We’re really excited to see the raintank team use Snap in this way. You should definitely check out co-founder <a href="https://blog.raintank.io/using-grafana-with-intels-snap-for-ad-hoc-metric-exploration/">Anthony Woods’ deep dive</a> on the topic and <a href="https://gitter.im/intelsdi-x/snap">share your thoughts</a> with us.</p></blockquote>
+    <p>“Combining Snap’s watch feature with Grafana Live provides a new twist to ad hoc queries. Not only can the query be ad hoc, but the actual telemetry data being collected can be ad hoc.”This all comes out at part of <a href="http://grafana.net">Grafana.net</a> the Open SaaS platform the team at raintank has announced today. The Snap Data Store <a href="https://github.com/raintank/snap-app">source code is here</a> if you’re curious. We’re really excited to see the raintank team use Snap in this way. You should definitely check out co-founder <a href="https://blog.raintank.io/using-grafana-with-intels-snap-for-ad-hoc-metric-exploration/">Anthony Woods’ deep dive</a> on the topic and <a href="https://gitter.im/intelsdi-x/snap">share your thoughts</a> with us.</p>
+</blockquote>
 <h3 id="collect-from-more-sources-with-new-plugins">Collect from more sources with new plugins</h3>
 <p>While the team at raintank developed Snap into a data store, our small team continued to expand the breadth and depth of metrics gathered by the framework. We created 24 new plugins coming to the Snap framework this week, adding tons of value to our growing ecosystem. A couple highlights:</p>
 <ul>

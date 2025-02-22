@@ -47,6 +47,16 @@
     type="text/css"
   />
   
+    
+    
+    <link
+      rel="stylesheet"
+      href="/css/custom.min.fe90a020f10926fad504daa32234897df2a7db38c3e186e66a28b35deecb6445.css"
+      integrity="sha256-/pCgIPEJJvrVBNqjIjSJffKn2zjD4YbmaiizXe7LZEU="
+      crossorigin="anonymous"
+      media="screen"
+    />
+  
   
   <link
     rel="stylesheet"
@@ -446,8 +456,11 @@
       <h4 id="updated-november-30th-2016">Updated November 30th, 2016</h4>
 <p>Today was <a href="https://itpeernetwork.intel.com/announcing-snap-1-0/">the announcement</a> that Snap reached a 1.0.0 release. On our journey toward this milestone, we did a rename of the binaries used in Snap (<em>snapd</em> is now <em>snapteld</em> and <em>snapctl</em> is <em>snaptel</em>) to avoid a conflict with another package. Since this post is the most popular of our series on Snap, so I updated it given this change. Enjoy!</p>
 <p>I was fortunate enough to be part of the release of <a href="https://github.com/intelsdi-x/snap">Snap, an open telemetry framework</a>, a few months ago and the feedback has been phenomenal.</p>
+
+
 <blockquote>
-<p><a href="https://twitter.com/cpswan/status/672090687345729536"></a>Organizations big and small see opportunity in a <strong>single API</strong> to manage any and all layers of their data center metrics. One-on-one conversations have been productive — I love those moments when the idea of snap clicks in as we discuss telemetry and its value in mass. Eyes widen. Data pipelines are whiteboarded. Everyone leaves happier after we discuss it.</p></blockquote>
+    <p><a href="https://twitter.com/cpswan/status/672090687345729536"></a>Organizations big and small see opportunity in a <strong>single API</strong> to manage any and all layers of their data center metrics. One-on-one conversations have been productive — I love those moments when the idea of snap clicks in as we discuss telemetry and its value in mass. Eyes widen. Data pipelines are whiteboarded. Everyone leaves happier after we discuss it.</p>
+</blockquote>
 <p><img src="/img/1*RJF5nIkG1YCo7sRpwEnV1Q.png" alt="">The workflow snap is designed to capture. The left-hand side is raw potential that, by the time it reaches the right-hand side, is a filtered and domain-specific dashboards of valuable insights. That is the big picture goal — we flow from collection, we do some level of processing on that raw value and then we publish what is valuable to the right audience in the right way.I could, however, do better at sharing that story beyond the one-on-ones and to the rest of us out here. Let’s fix this with a no assumptions introduction. We can talk telemetry later: let’s get Snap running right away.</p>
 <h3 id="download-and-run-snaptel">Download and Run snaptel</h3>
 <p>When you want to start using Snap, you start with the Snap daemon, <em>snapteld</em>. Each version is hosted on GitHub under the repositories <a href="https://github.com/intelsdi-x/snap/releases">releases tab</a> as shown in the video below. As of today, you can pull the latest build, <em>now 1.0.0</em>, and get up and running with just a download. Packages are also <a href="http://snap-telemetry.io/download">available here</a>. If you’re beginning with Snap, start simple and give this a watch:</p>

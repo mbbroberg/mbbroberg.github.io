@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sprout on </title>
+    <link>https://mbbroberg.fun/state/sprout/</link>
+    <description>Recent content in Sprout on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 08 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://mbbroberg.fun/state/sprout/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Digital Garden Home</title>
+      <link>https://mbbroberg.fun/digital-garden-home/</link>
+      <pubDate>Wed, 08 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbbroberg.fun/digital-garden-home/</guid>
+      
+        <description>Where my thoughts grow</description>
+      
+    </item>
+    
+    <item>
+      <title>Philosopher – Zizek, Slavoj</title>
+      <link>https://mbbroberg.fun/philosopher-zizek-slavoj/</link>
+      <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbbroberg.fun/philosopher-zizek-slavoj/</guid>
+      
+        <description>&lt;p&gt;He challenges my very concept of self through dialectics..&lt;/p&gt;
+&lt;p&gt;🫚&lt;/p&gt;
+&lt;p&gt;Listening to his wild thoughts. Here are observations.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Learning demands change</title>
+      <link>https://mbbroberg.fun/learning-demands-change/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbbroberg.fun/learning-demands-change/</guid>
+      
+        <description>&lt;blockquote&gt;
+    &lt;p&gt;Unlike education, learning demands change. Learning makes us incompetent just before it enables us to grasp mastery. Learning opens our eyes and changes the way we see, communicate and act.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>
