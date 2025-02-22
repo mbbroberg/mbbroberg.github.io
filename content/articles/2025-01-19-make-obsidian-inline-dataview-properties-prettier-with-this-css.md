@@ -1,6 +1,6 @@
 ---
 created: 2025-01-19 Sun 4:02pm
-updated: 2025-01-19 Sun 4:22pm
+updated: 2025-02-22 Sat 2:40pm
 tags:
   - obsidian
 title: Make Obsidian inline dataview properties prettier with this CSS
@@ -13,11 +13,14 @@ I've found it far more useful to use Obsidian properties when I see them. Luckil
 
 But I kept bumping into a nit of a flaw that cost me focus: I didn't like how in-line properties *rendered*. I stick with the Minimal theme for its sleek design and feature-packed extensions, but its visualization of properties no matter the format didn't quite catch my eye:
 
-![400](Screenshot%202025-01-19%20at%204.10.26%20PM.png)
+![400](../../static/images/Screenshot%202025-01-19%20at%204.10.26%20PM.png)
+
 It feels picky of me but it looks dull and I feel my mind get bored before I read it. I've learned a lot about how I think, and I have learned to trust that voice. As minor as it is, it's the kind of friction that leads me to leave one structure to another [like I talked about in my PKM post](https://mbbroberg.fun/my-path-to-personal-knowledge-management-pkm/). When I do listen to that voice, there is a subtle irony to something I intentionally kept visible is muted in comparison to other text. It could be normal for others, but I want to really **see** my properties. 
 
 To draw my eye, I thought about how text highlighting has the right logic built in already: make it pop and complement the theme's color palette. So after some searching and code assistance I got something I'm happy with: 
-![400](Screenshot%202025-01-19%20at%203.58.56%20PM.png)
+
+![400](../../static/images/Screenshot%202025-01-19%20at%203.58.56%20PM.png)
+
 It's already doing the trick for me. I notice my properties, but even more so I'm *drawn* to them. There's a little gravitational pull that was once a push, and it makes me happy. Here is the code as of today (Jan 19, 2025). 
 
 ```css
