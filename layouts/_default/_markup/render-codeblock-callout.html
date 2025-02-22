@@ -1,0 +1,4 @@
+{{ $type := partial "callout-mapper" .Type }}
+<div class="callout callout-{{ $type }}">
+    {{ .Inner | markdownify }}
+</div>

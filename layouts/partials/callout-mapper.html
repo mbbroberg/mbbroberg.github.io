@@ -1,0 +1,6 @@
+{{ $type := . | lower }}
+{{ $validTypes := slice "note" "warning" "danger" "tip" "info" }}
+{{ if not (in $validTypes $type) }}
+{{ $type = "note" }} <!-- This is your default fallback -->
+{{ end }}
+{{ return $type }}

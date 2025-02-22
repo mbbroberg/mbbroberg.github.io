@@ -6,7 +6,7 @@
   
     class="html theme--dark"
   
-><head>
+><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <title>
     Matt Broberg
@@ -46,6 +46,16 @@
     crossorigin="anonymous"
     type="text/css"
   />
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/css/custom.min.fe90a020f10926fad504daa32234897df2a7db38c3e186e66a28b35deecb6445.css"
+      integrity="sha256-/pCgIPEJJvrVBNqjIjSJffKn2zjD4YbmaiizXe7LZEU="
+      crossorigin="anonymous"
+      media="screen"
+    />
   
   
   <link
@@ -91,7 +101,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
 
-  <link rel="canonical" href="https://mbbroberg.fun/contributor-experience/" />
+  <link rel="canonical" href="http://localhost:1313/contributor-experience/" />
 
   
   
@@ -129,7 +139,7 @@
 
 
   
-  <meta property="og:url" content="https://mbbroberg.fun/contributor-experience/">
+  <meta property="og:url" content="http://localhost:1313/contributor-experience/">
   <meta property="og:site_name" content="Matthew Broberg">
   <meta property="og:title" content="Creating a Contributor Experience for Humans">
   <meta property="og:description" content="In preparation for the wonderful Open Source 101, I wanted to challenge my assumptions on what makes a great contributor experience by asking.">
@@ -166,7 +176,7 @@
         "isFamilyFriendly": "true",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/mbbroberg.fun\/contributor-experience\/"
+            "@id": "http:\/\/localhost:1313\/contributor-experience\/"
         },
         "author" : {
             "@type": "Person",
@@ -191,10 +201,10 @@
         "publisher":{
             "@type":"Organization",
             "name": "Matt Broberg",
-            "url": "https://mbbroberg.fun/",
+            "url": "http://localhost:1313/",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https:\/\/mbbroberg.fun\/favicons\/favicon-32x32.png",
+                "url": "http:\/\/localhost:1313\/favicons\/favicon-32x32.png",
                 "width":"32",
                 "height":"32"
             }
@@ -204,7 +214,7 @@
       ]
 
     ,
-        "url" : "https:\/\/mbbroberg.fun\/contributor-experience\/",
+        "url" : "http:\/\/localhost:1313\/contributor-experience\/",
         "wordCount" : "541",
         "genre" : [ ],
         "keywords" : [ ]
@@ -444,8 +454,11 @@
         <h1>Creating a Contributor Experience for Humans</h1>
       
       <p>In preparation for the wonderful <a href="http://opensource101.com">Open Source 101</a>, I wanted to challenge my assumptions on what makes a great contributor experience by asking.</p>
+
+
 <blockquote>
-<p><a href="https://twitter.com/mbbroberg/status/961348173628284928"></a>The Twitters answered in force.</p>
+    <p><a href="https://twitter.com/mbbroberg/status/961348173628284928"></a>The Twitters answered in force.</p>
+
 </blockquote>
 <p><img src="/img/1*tMXOkAnkwTqFNfJs7PdWzg.png" alt="">Just some of the thoughtful responses. Check out <a href="https://twitter.com/mbbroberg/status/961348173628284928">the full thread</a> to learn a <em>ton</em>I highly recommend scrolling through the thoughtful replies yourself. Here is a summary for those looking to make a great contribution experience:</p>
 <ul>
@@ -457,12 +470,18 @@ Those of us who support maintainers have an opportunity to communicate these use
 <h3 id="my-takeaways">My Takeaways</h3>
 <p>I found a few points hit home for me in unexpected ways.</p>
 <h3 id="documentation-but-with-a-twist"><strong>Documentation, but with a twist</strong></h3>
+
+
 <blockquote>
-<p><a href="https://twitter.com/Erstejahre/status/961361372230533120"></a>Documentation makes or breaks a project’s success for many contributors. The essentials of a Readme, Contributing and License capture what GitHub recommends by default, and there are opportunities to improve them all. I was struck by a couple of the specifics ideas, like the request for a single page contributor guideline. There’s something to be said for brevity.</p>
+    <p><a href="https://twitter.com/Erstejahre/status/961361372230533120"></a>Documentation makes or breaks a project’s success for many contributors. The essentials of a Readme, Contributing and License capture what GitHub recommends by default, and there are opportunities to improve them all. I was struck by a couple of the specifics ideas, like the request for a single page contributor guideline. There’s something to be said for brevity.</p>
+
 </blockquote>
 <p>I love the fact that changelogs were a top request, too:</p>
+
+
 <blockquote>
-<p><a href="https://twitter.com/SchwarzeLocke/status/961376175921692672"></a>On that latter point: if you like to learn by example, here are two great examples changelogs that came up during the discussion:</p>
+    <p><a href="https://twitter.com/SchwarzeLocke/status/961376175921692672"></a>On that latter point: if you like to learn by example, here are two great examples changelogs that came up during the discussion:</p>
+
 </blockquote>
 <ul>
 <li><a href="https://gitweb.torproject.org/tor.git/tree/ChangeLog">https://gitweb.torproject.org/tor.git/tree/ChangeLog</a></li>
@@ -470,12 +489,18 @@ Those of us who support maintainers have an opportunity to communicate these use
 I recently heard of <a href="https://github.com/toolmantim/release-drafter">Release Drafter</a> as a tool to make changelogs a little simpler to curate. Take the time to make one people can read, because people do read them.</li>
 </ul>
 <h4 id="help-them-help-you">Help them help you</h4>
+
+
 <blockquote>
-<p><a href="https://twitter.com/bytemeorg/status/961352565081460738"></a>Many people scrolling through GitHub want to help out. I appreciate Mark’s reminder to help make that a little easier. GitHub also provides added visibility to help wanted and good first issue labels on repositories. These two get highlighted at the top of a the projects /issues URL. See <a href="https://help.github.com/articles/helping-new-contributors-find-your-project-with-labels/">the guide here</a>.</p>
+    <p><a href="https://twitter.com/bytemeorg/status/961352565081460738"></a>Many people scrolling through GitHub want to help out. I appreciate Mark’s reminder to help make that a little easier. GitHub also provides added visibility to help wanted and good first issue labels on repositories. These two get highlighted at the top of a the projects /issues URL. See <a href="https://help.github.com/articles/helping-new-contributors-find-your-project-with-labels/">the guide here</a>.</p>
+
 </blockquote>
 <h4 id="welcoming-maintainers"><strong>Welcoming Maintainers</strong></h4>
+
+
 <blockquote>
-<p><a href="https://twitter.com/Firesphere/status/961354413582336000"></a>The verdict is out: In our time of social polarization, contributors have little patience for unwelcoming maintainers. I know it can be a challenge for maintainers to be chipper all the time, and maintaining lots of code is time consuming, so there has to be help on this front. I cannot recommend <a href="https://github.com/settings/replies">GitHub’s saved replies</a> or tools like <a href="https://textexpander.com/">TextExpander</a> enough. Here’s why:</p>
+    <p><a href="https://twitter.com/Firesphere/status/961354413582336000"></a>The verdict is out: In our time of social polarization, contributors have little patience for unwelcoming maintainers. I know it can be a challenge for maintainers to be chipper all the time, and maintaining lots of code is time consuming, so there has to be help on this front. I cannot recommend <a href="https://github.com/settings/replies">GitHub’s saved replies</a> or tools like <a href="https://textexpander.com/">TextExpander</a> enough. Here’s why:</p>
+
 </blockquote>
 <p>It takes a lot of words to repeatedly be kind to new contributors, and it’s easier to be more human by saving them as default replies. It helps new users feel welcome while removing the dullness from the maintainer. The irony of default replies as more personal is not lost on me, but I promise it’s effective.</p>
 <p><strong>Another Worthwhile Read</strong></p>
@@ -492,9 +517,9 @@ I recently heard of <a href="https://github.com/toolmantim/release-drafter">Rele
     
       <li><a href="/make-obsidian-inline-dataview-properties-prettier-with-this-css/">Make Obsidian inline dataview properties prettier with this CSS</a></li>
     
-      <li><a href="/my-path-to-personal-knowledge-management-pkm/">My path to Personal Knowledge Management (PKM)</a></li>
+      <li><a href="/make-obsidian-inline-dataview-properties-prettier-with-this-css/">Make Obsidian inline dataview properties prettier with this CSS</a></li>
     
-      <li><a href="/literate-programming-def/">Literate Programming (def)</a></li>
+      <li><a href="/my-path-to-personal-knowledge-management-pkm/">My path to Personal Knowledge Management (PKM)</a></li>
     
   </ul>
 

@@ -1,0 +1,12 @@
+{{ $content := .Text }}
+{{ if strings.HasPrefix .Text "[!" }}
+{{ $type := index (findRE `\[!(\w+)\]` .Text 1) 0 | strings.TrimPrefix "[!" | strings.TrimSuffix "]" }}
+{{ $content = replace .Text (printf "[!%s]" $type) "" }}
+<div class="callout callout-{{ $type | default " note" }}">
+    {{ $content }}
+</div>
+{{ else }}
+<blockquote>
+    {{ $content }}
+</blockquote>
+{{ end }}

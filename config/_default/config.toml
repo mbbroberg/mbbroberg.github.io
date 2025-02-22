@@ -31,13 +31,17 @@ contentratio = 0.65
 relatedPosts = true
 numberOfRelatedPosts = 3
 disableArchiveTitleStyling  = true
+customCss = ["css/custom.css"]
 
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]
         unsafe=true
+[markup.goldmark.parser.attribute]
+  block = true
+
 
 [taxonomies]
-    category = "categories"
     tag = "tags"
     garden = "garden"
+    state = "state"

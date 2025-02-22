@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on </title>
-    <link>https://mbbroberg.fun/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://mbbroberg.fun/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Obsidian</title>
-      <link>https://mbbroberg.fun/tags/obsidian/</link>
+      <link>http://localhost:1313/tags/obsidian/</link>
       <pubDate>Sun, 19 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/tags/obsidian/</guid>
+      <guid>http://localhost:1313/tags/obsidian/</guid>
       
         <description></description>
       
@@ -20,10 +20,10 @@
     
     <item>
       <title>Note/Develop🫚</title>
-      <link>https://mbbroberg.fun/tags/note/develop/</link>
+      <link>http://localhost:1313/tags/note/develop/</link>
       <pubDate>Thu, 16 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/tags/note/develop/</guid>
+      <guid>http://localhost:1313/tags/note/develop/</guid>
       
         <description></description>
       
@@ -31,10 +31,10 @@
     
     <item>
       <title>Future-Projects</title>
-      <link>https://mbbroberg.fun/tags/future-projects/</link>
+      <link>http://localhost:1313/tags/future-projects/</link>
       <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/tags/future-projects/</guid>
+      <guid>http://localhost:1313/tags/future-projects/</guid>
       
         <description></description>
       
@@ -42,10 +42,10 @@
     
     <item>
       <title>Mental Models</title>
-      <link>https://mbbroberg.fun/tags/mental-models/</link>
+      <link>http://localhost:1313/tags/mental-models/</link>
       <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/tags/mental-models/</guid>
+      <guid>http://localhost:1313/tags/mental-models/</guid>
       
         <description></description>
       
@@ -53,10 +53,10 @@
     
     <item>
       <title>Product Development</title>
-      <link>https://mbbroberg.fun/tags/product-development/</link>
+      <link>http://localhost:1313/tags/product-development/</link>
       <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/tags/product-development/</guid>
+      <guid>http://localhost:1313/tags/product-development/</guid>
       
         <description></description>
       
@@ -64,10 +64,21 @@
     
     <item>
       <title>Clipping</title>
-      <link>https://mbbroberg.fun/tags/clipping/</link>
+      <link>http://localhost:1313/tags/clipping/</link>
       <pubDate>Wed, 31 Jul 2024 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/tags/clipping/</guid>
+      <guid>http://localhost:1313/tags/clipping/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Meta</title>
+      <link>http://localhost:1313/tags/meta/</link>
+      <pubDate>Thu, 08 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/meta/</guid>
       
         <description></description>
       
@@ -75,10 +86,10 @@
     
     <item>
       <title>Learning</title>
-      <link>https://mbbroberg.fun/tags/learning/</link>
+      <link>http://localhost:1313/tags/learning/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/tags/learning/</guid>
+      <guid>http://localhost:1313/tags/learning/</guid>
       
         <description></description>
       
@@ -86,10 +97,10 @@
     
     <item>
       <title>Career</title>
-      <link>https://mbbroberg.fun/tags/career/</link>
+      <link>http://localhost:1313/tags/career/</link>
       <pubDate>Sat, 16 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/tags/career/</guid>
+      <guid>http://localhost:1313/tags/career/</guid>
       
         <description></description>
       
@@ -97,10 +108,10 @@
     
     <item>
       <title>Cloud</title>
-      <link>https://mbbroberg.fun/tags/cloud/</link>
+      <link>http://localhost:1313/tags/cloud/</link>
       <pubDate>Sat, 16 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/tags/cloud/</guid>
+      <guid>http://localhost:1313/tags/cloud/</guid>
       
         <description></description>
       
@@ -108,10 +119,10 @@
     
     <item>
       <title>Devops</title>
-      <link>https://mbbroberg.fun/tags/devops/</link>
+      <link>http://localhost:1313/tags/devops/</link>
       <pubDate>Sat, 16 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/tags/devops/</guid>
+      <guid>http://localhost:1313/tags/devops/</guid>
       
         <description></description>
       
@@ -119,10 +130,10 @@
     
     <item>
       <title>Humor</title>
-      <link>https://mbbroberg.fun/tags/humor/</link>
+      <link>http://localhost:1313/tags/humor/</link>
       <pubDate>Sat, 16 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/tags/humor/</guid>
+      <guid>http://localhost:1313/tags/humor/</guid>
       
         <description></description>
       
@@ -130,10 +141,10 @@
     
     <item>
       <title>Sysadmin</title>
-      <link>https://mbbroberg.fun/tags/sysadmin/</link>
+      <link>http://localhost:1313/tags/sysadmin/</link>
       <pubDate>Sat, 16 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://mbbroberg.fun/tags/sysadmin/</guid>
+      <guid>http://localhost:1313/tags/sysadmin/</guid>
       
         <description></description>
       

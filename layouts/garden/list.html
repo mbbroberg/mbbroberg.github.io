@@ -16,7 +16,7 @@
         {{ range $state := $states }}
         {{ $count := 0 }}
         {{ range $pages }}
-        {{ if eq .Params.growth $state }}
+        {{ if eq .Params.state $state }}
         {{ $count = add $count 1 }}
         {{ end }}
         {{ end }}
@@ -50,7 +50,7 @@
         </h2>
         <div class="entries-grid">
             {{ range where $.Site.RegularPages "Type" "garden" }}
-            {{ if eq .Params.growth $state }}
+            {{ if eq .Params.state $state }}
             <article class="garden-entry {{ $state }}">
                 <div class="entry-header">
                     <h3 class="entry-title">
