@@ -1,13 +1,13 @@
 ---
 created: 2025-02-22 Sat 2:41pm
-updated: 2025-02-23 Sun 9:15pm
+updated: 2025-02-23 Sun 9:27pm
 title: Make Obsidian a Digital Garden
 slug: ../make-obsidian-a-digital-garden
 filename: 2025-02-22-make-obsidian-a-digital-garden
 date: 2025-02-22
 share: true
 ---
-![richard-giblett-mycelium-rhizome.jpg](../../static/images/richard-giblett-mycelium-rhizome.jpg)
+![richard-giblett-mycelium-rhizome.png](/images/richard-giblett-mycelium-rhizome.png)
 
 ## Growing Ideas Like Mycelia
 
