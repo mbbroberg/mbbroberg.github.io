@@ -8,6 +8,7 @@ date: 2025-02-22
 share: true
 ---
 ![richard-giblett-mycelium-rhizome.jpg](../../static/images/richard-giblett-mycelium-rhizome.jpg)
+
 ## Growing Ideas Like Mycelia
 
 In 2010 I was told "if you ever have to explain something more than once, write a blog post." It's served me well. Many years later, writing has become second nature. I write everyday, sometimes in public, but mostly for myself these days. When I wondered why I seemed to stop, I realize it was the concept of posting has a permanence I don't have time to refine these days. The concept of a blog is one you "publish" on an artificial chronology feels increasingly disconnected from how knowledge and ideas actually develop.
