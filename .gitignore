@@ -7,4 +7,5 @@ Gemfile.lock
 .hugo*
 .ruby-version
 .jekyll*
-public/
+public*
+public/*
