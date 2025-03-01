@@ -1,6 +1,6 @@
 ---
 created: 2025-01-19 Sun 4:02pm
-updated: 2025-02-22 Sat 2:40pm
+updated: 2025-02-23 Sun 9:36pm
 tags:
   - obsidian
 title: Make Obsidian inline dataview properties prettier with this CSS
