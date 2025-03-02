@@ -1,6 +1,6 @@
 ---
 created: 2025-02-22 Sat 2:41pm
-updated: 2025-02-23 Sun 9:27pm
+updated: 2025-02-23 Sun 9:29pm
 title: Make Obsidian a Digital Garden
 slug: ../make-obsidian-a-digital-garden
 filename: 2025-02-22-make-obsidian-a-digital-garden
