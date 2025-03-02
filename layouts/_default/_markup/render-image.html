@@ -1,0 +1,8 @@
+{{ $src := .Destination }}
+{{ $src := replace $src "../../static/images/" "/images/" }}
+{{ if not (hasPrefix $src "/") }}
+{{ if hasPrefix $src "images/" }}
+{{ $src = printf "/%s" $src }}
+{{ end }}
+{{ end }}
+<img src="{{ $src }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}" {{ end }} />
