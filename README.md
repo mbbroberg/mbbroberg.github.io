@@ -11,11 +11,13 @@ These are mostly notes to my future self.
 The site builds and deploys automatically through GitHub Actions. To add new content:
 
 - Add posts to `content/articles/`
-  - You can use [Hugo Page Bundles](https://gohugo.io/content-management/page-bundles/) to store images with posts
-- or add pages to `content/` as a new folder and index.md file
-  - Create a link to the new page in `config/menus.toml`
+  - defaulting to images in `static/images/` these days, and fixing old pathways with `layouts/_default/_markup/render-image.html`
+  - or add pages to `content/` as a new folder and index.md file to use [Hugo Page Bundles](https://gohugo.io/content-management/page-bundles/) and store images with posts
+- Adding to `content/garden` adds to my [digital garden](https://mbbroberg.fun/garden/) 🌱
+  - Garden design is controlled by the taxonomy and `layouts/garden/list.html`
 - Update about me in `content/_index.md`
   - Social links are in `config/params.toml`
+  - Create a link to the new page in `config/menus.toml`
 
 ### Other Notes 📦
 
