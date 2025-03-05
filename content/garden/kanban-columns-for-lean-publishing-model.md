@@ -18,7 +18,8 @@ date: 2024-06-12
 datemod: 2025-02-18
 type: garden
 state: sprout
----# Kanban columns for lean publishing model
+---
+# Kanban columns for lean publishing model
 
 #product-management #operations
 
