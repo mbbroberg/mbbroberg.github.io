@@ -1,16 +1,25 @@
 ---
+title: Philosopher – Zizek, Slavoj
+slug: /philosopher-zizek-slavoj
+filename: philosopher-zizek-slavoj
+date: 2025-03-04
+share: true
+type: garden
+state: sprout
+---
+---
 up:
-  - "[Philosophy — my most influential thinkers](Philosophy%20%E2%80%94%20my%20most%20influential%20thinkers.md)"
+  - "[philosophy-my-most-influential-thinkers](./philosophy-my-most-influential-thinkers.md)"
 related:
   - "[Mental Model MOCs](Mental%20Model%20MOCs.md)"
-  - "[Politics (USA & beyond)](My%20Politics%20(USA%20&%20beyond)%20MOC.md)"
+  - "My Politics (USA & beyond) MOC"
 created: 2024-04-07 Sun 07:45am
 updated: 2024-07-30 Tue 08:54pm
 tags: []
 aliases: []
 cssclasses: 
 edited: 2024-04-07 08:00:08
-publish: false
+
 title: Philosopher – Zizek, Slavoj
 slug: /philosopher-zizek-slavoj
 filename: philosopher-zizek-slavoj
@@ -18,7 +27,7 @@ date: 2024-04-07
 share: true
 type: garden
 state: sprout
----
+---# Philosopher – Zizek, Slavoj
 
 He challenges my very concept of self through dialectics..
 

@@ -1,4 +1,13 @@
 ---
+title: Literate Programming (def)
+slug: /literate-programming-def
+filename: literate-programming-def
+date: 2025-03-04
+share: true
+type: garden
+state: sprout
+---
+---
 edited: 2024-03-16 13:17:54
 created: 2025-01-03 Fri 2:15pm
 updated: 2025-02-22 Sat 1:51pm
@@ -13,8 +22,7 @@ date: 2025-01-03
 datemod: 2025-02-19
 type: garden
 state: sprout
----
-
+---# Literate Programming (def)
 
 I love that I stumbled across this on [an old internet friend's site](https://www.curiouslychase.com/posts/literate-programming/):
 

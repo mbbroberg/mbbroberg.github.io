@@ -1,4 +1,13 @@
 ---
+title: we are born a garden
+slug: /we-are-born-a-garden
+filename: we-are-born-a-garden
+date: 2025-03-04
+share: true
+type: garden
+state: sprout
+---
+---
 up: 
 created: 2024-07-18 Thu 1:09pm
 updated: 2024-11-07 Thu 9:39pm
@@ -13,7 +22,8 @@ date: 2024-07-18
 lastmod: 2024-11-07
 share: true
 state: sprout
----
+---# we are born a garden
+
 Inspired by Nietzsche podcast 92
 
 We are a unique plot of land. Shape. Location. Weather patterns that follow. But still a garden; Primed for growth.
