@@ -1,6 +1,5 @@
 {{ define "main" }}
-
-<div class="archive">
+<div class="garden-archive">
     {{ with .Content }}
     <div class="garden-intro">
         {{ . | markdownify }}
@@ -10,7 +9,7 @@
     <!-- Growth State Navigation -->
     <nav class="growth-navigation" aria-label="Content growth states">
         {{ $pages := where .Site.RegularPages "Type" "garden" }}
-        {{ $states := slice "spore" "sprout" "entwined" }}
+        {{ $states := slice "seed" "sprout" "rhizome" }}
 
         {{ $stateCount := dict }}
         {{ range $state := $states }}
@@ -24,10 +23,10 @@
         {{ end }}
 
         <ul class="growth-list">
-            {{ range $state := slice "entwined" "sprout" "spore" }}
+            {{ range $state := slice "rhizome" "sprout" "seed" }}
             <li>
                 <a href="#{{ $state }}" class="growth-link {{ $state }}">
-                    {{ if eq $state "spore" }}🍄‍🟫{{ else if eq $state "sprout" }}🌱{{ else }}🌿{{ end }}
+                    {{ if eq $state "seed" }}🌱{{ else if eq $state "sprout" }}🌿{{ else }}🫚{{ end }}
                     {{ $state }}
                     <span class="growth-count">{{ index $stateCount $state }}</span>
                 </a>
@@ -37,43 +36,45 @@
     </nav>
 
     <!-- Content sections by growth state, ordered by maturity -->
-    {{ range $state := slice "spore" "sprout" "entwined" }}
+    {{ range $state := slice "seed" "sprout" "rhizome" }}
     <section id="{{ $state }}" class="growth-section">
         <h2 class="growth-heading">
-            {{ if eq $state "spore" }}
-            🍄‍🟫 New Growth
+            {{ if eq $state "seed" }}
+            🌱 New Growth
             {{ else if eq $state "sprout" }}
-            🌱 Sprouting Connections
+            🌿 Sprouting Connections
             {{ else }}
-            🌿 Enmeshed and Interwoven
+            🫚 Enmeshed and Interwoven
             {{ end }}
         </h2>
         <div class="entries-grid">
             {{ range where $.Site.RegularPages "Type" "garden" }}
             {{ if eq .Params.state $state }}
             <article class="garden-entry {{ $state }}">
-                <div class="entry-header">
-                    <h3 class="entry-title">
-                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    </h3>
-                </div>
-                <div class="entry-metadata">
-                    <div class="timestamps">
-                        <time class="planted">
-                            Planted: {{ .Date.Format "January 2, 2006" }}
-                        </time>
-                        <time class="tended">
-                            Last tended: {{ .Lastmod.Format "January 2, 2006" }}
-                        </time>
+                <a href="{{ .RelPermalink }}" class="entry-link-wrapper">
+                    <div class="entry-header">
+                        <h3 class="entry-title">{{ .Title }}</h3>
                     </div>
-                    {{ with .Params.tags }}
-                    <div class="entry-tags">
-                        {{ range . }}
-                        <a href="/tags/{{ . }}" class="tag">{{ . }}</a>
+                    <div class="entry-metadata">
+                        <div class="timestamps">
+                            {{ if .Params.updated }}
+                            {{ $dateStr := .Params.updated }}
+                            {{ $dateParts := split $dateStr " " }}
+                            {{ if ge (len $dateParts) 2 }}
+                            {{ $justDate := index $dateParts 0 }}
+                            <time class="tended">Last tended: {{ dateFormat "January 2, 2006" $justDate }}</time>
+                            {{ end }}
+                            {{ end }}
+                        </div>
+                        {{ with .Params.tags }}
+                        <div class="entry-tags">
+                            {{ range . }}
+                            <span class="tag">{{ . }}</span>
+                            {{ end }}
+                        </div>
                         {{ end }}
                     </div>
-                    {{ end }}
-                </div>
+                </a>
             </article>
             {{ end }}
             {{ end }}
@@ -83,6 +84,19 @@
 </div>
 
 <style>
+    .garden-archive {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .garden-intro {
+        margin: 2rem 0;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        border-left: 4px solid rgba(72, 187, 120, 0.5);
+    }
+
     .growth-navigation {
         margin: 2rem 0;
         padding: 1rem;
@@ -109,25 +123,52 @@
         transition: all 0.3s ease;
     }
 
-    .growth-link.spore {
+    .growth-link.seed {
         background: rgba(145, 219, 105, 0.1);
+        border: 1px solid rgba(145, 219, 105, 0.3);
     }
 
     .growth-link.sprout {
         background: rgba(72, 187, 120, 0.1);
+        border: 1px solid rgba(72, 187, 120, 0.3);
     }
 
-    .growth-link.entwined {
+    .growth-link.rhizome {
         background: rgba(47, 133, 90, 0.1);
+        border: 1px solid rgba(47, 133, 90, 0.3);
+    }
+
+    .growth-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .growth-count {
         opacity: 0.7;
         font-size: 0.875rem;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 0.2rem 0.5rem;
+        border-radius: 10px;
+    }
+
+    .growth-section {
+        margin: 3rem 0;
+        scroll-margin-top: 2rem;
+    }
+
+    .growth-heading {
+        margin: 2rem 0 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(72, 187, 120, 0.2);
+    }
+
+    .entries-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 
     .garden-entry {
-        padding: 1.5rem;
         background: rgba(255, 255, 255, 0.05);
         border-radius: 8px;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -135,13 +176,35 @@
         overflow: hidden;
         animation: growEntry 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         animation-fill-mode: both;
-        margin-bottom: 2rem;
+        border-left: 4px solid transparent;
+    }
+
+    .entry-link-wrapper {
+        display: block;
+        padding: 1.5rem;
+        text-decoration: none;
+        color: inherit;
+        height: 100%;
+    }
+
+    .garden-entry.seed {
+        border-left-color: rgba(145, 219, 105, 0.8);
+        background: rgba(145, 219, 105, 0.05);
+    }
+
+    .garden-entry.sprout {
+        border-left-color: rgba(72, 187, 120, 0.8);
+        background: rgba(72, 187, 120, 0.05);
+    }
+
+    .garden-entry.rhizome {
+        border-left-color: rgba(47, 133, 90, 0.8);
+        background: rgba(47, 133, 90, 0.05);
     }
 
     .garden-entry:hover {
         transform: translateY(-2px);
-        background: rgba(72, 187, 120, 0.05);
-        box-shadow: 0 4px 12px rgba(72, 187, 120, 0.1);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     /* Animation keyframes */
@@ -180,18 +243,8 @@
         font-weight: 500;
     }
 
-    .entry-title a {
-        text-decoration: none;
-        color: inherit;
-        transition: color 0.2s ease;
-    }
-
-    .entry-title a:hover {
-        color: rgba(72, 187, 120, 0.9);
-    }
-
     .entry-metadata {
-        font-size: 0.875rem;
+        font-size: 1.4rem;
     }
 
     .timestamps {
@@ -213,14 +266,11 @@
     .tag {
         display: inline-flex;
         align-items: center;
-        padding: 0.5rem 1rem;
-        background: rgba(255, 255, 255, 0.05);
+        padding: 0.25rem 0.75rem;
+        background: rgba(255, 255, 255, 0.1);
         border-radius: 20px;
-        text-decoration: none;
         color: inherit;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        position: relative;
-        overflow: hidden;
+        font-size: 0.75rem;
     }
 
     .tag::before {
@@ -229,30 +279,21 @@
         margin-right: 2px;
     }
 
-    .tag:hover {
-        transform: translateY(-2px);
-    }
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .entries-grid {
+            grid-template-columns: 1fr;
+        }
 
-    .tag::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(72, 187, 120, 0.1);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
+        .growth-list {
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .tag:hover::after {
-        opacity: 1;
-    }
-
-    .growth-heading {
-        margin: 2rem 0 1rem;
-        padding-bottom: 0.5rem;
-        border-bottom: 1px solid rgba(72, 187, 120, 0.2);
+        .growth-link {
+            width: 100%;
+            justify-content: space-between;
+        }
     }
 </style>
 {{ end }}

@@ -1,7 +1,40 @@
 {{ $link := .Destination }}
 {{ $isExternal := strings.HasPrefix $link "http" }}
+
 {{ if not $isExternal }}
-{{ $link = replace $link "../../" "/" }}
+  {{ $fileName := path.Base $link | strings.TrimSuffix ".md" | strings.TrimSuffix ".html" }}
+
+  {{ if strings.HasPrefix $link "../../" }}
+    {{ $decodedName := $fileName }}
+    {{ $decodedName = replaceRE "%20" " " $decodedName }}
+    {{ $decodedName = replaceRE "%27" "'" $decodedName }}
+
+    {{ $targetPage := false }}
+    {{ range .Page.Site.Pages }}
+      {{ $pageTitle := .Title }}
+      {{ if eq (lower $pageTitle) (lower $decodedName) }}
+        {{ $targetPage = . }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
+
+    {{ if $targetPage }}
+      {{ if $targetPage.Params.slug }}
+        {{ $link = $targetPage.Params.slug }}
+        {{ if not (strings.HasPrefix $link "/") }}
+          {{ $link = printf "/%s" $link }}
+        {{ end }}
+        {{ if not (strings.HasSuffix $link "/") }}
+          {{ $link = printf "%s/" $link }}
+        {{ end }}
+      {{ else }}
+        {{ $link = $targetPage.RelPermalink }}
+      {{ end }}
+    {{ else }}
+      {{ $slug := anchorize $decodedName }}
+      {{ $link = printf "/%s/" $slug }}
+    {{ end }}
+  {{ end }}
 {{ end }}
-<a href="{{ $link }}" {{ with .Title}} title="{{ . }}" {{ end }}{{ if $isExternal }} target="_blank" rel="noopener" {{
-    end }}>{{ .Text | safeHTML }}</a>
+
+<a href="{{ $link }}" {{ with .Title }} title="{{ . }}" {{ end }}{{ if $isExternal }} target="_blank" rel="noopener" {{ end }}>{{ .Text | safeHTML }}</a>

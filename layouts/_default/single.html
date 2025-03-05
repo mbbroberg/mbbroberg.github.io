@@ -1,117 +1,108 @@
 {{ define "main" }}
-  <div
-    class="post {{ with .Site.Params.doNotLoadAnimations }}
-      .
+<div class="post garden-post {{ with .Site.Params.doNotLoadAnimations }}
+   .
+   {{ else }}
+   animated fadeInDown
+   {{ end }}">
+  <!-- Garden State Indicator -->
+  {{ if eq .Type "garden" }}
+  <div class="garden-state-indicator">
+    {{ if eq .Params.state "seed" }}
+    <span class="state-icon seed" title="Seed - New Growth">🌱</span>
+    {{ else if eq .Params.state "sprout" }}
+    <span class="state-icon sprout" title="Sprout - Developing Ideas">🌿</span>
+    {{ else if eq .Params.state "rhizome" }}
+    <span class="state-icon rhizome" title="Rhizome - Mature, Connected Ideas">🫚</span>
     {{ else }}
-      animated fadeInDown
-    {{ end }}"
-  >
-    {{ if .Params.thumbnail }}
-      <div class="post__thumbnail-wrapper">
-        <img class="post__thumbnail" src="{{ .Params.thumbnail | relURL }}" alt="Thumbnail image" />
-      </div>
+    <span class="state-icon seed" title="Seed - New Growth">🌱</span>
     {{ end }}
-    <div class="post__content">
-      {{ if (eq .Site.Params.disableTitleCapitalization true) }}
-        <h1>{{ .Title }}</h1>
-      {{ else }}
-        <h1>{{ title .Title }}</h1>
+    <span class="state-label">{{ default "seed" .Params.state }}</span>
+    <span class="state-dates">
+      <time class="planted">Planted: {{ .Date.Format "January 2, 2006" }}</time>
+      {{ if .Params.updated }}
+      {{ $dateStr := .Params.updated }}
+      {{ $dateParts := split $dateStr " " }}
+      {{ if ge (len $dateParts) 2 }}
+      {{ $justDate := index $dateParts 0 }}
+      <time class="tended">Last tended: {{ dateFormat "January 2, 2006" $justDate }}</time>
       {{ end }}
-      {{ if or (eq .Type "post") (eq .Type .Site.Params.postSectionName) }}
-        <ul class="post__meta">
-          <li class="post__meta-item">
-            <em class="fas fa-calendar-day post__meta-icon"></em>
-            <span class="post__meta-text"
-              >{{ if isset .Site.Params "singledateformat" }}
-                {{ if .Site.Params.localizedDates }}
-                  {{ time.Format .Site.Params.singleDateFormat .Date }}
-                {{ else }}
-                  {{ .Date.Format .Site.Params.singleDateFormat }}
-                {{ end }}
-
-              {{ else }}
-                {{ if .Site.Params.localizedDates }}
-                  {{ time.Format "Mon, Jan 2, 2006" .Date }}
-                {{ else }}
-                  {{ .Date.Format "Mon, Jan 2, 2006" }}
-                {{ end }}
-
-              {{ end }}
-            </span>
-          </li>
-          <li class="post__meta-item">
-            <em class="fas fa-stopwatch post__meta-icon"></em>
-            <span class="post__meta-text">{{ i18n "reading_time" .ReadingTime }}</span>
-          </li>
-        </ul>
       {{ end }}
-
-      {{- partial "expirationnote.html" . -}}
-
-      {{- if (eq .Params.toc true) -}}
-        {{- partial "toc.html" . -}}
-      {{- end -}}
-
-      {{ .Content }}
-
-      {{- if isset .Params "series" -}}
-        {{- partial "series.html" . -}}
-      {{- end -}}
-
-      {{- if (eq .Site.Params.relatedPosts true) -}}
-        {{- partial "related.html" . -}}
-      {{- end -}}
-
-      {{- if (eq .Params.contact true) -}}
-        {{- partial "contact.html" . -}}
-      {{- end -}}
-
-      {{- if (eq .Site.Params.mermaid.enable true) -}}
-        {{- partial "mermaid.html" . -}}
-      {{- end -}}
-    </div>
-    <div class="post__footer">
-      {{ with .Page.Params.Categories }}
-        {{ partial "taxonomy/categories.html" . }}
-      {{ end }}
-
-      {{ with .Page.Params.Tags }}
-        {{ partial "taxonomy/tags.html" . }}
-      {{ end }}
-    </div>
-
-    {{ if and (or (eq .Type "post") (eq .Type .Site.Params.postSectionName)) (ne .Page.Params.disableComments true) }}
-      {{- if .Site.Config.Services.Disqus.Shortname -}}
-        <div id="comment">
-          <h2>{{ i18n "comments" }}</h2>
-          {{ template "_internal/disqus.html" . }}
-        </div>
-      {{- end -}}
-      {{- if .Site.Params.utterances.repo -}}
-        <div id="comment">
-          <h2>{{ i18n "comments" }}</h2>
-          {{ partial "comments/utterances.html" . }}
-        </div>
-      {{- end -}}
-      {{- if .Site.Params.giscus.repo -}}
-        <div id="comment">
-          <h2>{{ i18n "comments" }}</h2>
-          {{ partial "comments/giscus.html" . }}
-        </div>
-      {{- end -}}
-      {{- if .Site.Params.CommentoURL -}}
-        <div id="comment">
-          <h2>{{ i18n "comments" }}</h2>
-          {{ partial "comments/commento.html" . }}
-        </div>
-      {{- end -}}
-      {{- if .Site.Params.gitalk.repo -}}
-        <div id="comment">
-          <h2>{{ i18n "comments" }}</h2>
-          {{ partial "comments/gitalk.html" . }}
-        </div>
-      {{- end -}}
-
-    {{ end }}
+    </span>
   </div>
+  {{ end }}
+
+  <div class="post__content">
+    {{ .Content }}
+  </div>
+</div>
+
+<!-- Add CSS for garden state indicator -->
+{{ if eq .Type "garden" }}
+<style>
+  .garden-post {
+    position: relative;
+  }
+
+  .garden-state-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid;
+  }
+
+  /* State-specific styling */
+  .garden-state-indicator:has(.seed) {
+    border-left-color: rgba(145, 219, 105, 0.8);
+    background: rgba(145, 219, 105, 0.05);
+  }
+
+  .garden-state-indicator:has(.sprout) {
+    border-left-color: rgba(72, 187, 120, 0.8);
+    background: rgba(72, 187, 120, 0.05);
+  }
+
+  .garden-state-indicator:has(.rhizome) {
+    border-left-color: rgba(47, 133, 90, 0.8);
+    background: rgba(47, 133, 90, 0.05);
+  }
+
+  .state-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .state-label {
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-right: 1rem;
+  }
+
+  .state-dates {
+    display: flex;
+    gap: 3rem;
+    margin-left: auto;
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .garden-state-indicator {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .state-dates {
+      margin-left: 0;
+      flex-direction: column;
+      gap: 0.25rem;
+      margin-top: 0.5rem;
+    }
+  }
+</style>
+{{ end }}
 {{ end }}
