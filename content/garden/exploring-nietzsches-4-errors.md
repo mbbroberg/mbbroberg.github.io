@@ -1,17 +1,8 @@
 ---
-title: Exploring Nietzsche's 4 Errors
-slug: /exploring-nietzsches-4-errors
-filename: exploring-nietzsches-4-errors
-date: 2025-03-04
-share: true
-type: garden
-state: sprout
----
----
 aliases: []
 tags: []
 created: 2024-07-18 Thu 1:24pm
-updated: 2025-03-04 Tue 10:13pm
+updated: 2025-03-04 Tue 11:18pm
 date: 2024-07-18
 share: true
 type: garden
@@ -19,7 +10,9 @@ state: sprout
 title: Exploring Nietzsche's 4 Errors
 slug: /exploring-nietzsches-4-errors
 filename: exploring-nietzsches-4-errors
----# Exploring Nietzsche's 4 Errors
+---
+
+# Exploring Nietzsche's 4 Errors
 
 up:: [Friedrich Nietzsche](friedrich-nietzsche)
 
