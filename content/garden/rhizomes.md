@@ -1,17 +1,8 @@
 ---
-title: Rhizomes
-slug: /rhizomes
-filename: rhizomes
-date: 2025-03-04
-share: true
-type: garden
-state: sprout
----
----
 up: 
 related: 
 created: 2024-05-12 Sun 1:00pm
-updated: 2025-02-22 Sat 9:13am
+updated: 2025-03-04 Tue 11:23pm
 edited: 2024-05-18 14:37:42
 title: Rhizomes
 slug: /rhizomes
@@ -22,7 +13,9 @@ type: garden
 lastmod: 2025-02-22
 state: sprout
 share: true
----# Rhizomes
+---
+
+# Rhizomes
 
 While I'm still early in my understanding of it, the philosophy of [Philosophers – Deleuze and Guattari](philosophers-deleuze-and-guattari) speaks to me.
 

@@ -1,15 +1,6 @@
 ---
-title: Kahneman on Irrationality
-slug: /kahneman-on-irrationality
-filename: kahneman-on-irrationality
-date: 2025-03-04
-share: true
-type: garden
-state: sprout
----
----
 created: 2024-07-31 Wed 9:45pm
-updated: 2025-03-04 Tue 10:29pm
+updated: 2025-03-04 Tue 11:19pm
 aliases: []
 tags: []
 title: Kahneman on Irrationality
@@ -19,7 +10,8 @@ type: garden
 state: sprout
 share: true
 filename: kahneman-on-irrationality
----# Kahneman on Irrationality
+---
+# Kahneman on Irrationality
 
 up:: [Prospect Theory](prospect-theory)
 related:: [Exploring Nietzsche's 4 Errors](exploring-nietzsches-4-errors)
