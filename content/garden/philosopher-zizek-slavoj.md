@@ -1,25 +1,10 @@
 ---
-title: Philosopher – Zizek, Slavoj
-slug: /philosopher-zizek-slavoj
-filename: philosopher-zizek-slavoj
-date: 2025-03-04
-share: true
-type: garden
-state: sprout
----
----
-up:
-  - "[philosophy-my-most-influential-thinkers](./philosophy-my-most-influential-thinkers.md)"
-related:
-  - "[Mental Model MOCs](Mental%20Model%20MOCs.md)"
-  - "My Politics (USA & beyond) MOC"
 created: 2024-04-07 Sun 07:45am
-updated: 2024-07-30 Tue 08:54pm
+updated: 2025-03-04 Tue 11:20pm
 tags: []
 aliases: []
 cssclasses: 
 edited: 2024-04-07 08:00:08
-
 title: Philosopher – Zizek, Slavoj
 slug: /philosopher-zizek-slavoj
 filename: philosopher-zizek-slavoj
@@ -27,7 +12,12 @@ date: 2024-04-07
 share: true
 type: garden
 state: sprout
----# Philosopher – Zizek, Slavoj
+---
+
+# Philosopher – Zizek, Slavoj
+
+up: philosophy-my-most-influential-thinkers
+related: [Mental Model MOCs](Mental%20Model%20MOCs.md)
 
 He challenges my very concept of self through dialectics..
 
@@ -38,7 +28,7 @@ Listening to his wild thoughts. Here are observations.
 - his belief in true love as described is childishly unaware of the origin of the modern construct of love. Ironically, it lacks dialectic considerations beyond “true love”
 - His point on “identifying with the mask” of identity and ignoring introspection is dual edged to me. There’s so much ignorance in not knowing what drives us, yet there is a point at which we can potentially achieve more if we ignore it. Think about how motivating trauma can be.
 
-## Wiki overview
+### Wiki Overview
 
 > Slavoj Žižek ( SLAH-voy ZHEE-zhek, Slovene: [ˈsláːʋɔj ˈʒíːʒək]; born 21 March 1949) is a Slovenian philosopher, cultural theorist and public intellectual.
 >
