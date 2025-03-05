@@ -1,17 +1,8 @@
 ---
-title: Learning demands change
-slug: /learning-demands-change
-filename: learning-demands-change
-date: 2025-03-04
-share: true
-type: garden
-state: sprout
----
----
 up: 
 related: 
 created: 2020-04-10 Fri 12:00am
-updated: 2025-03-02 Sun 10:01am
+updated: 2025-03-04 Tue 11:18pm
 tags:
   - learning
 aliases: []
@@ -24,10 +15,12 @@ filename: learning-demands-change
 date: 2020-04-10
 datemod: 2025-02-19
 type: garden
-state: sprout
----# Learning demands change
+state: seed
+---
 
-> [!quote]
+# Learning demands change
+
+> > 
 > Unlike education, learning demands change. Learning makes us incompetent just before it enables us to grasp mastery. Learning opens our eyes and changes the way we see, communicate and act.
 
 From [Seth Godin](https://www.unscrambled.sg/2020/04/18/seth-godin-you-can-learn-just-about-anything-now-so-what-did-you-learn-today/). 
