@@ -1,4 +1,13 @@
 ---
+title: Learning demands change
+slug: /learning-demands-change
+filename: learning-demands-change
+date: 2025-03-04
+share: true
+type: garden
+state: sprout
+---
+---
 up: 
 related: 
 created: 2020-04-10 Fri 12:00am
@@ -16,7 +25,7 @@ date: 2020-04-10
 datemod: 2025-02-19
 type: garden
 state: sprout
----
+---# Learning demands change
 
 > [!quote]
 > Unlike education, learning demands change. Learning makes us incompetent just before it enables us to grasp mastery. Learning opens our eyes and changes the way we see, communicate and act.
