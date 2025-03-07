@@ -18,7 +18,7 @@ state: sprout
 
 # George Lakoff
 
-[George Lakoff](https://cogweb.ucla.edu/CogSci/Lakoff.html) is a huge influence for me (see [Philosophy — my most influential thinkers](dropletsphilosophy-my-most-influential-thinkers))
+[George Lakoff](https://cogweb.ucla.edu/CogSci/Lakoff.html) is a huge influence for me (see [Philosophy — my most influential thinkers](/garden/philosophy-my-most-influential-thinkers/)
 
 ## Research
 
