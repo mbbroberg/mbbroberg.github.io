@@ -33,6 +33,7 @@ relatedPosts = true
 numberOfRelatedPosts = 3
 disableArchiveTitleStyling  = true
 customCss = ["css/custom.css"]
+customJs = ["js/dataview-styler.js"]
 
 [markup]
     [markup.goldmark]
