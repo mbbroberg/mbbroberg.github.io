@@ -1,7 +1,7 @@
 ---
 up: 
 created: 2024-06-30 Sun 6:37am
-updated: 2025-03-04 Tue 11:18pm
+updated: 2025-03-06 Thu 10:37pm
 tags: []
 aliases: []
 cssclasses: 
@@ -16,6 +16,11 @@ state: sprout
 
 ## Goya’s Saturn
 
-A favorite terrifying moment in [Art History](art-history)
+A favorite terrifying moment in [Art History](art-history). 
 
-![][https://embed.filekitcdn.com/e/dv87Nny89souiCFyZqnEgh/bJWjYHQZEcUagm95FRpePu]
+Saturn in Roman mythology is Cronus in Greek myths–father of all the gods. He's told of a prophesy that one of his children will kill him–so upon birth–the story is he swallowed them all (until he was deceived). 
+
+Goya's depiction is less cutesy than what I imagined before seeing it. 
+
+![bJWjYHQZEcUagm95FRpePu.jpeg](../../static/images/bJWjYHQZEcUagm95FRpePu.jpeg)
+
