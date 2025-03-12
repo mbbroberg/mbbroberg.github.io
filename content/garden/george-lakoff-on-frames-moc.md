@@ -22,12 +22,6 @@ state: sprout
 
 ## Research
 
-### External
-
-| Resource Link | Saved Date |
-| ------------- | ---------- |
-
-
 ### Internal
 
 | Resource Link                                                                                                                    | Saved Date        |
