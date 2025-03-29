@@ -2,7 +2,7 @@
 created: 2025-03-16 Sun 4:34am
 updated: 2025-03-16 Sun 5:28am
 title: Dont Confuse Your Skills with Your Job Title
-slug: /dont-confuse-your-skills-with-your-job-title
+slug: ../dont-confuse-your-skills-with-your-job-title
 filename: 2025-03-16-dont-confuse-your-skills-with-your-job-title
 date: 2025-03-16
 share: true

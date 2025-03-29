@@ -1,6 +1,6 @@
 ---
 title: Work as a Game – Both Finite and Infinite
-slug: /work-as-a-game-both-finite-and-infinite
+slug: ../work-as-a-game-both-finite-and-infinite
 filename: 2025-02-26-work-as-a-game-both-finite-and-infinite
 date: 2025-02-26
 share: true

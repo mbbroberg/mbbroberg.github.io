@@ -22,7 +22,7 @@
       {{ if $targetPage.Params.slug }}
         {{ $link = $targetPage.Params.slug }}
         {{ if not (strings.HasPrefix $link "/") }}
-          {{ $link = printf "/%s" $link }}
+          {{ $link = printf "../%s" $link }}
         {{ end }}
         {{ if not (strings.HasSuffix $link "/") }}
           {{ $link = printf "%s/" $link }}
