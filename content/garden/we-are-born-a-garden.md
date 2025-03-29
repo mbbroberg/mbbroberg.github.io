@@ -68,7 +68,7 @@ In recognizing this interconnection, we understand that how we tend our garden m
 
 There is no "finished" state to our gardens. No point at which we can wipe our hands clean and declare ourselves complete. The garden continues to grow and change as long as we live. Seasons shift. New challenges emerge. Different plants become possible as we evolve.
 
-This is [not a finite game with winners and losers, but an infinite game of continued cultivation](https://claude.ai/work-as-a-game-both-finite-and-infinite). The joy is in the tending itself—in the daily practice of becoming more.
+This is [not a finite game with winners and losers, but an infinite game of continued cultivation](/work-as-a-game-both-finite-and-infinite). The joy is in the tending itself—in the daily practice of becoming more.
 
 What seeds are you planting today? What weeds might need gentle removal? What areas of your garden are you ready to explore anew?
 
