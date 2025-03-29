@@ -1,9 +1,5 @@
 {{ define "main" }}
-<div class="post garden-post {{ with .Site.Params.doNotLoadAnimations }}
-   .
-   {{ else }}
-   animated fadeInDown
-   {{ end }}">
+<div class="post garden-post {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
   <!-- Garden State Indicator -->
   {{ if eq .Type "garden" }}
   <div class="garden-state-indicator">
@@ -34,6 +30,13 @@
   <div class="post__content">
     {{ .Content }}
   </div>
+
+  <!-- Garden Callout - Added INSIDE the post container but AFTER the content -->
+  {{ if eq .Type "garden" }}
+  <div class="garden-callout">
+    <p>This is an entry in my digital garden. <a href="{{ .Site.BaseURL }}garden">See what else is growing here.</a></p>
+  </div>
+  {{ end }}
 </div>
 
 <!-- Add CSS for garden state indicator -->
@@ -102,6 +105,27 @@
       gap: 0.25rem;
       margin-top: 0.5rem;
     }
+  }
+
+  /* Garden Callout Styles */
+  .garden-callout {
+    margin: 3rem 0 1.5rem 0;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border-left: 4px solid rgba(72, 187, 120, 0.5);
+    font-style: italic;
+    text-align: center;
+  }
+
+  .garden-callout a {
+    color: rgba(72, 187, 120, 0.9);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .garden-callout a:hover {
+    text-decoration: underline;
   }
 </style>
 {{ end }}
