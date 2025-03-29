@@ -2,10 +2,10 @@
 created: 2025-01-03 Fri 2:15pm
 edited: 2024-01-28 11:44:58
 tags:
-  - my/words
+  - etymology
 up:
   - "[Etymology MOC](Etymology%20MOC.md)"
-updated: 2025-03-11 Tue 8:16pm
+updated: 2025-03-28 Fri 10:42pm
 title: Ethernet comes from "ether"
 slug: /ethernet-comes-from-ether
 filename: ethernet-comes-from-ether

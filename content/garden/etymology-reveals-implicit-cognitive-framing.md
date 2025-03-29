@@ -1,7 +1,7 @@
 ---
 type: garden
 created: 2025-01-02 Thu 11:17pm
-updated: 2025-03-17 Mon 5:50am
+updated: 2025-03-17 Mon 6:00am
 title: Etymology reveals implicit cognitive framing
 slug: /etymology-reveals-implicit-cognitive-framing
 filename: etymology-reveals-implicit-cognitive-framing
@@ -13,7 +13,7 @@ status: emerging
 
 ## Core Pattern
 
-Etymology reveals how abstract concepts are grounded in physical/embodied metaphors, exposing historical cognitive frames that continue to shape our thinking today.
+[learning:: Etymology reveals how abstract concepts are grounded in physical/embodied metaphors, exposing historical cognitive frames that continue to shape our thinking today.]
 
 ## Evidence & Examples
 
@@ -32,13 +32,6 @@ This pattern appears strongest in:
 - Etymological awareness can help identify & counteract cognitive biases by making implicit frames explicit
 - These inherited frames can limit or enable our thinking in ways we don't consciously recognize
 - The metaphors often persist even when we've lost conscious connection to the original meaning
-
-## Learning Log
-
-- [learning:: ([2024-01-02 Tue](2024-01-02%20Tue.md)) Etymology serves as an archaeological tool for uncovering implicit cognitive frames]
-- [learning:: ([2024-01-02 Tue](2024-01-02%20Tue.md)) awareness can counteract cognitive biases by making implicit frames explicit]
-- [learning:: ([2024-01-02 Tue](2024-01-02%20Tue.md)) can reveal embodied or physical metaphors in cognitive frames]
-- [learning:: ([2024-01-02 Tue](2024-01-02%20Tue.md)) often reveal historical context that still shape our thinking today]
 
 ## Connections
 

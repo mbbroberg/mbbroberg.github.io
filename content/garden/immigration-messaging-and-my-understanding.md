@@ -1,6 +1,6 @@
 ---
 created: 2025-03-27 Thu 7:03pm
-updated: 2025-03-27 Thu 8:59pm
+updated: 2025-03-27 Thu 9:01pm
 title: Immigration messaging and my understanding
 slug: /immigration-messaging-and-my-understanding
 filename: immigration-messaging-and-my-understanding

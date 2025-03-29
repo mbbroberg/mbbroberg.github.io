@@ -33,7 +33,7 @@ I wrote these guidelines for a past team that found it helpful.
 
 - You avoid interacting with the EM
 - You’re being assigned work like you report to the EM 
-- You lead most development routines
+- You lead most developer routines
 - You are the only one who writes documentation about what you're building
 - You or our engineering partners feel powerless and "just following orders"
 - You prioritize work based primarily on engineer's opinions
