@@ -1,7 +1,7 @@
 ---
 type: garden
 created: 2025-01-02 Thu 11:17pm
-updated: 2025-03-17 Mon 6:00am
+updated: 2025-04-11 Fri 8:50pm
 title: Etymology reveals implicit cognitive framing
 slug: /etymology-reveals-implicit-cognitive-framing
 filename: etymology-reveals-implicit-cognitive-framing
@@ -35,20 +35,4 @@ This pattern appears strongest in:
 
 ## Connections
 
-```dataview 
-LIST WITHOUT ID
-choice(contains(file.folder, "Droplets"), "💧 ", 
-    choice(contains(file.folder, "Emergent"), "🌱 ",
-        choice(contains(file.folder, "Experimenting"), "🧪 ", 
-            choice(contains(file.folder, "Ideal"), "🎯 ", 
-                choice(contains(file.folder, "Projects"), "📋 ", "📝 ")
-            )
-        )
-    )
-) + file.link +
-choice(understanding, ": " + learning,
-    choice(hypothesis, ": " + hypothesis,
-        choice(next_action, ": " + next_action, "")))
-FROM [](.md) AND ("Droplets" OR "Emergent Patterns" OR "Experimenting" OR "Ideal" OR "Projects")
-WHERE contains(file.outlinks, this.file.link)
-SORT file.folder ASC
+
