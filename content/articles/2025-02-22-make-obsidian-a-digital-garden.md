@@ -1,6 +1,6 @@
 ---
 created: 2025-02-22 Sat 2:41pm
-updated: 2025-02-23 Sun 9:29pm
+updated: 2025-04-20 Sun 7:53am
 title: Make Obsidian a Digital Garden
 slug: ../make-obsidian-a-digital-garden
 filename: 2025-02-22-make-obsidian-a-digital-garden
@@ -30,29 +30,6 @@ What resonates most is that digital gardens emphasize growth over perfection. Th
 ## My Technical Setup: Obsidian + Hugo
 
 While there are tons of complete framework out there, the key is choosing an approach that matches your thinking style. I use Obsidian extensively, but most of my files remain private. That rules out the standard Publish model since on day one of using it I published personal notes by accident. I've been drawn to rebuilding everything with yet-another-frame, but couldn't find a workflow that made sense. Then I realized what could be done with a plugin and rethinking through the problem.
-
-```mermaid
-flowchart TD
-    subgraph Setup ["One-time Setup"]
-        direction TB
-        A[Hugo Site] -->|Customize| B[layouts/garden/list.html]
-        A -->|Configure| C[config/_default/config.toml]
-        C -->|Add taxonomy settings| D[Taxonomy Setup]
-        B -->|Add garden layout| E[Custom Layout]
-    end
-
-    subgraph Publishing ["Publishing Workflow"]
-        direction TB
-        F[Obsidian Note] -->|"Run Templater<br>to add Frontmatter"| H[Formatted Note]
-        H -->|"Hotkey trigger<br>to push to repo"| J[GitHub]
-        J -->|"GitHub Action<br>to build & deploy"| K[Live Site]
-    end
-
-    Setup -.-o Publishing
-    
-    style Setup fill:#f9f9f9,stroke:#333,stroke-width:2px
-    style Publishing fill:#f0f9f0,stroke:#333,stroke-width:2px
-```
 
 I finally [went all in and build one](https://github.com/mbbroberg/mbbroberg.github.io/blob/main/layouts/garden/list.html) that's pretty beautiful. A minor [taxonomy edit](https://github.com/mbbroberg/mbbroberg.github.io/blob/main/config/_default/config.toml#L45-L48) with a little [metadata on the post](https://github.com/mbbroberg/mbbroberg.github.io/blob/main/content/garden/2020-04-10-learning-demands-change.md?plain=1#L17-L18) and it all comes together. If you want to build on my setup, here are the essential components:
 
