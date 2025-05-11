@@ -1,6 +1,6 @@
 ---
 created: 2025-03-16 Sun 5:34am
-updated: 2025-03-16 Sun 5:40am
+updated: 2025-05-11 Sun 1:44pm
 title: Product Management – Signs of Healthy Engineering Relationships
 slug: /product-management-signs-of-healthy-engineering-relationships
 filename: product-management-signs-of-healthy-engineering-relationships
@@ -9,6 +9,7 @@ share: true
 type: garden
 state: seed
 ---
+![pm-em-relationship.png](../../static/images/pm-em-relationship.png)
 
 Product Management requires an effective partnership with Engineering. In my leadership experience, when an organization is still transitioning from Scrummasters or Product Owners to Product Management, that relationship is especially easy to tip over with the Engineering Manager (EM). 
 
