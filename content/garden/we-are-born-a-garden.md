@@ -1,7 +1,7 @@
 ---
 up: 
 created: 2024-07-18 Thu 1:09pm
-updated: 2025-03-28 Fri 10:50pm
+updated: 2025-05-11 Sun 2:18pm
 aliases: []
 title: we are born a garden
 type: garden
@@ -15,6 +15,8 @@ state: rhizome
 # We Are Born a Garden
 
 > "Become who you are." — Friedrich Nietzsche
+
+![born-a-garden.png](../../static/images/born-a-garden.png)
 
 ## The Soil We Begin With
 
