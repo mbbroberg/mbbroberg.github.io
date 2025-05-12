@@ -1,6 +1,6 @@
 ---
 created: 2025-05-11 Sun 8:43pm
-updated: 2025-05-11 Sun 8:53pm
+updated: 2025-05-11 Sun 8:54pm
 title: Loving GitIngest for Repo Exploration through LLM Grounding
 slug: /loving-gitingest-for-repo-exploration-through-llm-grounding
 filename: 2025-05-11-loving-gitingest-for-repo-exploration-through-llm-grounding

@@ -1,13 +1,12 @@
 ---
 tags:
   - my/words
-updated: 2025-04-18 Fri 4:50am
+updated: 2025-04-18 Fri 4:53am
 created: 2025-01-03 Fri 2:15pm
 original_created: 2013-11-19
 title: I saw things mocking me
 slug: /i-saw-things-mocking-me
 filename: i-saw-things-mocking-me
-date: 2025-01-03
 share: true
 type: garden
 state: seed

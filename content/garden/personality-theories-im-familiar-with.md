@@ -5,7 +5,7 @@ created: 2020-11-17 Tue 12:00am
 edited: 2024-01-28 17:07:52
 up:
   - "[Psychology of Personality MOC](Psychology%20of%20Personality%20MOC.md)"
-updated: 2025-04-22 Tue 9:06pm
+updated: 2025-04-22 Tue 9:08pm
 related:
   - "[Enneagram as a meaningful personality theory](Enneagram%20as%20a%20meaningful%20personality%20theory.md)"
 title: Personality Theories I'm familiar with
