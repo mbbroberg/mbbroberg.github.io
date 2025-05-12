@@ -1,6 +1,6 @@
 ---
 created: 2025-05-08 Thu 5:59am
-updated: 2025-05-11 Sun 9:36am
+updated: 2025-05-11 Sun 10:07am
 title: Not everything is a product in Team Topologies
 slug: /not-everything-is-a-product-in-team-topologies
 filename: not-everything-is-a-product-in-team-topologies
