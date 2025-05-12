@@ -1,7 +1,7 @@
 ---
 created: 2016-06-06 Mon 12:00am
 edited: 2024-01-28 11:44:59
-updated: 2025-05-09 Fri 8:48pm
+updated: 2025-05-09 Fri 8:49pm
 title: We're not all Innovators
 slug: /were-not-all-innovators
 filename: 2016-06-06-were-not-all-innovators
