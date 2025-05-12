@@ -64,3 +64,8 @@ url = "https://github.com/mbbroberg/"
 icon = "fas fa-envelope"
 title = "e-mail"
 url = "mailto:matthewbbroberg+io@gmail.com"
+
+[[socialIcons]]
+icon = "fas fa-rss"
+title = "RSS"
+url = "/index.xml"

@@ -42,6 +42,16 @@ customJs = ["js/dataview-styler.js"]
 [markup.goldmark.parser.attribute]
   block = true
 
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+
+[services]
+  [services.rss]
+    limit = 20  # Limit to the 20 most recent articles
+
 
 [taxonomies]
     tag = "tags"
