@@ -4,7 +4,7 @@ up:
 related:
   - "[On Mindset & Inspiration](On%20Mindset%20&%20Inspiration.md)"
 created: 2024-04-15 Mon 12:00am
-updated: 2025-03-04 Tue 11:21pm
+updated: 2025-05-17 Sat 2:03pm
 tags: []
 aliases: []
 cssclasses: 
@@ -24,7 +24,7 @@ Very early scratch of notes...
 
 ## Rhizomes
 
-I'm obsessed with this imagery and the entire concept of shifting focus from verticality and permanence implied by tree-like structures to the emerging network of relationships of [Rhizomes](./rhizomes.md#)
+I'm obsessed with this imagery and the entire concept of shifting focus from verticality and permanence implied by tree-like structures to the emerging network of relationships of [Rhizomes](/rhizomes)
 
 ## Eminence
 
