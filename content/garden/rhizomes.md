@@ -2,7 +2,7 @@
 up: 
 related: 
 created: 2024-05-12 Sun 1:00pm
-updated: 2025-05-17 Sat 1:55pm
+updated: 2025-05-17 Sat 2:04pm
 edited: 2024-05-18 14:37:42
 title: Rhizomes
 slug: /rhizomes
@@ -17,7 +17,7 @@ share: true
 
 # Rhizomes
 
-While I'm still early in my understanding of it, the philosophy of [Philosophers – Deleuze and Guattari](philosophers-deleuze-and-guattari) speaks to me. It fascinates me because it reveals a powerful truth:
+While I'm still early in my understanding of it, the philosophy of [Philosophers – Deleuze and Guattari](../philosophers-deleuze-and-guattari) speaks to me. It fascinates me because it reveals a powerful truth:
 
 - We don't just see the world—we interpret it through mental filters
 - These interpretations are types of mental models that shape our understanding
@@ -33,6 +33,6 @@ Now imagine a patch of grass or mushroom. If you look underground, you don't see
 
 The first type is arborescence, or arborescent growth. It's so common we often don't name it. The second type of growth pattern is a rhizome, or rhizomatic growth. Philosophers Deleuze and Guattari found this contrast so foundational that they use it to describe how life itself can be viewed.
 
-> A rhizome was defined by [Philosophers – Deleuze and Guattari](philosophers-deleuze-and-guattari) in A Thousand Plateaus as **a nonlinear network that “connects any point to any other point”**. It contrasts a tree that represents arborescence: hierarchical structure with clear organization.
+> A rhizome was defined by [Philosophers – Deleuze and Guattari](../philosophers-deleuze-and-guattari) in A Thousand Plateaus as **a nonlinear network that “connects any point to any other point”**. It contrasts a tree that represents arborescence: hierarchical structure with clear organization.
 
 ![richard-giblett-mycelium-rhizome.jpg](../../static/images/richard-giblett-mycelium-rhizome.jpg)
