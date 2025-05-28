@@ -1,7 +1,8 @@
 ---
 created: 2024-04-07 Sun 07:45am
-updated: 2025-03-04 Tue 11:20pm
-tags: []
+updated: 2025-05-27 Tue 9:44pm
+tags:
+  - inspirations
 aliases: []
 cssclasses: 
 edited: 2024-04-07 08:00:08
@@ -17,6 +18,7 @@ state: sprout
 # Philosopher – Zizek, Slavoj
 
 up: philosophy-my-most-influential-thinkers
+
 related: [Mental Model MOCs](Mental%20Model%20MOCs.md)
 
 He challenges my very concept of self through dialectics..
@@ -28,7 +30,7 @@ Listening to his wild thoughts. Here are observations.
 - his belief in true love as described is childishly unaware of the origin of the modern construct of love. Ironically, it lacks dialectic considerations beyond “true love”
 - His point on “identifying with the mask” of identity and ignoring introspection is dual edged to me. There’s so much ignorance in not knowing what drives us, yet there is a point at which we can potentially achieve more if we ignore it. Think about how motivating trauma can be.
 
-### Wiki Overview
+## Wiki Overview
 
 > Slavoj Žižek ( SLAH-voy ZHEE-zhek, Slovene: [ˈsláːʋɔj ˈʒíːʒək]; born 21 March 1949) is a Slovenian philosopher, cultural theorist and public intellectual.
 >
