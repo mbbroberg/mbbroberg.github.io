@@ -4,9 +4,8 @@ date: 2025-05-27
 tags:
   - team-topologies
   - wardley-maps
-  - domain-driven-design
 created: 2025-05-27 Tue 9:15pm
-updated: 2025-05-27 Tue 9:37pm
+updated: 2025-05-27 Tue 9:40pm
 slug: /when-platform-products-fail-about-maps-domains-topologies
 filename: 2025-05-27-when-platform-products-fail-about-maps-domains-topologies
 share: true
