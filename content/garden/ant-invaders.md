@@ -1,14 +1,17 @@
 ---
 title: Ant Invaders
 slug: /ant-invaders
+tags:
+  - thoughts
 filename: ant-invaders
 date: 2025-03-04
 share: true
 type: garden
 state: sprout
 created: 2025-01-03 Fri 2:15pm
-updated: 2025-03-04 Tue 10:56pm
+updated: 2025-05-27 Tue 9:43pm
 ---
+
 # Ant Invaders
 
 Their trail leads to places I deem my own, which leads to conflict.
