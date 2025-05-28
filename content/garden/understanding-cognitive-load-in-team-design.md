@@ -6,13 +6,14 @@ tags:
   - cognitive-load
   - systems-thinking
 created: 2025-05-27 Tue 8:16pm
-updated: 2025-05-27 Tue 8:40pm
+updated: 2025-05-27 Tue 9:38pm
 slug: /understanding-cognitive-load-in-team-design
 filename: understanding-cognitive-load-in-team-design
 share: true
 type: garden
 state: sprout
 ---
+# Understanding Cognitive Load in Team Design
 
 > "Do you feel like you're effective and able to respond in a timely fashion to the work you are asked to do?"
 
