@@ -6,13 +6,14 @@ tags:
   - platform-products
   - product-thinking
 created: 2025-01-03 Fri 2:15pm
-updated: 2025-05-27 Tue 8:54pm
+updated: 2025-05-27 Tue 9:38pm
 slug: /team-topologies-updated-its-concept-of-platforms
 filename: team-topologies-updated-its-concept-of-platforms
 share: true
 type: garden
 state: sprout
 ---
+# Team Topologies Updated Its Concept of Platforms
 
 Matthew Skelton recently updated a crucial concept from Team Topologies that changes how platforms scale in larger organizations.
 
@@ -24,6 +25,6 @@ This solves a practical problem: platforms serving dozens of stream-aligned team
 
 What's particularly insightful is Skelton's expectation of "multiple different types of teams" within platform groupings. You might have stream-aligned teams focused on platform capabilities, enabling teams for platform adoption, or complicated-subsystem teams for specialized platform components.
 
-The boundary shifts from team-level to platform-level, but the principles remain: clear ownership, [reduced cognitive load](/understanding-cognitive-load-in-team-design), and enabling autonomous value delivery.
+The boundary shifts from team-level to platform-level, but the principles remain: clear ownership, [reduced cognitive load](/garden/understanding-cognitive-load-in-team-design), and enabling autonomous value delivery.
 
 *From [SE Radio 646: Matthew Skelton on Team Topologies](https://se-radio.net/2024/12/se-radio-646-matthew-skelton-on-team-topologies/)*
