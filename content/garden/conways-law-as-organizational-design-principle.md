@@ -4,13 +4,14 @@ date: 2025-05-27
 tags:
   - team-topologies
 created: 2025-05-27 Tue 8:12pm
-updated: 2025-05-27 Tue 8:55pm
+updated: 2025-05-27 Tue 9:38pm
 slug: /conways-law-as-organizational-design-principle
 filename: conways-law-as-organizational-design-principle
 share: true
 type: garden
 state: sprout
 ---
+# Conway's Law as Organizational Design Principle
 
 > "Organizations which design systems are constrained to produce designs which are copies of the communication structures of these organizations." — Conway's Law
 

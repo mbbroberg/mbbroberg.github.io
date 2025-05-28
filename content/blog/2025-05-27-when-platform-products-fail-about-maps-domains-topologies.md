@@ -6,12 +6,13 @@ tags:
   - wardley-maps
   - domain-driven-design
 created: 2025-05-27 Tue 9:15pm
-updated: 2025-05-27 Tue 9:10pm
+updated: 2025-05-27 Tue 9:37pm
 slug: /when-platform-products-fail-about-maps-domains-topologies
 filename: 2025-05-27-when-platform-products-fail-about-maps-domains-topologies
 share: true
 type: blog
 ---
+# When Platform Products Fail - About Maps, Domains, Topologies
 
 I've been thinking about why platforms fail during organizational evolution, and I think the answer lies at the intersection of three mental models: Wardley Maps, Domain-Driven Design, and Team Topologies.
 

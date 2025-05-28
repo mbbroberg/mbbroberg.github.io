@@ -3,15 +3,17 @@ title: Platforms as Internal Products
 date: 2025-05-27
 tags:
   - team-topologies
+  - platform-products
   - product-thinking
 created: 2025-05-27 Tue 8:29pm
-updated: 2025-05-27 Tue 8:54pm
+updated: 2025-05-27 Tue 9:37pm
 slug: /platforms-as-internal-products
 filename: platforms-as-internal-products
 share: true
 type: garden
 state: sprout
 ---
+# Platforms as Internal Products
 
 > "A digital platform is a foundation of self-service APIs, tools, services, knowledge and support which are arranged as a compelling internal product."
 
