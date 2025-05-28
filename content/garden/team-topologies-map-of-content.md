@@ -5,13 +5,15 @@ tags:
   - team-topologies
   - mental-models
 created: 2025-05-27 Tue 9:45pm
-updated: 2025-05-27 Tue 9:30pm
+updated: 2025-05-27 Tue 9:36pm
 slug: /team-topologies-map-of-content
 filename: team-topologies-map-of-content
 share: true
 type: garden
 state: rhizome
 ---
+
+# Team Topologies Map of Content
 
 Team Topologies provides one of the clearest mental models I've found for organizing software teams and the systems they build. These posts explore the intersection of team design, platform thinking, and organizational evolution.
 
@@ -47,7 +49,7 @@ Clarifying the boundaries of product thinking within Team Topologies patterns.
 
 ## Applied Thinking
 
-**[When Platform Products Fail - About Maps, Domains, Topologies](/garden/when-platform-products-fail-about-maps-domains-topologies)**  
+**[When Platform Products Fail - About Maps, Domains, Topologies](/when-platform-products-fail-about-maps-domains-topologies)**  
 How Wardley Maps, Domain-Driven Design, and Team Topologies intersect to explain platform failures and evolutionary misalignment.
 
 **[Applying Team Topologies to Marketing and Community](/articles/applying-team-topologies-to-marketing-and-community/)**  
