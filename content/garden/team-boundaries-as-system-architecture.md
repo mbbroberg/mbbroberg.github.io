@@ -4,13 +4,14 @@ date: 2025-05-27
 tags:
   - team-topologies
 created: 2025-05-27 Tue 8:31pm
-updated: 2025-05-27 Tue 8:54pm
+updated: 2025-05-27 Tue 9:37pm
 slug: /team-boundaries-as-system-architecture
 filename: team-boundaries-as-system-architecture
 share: true
 type: garden
 state: sprout
 ---
+# Team Boundaries as System Architecture
 
 > "Every part of the software system needs to be owned by exactly one team."
 
