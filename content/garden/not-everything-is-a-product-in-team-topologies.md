@@ -23,4 +23,4 @@ Source:
 [Project to Product Transitions: Challenges & Solutions Nobody Talks About — Team Topologies - Organizing for fast flow of value](https://teamtopologies.com/news-blogs-newsletters/2025/2/7/project-to-product-transitions-challenges-solutions)
 
 
-[up:: [Applying Team Topologies to Marketing and Community](applying-team-topologies-to-marketing-and-community)]
+[up:: [Applying Team Topologies to Marketing and Community](/articles/applying-team-topologies-to-marketing-and-community)]
