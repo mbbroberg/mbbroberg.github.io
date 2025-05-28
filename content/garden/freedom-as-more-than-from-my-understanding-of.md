@@ -4,8 +4,8 @@ edited: 2024-05-19 17:41:26
 up:
   - "[Cognitive Frames MOC](Cognitive%20Frames%20MOC.md)"
 tags:
-  - thoughts
-updated: 2025-03-11 Tue 8:15pm
+  - cognitive-frames
+updated: 2025-05-27 Tue 9:41pm
 title: Freedom as more than from – my understanding of
 slug: /freedom-as-more-than-from-my-understanding-of
 filename: freedom-as-more-than-from-my-understanding-of
@@ -30,5 +30,5 @@ The right to act without interference is an option. I have many options that wil
 
 An environment designed to encourage an understanding of and investment in self-direction is not equivalent to the absence of a looming threat if I do. 
 
-Said in a way that might click: goodness is not the absence of badness. That's a misunderstanding of terms. Goodness requires the presence of something. And I think the same of freedom.
+Said in a way that might click: goodness is not the absence of badness. That's a misunderstanding of terms. Goodness requires the presence of something. And I think the same of freedom. 
 

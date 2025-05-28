@@ -1,8 +1,9 @@
 ---
 created: 2024-08-01 Thu 2:18am
-updated: 2025-03-11 Tue 8:00pm
+updated: 2025-05-27 Tue 9:41pm
 aliases: []
-tags: []
+tags:
+  - cognitive-frames
 title: Sensitive – alternatives to
 slug: /sensitive-alternatives-to
 filename: sensitive-alternatives-to
@@ -15,15 +16,17 @@ state: seed
 The negative connotation often masks an under appreciated talent.
 
 The negative framing includes:
+
 - sensitive child/person to shame or imply weakness
 - sensitive pallet to shame disinterest or acuteness of sensation
 
-## When does it turn into a talent? 
+# When Does it Turn into a Talent?
 
 - We don’t say a chef has a sensitive pallet— we say refined tastes or mature
 - We don’t say a musician has a sensitive ear—we say perfect pitch
 
 Better alternatives:
+
 - Attuned
 - Alert
 - Empathetic
@@ -31,6 +34,7 @@ Better alternatives:
 - Expressive
 
 Better descriptors for the negative:
+
 - Cautious
 - Fearful
 - In need

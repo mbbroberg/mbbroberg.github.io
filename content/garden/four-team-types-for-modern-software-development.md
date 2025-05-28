@@ -3,9 +3,8 @@ title: Four Team Types for Modern Software Development
 date: 2025-05-27
 tags:
   - team-topologies
-  - organizational-patterns
 created: 2025-05-27 Tue 8:21pm
-updated: 2025-05-27 Tue 9:38pm
+updated: 2025-05-27 Tue 9:40pm
 slug: /four-team-types-for-modern-software-development
 filename: four-team-types-for-modern-software-development
 share: true

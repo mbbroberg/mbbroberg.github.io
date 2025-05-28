@@ -1,10 +1,10 @@
 ---
 edited: 2024-03-16 13:17:54
 created: 2025-01-03 Fri 2:15pm
-updated: 2025-03-04 Tue 11:19pm
+updated: 2025-05-27 Tue 9:43pm
 aliases: []
 tags:
-  - future-projects
+  - inspirations
 title: Literate Programming (def)
 share: true
 slug: /literate-programming-def
@@ -15,7 +15,7 @@ type: garden
 state: seed
 ---
 
-## Literate Programming (def)
+# Literate Programming (def)
 
 I love that I stumbled across this on [an old internet friend's site](https://www.curiouslychase.com/posts/literate-programming/):
 

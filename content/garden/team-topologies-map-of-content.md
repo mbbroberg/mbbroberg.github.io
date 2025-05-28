@@ -3,9 +3,8 @@ title: "Team Topologies: Map of Content"
 date: 2025-05-27
 tags:
   - team-topologies
-  - mental-models
 created: 2025-05-27 Tue 9:45pm
-updated: 2025-05-27 Tue 9:36pm
+updated: 2025-05-27 Tue 9:40pm
 slug: /team-topologies-map-of-content
 filename: team-topologies-map-of-content
 share: true
