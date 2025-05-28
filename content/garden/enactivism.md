@@ -1,6 +1,6 @@
 ---
 created: 2025-05-26 Mon 2:18pm
-updated: 2025-05-26 Mon 2:29pm
+updated: 2025-05-26 Mon 2:30pm
 title: enactivism
 slug: /enactivism
 filename: enactivism
