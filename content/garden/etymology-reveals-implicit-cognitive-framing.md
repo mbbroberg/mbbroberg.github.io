@@ -9,6 +9,8 @@ date: 2025-01-02
 share: true
 state: seed
 status: emerging
+tags:
+  - thoughts
 ---
 
 ## Core Pattern

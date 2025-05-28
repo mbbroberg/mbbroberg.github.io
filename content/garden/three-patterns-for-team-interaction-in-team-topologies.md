@@ -3,8 +3,6 @@ title: Three Patterns for Team Interaction in Team Topologies
 date: 2025-05-27
 tags:
   - team-topologies
-  - team-interaction
-  - collaboration-patterns
 created: 2025-05-27 Tue 8:26pm
 updated: 2025-05-27 Tue 8:44pm
 slug: /three-patterns-for-team-interaction-in-team-topologies

@@ -3,7 +3,6 @@ title: Platforms as Internal Products
 date: 2025-05-27
 tags:
   - team-topologies
-  - platform-products
   - product-thinking
 created: 2025-05-27 Tue 8:29pm
 updated: 2025-05-27 Tue 8:54pm

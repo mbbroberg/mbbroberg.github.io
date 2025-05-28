@@ -1,6 +1,6 @@
 ---
 tags:
-  - my/words
+  - thoughts
 updated: 2025-04-18 Fri 4:53am
 created: 2025-01-03 Fri 2:15pm
 original_created: 2013-11-19

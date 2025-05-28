@@ -4,7 +4,7 @@ related:
 created: 2020-04-10 Fri 12:00am
 updated: 2025-03-04 Tue 11:18pm
 tags:
-  - learning
+  - thoughts
 aliases: []
 cssclasses: 
 edited: 2024-01-28 11:45:00
