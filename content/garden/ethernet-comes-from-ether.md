@@ -1,11 +1,10 @@
 ---
 created: 2025-01-03 Fri 2:15pm
 edited: 2024-01-28 11:44:58
-tags:
-  - etymology
+tags: []
 up:
   - "[Etymology MOC](Etymology%20MOC.md)"
-updated: 2025-03-28 Fri 10:42pm
+updated: 2025-05-27 Tue 9:45pm
 title: Ethernet comes from "ether"
 slug: /ethernet-comes-from-ether
 filename: ethernet-comes-from-ether
@@ -14,6 +13,7 @@ share: true
 type: garden
 state: sprout
 ---
+
 [up:: [Etymology reveals implicit cognitive framing](etymology-reveals-implicit-cognitive-framing)]
 
 **Fun Fact Etymology.**
