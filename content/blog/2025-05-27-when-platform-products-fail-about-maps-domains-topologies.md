@@ -1,5 +1,5 @@
 ---
-title: When Platform Products Fail - About Maps, Domains, Topologies
+title: "When Platform Products Fail: About Maps, Domains, Topologies"
 date: 2025-05-27
 tags:
   - team-topologies
