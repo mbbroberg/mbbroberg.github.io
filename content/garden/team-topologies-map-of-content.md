@@ -16,7 +16,7 @@ state: rhizome
 
 Team Topologies provides one of the clearest mental models I've found for organizing software teams and the systems they build. These posts explore the intersection of team design, platform thinking, and organizational evolution.
 
-![ChatGPT Image Jun 22, 2025 at 05_31_29 PM.png](../../static/images/ChatGPT%20Image%20Jun%2022,%202025%20at%2005_31_29%20PM.png)
+![interaction-modeling.png](../../static/images/interaction-modeling.png)
 
 ## Core Principles
 
