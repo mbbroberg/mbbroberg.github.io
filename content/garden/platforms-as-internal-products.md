@@ -30,3 +30,9 @@ The best platforms feel invisible to their users. Powerful enough to enable comp
 I've started asking: what's the minimum viable platform that removes friction, rather than the maximum possible platform that covers every scenario?
 
 Platform teams that think like product teams build platforms that stream-aligned teams actually want to use.
+
+---
+**Related:**
+- [A Definition of Platform Product Management](/garden/a-definition-of-platform-product-management)
+- [Platform Product Extension Model Language](/garden/platform-product-extension-model-language)
+- [From Project to Product Management](/articles/from-project-to-product-management)

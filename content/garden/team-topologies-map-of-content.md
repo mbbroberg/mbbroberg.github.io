@@ -4,7 +4,7 @@ date: 2025-05-27
 tags:
   - team-topologies
 created: 2025-05-27 Tue 9:45pm
-updated: 2025-05-27 Tue 9:40pm
+updated: 2025-06-22 Sun 5:31pm
 slug: /team-topologies-map-of-content
 filename: team-topologies-map-of-content
 share: true
@@ -15,6 +15,8 @@ state: rhizome
 # Team Topologies Map of Content
 
 Team Topologies provides one of the clearest mental models I've found for organizing software teams and the systems they build. These posts explore the intersection of team design, platform thinking, and organizational evolution.
+
+![interaction-modeling.png](../../static/images/interaction-modeling.png)
 
 ## Core Principles
 
