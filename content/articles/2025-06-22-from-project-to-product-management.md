@@ -1,15 +1,15 @@
 ---
 created: 2025-06-22 Sun 4:00pm
-updated: 2025-06-22 Sun 4:49pm
+updated: 2025-06-27 Fri 7:57am
 title: From Project to Product Management
 slug: /from-project-to-product-management
 filename: 2025-06-22-from-project-to-product-management
 date: 2025-06-22
-share: true
 tags:
-  - product-thinking
-  - platform-product
+  - product-management
+share: true
 ---
+
 # From Project to Product: A Shift That Changes Everything
 
 I've watched countless organizations struggle with a fundamental change they don't quite realize they're making—moving from delivering projects to building products. The difference isn't just semantic; it changes everything about how teams work, what gets funded, and which job titles actually matter.
@@ -28,9 +28,9 @@ Companies have shifted from primarily staffing the completion of work from **pr
 
 Let's use a playful example: building a cat tower. A project mindset would build to spec, staying on budget and timeline, delivering exactly what was requested at the start. A product approach would focus on the user and de-risk the end result through rapid prototyping. This meme captures the essential difference:
 
-![Product-Features-User-Needs.png](../../static/images/Product-Features-User-Needs.png)
+![product-feature-user-need-sm.png](../../static/images/product-feature-user-need-sm.png)
 
-**Goal:** Reduce _friction_ on the path toward _product value._  
+**Goal:** Reduce _friction_ on the path toward _product value._
 **How:** Prioritize the _user_, _business value_, and _minimizing scope_.
 
 In this case, we could save time and money building what the user needs, even though it doesn't match the original spec. However, if the buyer and user aren't aligned (and who is ever really aligned with their cat?), we may not have a market for plain boxes. That tension—between user need and paying customer need—is a common product management challenge.
@@ -69,9 +69,3 @@ This shift represents more than job titles—it's a fundamental change in how wo
 The clarity helps me understand when product management makes sense versus when project management is the right approach. More importantly, it's helped me recognize when an organization talks product but operates as if everything is still a project—a mismatch that usually leads to frustration for everyone involved.
 
 The pattern worth noticing? The most successful teams I've observed have learned to match their operating model to the type of value they're actually trying to create.
-
----
-**Related:**
-- [A Definition of Platform Product Management](/garden/a-definition-of-platform-product-management)
-- [Platforms as Internal Products](/garden/platforms-as-internal-products)
-- [Platform Product Extension Model Language](/garden/platform-product-extension-model-language)
