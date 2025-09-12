@@ -1,12 +1,14 @@
 ---
 created: 2025-09-12 Fri 5:52am
-updated: 2025-09-12 Fri 6:22am
+updated: 2025-09-12 Fri 7:17am
 title: GenAI is magical at intersectionality
 slug: /genai-is-magical-at-intersectionality
 filename: 2025-09-12-genai-is-magical-at-intersectionality
 date: 2025-09-12
 share: true
 ---
+
+# GenAI is magical at intersectionality
 
 > "If a machine is expected to be infallible, it cannot also be intelligent."  
 > ― Alan Turing
