@@ -1,12 +1,14 @@
 ---
 created: 2025-09-12 Fri 5:52am
-updated: 2025-09-12 Fri 6:22am
+updated: 2025-09-12 Fri 7:17am
 title: GenAI is magical at intersectionality
 slug: /genai-is-magical-at-intersectionality
 filename: 2025-09-12-genai-is-magical-at-intersectionality
 date: 2025-09-12
 share: true
 ---
+
+# GenAI is magical at intersectionality
 
 > "If a machine is expected to be infallible, it cannot also be intelligent."  
 > ― Alan Turing
@@ -21,7 +23,7 @@ Instead of asking it to _explain_ product management, I asked it to _contrast
 
 ### What I've Discovered
 
-The magic of GenAI isn't in its ability to give me definitive answers—it's in its capacity to hold multiple frameworks in tension simultaneously. When I ask about [Simon Wardley's Explorers, Villagers, and Town Planners](./2015-01-03-on-explorers-villager-and-towns-planners-of-simon-wardley.md) and then ask how it could be leveraged in a design thinking exercise, or when I explore how Deleuze's philosophical concepts of "bodies without organs" might reframe my workout routines, the model offers something a search engine can't provide. It offers a way to wonder (and wander) through curiosities. It expands its value beyond an answer machine.
+The magic of GenAI isn't in its ability to give me definitive answers—it's in its capacity to hold multiple frameworks in tension simultaneously. When I ask about [Simon Wardley's Explorers, Villagers, and Town Planners](https://mbbroberg.fun/on-explorers-villager-and-towns-planners-of-simon-wardley/) and then ask how it could be leveraged in a design thinking exercise, or when I explore how Deleuze's philosophical concepts of "bodies without organs" might reframe my workout routines, the model offers something a search engine can't provide. It offers a way to wonder (and wander) through curiosities. It expands its value beyond an answer machine.
 
 My best GenAI conversations follow this pattern:
 
@@ -38,7 +40,7 @@ This only works within specific boundaries:
 
 **Topics I know well enough to correct hallucinations.** I'm not learning new technical skills from ChatGPT; I'm exploring different ways to think about skills I already have.
 
-**Low-stakes exploration.** Like my approach to [work as a game](./2025-02-26-work-as-a-game-both-finite-and-infinite.md), this is about expanding my thinking, not replacing it. I'm not making life-altering decisions based on AI responses—I'm collecting new lenses through which to view problems I'm already working on.
+**Low-stakes exploration.** Like my approach to [work as a game](https://mbbroberg.fun/work-as-a-game-both-finite-and-infinite/), this is about expanding my thinking, not replacing it. I'm not making life-altering decisions based on AI responses—I'm collecting new lenses through which to view problems I'm already working on.
 
 **Intersectionality over authority.** The model excels at finding connections between established ideas, not at generating novel insights. It's semantic pattern matching, not wisdom.
 
