@@ -6,6 +6,8 @@ slug: /genai-is-magical
 filename: 2025-09-12-genai-is-magical
 date: 2025-09-12
 share: true
+aliases:
+  - /genai-is-magical-at-intersectionality
 ---
 
 # GenAI is magical at the intersection of ideas
