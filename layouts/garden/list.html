@@ -316,6 +316,7 @@
         font-weight: 600;
         line-height: 1.3;
         flex: 1;
+        color: inherit;
     }
 
     .growth-badge-mini {
@@ -423,7 +424,8 @@
         font-size: 1.3rem;
         font-weight: 600;
         line-height: 1.3;
-        color: rgba(255, 255, 255, 0.95);
+        /* Use the site's inherited text color so titles follow the active theme (light/dark) */
+        color: inherit;
     }
 
     .featured-card p {
@@ -727,7 +729,8 @@
         font-size: 1.6rem;
         font-weight: 600;
         line-height: 1.3;
-        color: rgba(255, 255, 255, 0.95);
+        /* Follow theme color rather than hardcoding white */
+        color: inherit;
     }
 
     .entry-metadata {
