@@ -6,13 +6,107 @@
     </div>
     {{ end }}
 
-    <!-- Unified browsing interface -->
+    {{ $pages := where .Site.RegularPages "Type" "garden" }}
+
+    <!-- Featured Content Section - Manual Curation -->
+    {{ $featuredPages := where .Site.RegularPages "Params.featured" true }}
+    {{ if $featuredPages }}
+    <section class="featured-content-section">
+        <h2 class="section-title">⭐ Featured Content</h2>
+        <p class="section-description">Curated highlights from the garden</p>
+        <div class="featured-grid">
+            {{ range $featuredPages }}
+            {{ $description := "" }}
+            {{ if .Description }}
+            {{ $description = .Description }}
+            {{ else if .Summary }}
+            {{ $summary := .Summary | plainify }}
+            {{ $cleanSummary := replace $summary .Title "" }}
+            {{ $cleanSummary = replace $cleanSummary "#" "" }}
+            {{ $cleanSummary = strings.TrimSpace $cleanSummary }}
+            {{ if gt (len $cleanSummary) 20 }}
+            {{ $description = $cleanSummary }}
+            {{ end }}
+            {{ end }}
+            {{ if not $description }}
+            {{ $description = "A highlighted entry from the garden." }}
+            {{ end }}
+            <a href="{{ .RelPermalink }}" class="featured-card">
+                <div class="featured-badge">✨ Featured</div>
+                <h4>{{ .Title }}</h4>
+                <p>{{ $description | truncate 120 }}</p>
+                <div class="featured-meta">
+                    <span class="growth-indicator {{ .Params.state }}">
+                        {{ if eq .Params.state "seed" }}🌱{{ else if eq .Params.state "sprout" }}🌿{{ else }}🫚{{ end }}
+                        {{ .Params.state }}
+                    </span>
+                    {{ if .Params.updated }}
+                    {{ $dateStr := .Params.updated }}
+                    {{ $dateParts := split $dateStr " " }}
+                    {{ if ge (len $dateParts) 1 }}
+                    {{ $justDate := index $dateParts 0 }}
+                    <time>{{ dateFormat "Jan 2006" $justDate }}</time>
+                    {{ end }}
+                    {{ end }}
+                </div>
+            </a>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+
+    <!-- Recently Tended Section -->
+    {{ $recentlyTended := first 6 (sort $pages ".Params.updated" "desc") }}
+    {{ if $recentlyTended }}
+    <section class="recently-tended">
+        <h2 class="section-title">🌿 Recently Tended</h2>
+        <p class="section-description">Ideas actively growing and evolving</p>
+        <div class="entries-grid compact">
+            {{ range $recentlyTended }}
+            <article class="garden-entry {{ .Params.state }} compact-card">
+                <a href="{{ .RelPermalink }}" class="entry-link-wrapper">
+                    <div class="entry-header-compact">
+                        <h3 class="entry-title-compact">{{ .Title }}</h3>
+                        <span class="growth-badge-mini {{ .Params.state }}">
+                            {{ if eq .Params.state "seed" }}🌱{{ else if eq .Params.state "sprout" }}🌿{{ else }}🫚{{ end }}
+                        </span>
+                    </div>
+                    {{ if .Summary }}
+                    <p class="entry-summary">{{ .Summary | plainify | truncate 100 }}</p>
+                    {{ end }}
+                    <div class="entry-metadata-compact">
+                        {{ if .Params.updated }}
+                        {{ $dateStr := .Params.updated }}
+                        {{ $dateParts := split $dateStr " " }}
+                        {{ if ge (len $dateParts) 1 }}
+                        {{ $justDate := index $dateParts 0 }}
+                        <time>{{ dateFormat "Jan 2" $justDate }}</time>
+                        {{ end }}
+                        {{ end }}
+                        {{ with .Params.tags }}
+                        <div class="tags-compact">
+                            {{ range first 2 . }}
+                            <span class="tag-mini">#{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                </a>
+            </article>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+
+    <!-- Enhanced browsing interface -->
     <section class="garden-browse">
+
+        <!-- Growth Stage Navigation -->
         <div class="browse-section">
-            <h3 class="browse-heading">Browse by growth stage</h3>
+            <h2 class="section-title">🌳 Explore the Garden</h2>
+            <p class="section-description">Navigate by growth stage or topic</p>
 
             <div class="browse-items">
-                {{ $pages := where .Site.RegularPages "Type" "garden" }}
                 {{ $states := slice "seed" "sprout" "rhizome" }}
 
                 {{ $stateCount := dict }}
@@ -36,43 +130,44 @@
             </div>
         </div>
 
-        <div class="browse-section">
-            <h3 class="browse-heading">Browse by topic</h3>
+        <!-- Topic Tags -->
+        <div class="browse-section topics-section">
+            {{ $gardenPages := where .Site.RegularPages "Section" "garden" }}
+            {{ $allTags := slice }}
+            {{ range $gardenPages }}
+            {{ range .Params.tags }}
+            {{ $allTags = $allTags | append . }}
+            {{ end }}
+            {{ end }}
+            {{ $uniqueTags := uniq $allTags }}
 
-            <div class="browse-items">
-                {{ $pages := where .Site.RegularPages "Section" "garden" }}
-                {{ $allTags := slice }}
-                {{ range $pages }}
-                {{ range .Params.tags }}
-                {{ $allTags = $allTags | append . }}
-                {{ end }}
-                {{ end }}
-                {{ $uniqueTags := uniq $allTags }}
+            {{ $tagCount := dict }}
+            {{ range $tag := $uniqueTags }}
+            {{ $count := 0 }}
+            {{ range $gardenPages }}
+            {{ if in .Params.tags $tag }}
+            {{ $count = add $count 1 }}
+            {{ end }}
+            {{ end }}
+            {{ $tagCount = merge $tagCount (dict $tag $count) }}
+            {{ end }}
 
-                {{ $tagCount := dict }}
-                {{ range $tag := $uniqueTags }}
-                {{ $count := 0 }}
-                {{ range $pages }}
-                {{ if in .Params.tags $tag }}
-                {{ $count = add $count 1 }}
-                {{ end }}
-                {{ end }}
-                {{ $tagCount = merge $tagCount (dict $tag $count) }}
-                {{ end }}
-
+            <div class="tags-directory">
                 {{ range $tag, $count := $tagCount }}
-                <a href="{{ $.Site.BaseURL }}tags/{{ $tag | urlize }}/" class="browse-badge tag-badge" data-count="{{ $count }}">
-                    #{{ $tag }}
-                    <span class="badge-count">{{ $count }}</span>
+                <a href="{{ $.Site.BaseURL }}tags/{{ $tag | urlize }}/" class="tag-directory-item" data-count="{{ $count }}">
+                    <span class="tag-name">#{{ $tag }}</span>
+                    <span class="tag-info">
+                        <span class="tag-count">{{ $count }} {{ if eq $count 1 }}entry{{ else }}entries{{ end }}</span>
+                    </span>
                 </a>
                 {{ end }}
             </div>
         </div>
     </section>
 
-    <!-- Content sections by growth state, ordered by maturity -->
+    <!-- Content sections by growth state -->
     {{ range $state := slice "seed" "sprout" "rhizome" }}
-    <section id="{{ $state }}" class="growth-section">
+    <section id="{{ $state }}" class="growth-section" data-state="{{ $state }}">
         <h2 class="growth-heading">
             {{ if eq $state "seed" }}
             🌱 New Growth
@@ -83,39 +178,65 @@
             {{ end }}
         </h2>
         <div class="entries-grid">
-            {{ range where $.Site.RegularPages "Type" "garden" }}
-            {{ if eq .Params.state $state }}
-            <article class="garden-entry {{ $state }}">
-                <a href="{{ .RelPermalink }}" class="entry-link-wrapper">
-                    <div class="entry-header">
+                {{ range where $.Site.RegularPages "Type" "garden" }}
+                {{ if eq .Params.state $state }}
+                <article class="garden-entry {{ $state }} enhanced-card">
+                    <a href="{{ .RelPermalink }}" class="entry-link-wrapper">
+                        <div class="entry-card-top">
+                            <span class="growth-badge-card {{ $state }}">
+                                {{ if eq $state "seed" }}🌱{{ else if eq $state "sprout" }}🌿{{ else }}🫚{{ end }}
+                            </span>
+                            <!-- Connection indicators -->
+                            {{ $currentPage := . }}
+                            {{ $backlinks := 0 }}
+                            {{ range $.Site.RegularPages }}
+                            {{ if ne . $currentPage }}
+                                {{ $linkPattern := printf "/%s/" $currentPage.File.BaseFileName }}
+                                {{ $titlePattern := $currentPage.Title }}
+                                {{ if or (in .RawContent $linkPattern) (and (in .RawContent $titlePattern) (or (in .RawContent "[[") (in .RawContent "](/"))) }}
+                                {{ $backlinks = add $backlinks 1 }}
+                                {{ end }}
+                            {{ end }}
+                            {{ end }}
+                            {{ if gt $backlinks 0 }}
+                            <span class="connection-badge" title="{{ $backlinks }} connections">🔗 {{ $backlinks }}</span>
+                            {{ end }}
+                        </div>
                         <h3 class="entry-title">{{ .Title }}</h3>
-                    </div>
-                    <div class="entry-metadata">
-                        <div class="timestamps">
+                        {{ if .Summary }}
+                        <p class="entry-summary">{{ .Summary | plainify | truncate 150 }}</p>
+                        {{ end }}
+                        <div class="entry-metadata">
                             {{ if .Params.updated }}
                             {{ $dateStr := .Params.updated }}
                             {{ $dateParts := split $dateStr " " }}
-                            {{ if ge (len $dateParts) 2 }}
+                            {{ if ge (len $dateParts) 1 }}
                             {{ $justDate := index $dateParts 0 }}
-                            <time class="tended">Last tended: {{ dateFormat "January 2, 2006" $justDate }}</time>
+                            <time class="tended">{{ dateFormat "Jan 2, 2006" $justDate }}</time>
                             {{ end }}
+                            {{ end }}
+                            {{ with .Params.tags }}
+                            <div class="entry-tags">
+                                {{ range first 3 . }}
+                                <span class="tag">{{ . }}</span>
+                                {{ end }}
+                            </div>
                             {{ end }}
                         </div>
-                        {{ with .Params.tags }}
-                        <div class="entry-tags">
-                            {{ range . }}
-                            <span class="tag">{{ . }}</span>
-                            {{ end }}
-                        </div>
-                        {{ end }}
-                    </div>
-                </a>
-            </article>
-            {{ end }}
-            {{ end }}
+                    </a>
+                </article>
+                {{ end }}
+                {{ end }}
         </div>
     </section>
     {{ end }}
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top-container">
+        <button class="back-to-top-btn" aria-label="Back to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+            ↑ Back to Top
+        </button>
+    </div>
 </div>
 
 <style>
@@ -128,12 +249,208 @@
     }
 
     .garden-intro {
-        margin: 2rem 0;
+        margin: 2rem 0 3rem;
         padding: 1.5rem;
         background: rgba(255, 255, 255, 0.05);
         border-radius: 8px;
         border-left: 4px solid rgba(72, 187, 120, 0.5);
     }
+
+    /* Section Titles - Unified styling */
+    .section-title {
+        margin: 3rem 0 0.5rem;
+        font-size: 2rem;
+        color: rgba(72, 187, 120, 0.9);
+        font-weight: 600;
+    }
+
+    .section-description {
+        margin: 0 0 1.5rem;
+        font-size: 1rem;
+        opacity: 0.7;
+        font-style: italic;
+    }
+
+    /* Recently Tended Section */
+    .recently-tended {
+        margin: 3rem 0;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid rgba(72, 187, 120, 0.2);
+    }
+
+    .entries-grid.compact {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
+    .compact-card {
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 8px;
+        transition: all 0.25s ease;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .compact-card:hover {
+        transform: translateY(-2px);
+        background: rgba(255, 255, 255, 0.06);
+        border-color: rgba(72, 187, 120, 0.2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .compact-card .entry-link-wrapper {
+        padding: 1.5rem;
+    }
+
+    .entry-header-compact {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .entry-title-compact {
+        margin: 0;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 1.3;
+        flex: 1;
+    }
+
+    .growth-badge-mini {
+        font-size: 1.2rem;
+        flex-shrink: 0;
+        opacity: 0.7;
+    }
+
+    .entry-summary {
+        margin: 0 0 0.75rem;
+        font-size: 1rem;
+        line-height: 1.6;
+        opacity: 0.8;
+    }
+
+    .entry-metadata-compact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.95rem;
+        opacity: 0.6;
+        gap: 0.5rem;
+    }
+
+    .entry-metadata-compact time {
+        white-space: nowrap;
+    }
+
+    .tags-compact {
+        display: flex;
+        gap: 0.35rem;
+        flex-wrap: wrap;
+    }
+
+    .tag-mini {
+        font-size: 0.75rem;
+        opacity: 0.7;
+    }
+
+    /* Featured Content Section - Now at bottom */
+    .featured-content-section {
+        margin: 3rem 0;
+        padding-top: 2rem;
+        border-top: 2px solid rgba(72, 187, 120, 0.2);
+    }
+
+    .featured-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        max-width: 100%;
+        gap: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    /* Limit to max 3 columns for better readability */
+    @media (min-width: 1200px) {
+        .featured-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .featured-card {
+        display: block;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .featured-card:hover {
+        background: rgba(255, 255, 255, 0.06);
+        border-color: rgba(72, 187, 120, 0.3);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .featured-badge {
+        display: inline-block;
+        padding: 0.3rem 0.8rem;
+        background: rgba(72, 187, 120, 0.2);
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        border: 1px solid rgba(72, 187, 120, 0.3);
+    }
+
+    .moc-type .featured-badge {
+        background: rgba(72, 187, 120, 0.25);
+        border-color: rgba(72, 187, 120, 0.4);
+    }
+
+    .mature-type .featured-badge {
+        background: rgba(145, 219, 105, 0.2);
+        border-color: rgba(145, 219, 105, 0.3);
+    }
+
+    .featured-card h4 {
+        margin: 0 0 0.75rem 0;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 1.3;
+        color: rgba(255, 255, 255, 0.95);
+    }
+
+    .featured-card p {
+        margin: 0 0 1rem 0;
+        opacity: 0.8;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .featured-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.8rem;
+        opacity: 0.7;
+    }
+
+    .growth-indicator {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+    }
+
+    .topic-count {
+        font-style: italic;
+    }
+
 
     /* Unified browsing styles */
     .garden-browse {
@@ -177,12 +494,15 @@
         transition: all 0.2s ease;
         border: 1px solid transparent;
         background: rgba(255, 255, 255, 0.05);
+        cursor: pointer;
+        position: relative;
     }
 
     .browse-badge:hover {
         transform: translateY(-2px);
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
+
 
     /* Growth badge specific styles */
     .growth-badge.seed {
@@ -215,10 +535,47 @@
         border-color: rgba(47, 133, 90, 0.4);
     }
 
-    /* Tag badge specific styles */
-    .tag-badge:hover {
+    /* Tag Directory Styles */
+    .tags-directory {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 0.75rem;
+        margin-top: 1rem;
+    }
+
+    .tag-directory-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 1rem;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 8px;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.25s ease;
+    }
+
+    .tag-directory-item:hover {
         background: rgba(72, 187, 120, 0.08);
-        border-color: rgba(72, 187, 120, 0.2);
+        border-color: rgba(72, 187, 120, 0.3);
+        transform: translateX(4px);
+    }
+
+    .tag-name {
+        font-size: 1.05rem;
+        font-weight: 500;
+    }
+
+    .tag-info {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .tag-count {
+        font-size: 0.9rem;
+        opacity: 0.6;
     }
 
     /* Badge count indicator */
@@ -236,6 +593,7 @@
         padding: 0 0.35rem;
     }
 
+    /* Growth section styles */
     .growth-section {
         margin: 3rem 0;
         scroll-margin-top: 2rem;
@@ -245,6 +603,52 @@
         margin: 2rem 0 1rem;
         padding-bottom: 0.5rem;
         border-bottom: 1px solid rgba(72, 187, 120, 0.2);
+    }
+
+    /* Enhanced card styles with improved hierarchy */
+    .enhanced-card .entry-card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .growth-badge-card {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.25rem 0.6rem;
+        border-radius: 12px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+
+    .growth-badge-card.seed {
+        background: rgba(145, 219, 105, 0.15);
+        border: 1px solid rgba(145, 219, 105, 0.3);
+    }
+
+    .growth-badge-card.sprout {
+        background: rgba(72, 187, 120, 0.15);
+        border: 1px solid rgba(72, 187, 120, 0.3);
+    }
+
+    .growth-badge-card.rhizome {
+        background: rgba(47, 133, 90, 0.15);
+        border: 1px solid rgba(47, 133, 90, 0.3);
+    }
+
+    .connection-badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.25rem 0.6rem;
+        background: rgba(72, 187, 120, 0.15);
+        border-radius: 12px;
+        font-size: 0.75rem;
+        font-weight: 500;
+        white-space: nowrap;
+        border: 1px solid rgba(72, 187, 120, 0.3);
+        opacity: 0.8;
     }
 
     .entries-grid {
@@ -266,7 +670,7 @@
 
     .entry-link-wrapper {
         display: block;
-        padding: 1.5rem;
+        padding: 2rem;
         text-decoration: none;
         color: inherit;
         height: 100%;
@@ -318,55 +722,91 @@
         animation-delay: 0.3s;
     }
 
-    .entry-header {
-        margin-bottom: 1rem;
-    }
-
     .entry-title {
-        margin: 0;
-        font-size: 1.75rem;
-        font-weight: 500;
+        margin: 0 0 1rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.3;
+        color: rgba(255, 255, 255, 0.95);
     }
 
     .entry-metadata {
-        font-size: 1.4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1rem;
+        opacity: 0.7;
+        margin-top: 1.25rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
     }
 
-    .timestamps {
-        margin-bottom: 0.75rem;
-        opacity: 0.8;
-    }
-
-    .timestamps time {
-        display: block;
-        margin-top: 0.25rem;
+    .entry-metadata time {
+        white-space: nowrap;
     }
 
     .entry-tags {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.5rem;
+        gap: 0.4rem;
     }
 
     .tag {
         display: inline-flex;
         align-items: center;
-        padding: 0.25rem 0.75rem;
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 20px;
+        padding: 0.3rem 0.75rem;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
         color: inherit;
-        font-size: 0.75rem;
+        font-size: 0.9rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .tag::before {
         content: '#';
-        opacity: 0.7;
-        margin-right: 2px;
+        opacity: 0.6;
+        margin-right: 3px;
+    }
+
+    /* Back to Top Button */
+    .back-to-top-container {
+        margin: 4rem 0 2rem;
+        padding-top: 2rem;
+        border-top: 2px solid rgba(72, 187, 120, 0.2);
+        text-align: center;
+    }
+
+    .back-to-top-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem 2rem;
+        background: rgba(72, 187, 120, 0.1);
+        border: 1px solid rgba(72, 187, 120, 0.3);
+        border-radius: 8px;
+        color: rgba(72, 187, 120, 0.9);
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.25s ease;
+    }
+
+    .back-to-top-btn:hover {
+        background: rgba(72, 187, 120, 0.15);
+        border-color: rgba(72, 187, 120, 0.4);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     /* Responsive adjustments */
     @media (max-width: 768px) {
-        .entries-grid {
+        .section-title {
+            font-size: 1.6rem;
+        }
+
+        .entries-grid, .entries-grid.compact {
             grid-template-columns: 1fr;
         }
 
@@ -384,7 +824,58 @@
 
         .browse-badge {
             padding: 0.25rem 0.6rem;
+            font-size: 1.2rem;
+        }
+
+        .featured-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .featured-card {
+            padding: 1.2rem;
+        }
+
+        .featured-meta {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .entry-title {
+            font-size: 1.2rem;
+        }
+
+        .entry-metadata {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .entry-card-top {
+            flex-wrap: wrap;
+        }
+
+        .tags-directory {
+            grid-template-columns: 1fr;
         }
     }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Add smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+});
+</script>
 {{ end }}

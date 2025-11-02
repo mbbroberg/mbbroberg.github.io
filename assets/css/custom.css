@@ -83,3 +83,219 @@ ul li.dataview-item,
 ol li.dataview-item {
     margin-left: -1.5em;
 }
+
+/* Homepage styling */
+.homepage-intro {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: rgba(72, 187, 120, 0.05);
+    border-left: 4px solid rgba(72, 187, 120, 0.5);
+    border-radius: 6px;
+}
+
+.hiring-highlight {
+    background: rgba(255, 193, 7, 0.1);
+    border-left: 4px solid rgba(255, 193, 7, 0.7);
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+.section-divider {
+    margin: 3rem 0 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid rgba(72, 187, 120, 0.2);
+}
+
+.product-card {
+    margin-bottom: 1.5rem;
+    padding: 1.25rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    transition: all 0.25s ease;
+}
+
+.product-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(72, 187, 120, 0.3);
+    transform: translateX(4px);
+}
+
+.product-card strong {
+    color: rgba(72, 187, 120, 0.9);
+    font-size: 1.1em;
+}
+
+.obsession-item {
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid rgba(72, 187, 120, 0.4);
+}
+
+.obsession-item strong {
+    color: rgba(72, 187, 120, 0.9);
+    font-size: 1.05em;
+}
+
+/* Article card styling */
+.article-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.article-card {
+    cursor: pointer;
+}
+
+.article-title {
+    margin: 0 0 0.75rem;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: rgba(72, 187, 120, 0.9);
+}
+
+.article-summary {
+    margin: 0 0 1rem;
+    line-height: 1.5;
+    opacity: 0.85;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+.article-date {
+    font-style: italic;
+}
+
+.article-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.article-tag {
+    background: rgba(72, 187, 120, 0.15);
+    padding: 0.2em 0.6em;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.95em;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+table thead {
+    background: rgba(72, 187, 120, 0.15);
+}
+
+table thead th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: rgba(72, 187, 120, 0.9);
+    border-bottom: 2px solid rgba(72, 187, 120, 0.3);
+}
+
+table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: background-color 0.2s ease;
+}
+
+table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+table tbody tr:last-child {
+    border-bottom: none;
+}
+
+table td {
+    padding: 0.875rem 1rem;
+    line-height: 1.5;
+}
+
+table th:first-child,
+table td:first-child {
+    padding-left: 1.5rem;
+}
+
+table th:last-child,
+table td:last-child {
+    padding-right: 1.5rem;
+}
+
+/* Responsive tables */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.85em;
+    }
+
+    table th,
+    table td {
+        padding: 0.6rem 0.8rem;
+    }
+
+    table th:first-child,
+    table td:first-child {
+        padding-left: 1rem;
+    }
+
+    table th:last-child,
+    table td:last-child {
+        padding-right: 1rem;
+    }
+}
+
+/* Light mode overrides */
+.theme--light .homepage-intro {
+    background: rgba(72, 187, 120, 0.08);
+    border-left-color: rgba(72, 187, 120, 0.6);
+}
+
+.theme--light .hiring-highlight {
+    background: rgba(255, 193, 7, 0.15);
+    border-left-color: rgba(255, 193, 7, 0.8);
+}
+
+.theme--light .product-card {
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.theme--light .product-card:hover {
+    background: rgba(0, 0, 0, 0.04);
+    border-color: rgba(72, 187, 120, 0.4);
+}
+
+.theme--light .article-tag {
+    background: rgba(72, 187, 120, 0.2);
+}
+
+.theme--light table thead {
+    background: rgba(72, 187, 120, 0.2);
+}
+
+.theme--light table tbody tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.theme--light table tbody tr:hover {
+    background: rgba(0, 0, 0, 0.02);
+}

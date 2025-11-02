@@ -34,62 +34,28 @@
 
   {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
   {{ range $paginator.Pages }}
-    <div
-      class="post {{ with .Site.Params.doNotLoadAnimations }}
-        .
-      {{ else }}
-        animated fadeInDown
-      {{ end }}"
-    >
-      {{ if .Params.thumbnail }}
-        <div class="post__thumbnail-wrapper">
-          <a href="{{ .RelPermalink }}">
-            <img class="post__thumbnail" src="{{ .Params.thumbnail | relURL }}" alt="Thumbnail image" loading="lazy" />
-          </a>
+    <a href="{{ .RelPermalink }}" class="article-card-link">
+      <div class="product-card article-card">
+        <h3 class="article-title">{{ .Title }}</h3>
+        <p class="article-summary">{{ .Summary | plainify | truncate 180 }}</p>
+        <div class="article-meta">
+          <span class="article-date">
+            {{ if .Site.Params.localizedDates }}
+              {{ time.Format "Jan 2, 2006" .Date }}
+            {{ else }}
+              {{ .Date.Format "Jan 2, 2006" }}
+            {{ end }}
+          </span>
+          {{ with .Page.Params.Tags }}
+            <span class="article-tags">
+              {{ range first 3 . }}
+                <span class="article-tag">{{ . }}</span>
+              {{ end }}
+            </span>
+          {{ end }}
         </div>
-      {{ end }}
-      <div class="post__content">
-        <h3><a href="{{ .RelPermalink }}">{{ upper .Title }}</a></h3>
-        {{ if .Site.Params.fullPostContent }}
-          <p>{{ .Content | markdownify }}</p>
-        {{ else }}
-          <p>{{ .Summary | markdownify }}</p>
-        {{ end }}
-        <!-- add read more -->
-        {{- if and (.Truncated) (.Site.Params.readMore) -}}
-          <a href="{{ .RelPermalink }}">{{ i18n "read_more" }}</a>
-        {{- end -}}
       </div>
-
-      <!--  -->
-      <div class="post__footer">
-        <em class="fas fa-calendar-day"></em>
-        <span class="post__footer-date"
-          >{{ if isset .Site.Params "indexdateformat" }}
-            {{ if .Site.Params.localizedDates }}
-              {{ time.Format .Site.Params.indexDateFormat .Date }}
-            {{ else }}
-              {{ .Date.Format .Site.Params.indexDateFormat }}
-            {{ end }}
-
-          {{ else }}
-            {{ if .Site.Params.localizedDates }}
-              {{ time.Format "Mon, Jan 2, 2006" .Date }}
-            {{ else }}
-              {{ .Date.Format "Mon, Jan 2, 2006" }}
-            {{ end }}
-
-          {{ end }}</span
-        >
-        {{ with .Page.Params.Categories }}
-          {{ partial "taxonomy/categories.html" . }}
-        {{ end }}
-
-        {{ with .Page.Params.Tags }}
-          {{ partial "taxonomy/tags.html" . }}
-        {{ end }}
-      </div>
-    </div>
+    </a>
   {{ end }}
   <div class="pagination">
     {{ template "partials/pagination.html" . }}

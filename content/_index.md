@@ -4,46 +4,85 @@ layout: page
 
 ## Hey 👋. I'm Matt.
 
-I love building products developers love. I thrive as organizations scale by creating systems that keep priorities clear, defining value with metrics that matter, and coaching teams to grow with challenges. My leadership empowers through accountability, builds trust through transparency, and inspires everyone to be a catalyst for change.
+<div class="homepage-intro">
 
-### Teams I've managed: 
+I specialize in making complex systems delightfully simple for developers—navigating the messy middle between Infrastructure, Security, and Business stakeholders to ship products with measurable impact.
 
-* Product management teams unifying all of engineering through the Target Application Platform (TAP)
-* The product management team for Production Engineering at Target, including DevEx, SRE, and incident response
-* The product, program, and content teams behind Red Hat's digital communities, including [Opensource.com](https://opensource.com)
-* Community and marketing teams at Sensu, from seed to series A
-* Leading the vision for product and DevRel in part of Intel managing open source projects, including [Snap](https://github.com/intelsdi-x/snap/)
-* Leading the vision for EMC's first international community advocacy and gamification programs
+</div>
 
-### Communities I'm a part of:
+<div class="hiring-highlight">
 
-I work hard to connect and contribute to a broad range of communities of practice. Grouping in order of recency, that includes: 
+**What I'm looking for (October 2025):** Product leadership roles where I can scale AI-augmented developer experiences, design internal platform products, or transform how organizations build and ship software.
 
-* **Systems of Thought** inspired by [Team Topologies](https://teamtopologies.com), [Wardley Maps](https://www.wardleymaps.com/), and [John Cutler](https://cutlefish.substack.com)
-* **Product Management** through podcasts like [Melissa Perri](https://www.produxlabs.com/product-thinking)'s and [Product School](https://productschool.com)
-* **Kubernetes**, **Open Source** (the OSI, GitHub, and CNCF), and **Developer Relations**
-* **Python** programming language and **Go** programming language 
-* **DevOps** through the monitoring, observability, and distributed system sub-tribes
-* **Virtualization** (especially VMware), **Infosec**, and **Storage** (especially EMC and NetApp)
+</div>
 
-### Communities I've helped build:
+### Recent obsessions
 
-* **[Enable Architect](https://redhat.com/architect)** as the founding editorial lead.
-* **[Opensource.com](https://opensource.com)** as a Technical Editor and designer of the [Correspondent program](https://opensource.com/correspondent-program).
-* **[CHAOSScast podcast](https://podcast.chaoss.community/)** to highlight the value of open source and common metrics.
-* **[DevRel Collective](https://devrelcollective.fun)** as a maintainer, designer of the rebrand, and creator of the website (v1).
-* **[The Geek Whisperers podcast](https://geek-whisperers.com/)** as a co-creator and co-host for 5 years.
-* **[Commitmas: learning GitHub socially](https://github.com/commitmas)** to collaborative learn Git and GitHub with the [vBrownBag](https://vbrownbag.com/) community.
-* **The Sensu Community** leading community initiatives from maintainer practices to user summits.
-* **[Snap: the open telemetry framework](https://snap-telemetry.io)** (EOL 2018) building brand, documentation, maintainer and contributor strategy.
-* **[The EMC Elect](https://community.emc.com/community/connect/dell_emc_elect)** (EOL 2017) as program lead, designing the business plan, brand, and community engagement.
-* **[The Basho Community](https://github.com/basho-labs/the-basho-community)** (EOL 2017) as the community leader and a maintainer.
+<div class="obsession-item">
 
-### Projects I've contributed to:
+**AI Integration at Scale** — Pioneering GenAI workflows (ChatGPT, GitHub Copilot, Cursor) across enterprise platforms, reducing deployment time by 60% and onboarding by 50% while balancing innovation with governance.
 
-I often open small PRs as I work through new problem or as a way of saying thank you to a project. That's led to contributions to [Obsidian](https://github.com/obsidianmd/obsidian-help/pull/729), its community publishing [plugin Enveloppe](https://github.com/Enveloppe), [Kubernetes](https://github.com/kubernetes/community/tree/master/communication/marketing-team#purpose), the [CHAOSS community](https://github.com/chaoss/wg-value#contributors), [iPython](https://github.com/ipython/ipython-in-depth), [Chezmoi](https://github.com/twpayne/chezmoi/pull/821), [this Notion wrapper for Linux](https://github.com/puneetsl/lotion/pull/96), [Slack API Tutorial](https://github.com/slackapi/Slack-Ruby-Onboarding-Tutorial/pull/2), [Go GitHub library](https://github.com/google/go-github/pull/323), [Slack Go library](https://github.com/nlopes/slack/pull/170), [Leeroy from Docker](https://github.com/docker/leeroy/pull/40), [Awesome Maintainers](https://github.com/nayafia/awesome-maintainers), [The Lita project](https://github.com/litaio/lita.io/pull/11), [Homebrew](https://github.com/Homebrew/brew/pull/1281), [CHAOSS project](https://github.com/chaoss/grimoirelab-tutorial/pull/3), the [CNCF Landscape](https://github.com/cncf/landscape/pull/759), and many more. I also consulted for [Exercism](https://exercism.io) and continue to recommend joining their community because I ❤️ them.
+</div>
 
-### Articles 
+<div class="obsession-item">
 
-Some of my more popular articles are off domain, like [The right and wrong way to set Python 3 as default on a Mac](https://opensource.com/article/19/5/python-3-default-mac). Others include: 
+**Product Operating Models** — Transforming how platform teams work through better frameworks, value measurement, and systematic enablement. I love turning "we should explore AI" into shipped products with measurable ROI.
+
+</div>
+
+<div class="section-divider"></div>
+
+### Product domains I love
+
+<div class="obsession-item">
+
+**Cloud platform products** — Scaled internal developer platform from pilot to 4,600+ weekly active users (92% adoption). Led $200M infrastructure portfolio: 500,000 containers, 50,000 VMs, 8PB storage serving 5,000 engineers with 99.99% reliability.
+
+</div>
+
+<div class="obsession-item">
+
+**AI-augmented workflows** — Integrated GenAI tools (ChatGPT, GitHub Copilot, Cursor) across enterprise infrastructure, reducing deployment time by 60% and onboarding by 50%. Built AI-assisted documentation systems cutting planning time from 2 days to 3 hours.
+
+</div>
+
+<div class="obsession-item">
+
+**Developer-centric educational platforms** — Grew technical content platform from 10M to 22.4M visitors generating 25M in influenced pipeline. Achieved 3x deployment frequency through product-led operations and systematic friction removal.
+
+</div>
+
+<div class="obsession-item">
+
+**Influential open source frameworks** — Led meaningful influence in observability, database, Kubernetes, and virtualization ecosystems through community-led growth and developer experience optimization.
+
+</div>
+
+<div class="section-divider"></div>
+
+### Community leadership
+
+<div class="obsession-item">
+
+**Communities I've built** — Co-founded [DevRel Collective](https://devrelcollective.fun) (2,000+ members). Co-hosted [The Geek Whisperers podcast](https://geek-whisperers.com/) (140 episodes, 100K+ listeners). Designed [Opensource.com](https://opensource.com) Correspondent program, [CHAOSScast](https://podcast.chaoss.community/), and [Enable Architect](https://redhat.com/architect). Led community programs for Sensu, Snap, EMC Elect, and Basho.
+
+</div>
+
+<div class="obsession-item">
+
+**Open source contributions** — Led [Kubernetes SIG contributor experience](https://github.com/kubernetes/community/tree/master/sig-contributor-experience). Defined [CHAOSS value metrics](https://github.com/chaoss/wg-value). See [my GitHub contributions](https://github.com/mbbroberg) for the many sprinkles of PRs I've shared across the internet.
+
+</div>
+
+<div class="obsession-item">
+
+**Learning communities** — Deep in systems thinking: [Team Topologies](https://teamtopologies.com), [Wardley Maps](https://www.wardleymaps.com/), [John Cutler](https://cutlefish.substack.com). Product management: [Melissa Perri](https://www.produxlabs.com/product-thinking), [SVPG](https://www.svpg.com/). Technology: [Kubernetes](https://kubernetes.io), [CNCF](https://www.cncf.io/), DevOps, Python, Go.
+
+</div>
+
+<div class="section-divider"></div>
+
+### Writing
+
+Popular articles include [The right and wrong way to set Python 3 as default on a Mac](https://opensource.com/article/19/5/python-3-default-mac) and: 
 
