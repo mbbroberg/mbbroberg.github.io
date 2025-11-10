@@ -20,7 +20,6 @@ state: seed
 
 # Learning demands change
 
-> > 
 > Unlike education, learning demands change. Learning makes us incompetent just before it enables us to grasp mastery. Learning opens our eyes and changes the way we see, communicate and act.
 
 From [Seth Godin](https://www.unscrambled.sg/2020/04/18/seth-godin-you-can-learn-just-about-anything-now-so-what-did-you-learn-today/). 

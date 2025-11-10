@@ -1,0 +1,274 @@
+<div class="garden-category-page">
+  <!-- Breadcrumbs -->
+  {{ partial "garden-breadcrumbs.html" . }}
+
+  <!-- Category Header -->
+  <header class="category-header">
+    <h1 class="category-title">
+      <span class="category-icon">📁</span>
+      {{ .Title }}
+    </h1>
+    
+    {{ with .Content }}
+    <div class="category-description">
+      {{ . | markdownify }}
+    </div>
+    {{ end }}
+
+    <div class="category-meta">
+      <span class="category-count">{{ len .RegularPages }} {{ if eq (len .RegularPages) 1 }}note{{ else }}notes{{ end }}</span>
+    </div>
+  </header>
+
+  <!-- Growth Stage Summary for this category -->
+  {{ $pages := .RegularPages }}
+  {{ $seedCount := len (where $pages "Params.state" "seed") }}
+  {{ $sproutCount := len (where $pages "Params.state" "sprout") }}
+  {{ $rhizomeCount := len (where $pages "Params.state" "rhizome") }}
+  
+  {{ if or (gt $seedCount 0) (gt $sproutCount 0) (gt $rhizomeCount 0) }}
+  <div class="category-growth-summary">
+    <h3 class="summary-title">Growth Stages in this Category</h3>
+    <div class="growth-badges">
+      {{ if gt $rhizomeCount 0 }}
+      <a href="#rhizome" class="growth-badge rhizome">
+        🫚 Rhizome
+        <span class="badge-count">{{ $rhizomeCount }}</span>
+      </a>
+      {{ end }}
+      {{ if gt $sproutCount 0 }}
+      <a href="#sprout" class="growth-badge sprout">
+        🌿 Sprout
+        <span class="badge-count">{{ $sproutCount }}</span>
+      </a>
+      {{ end }}
+      {{ if gt $seedCount 0 }}
+      <a href="#seed" class="growth-badge seed">
+        🌱 Seed
+        <span class="badge-count">{{ $seedCount }}</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
+  <!-- Notes grouped by growth stage -->
+  {{ range $state := slice "rhizome" "sprout" "seed" }}
+    {{ $statePages := where $pages "Params.state" $state }}
+    {{ if $statePages }}
+    <section id="{{ $state }}" class="growth-section" data-state="{{ $state }}">
+      <h2 class="growth-heading">
+        {{ if eq $state "seed" }}
+        🌱 Seeds
+        {{ else if eq $state "sprout" }}
+        🌿 Sprouts
+        {{ else }}
+        🫚 Rhizomes
+        {{ end }}
+      </h2>
+      
+      <div class="entries-grid">
+        {{ range $statePages }}
+        <article class="garden-entry {{ $state }}">
+          <a href="{{ .RelPermalink }}" class="entry-link-wrapper">
+            <div class="entry-card-top">
+              <span class="growth-badge-card {{ $state }}">
+                {{ if eq $state "seed" }}🌱{{ else if eq $state "sprout" }}🌿{{ else }}🫚{{ end }}
+              </span>
+            </div>
+            
+            <h3 class="entry-title">{{ .Title }}</h3>
+            
+            {{ if .Summary }}
+            <p class="entry-summary">{{ .Summary | plainify | truncate 150 }}</p>
+            {{ end }}
+            
+            <div class="entry-metadata">
+              {{ if .Params.updated }}
+              {{ $dateStr := .Params.updated }}
+              {{ $dateParts := split $dateStr " " }}
+              {{ if ge (len $dateParts) 1 }}
+              {{ $justDate := index $dateParts 0 }}
+              <time class="tended">{{ dateFormat "Jan 2, 2006" $justDate }}</time>
+              {{ end }}
+              {{ end }}
+              
+              {{ with .Params.tags }}
+              <div class="entry-tags">
+                {{ range first 3 . }}
+                <span class="tag">{{ . }}</span>
+                {{ end }}
+              </div>
+              {{ end }}
+            </div>
+          </a>
+        </article>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+  {{ end }}
+
+  <!-- Back to Garden -->
+  <div class="back-to-garden">
+    <a href="{{ .Site.BaseURL }}garden/" class="back-link">
+      ← Back to Full Garden
+    </a>
+  </div>
+</div>
+
+<style>
+  .garden-category-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .category-header {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .category-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .category-icon {
+    font-size: 2rem;
+  }
+
+  .category-description {
+    max-width: 700px;
+    margin: 1.5rem auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+
+  .category-meta {
+    margin-top: 1rem;
+    font-size: 1rem;
+    opacity: 0.7;
+  }
+
+  .category-growth-summary {
+    margin: 2rem 0 3rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+  }
+
+  .summary-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .growth-badges {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .growth-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    border: 1px solid;
+  }
+
+  .growth-badge.seed {
+    background: rgba(145, 219, 105, 0.1);
+    border-color: rgba(145, 219, 105, 0.3);
+  }
+
+  .growth-badge.seed:hover {
+    background: rgba(145, 219, 105, 0.15);
+    border-color: rgba(145, 219, 105, 0.4);
+  }
+
+  .growth-badge.sprout {
+    background: rgba(72, 187, 120, 0.1);
+    border-color: rgba(72, 187, 120, 0.3);
+  }
+
+  .growth-badge.sprout:hover {
+    background: rgba(72, 187, 120, 0.15);
+    border-color: rgba(72, 187, 120, 0.4);
+  }
+
+  .growth-badge.rhizome {
+    background: rgba(47, 133, 90, 0.1);
+    border-color: rgba(47, 133, 90, 0.3);
+  }
+
+  .growth-badge.rhizome:hover {
+    background: rgba(47, 133, 90, 0.15);
+    border-color: rgba(47, 133, 90, 0.4);
+  }
+
+  .badge-count {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+
+  .back-to-garden {
+    margin-top: 4rem;
+    text-align: center;
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(72, 187, 120, 0.1);
+    border: 1px solid rgba(72, 187, 120, 0.3);
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    transition: all 0.25s ease;
+  }
+
+  .back-link:hover {
+    background: rgba(72, 187, 120, 0.15);
+    border-color: rgba(72, 187, 120, 0.4);
+    transform: translateX(-2px);
+  }
+
+  @media (max-width: 768px) {
+    .category-title {
+      font-size: 2rem;
+    }
+
+    .category-description {
+      font-size: 1rem;
+    }
+
+    .growth-badges {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .growth-badge {
+      justify-content: center;
+    }
+  }
+</style>
+

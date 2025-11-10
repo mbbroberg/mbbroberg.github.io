@@ -1,4 +1,11 @@
 {{ define "main" }}
+
+{{- /* Check if this is a subsection (e.g., /garden/philosophy/) */ -}}
+{{ if ne .File.Path "garden/_index.md" }}
+  {{- /* This is a category/folder page - use section template logic */ -}}
+  {{ partial "garden-category-page.html" . }}
+{{ else }}
+  {{- /* This is the main garden page */ -}}
 <div class="garden-archive">
     {{ with .Content }}
     <div class="garden-intro">
@@ -55,56 +62,13 @@
     </section>
     {{ end }}
 
-    <!-- Recently Tended Section -->
-    {{ $recentlyTended := first 6 (sort $pages ".Params.updated" "desc") }}
-    {{ if $recentlyTended }}
-    <section class="recently-tended">
-        <h2 class="section-title">🌿 Recently Tended</h2>
-        <p class="section-description">Ideas actively growing and evolving</p>
-        <div class="entries-grid compact">
-            {{ range $recentlyTended }}
-            <article class="garden-entry {{ .Params.state }} compact-card">
-                <a href="{{ .RelPermalink }}" class="entry-link-wrapper">
-                    <div class="entry-header-compact">
-                        <h3 class="entry-title-compact">{{ .Title }}</h3>
-                        <span class="growth-badge-mini {{ .Params.state }}">
-                            {{ if eq .Params.state "seed" }}🌱{{ else if eq .Params.state "sprout" }}🌿{{ else }}🫚{{ end }}
-                        </span>
-                    </div>
-                    {{ if .Summary }}
-                    <p class="entry-summary">{{ .Summary | plainify | truncate 100 }}</p>
-                    {{ end }}
-                    <div class="entry-metadata-compact">
-                        {{ if .Params.updated }}
-                        {{ $dateStr := .Params.updated }}
-                        {{ $dateParts := split $dateStr " " }}
-                        {{ if ge (len $dateParts) 1 }}
-                        {{ $justDate := index $dateParts 0 }}
-                        <time>{{ dateFormat "Jan 2" $justDate }}</time>
-                        {{ end }}
-                        {{ end }}
-                        {{ with .Params.tags }}
-                        <div class="tags-compact">
-                            {{ range first 2 . }}
-                            <span class="tag-mini">#{{ . }}</span>
-                            {{ end }}
-                        </div>
-                        {{ end }}
-                    </div>
-                </a>
-            </article>
-            {{ end }}
-        </div>
-    </section>
-    {{ end }}
-
     <!-- Enhanced browsing interface -->
     <section class="garden-browse">
 
         <!-- Growth Stage Navigation -->
         <div class="browse-section">
             <h2 class="section-title">🌳 Explore the Garden</h2>
-            <p class="section-description">Navigate by growth stage or topic</p>
+            <p class="section-description">Navigate by growth stage</p>
 
             <div class="browse-items">
                 {{ $states := slice "seed" "sprout" "rhizome" }}
@@ -129,9 +93,9 @@
                 {{ end }}
             </div>
         </div>
-
         <!-- Topic Tags -->
         <div class="browse-section topics-section">
+            <p class="section-description">Navigate by topic</p>
             {{ $gardenPages := where .Site.RegularPages "Section" "garden" }}
             {{ $allTags := slice }}
             {{ range $gardenPages }}
@@ -165,6 +129,50 @@
         </div>
     </section>
 
+<!-- Recently Tended Section -->
+{{ $recentlyTended := first 6 (sort $pages ".Params.updated" "desc") }}
+{{ if $recentlyTended }}
+<section class="recently-tended">
+    <h2 class="section-title">🌿 Recently Tended</h2>
+    <p class="section-description">Ideas actively growing and evolving</p>
+    <div class="entries-grid compact">
+        {{ range $recentlyTended }}
+        <article class="garden-entry {{ .Params.state }} compact-card">
+            <a href="{{ .RelPermalink }}" class="entry-link-wrapper">
+                <div class="entry-header-compact">
+                    <h3 class="entry-title-compact">{{ .Title }}</h3>
+                    <span class="growth-badge-mini {{ .Params.state }}">
+                        {{ if eq .Params.state "seed" }}🌱{{ else if eq .Params.state "sprout" }}🌿{{ else }}🫚{{ end }}
+                    </span>
+                </div>
+                {{ if .Summary }}
+                <p class="entry-summary">{{ .Summary | plainify | truncate 100 }}</p>
+                {{ end }}
+                <div class="entry-metadata-compact">
+                    {{ if .Params.updated }}
+                    {{ $dateStr := .Params.updated }}
+                    {{ $dateParts := split $dateStr " " }}
+                    {{ if ge (len $dateParts) 1 }}
+                    {{ $justDate := index $dateParts 0 }}
+                    <time>{{ dateFormat "Jan 2" $justDate }}</time>
+                    {{ end }}
+                    {{ end }}
+                    {{ with .Params.tags }}
+                    <div class="tags-compact">
+                        {{ range first 2 . }}
+                        <span class="tag-mini">#{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </a>
+        </article>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+
     <!-- Content sections by growth state -->
     {{ range $state := slice "seed" "sprout" "rhizome" }}
     <section id="{{ $state }}" class="growth-section" data-state="{{ $state }}">
@@ -177,16 +185,57 @@
             🫚 Enmeshed and Interwoven
             {{ end }}
         </h2>
-        <div class="entries-grid">
-                {{ range where $.Site.RegularPages "Type" "garden" }}
-                {{ if eq .Params.state $state }}
+
+        {{- /* Get all pages for this growth state */ -}}
+        {{ $statePages := where $.Site.RegularPages "Type" "garden" }}
+        {{ $statePages = where $statePages "Params.state" $state }}
+
+        {{- /* Separate pages by whether they're in folders or at root */ -}}
+        {{ $gardenSubsections := $.Sections }}
+        {{ $folderedPages := dict }}
+        {{ $rootPages := slice }}
+
+        {{- /* Categorize pages */ -}}
+        {{ range $page := $statePages }}
+            {{ $inFolder := false }}
+            {{ range $section := $gardenSubsections }}
+                {{- /* Check if this page is in this subsection */ -}}
+                {{ if in $page.File.Path $section.File.Dir }}
+                    {{ $folderTitle := $section.Title }}
+                    {{ $folderPath := $section.RelPermalink }}
+                    {{ $existing := index $folderedPages $folderPath }}
+                    {{ if $existing }}
+                        {{ $folderedPages = merge $folderedPages (dict $folderPath (dict "title" $folderTitle "pages" ($existing.pages | append $page))) }}
+                    {{ else }}
+                        {{ $folderedPages = merge $folderedPages (dict $folderPath (dict "title" $folderTitle "pages" (slice $page))) }}
+                    {{ end }}
+                    {{ $inFolder = true }}
+                {{ end }}
+            {{ end }}
+            {{ if not $inFolder }}
+                {{ $rootPages = $rootPages | append $page }}
+            {{ end }}
+        {{ end }}
+
+        {{- /* Display folder groups first */ -}}
+        {{ range $folderPath, $folderData := $folderedPages }}
+        <div class="folder-group">
+            <h3 class="folder-group-title">
+                <a href="{{ $folderPath }}" class="folder-group-link">
+                    <span class="folder-group-icon">📁</span>
+                    <span class="folder-group-name">{{ $folderData.title }}</span>
+                    <span class="folder-group-count">({{ len $folderData.pages }})</span>
+                </a>
+            </h3>
+            <div class="entries-grid">
+                {{ range $folderData.pages }}
                 <article class="garden-entry {{ $state }} enhanced-card">
                     <a href="{{ .RelPermalink }}" class="entry-link-wrapper">
                         <div class="entry-card-top">
                             <span class="growth-badge-card {{ $state }}">
                                 {{ if eq $state "seed" }}🌱{{ else if eq $state "sprout" }}🌿{{ else }}🫚{{ end }}
                             </span>
-                            <!-- Connection indicators -->
+                            {{- /* Connection indicators */ -}}
                             {{ $currentPage := . }}
                             {{ $backlinks := 0 }}
                             {{ range $.Site.RegularPages }}
@@ -226,8 +275,62 @@
                     </a>
                 </article>
                 {{ end }}
-                {{ end }}
+            </div>
         </div>
+        {{ end }}
+
+        {{- /* Display root-level pages */ -}}
+        {{ if $rootPages }}
+        <div class="entries-grid">
+            {{ range $rootPages }}
+            <article class="garden-entry {{ $state }} enhanced-card">
+                <a href="{{ .RelPermalink }}" class="entry-link-wrapper">
+                    <div class="entry-card-top">
+                        <span class="growth-badge-card {{ $state }}">
+                            {{ if eq $state "seed" }}🌱{{ else if eq $state "sprout" }}🌿{{ else }}🫚{{ end }}
+                        </span>
+                        {{- /* Connection indicators */ -}}
+                        {{ $currentPage := . }}
+                        {{ $backlinks := 0 }}
+                        {{ range $.Site.RegularPages }}
+                        {{ if ne . $currentPage }}
+                            {{ $linkPattern := printf "/%s/" $currentPage.File.BaseFileName }}
+                            {{ $titlePattern := $currentPage.Title }}
+                            {{ if or (in .RawContent $linkPattern) (and (in .RawContent $titlePattern) (or (in .RawContent "[[") (in .RawContent "](/"))) }}
+                            {{ $backlinks = add $backlinks 1 }}
+                            {{ end }}
+                        {{ end }}
+                        {{ end }}
+                        {{ if gt $backlinks 0 }}
+                        <span class="connection-badge" title="{{ $backlinks }} connections">🔗 {{ $backlinks }}</span>
+                        {{ end }}
+                    </div>
+                    <h3 class="entry-title">{{ .Title }}</h3>
+                    {{ if .Summary }}
+                    <p class="entry-summary">{{ .Summary | plainify | truncate 150 }}</p>
+                    {{ end }}
+                    <div class="entry-metadata">
+                        {{ if .Params.updated }}
+                        {{ $dateStr := .Params.updated }}
+                        {{ $dateParts := split $dateStr " " }}
+                        {{ if ge (len $dateParts) 1 }}
+                        {{ $justDate := index $dateParts 0 }}
+                        <time class="tended">{{ dateFormat "Jan 2, 2006" $justDate }}</time>
+                        {{ end }}
+                        {{ end }}
+                        {{ with .Params.tags }}
+                        <div class="entry-tags">
+                            {{ range first 3 . }}
+                            <span class="tag">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                </a>
+            </article>
+            {{ end }}
+        </div>
+        {{ end }}
     </section>
     {{ end }}
 
@@ -535,6 +638,132 @@
     .growth-badge.rhizome:hover {
         background: rgba(47, 133, 90, 0.15);
         border-color: rgba(47, 133, 90, 0.4);
+    }
+
+    /* Folder Directory Styles */
+    .folders-directory {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .folder-directory-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.25rem;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(72, 187, 120, 0.15);
+        border-radius: 8px;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.25s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .folder-directory-item::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: rgba(72, 187, 120, 0.5);
+        transform: scaleY(0);
+        transition: transform 0.25s ease;
+    }
+
+    .folder-directory-item:hover {
+        background: rgba(72, 187, 120, 0.08);
+        border-color: rgba(72, 187, 120, 0.4);
+        transform: translateX(4px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .folder-directory-item:hover::before {
+        transform: scaleY(1);
+    }
+
+    .folder-icon {
+        font-size: 1.5rem;
+        flex-shrink: 0;
+        opacity: 0.8;
+    }
+
+    .folder-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .folder-name {
+        font-size: 1.1rem;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+
+    .folder-count {
+        font-size: 0.85rem;
+        opacity: 0.7;
+    }
+
+    .folder-arrow {
+        font-size: 1.2rem;
+        opacity: 0.5;
+        transition: all 0.25s ease;
+    }
+
+    .folder-directory-item:hover .folder-arrow {
+        opacity: 1;
+        transform: translateX(4px);
+    }
+
+    /* Folder Group Styles (within growth sections) */
+    .folder-group {
+        margin-bottom: 3rem;
+    }
+
+    .folder-group-title {
+        margin: 0 0 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .folder-group-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        background: rgba(72, 187, 120, 0.08);
+        border: 1px solid rgba(72, 187, 120, 0.2);
+        border-radius: 8px;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.25s ease;
+    }
+
+    .folder-group-link:hover {
+        background: rgba(72, 187, 120, 0.12);
+        border-color: rgba(72, 187, 120, 0.3);
+        transform: translateX(2px);
+    }
+
+    .folder-group-icon {
+        font-size: 1.2rem;
+        opacity: 0.8;
+    }
+
+    .folder-group-name {
+        font-weight: 600;
+    }
+
+    .folder-group-count {
+        font-size: 0.9rem;
+        opacity: 0.7;
+        font-weight: 400;
     }
 
     /* Tag Directory Styles */
@@ -858,8 +1087,17 @@
             flex-wrap: wrap;
         }
 
+        .folders-directory,
         .tags-directory {
             grid-template-columns: 1fr;
+        }
+
+        .folder-directory-item {
+            padding: 0.85rem 1rem;
+        }
+
+        .folder-name {
+            font-size: 1rem;
         }
     }
 </style>
@@ -881,4 +1119,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+{{ end }}
+{{- /* End of main garden page */ -}}
 {{ end }}

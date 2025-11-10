@@ -1,5 +1,10 @@
 {{ define "main" }}
 <div class="post garden-post {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
+  <!-- Garden Breadcrumbs -->
+  {{ if eq .Type "garden" }}
+    {{ partial "garden-breadcrumbs.html" . }}
+  {{ end }}
+
   <!-- Garden State Indicator (from module) -->
   {{ if eq .Type "garden" }}
     {{ partial "garden-state-indicator.html" . }}

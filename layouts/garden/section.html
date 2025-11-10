@@ -1,0 +1,425 @@
+{{ define "main" }}
+<div class="garden-category-page">
+  <!-- Breadcrumbs -->
+  {{ partial "garden-breadcrumbs.html" . }}
+
+  <!-- Category Header -->
+  <header class="category-header">
+    <h1 class="category-title">
+      <span class="category-icon">📁</span>
+      {{ .Title }}
+    </h1>
+    
+    {{ with .Content }}
+    <div class="category-description">
+      {{ . | markdownify }}
+    </div>
+    {{ end }}
+
+    <div class="category-meta">
+      <span class="category-count">{{ len .Pages }} {{ if eq (len .Pages) 1 }}note{{ else }}notes{{ end }}</span>
+    </div>
+  </header>
+
+  <!-- Growth Stage Summary for this category -->
+  {{ $pages := .Pages }}
+  {{ $seedCount := len (where $pages "Params.state" "seed") }}
+  {{ $sproutCount := len (where $pages "Params.state" "sprout") }}
+  {{ $rhizomeCount := len (where $pages "Params.state" "rhizome") }}
+  
+  {{ if or (gt $seedCount 0) (gt $sproutCount 0) (gt $rhizomeCount 0) }}
+  <div class="category-growth-summary">
+    <h3 class="summary-title">Growth Stages in this Category</h3>
+    <div class="growth-badges">
+      {{ if gt $rhizomeCount 0 }}
+      <a href="#rhizome" class="growth-badge rhizome">
+        🫚 Rhizome
+        <span class="badge-count">{{ $rhizomeCount }}</span>
+      </a>
+      {{ end }}
+      {{ if gt $sproutCount 0 }}
+      <a href="#sprout" class="growth-badge sprout">
+        🌿 Sprout
+        <span class="badge-count">{{ $sproutCount }}</span>
+      </a>
+      {{ end }}
+      {{ if gt $seedCount 0 }}
+      <a href="#seed" class="growth-badge seed">
+        🌱 Seed
+        <span class="badge-count">{{ $seedCount }}</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+  {{ end }}
+
+  <!-- Notes grouped by growth stage -->
+  {{ range $state := slice "rhizome" "sprout" "seed" }}
+    {{ $statePages := where $pages "Params.state" $state }}
+    {{ if $statePages }}
+    <section id="{{ $state }}" class="growth-section" data-state="{{ $state }}">
+      <h2 class="growth-heading">
+        {{ if eq $state "seed" }}
+        🌱 Seeds
+        {{ else if eq $state "sprout" }}
+        🌿 Sprouts
+        {{ else }}
+        🫚 Rhizomes
+        {{ end }}
+      </h2>
+      
+      <div class="entries-grid">
+        {{ range $statePages }}
+        <article class="garden-entry {{ $state }}">
+          <a href="{{ .RelPermalink }}" class="entry-link-wrapper">
+            <div class="entry-card-top">
+              <span class="growth-badge-card {{ $state }}">
+                {{ if eq $state "seed" }}🌱{{ else if eq $state "sprout" }}🌿{{ else }}🫚{{ end }}
+              </span>
+            </div>
+            
+            <h3 class="entry-title">{{ .Title }}</h3>
+            
+            {{ if .Summary }}
+            <p class="entry-summary">{{ .Summary | plainify | truncate 150 }}</p>
+            {{ end }}
+            
+            <div class="entry-metadata">
+              {{ if .Params.updated }}
+              {{ $dateStr := .Params.updated }}
+              {{ $dateParts := split $dateStr " " }}
+              {{ if ge (len $dateParts) 1 }}
+              {{ $justDate := index $dateParts 0 }}
+              <time class="tended">{{ dateFormat "Jan 2, 2006" $justDate }}</time>
+              {{ end }}
+              {{ end }}
+              
+              {{ with .Params.tags }}
+              <div class="entry-tags">
+                {{ range first 3 . }}
+                <span class="tag">{{ . }}</span>
+                {{ end }}
+              </div>
+              {{ end }}
+            </div>
+          </a>
+        </article>
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+  {{ end }}
+
+  <!-- Back to Garden -->
+  <div class="back-to-garden">
+    <a href="{{ .Site.BaseURL }}garden/" class="back-link">
+      ← Back to Full Garden
+    </a>
+  </div>
+</div>
+
+<style>
+  .garden-category-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+
+  .category-header {
+    margin-bottom: 3rem;
+  }
+
+  .category-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 0 0 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(72, 187, 120, 0.95);
+  }
+
+  .category-icon {
+    font-size: 2rem;
+  }
+
+  .category-description {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+
+  .category-meta {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    opacity: 0.7;
+  }
+
+  .category-count {
+    padding: 0.35rem 0.75rem;
+    background: rgba(72, 187, 120, 0.1);
+    border-radius: 12px;
+    border: 1px solid rgba(72, 187, 120, 0.2);
+  }
+
+  /* Growth Summary */
+  .category-growth-summary {
+    margin: 2rem 0 3rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    border: 1px solid rgba(72, 187, 120, 0.15);
+  }
+
+  .summary-title {
+    margin: 0 0 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: 0.9;
+  }
+
+  .growth-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .growth-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+  }
+
+  .growth-badge.seed {
+    background: rgba(145, 219, 105, 0.1);
+    border-color: rgba(145, 219, 105, 0.3);
+  }
+
+  .growth-badge.seed:hover {
+    background: rgba(145, 219, 105, 0.15);
+    border-color: rgba(145, 219, 105, 0.4);
+  }
+
+  .growth-badge.sprout {
+    background: rgba(72, 187, 120, 0.1);
+    border-color: rgba(72, 187, 120, 0.3);
+  }
+
+  .growth-badge.sprout:hover {
+    background: rgba(72, 187, 120, 0.15);
+    border-color: rgba(72, 187, 120, 0.4);
+  }
+
+  .growth-badge.rhizome {
+    background: rgba(47, 133, 90, 0.1);
+    border-color: rgba(47, 133, 90, 0.3);
+  }
+
+  .growth-badge.rhizome:hover {
+    background: rgba(47, 133, 90, 0.15);
+    border-color: rgba(47, 133, 90, 0.4);
+  }
+
+  .badge-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    padding: 0 0.4rem;
+  }
+
+  /* Reuse existing garden entry styles */
+  .growth-section {
+    margin: 3rem 0;
+    scroll-margin-top: 2rem;
+  }
+
+  .growth-heading {
+    margin: 0 0 1.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+    border-bottom: 1px solid rgba(72, 187, 120, 0.2);
+  }
+
+  .entries-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .garden-entry {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+  }
+
+  .garden-entry.seed {
+    border-left-color: rgba(145, 219, 105, 0.8);
+    background: rgba(145, 219, 105, 0.05);
+  }
+
+  .garden-entry.sprout {
+    border-left-color: rgba(72, 187, 120, 0.8);
+    background: rgba(72, 187, 120, 0.05);
+  }
+
+  .garden-entry.rhizome {
+    border-left-color: rgba(47, 133, 90, 0.8);
+    background: rgba(47, 133, 90, 0.05);
+  }
+
+  .garden-entry:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .entry-link-wrapper {
+    display: block;
+    padding: 2rem;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+  }
+
+  .entry-card-top {
+    margin-bottom: 1rem;
+  }
+
+  .growth-badge-card {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    opacity: 0.8;
+  }
+
+  .growth-badge-card.seed {
+    background: rgba(145, 219, 105, 0.15);
+    border: 1px solid rgba(145, 219, 105, 0.3);
+  }
+
+  .growth-badge-card.sprout {
+    background: rgba(72, 187, 120, 0.15);
+    border: 1px solid rgba(72, 187, 120, 0.3);
+  }
+
+  .growth-badge-card.rhizome {
+    background: rgba(47, 133, 90, 0.15);
+    border: 1px solid rgba(47, 133, 90, 0.3);
+  }
+
+  .entry-title {
+    margin: 0 0 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: inherit;
+  }
+
+  .entry-summary {
+    margin: 0 0 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    opacity: 0.8;
+  }
+
+  .entry-metadata {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .entry-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.6rem;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .tag::before {
+    content: '#';
+    opacity: 0.6;
+    margin-right: 3px;
+  }
+
+  /* Back to Garden */
+  .back-to-garden {
+    margin: 4rem 0 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid rgba(72, 187, 120, 0.2);
+    text-align: center;
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 2rem;
+    background: rgba(72, 187, 120, 0.1);
+    border: 1px solid rgba(72, 187, 120, 0.3);
+    border-radius: 8px;
+    color: rgba(72, 187, 120, 0.9);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.25s ease;
+  }
+
+  .back-link:hover {
+    background: rgba(72, 187, 120, 0.15);
+    border-color: rgba(72, 187, 120, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .category-title {
+      font-size: 2rem;
+    }
+
+    .entries-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .growth-badges {
+      flex-direction: column;
+    }
+
+    .growth-badge {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+</style>
+{{ end }}
+
