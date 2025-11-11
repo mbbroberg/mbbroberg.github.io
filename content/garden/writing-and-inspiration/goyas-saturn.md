@@ -1,13 +1,14 @@
 ---
-up: 
+up:
 created: 2024-06-30 Sun 6:37am
 updated: 2025-05-27 Tue 9:42pm
 tags:
   - myths
-aliases: []
-cssclasses: 
+aliases:
+  - /garden/goyas-saturn/
+cssclasses:
 title: Goya’s Saturn
-slug: /goyas-saturn
+slug: /writing-and-inspiration/goyas-saturn
 filename: goyas-saturn
 date: 2024-06-30
 share: true

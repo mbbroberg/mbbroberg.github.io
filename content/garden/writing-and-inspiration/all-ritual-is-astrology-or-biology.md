@@ -1,11 +1,12 @@
 ---
-up: 
-aliases: []
+up:
+aliases:
+  - /garden/all-ritual-is-astrology-or-biology/
 tags: []
 created: 2024-11-15 Fri 10:50pm
 updated: 2025-05-09 Fri 8:26pm
 title: all ritual is astrology or biology
-slug: /all-ritual-is-astrology-or-biology
+slug: /writing-and-inspiration/all-ritual-is-astrology-or-biology
 filename: all-ritual-is-astrology-or-biology
 date: 2024-11-15
 share: true

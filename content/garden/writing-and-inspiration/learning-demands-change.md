@@ -1,16 +1,17 @@
 ---
-up: 
-related: 
+up:
+related:
 created: 2020-04-10 Fri 12:00am
 updated: 2025-05-27 Tue 9:43pm
 tags:
   - inspirations
-aliases: []
-cssclasses: 
+aliases:
+  - /garden/learning-demands-change/
+cssclasses:
 edited: 2024-01-28 11:45:00
 title: Learning demands change
 share: true
-slug: /learning-demands-change
+slug: /writing-and-inspiration/learning-demands-change
 filename: learning-demands-change
 date: 2020-04-10
 datemod: 2025-02-19

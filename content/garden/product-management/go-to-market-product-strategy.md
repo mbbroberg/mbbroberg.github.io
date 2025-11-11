@@ -1,6 +1,8 @@
 ---
 title: Go-To-Market Product Strategy
-slug: /go-to-market-product-strategy
+aliases:
+  - /garden/go-to-market-product-strategy/
+slug: /product-management/go-to-market-product-strategy
 filename: go-to-market-product-strategy
 date: 2025-06-22
 share: true

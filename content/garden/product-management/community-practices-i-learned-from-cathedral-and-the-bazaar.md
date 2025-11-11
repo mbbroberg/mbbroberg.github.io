@@ -1,8 +1,10 @@
 ---
 created: 2025-06-22 Sun 5:00pm
 updated: 2025-06-22 Sun 5:05pm
+aliases:
+  - /garden/community-practices-i-learned-from-cathedral-and-the-bazaar/
 title: Community practices I learned from Cathedral and the Bazaar
-slug: /community-practices-i-learned-from-cathedral-and-the-bazaar
+slug: /product-management/community-practices-i-learned-from-cathedral-and-the-bazaar
 filename: community-practices-i-learned-from-cathedral-and-the-bazaar
 date: 2025-06-22
 share: true

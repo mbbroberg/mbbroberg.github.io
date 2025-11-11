@@ -1,11 +1,12 @@
 ---
-up: 
+up:
 created: 2024-07-18 Thu 1:09pm
 updated: 2025-05-11 Sun 2:18pm
-aliases: []
+aliases:
+  - /garden/we-are-born-a-garden/
 title: we are born a garden
 type: garden
-slug: /we-are-born-a-garden
+slug: /writing-and-inspiration/we-are-born-a-garden
 filename: we-are-born-a-garden
 date: 2024-07-18
 lastmod: 2024-11-07

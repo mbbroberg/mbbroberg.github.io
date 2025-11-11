@@ -2,8 +2,10 @@
 edited: 2024-01-28 11:44:58
 updated: 2025-11-01 Sat 11:24am
 created: 2010-10-02 Fri 2:15pm
+aliases:
+  - /garden/i-do-believe-it/
 title: I do believe it
-slug: /i-do-believe-it
+slug: /writing-and-inspiration/i-do-believe-it
 filename: i-do-believe-it
 date: 2025-01-03
 share: true

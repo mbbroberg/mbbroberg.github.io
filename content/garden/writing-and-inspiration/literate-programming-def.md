@@ -2,12 +2,13 @@
 edited: 2024-03-16 13:17:54
 created: 2025-01-03 Fri 2:15pm
 updated: 2025-05-27 Tue 9:43pm
-aliases: []
+aliases:
+  - /garden/literate-programming-def/
 tags:
   - inspirations
 title: Literate Programming (def)
 share: true
-slug: /literate-programming-def
+slug: /writing-and-inspiration/literate-programming-def
 filename: literate-programming-def
 date: 2025-01-03
 datemod: 2025-02-19

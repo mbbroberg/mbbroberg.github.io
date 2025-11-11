@@ -1,8 +1,10 @@
 ---
 created: 2025-03-16 Sun 5:34am
 updated: 2025-05-11 Sun 1:44pm
+aliases:
+  - /garden/product-management-signs-of-healthy-engineering-relationships/
 title: Product Management – Signs of Healthy Engineering Relationships
-slug: /product-management-signs-of-healthy-engineering-relationships
+slug: /product-management/product-management-signs-of-healthy-engineering-relationships
 filename: product-management-signs-of-healthy-engineering-relationships
 date: 2025-03-16
 share: true
@@ -51,7 +53,7 @@ I wrote these guidelines for a past team that found it helpful.
 
 ---
 **Related:**
-- [A Definition of Platform Product Management](/garden/a-definition-of-platform-product-management)
-- [Platforms as Internal Products](/garden/platforms-as-internal-products)
+- [A Definition of Platform Product Management](/product-management/a-definition-of-platform-product-management)
+- [Platforms as Internal Products](/product-management/platforms-as-internal-products)
 - [From Project to Product Management](/articles/from-project-to-product-management)
 

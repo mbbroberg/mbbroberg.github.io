@@ -1,11 +1,12 @@
 ---
 up: "[[ADHD MOC]]"
-aliases: []
+aliases:
+  - /garden/adhd-timebounding-advice/
 tags: []
 created: 2024-12-27 Fri 9:01am
 updated: 2025-05-09 Fri 8:25pm
 title: ADHD timebounding advice
-slug: /adhd-timebounding-advice
+slug: /philosophy-psychology/adhd-timebounding-advice
 filename: adhd-timebounding-advice
 date: 2024-12-27
 share: true

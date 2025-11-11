@@ -1,5 +1,6 @@
 ---
-aliases: []
+aliases:
+  - /garden/personality-theories-im-familiar-with/
 tags: []
 created: 2020-11-17 Tue 12:00am
 edited: 2024-01-28 17:07:52
@@ -9,7 +10,7 @@ updated: 2025-04-22 Tue 9:08pm
 related:
   - "[Enneagram as a meaningful personality theory](Enneagram%20as%20a%20meaningful%20personality%20theory.md)"
 title: Personality Theories I'm familiar with
-slug: /personality-theories-im-familiar-with
+slug: /philosophy-psychology/personality-theories-im-familiar-with
 filename: personality-theories-im-familiar-with
 date: 2020-11-17
 share: true

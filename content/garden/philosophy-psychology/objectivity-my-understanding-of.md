@@ -1,13 +1,14 @@
 ---
-up: 
-aliases: []
+up:
+aliases:
+  - /garden/objectivity-my-understanding-of/
 tags:
   - cognitive-frames
 created: 2024-06-28 Fri 10:07pm
 updated: 2025-05-27 Tue 9:41pm
 title: Objectivity – my understanding of
 share: true
-slug: /objectivity-my-understanding-of
+slug: /philosophy-psychology/objectivity-my-understanding-of
 filename: objectivity-my-understanding-of
 date: 2024-06-28
 datemod: 2025-02-19

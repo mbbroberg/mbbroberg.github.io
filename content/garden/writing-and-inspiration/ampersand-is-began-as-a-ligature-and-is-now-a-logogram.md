@@ -1,8 +1,10 @@
 ---
 created: 2025-06-09 Mon 12:21pm
 updated: 2025-06-09 Mon 12:28pm
+aliases:
+  - /garden/ampersand-is-began-as-a-ligature-and-is-now-a-logogram/
 title: Ampersand is began as a ligature and is now a logogram
-slug: /ampersand-is-began-as-a-ligature-and-is-now-a-logogram
+slug: /writing-and-inspiration/ampersand-is-began-as-a-ligature-and-is-now-a-logogram
 filename: ampersand-is-began-as-a-ligature-and-is-now-a-logogram
 date: 2025-06-09
 share: true

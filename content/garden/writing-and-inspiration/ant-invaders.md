@@ -1,6 +1,8 @@
 ---
 title: Ant Invaders
-slug: /ant-invaders
+aliases:
+  - /garden/ant-invaders/
+slug: /writing-and-inspiration/ant-invaders
 tags:
   - thoughts
 filename: ant-invaders

@@ -1,9 +1,11 @@
 ---
 created: 2025-01-03 Fri 2:15pm
 updated: 2025-03-11 Tue 8:15pm
+aliases:
+  - /garden/cognitive-and-relational-proximity/
 state: seed
 title: Cognitive and Relational Proximity
-slug: /cognitive-and-relational-proximity
+slug: /philosophy-psychology/cognitive-and-relational-proximity
 filename: cognitive-and-relational-proximity
 date: 2025-01-03
 share: true

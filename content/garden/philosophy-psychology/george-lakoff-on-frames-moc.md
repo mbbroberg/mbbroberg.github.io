@@ -1,15 +1,16 @@
 ---
-related: 
+related:
 created: 2020-10-08 Thu 12:00am
 updated: 2025-03-28 Fri 10:45pm
 tags:
   - inspirations
-aliases: []
-cssclasses: 
+aliases:
+  - /garden/george-lakoff-on-frames/
+cssclasses:
 share: true
 TLDR: The man behind Cognitive Frames
 title: George Lakoff on Frames
-slug: /george-lakoff-on-frames
+slug: /philosophy-psychology/george-lakoff-on-frames
 filename: george-lakoff-on-frames-moc
 date: 2020-10-08
 type: garden
@@ -18,7 +19,7 @@ state: sprout
 
 # George Lakoff
 
-[George Lakoff](https://cogweb.ucla.edu/CogSci/Lakoff.html) is a huge influence for me (see [Philosophy — my most influential thinkers](/garden/philosophy-my-most-influential-thinkers)
+[George Lakoff](https://cogweb.ucla.edu/CogSci/Lakoff.html) is a huge influence for me (see [Philosophy — my most influential thinkers](/philosophy-psychology/philosophy-my-most-influential-thinkers)
 
 ## Key Theories 
 

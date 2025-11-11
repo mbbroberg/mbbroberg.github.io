@@ -2,11 +2,13 @@
 created: 2025-01-03 Fri 2:15pm
 edited: 2024-01-28 11:44:58
 tags: []
+aliases:
+  - /garden/ethernet-comes-from-ether/
 up:
   - "[Etymology MOC](Etymology%20MOC.md)"
 updated: 2025-05-27 Tue 9:45pm
 title: Ethernet comes from "ether"
-slug: /ethernet-comes-from-ether
+slug: /writing-and-inspiration/ethernet-comes-from-ether
 filename: ethernet-comes-from-ether
 date: 2025-01-03
 share: true

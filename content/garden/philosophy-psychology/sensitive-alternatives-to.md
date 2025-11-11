@@ -1,11 +1,12 @@
 ---
 created: 2024-08-01 Thu 2:18am
 updated: 2025-05-27 Tue 9:41pm
-aliases: []
+aliases:
+  - /garden/sensitive-alternatives-to/
 tags:
   - cognitive-frames
 title: Sensitive – alternatives to
-slug: /sensitive-alternatives-to
+slug: /philosophy-psychology/sensitive-alternatives-to
 filename: sensitive-alternatives-to
 date: 2024-08-01
 share: true

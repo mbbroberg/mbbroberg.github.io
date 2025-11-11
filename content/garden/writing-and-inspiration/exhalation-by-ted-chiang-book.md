@@ -7,11 +7,13 @@ kindle-sync:
   lastAnnotatedDate: 2025-01-02
   bookImageUrl: https://m.media-amazon.com/images/I/71rxUxpcPgL._SY160.jpg
   highlightsCount: 26
+aliases:
+  - /garden/exhalation-by-ted-chiang-book/
 created: 2025-02-13 Thu 6:21am
 updated: 2025-03-11 Tue 8:40pm
 state: seed
 title: Exhalation by Ted Chiang – Book
-slug: /exhalation-by-ted-chiang-book
+slug: /writing-and-inspiration/exhalation-by-ted-chiang-book
 filename: exhalation-by-ted-chiang-book
 date: 2025-02-13
 share: true

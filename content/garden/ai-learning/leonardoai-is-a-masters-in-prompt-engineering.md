@@ -1,8 +1,10 @@
 ---
 created: 2025-05-11 Sun 8:56pm
 updated: 2025-05-11 Sun 9:03pm
+aliases:
+  - /garden/leonardoai-is-a-masters-in-prompt-engineering/
 title: Leonardo.ai is a Masters in Prompt Engineering
-slug: /leonardoai-is-a-masters-in-prompt-engineering
+slug: /ai-learning/leonardoai-is-a-masters-in-prompt-engineering
 filename: leonardoai-is-a-masters-in-prompt-engineering
 date: 2025-05-11
 share: true

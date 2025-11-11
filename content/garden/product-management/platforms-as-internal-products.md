@@ -5,9 +5,11 @@ tags:
   - team-topologies
   - platform-products
   - product-thinking
+aliases:
+  - /garden/platforms-as-internal-products/
 created: 2025-05-27 Tue 8:29pm
 updated: 2025-05-27 Tue 9:37pm
-slug: /platforms-as-internal-products
+slug: /product-management/platforms-as-internal-products
 filename: platforms-as-internal-products
 share: true
 type: garden
@@ -33,6 +35,6 @@ Platform teams that think like product teams build platforms that stream-aligned
 
 ---
 **Related:**
-- [A Definition of Platform Product Management](/garden/a-definition-of-platform-product-management)
-- [Platform Product Extension Model Language](/garden/platform-product-extension-model-language)
+- [A Definition of Platform Product Management](/product-management/a-definition-of-platform-product-management)
+- [Platform Product Extension Model Language](/product-management/platform-product-extension-model-language)
 - [From Project to Product Management](/articles/from-project-to-product-management)

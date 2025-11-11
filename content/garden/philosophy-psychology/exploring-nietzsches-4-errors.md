@@ -1,5 +1,6 @@
 ---
-aliases: []
+aliases:
+  - /garden/exploring-nietzsches-4-errors/
 tags:
   - inspirations
 created: 2024-07-18 Thu 1:24pm
@@ -9,7 +10,7 @@ share: true
 type: garden
 state: sprout
 title: Exploring Nietzsche's 4 Errors
-slug: /exploring-nietzsches-4-errors
+slug: /philosophy-psychology/exploring-nietzsches-4-errors
 filename: exploring-nietzsches-4-errors
 ---
 

@@ -1,8 +1,10 @@
 ---
 created: 2025-05-26 Mon 2:18pm
 updated: 2025-05-26 Mon 2:30pm
+aliases:
+  - /garden/enactivism/
 title: enactivism
-slug: /enactivism
+slug: /philosophy-psychology/enactivism
 filename: enactivism
 date: 2025-05-26
 share: true

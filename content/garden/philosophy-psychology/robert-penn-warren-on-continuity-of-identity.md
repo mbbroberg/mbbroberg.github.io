@@ -1,8 +1,10 @@
 ---
 created: 2025-02-14 Fri 4:30am
 updated: 2025-05-23 Fri 5:47pm
+aliases:
+  - /garden/robert-penn-warren-on-continuity-of-identity/
 title: Robert Penn Warren on Continuity of Identity
-slug: /robert-penn-warren-on-continuity-of-identity
+slug: /philosophy-psychology/robert-penn-warren-on-continuity-of-identity
 filename: robert-penn-warren-on-continuity-of-identity
 date: 2025-02-14
 share: true

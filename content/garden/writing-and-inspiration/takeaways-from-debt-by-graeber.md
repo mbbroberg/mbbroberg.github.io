@@ -1,6 +1,8 @@
 ---
 title: Takeaways from Debt by Graeber
-slug: /takeaways-from-debt-by-graeber
+aliases:
+  - /garden/takeaways-from-debt-by-graeber/
+slug: /writing-and-inspiration/takeaways-from-debt-by-graeber
 filename: takeaways-from-debt-by-graeber
 date: 2025-07-24
 share: true

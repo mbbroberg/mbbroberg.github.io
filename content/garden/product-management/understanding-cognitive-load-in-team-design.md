@@ -3,9 +3,11 @@ title: Understanding Cognitive Load in Team Design
 date: 2025-05-27
 tags:
   - team-topologies
+aliases:
+  - /garden/understanding-cognitive-load-in-team-design/
 created: 2025-05-27 Tue 8:16pm
 updated: 2025-05-27 Tue 9:40pm
-slug: /understanding-cognitive-load-in-team-design
+slug: /product-management/understanding-cognitive-load-in-team-design
 filename: understanding-cognitive-load-in-team-design
 share: true
 type: garden

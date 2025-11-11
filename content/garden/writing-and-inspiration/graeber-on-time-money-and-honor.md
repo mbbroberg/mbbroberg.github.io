@@ -1,10 +1,12 @@
 ---
 created: 2024-12-30 Mon 8:56am
 updated: 2025-05-11 Sun 9:14pm
+aliases:
+  - /garden/graeber-on-time-money-and-honor/
 type: garden
 template_version: 1.0.0
 title: Graeber on Time, Money, and Honor
-slug: /graeber-on-time-money-and-honor
+slug: /writing-and-inspiration/graeber-on-time-money-and-honor
 filename: graeber-on-time-money-and-honor
 date: 2024-12-30
 share: true

@@ -1,38 +1,31 @@
 {{- /*
 Garden Breadcrumbs Partial
-Displays hierarchical navigation path for garden pages
-Example: Garden > Philosophy > Nietzsche's 4 Errors
+Displays tag-based navigation path for garden pages
+Example: Garden > Cognitive Frames > Etymology Reveals Implicit Cognitive Framing
 */ -}}
 
 {{- if eq .Type "garden" -}}
 <nav class="garden-breadcrumbs" aria-label="Breadcrumb navigation">
   <ol class="breadcrumb-list">
 
-    {{- /* Build path from ancestors */ -}}
-    {{- $ancestors := slice -}}
-    {{- $current := . -}}
-    
-    {{- /* Collect all ancestors */ -}}
-    {{- range $current.Ancestors.Reverse -}}
-      {{- if ne .Kind "home" -}}
-        {{- if ne .Kind "section" -}}
-          {{- $ancestors = $ancestors | append . -}}
-        {{- else if eq .Type "garden" -}}
-          {{- /* Only include garden section ancestors, not the main garden section */ -}}
-          {{- if ne .File.Path "garden/_index.md" -}}
-            {{- $ancestors = $ancestors | append . -}}
-          {{- end -}}
-        {{- end -}}
+    {{- /* Get the first tag from the page's frontmatter */ -}}
+    {{- $firstTag := "" -}}
+    {{- $tagTerm := "" -}}
+    {{- if .Params.tags -}}
+      {{- if gt (len .Params.tags) 0 -}}
+        {{- $firstTag = index .Params.tags 0 -}}
+        {{- /* Get the taxonomy term for the tag to get its title and URL */ -}}
+        {{- $tagTerm = $.Site.GetPage (printf "/tags/%s" ($firstTag | urlize)) -}}
       {{- end -}}
     {{- end -}}
 
-    {{- /* Display ancestor breadcrumbs (folders/categories) */ -}}
-    {{- range $ancestors -}}
+    {{- /* Display tag breadcrumb if tag exists */ -}}
+    {{- if $tagTerm -}}
       <li class="breadcrumb-separator" aria-hidden="true">❯</li>
       <li class="breadcrumb-item">
-        <a href="{{ .RelPermalink }}" class="breadcrumb-link">
-          <span class="breadcrumb-icon">📁</span>
-          <span class="breadcrumb-text">{{ .Title }}</span>
+        <a href="{{ $tagTerm.RelPermalink }}" class="breadcrumb-link">
+          <span class="breadcrumb-icon">🏷️</span>
+          <span class="breadcrumb-text">{{ $tagTerm.Title }}</span>
         </a>
       </li>
     {{- end -}}

@@ -1,8 +1,10 @@
 ---
 created: 2025-03-27 Thu 7:03pm
 updated: 2025-03-27 Thu 9:01pm
+aliases:
+  - /garden/immigration-messaging-and-my-understanding/
 title: Immigration messaging and my understanding
-slug: /immigration-messaging-and-my-understanding
+slug: /writing-and-inspiration/immigration-messaging-and-my-understanding
 filename: immigration-messaging-and-my-understanding
 date: 2025-03-27
 share: true

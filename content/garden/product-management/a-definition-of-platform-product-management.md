@@ -1,8 +1,10 @@
 ---
 created: 2025-06-22 Sun 4:50pm
 updated: 2025-06-22 Sun 5:08pm
+aliases:
+  - /garden/a-definition-of-platform-product-management/
 title: A Definition of Platform Product Management
-slug: /a-definition-of-platform-product-management
+slug: /product-management/a-definition-of-platform-product-management
 filename: a-definition-of-platform-product-management
 date: 2025-06-22
 share: true
@@ -36,6 +38,6 @@ This links to skills of:
 
 ---
 **Related:**
-- [Platforms as Internal Products](/garden/platforms-as-internal-products)
-- [Platform Product Extension Model Language](/garden/platform-product-extension-model-language)
+- [Platforms as Internal Products](/product-management/platforms-as-internal-products)
+- [Platform Product Extension Model Language](/product-management/platform-product-extension-model-language)
 - [From Project to Product Management](/articles/from-project-to-product-management)

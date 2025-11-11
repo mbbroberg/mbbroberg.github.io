@@ -14,9 +14,9 @@ filename: kahneman-on-irrationality
 
 # Kahneman on Irrationality
 
-up:: [Prospect Theory](/garden/prospect-theory)
+up:: [Prospect Theory](/philosophy-psychology/prospect-theory)
 
-related:: [Exploring Nietzsche's 4 Errors](/garden/exploring-nietzsches-4-errors)
+related:: [Exploring Nietzsche's 4 Errors](/philosophy-psychology/exploring-nietzsches-4-errors)
 
 ## The Limits of the Rational-Agent Model
 

@@ -1,11 +1,13 @@
 ---
-up: 
-related: 
+up:
+related:
+aliases:
+  - /garden/rhizomes/
 created: 2024-05-12 Sun 1:00pm
 updated: 2025-05-17 Sat 2:04pm
 edited: 2024-05-18 14:37:42
 title: Rhizomes
-slug: /rhizomes
+slug: /philosophy-psychology/rhizomes
 filename: rhizomes
 date: 2024-05-12
 datemod: 2024-10-28
