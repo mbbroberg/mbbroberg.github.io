@@ -2,6 +2,13 @@
 <div class="tag-archive">
     <div class="tag-intro">
         <h1 class="tag-title">#{{ .Title }}</h1>
+
+        {{ with .Content }}
+        <div class="tag-description">
+            {{ . }}
+        </div>
+        {{ end }}
+
         <p class="tag-count">{{ .Pages | len }} {{ if eq (.Pages | len) 1 }}entry{{ else }}entries{{ end }} tagged with this topic</p>
     </div>
 
@@ -84,6 +91,29 @@
         font-size: 2.5rem;
         color: rgba(72, 187, 120, 0.9);
         font-weight: 700;
+    }
+
+    .tag-description {
+        margin: 1.5rem 0;
+        padding: 1rem 0;
+        font-size: 1.65rem;
+        line-height: 1.65;
+        letter-spacing: 0.01em;
+        color: rgba(255, 255, 255, 0.85);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .tag-description p {
+        margin: 1.2em 0;
+    }
+
+    .tag-description p:first-child {
+        margin-top: 0;
+    }
+
+    .tag-description p:last-child {
+        margin-bottom: 0;
     }
 
     .tag-count {
@@ -180,7 +210,7 @@
 
     .entry-title {
         margin: 0 0 0.75rem;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         font-weight: 600;
         line-height: 1.3;
         color: rgba(255, 255, 255, 0.95);
@@ -189,7 +219,8 @@
     .entry-summary {
         margin: 0 0 1rem;
         font-size: 0.9rem;
-        line-height: 1.5;
+        line-height: 1.7;
+        letter-spacing: 0.01em;
         opacity: 0.8;
     }
 
@@ -243,7 +274,7 @@
 
     .article-title {
         margin: 0;
-        font-size: 1.1rem;
+        font-size: 1.35rem;
         font-weight: 500;
         flex: 1;
     }
