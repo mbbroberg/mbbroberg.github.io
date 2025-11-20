@@ -12,9 +12,25 @@
         <p class="tag-count">{{ .Pages | len }} {{ if eq (.Pages | len) 1 }}entry{{ else }}entries{{ end }} tagged with this topic</p>
     </div>
 
-    <!-- Filter to show only garden entries -->
+    <!-- Filter to separate articles and garden entries -->
     {{ $gardenPages := where .Pages "Type" "garden" }}
     {{ $otherPages := where .Pages "Type" "!=" "garden" }}
+
+    {{ if $otherPages }}
+    <section class="tag-section articles-section">
+        <h2 class="section-heading">📝 Articles</h2>
+        <div class="articles-list">
+            {{ range $otherPages }}
+            <article class="article-entry">
+                <a href="{{ .RelPermalink }}" class="article-link">
+                    <h3 class="article-title">{{ .Title }}</h3>
+                    <time class="article-date">{{ .Date.Format "January 2, 2006" }}</time>
+                </a>
+            </article>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
 
     {{ if $gardenPages }}
     <section class="tag-section garden-section">
@@ -43,22 +59,6 @@
                         {{ end }}
                         <span class="state-label">{{ default "seed" .Params.state }}</span>
                     </div>
-                </a>
-            </article>
-            {{ end }}
-        </div>
-    </section>
-    {{ end }}
-
-    {{ if $otherPages }}
-    <section class="tag-section articles-section">
-        <h2 class="section-heading">📝 Articles</h2>
-        <div class="articles-list">
-            {{ range $otherPages }}
-            <article class="article-entry">
-                <a href="{{ .RelPermalink }}" class="article-link">
-                    <h3 class="article-title">{{ .Title }}</h3>
-                    <time class="article-date">{{ .Date.Format "January 2, 2006" }}</time>
                 </a>
             </article>
             {{ end }}

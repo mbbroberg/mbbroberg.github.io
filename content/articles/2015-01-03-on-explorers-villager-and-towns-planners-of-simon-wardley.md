@@ -2,7 +2,7 @@
 title: On Explorers Villager and Towns Planners of Simon Wardley
 date: 2015-01-03
 tags:
-  - Inspirations
+  - inspirations
 updated: 2025-02-13 Thu 6:12am
 slug: ../on-explorers-villager-and-towns-planners-of-simon-wardley
 filename: 2015-01-03-on-explorers-villager-and-towns-planners-of-simon-wardley
