@@ -1,6 +1,6 @@
 ---
 created: 2025-11-20 Thu 1:50pm
-updated: 2025-11-20 Thu 4:03pm
+updated: 2025-11-20 Thu 4:04pm
 share: true
 type: blog
 title: Falling in Love with AI Coding Agents
