@@ -4,8 +4,8 @@ blog: true
 date: "2021-04-12T00:00:00Z"
 description: If you don't have the right keywords, competencies, and business value,
   you're likely to get filtered out before you make an impression. Use these tips.
-tag:
-- career
+tags:
+  - career
 title: 3 tech resume tips to get seen by the hiring manager
 slug: ../resume-tips/
 ---

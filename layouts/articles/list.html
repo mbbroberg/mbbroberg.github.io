@@ -1,0 +1,257 @@
+{{ define "main" }}
+<div class="articles-archive">
+    {{ with .Content }}
+    <div class="articles-intro">
+        {{ . | markdownify }}
+    </div>
+    {{ end }}
+
+    {{ $articlePages := where .Site.RegularPages "Section" "articles" }}
+
+    <!-- Browse by Tags Section -->
+    <section class="articles-browse">
+        <div class="browse-section topics-section">
+            <h2 class="section-title">🏷️ Browse by Tags</h2>
+            <p class="section-description">Explore articles by topic</p>
+            
+            {{ $allTags := slice }}
+            {{ range $articlePages }}
+            {{ range .Params.tags }}
+            {{ $allTags = $allTags | append . }}
+            {{ end }}
+            {{ end }}
+            {{ $uniqueTags := uniq $allTags }}
+
+            {{ $tagCount := dict }}
+            {{ range $tag := $uniqueTags }}
+            {{ $count := 0 }}
+            {{ range $articlePages }}
+            {{ if in .Params.tags $tag }}
+            {{ $count = add $count 1 }}
+            {{ end }}
+            {{ end }}
+            {{ $tagCount = merge $tagCount (dict $tag $count) }}
+            {{ end }}
+
+            <div class="tags-directory">
+                {{ range $tag, $count := $tagCount }}
+                <a href="{{ $.Site.BaseURL }}tags/{{ $tag | urlize }}/" class="tag-directory-item" data-count="{{ $count }}">
+                    <span class="tag-name">#{{ $tag }}</span>
+                    <span class="tag-info">
+                        <span class="tag-count">{{ $count }} {{ if eq $count 1 }}article{{ else }}articles{{ end }}</span>
+                    </span>
+                </a>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
+    <!-- All Articles Section -->
+    <section class="all-articles-section">
+        <h2 class="section-title">📝 All Articles</h2>
+        <p class="section-description">Chronologically organized</p>
+        
+        <div class="archive {{ with .Site.Params.doNotLoadAnimations }}.{{ else }}animated fadeInDown{{ end }}">
+            {{ range .Data.Pages.GroupByDate "2006" }}
+            <div class="archive__heading">{{ .Key }}</div>
+            {{ range .Pages }}
+            <ul class="archive__list">
+                <li class="archive__list-item">
+                    {{ if (eq .Site.Params.disableArchiveTitleStyling true) }}
+                    <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
+                    {{ else }}
+                    <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ upper .Title }}</a>
+                    {{ end }}
+                    <div class="archive__list-date">
+                        {{ if isset .Site.Params "listdateformat" }}
+                        {{ if .Site.Params.localizedDates }}
+                        {{ time.Format .Site.Params.listDateFormat .Date }}
+                        {{ else }}
+                        {{ .Date.Format .Site.Params.listDateFormat }}
+                        {{ end }}
+                        {{ else }}
+                        {{ if .Site.Params.localizedDates }}
+                        {{ time.Format "Jan 2" .Date }}
+                        {{ else }}
+                        {{ .Date.Format "Jan 2" }}
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </li>
+            </ul>
+            {{ end }}
+            {{ end }}
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top-container">
+        <button class="back-to-top-btn" aria-label="Back to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+            ↑ Back to Top
+        </button>
+    </div>
+</div>
+
+<style>
+    .articles-archive {
+        max-width: 1200px;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 2rem 1rem;
+    }
+
+    .articles-intro {
+        margin: 2rem 0 3rem;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        border-left: 4px solid rgba(72, 187, 120, 0.5);
+    }
+
+    /* Section Titles */
+    .section-title {
+        margin: 3rem 0 0.5rem;
+        font-size: 2rem;
+        color: rgba(72, 187, 120, 0.9);
+        font-weight: 600;
+    }
+
+    .section-description {
+        margin: 0 0 1.5rem;
+        font-size: 1rem;
+        opacity: 0.7;
+        font-style: italic;
+    }
+
+    /* Browse Section */
+    .articles-browse {
+        margin: 2.5rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .browse-section {
+        padding-bottom: 2rem;
+        border-bottom: 2px solid rgba(72, 187, 120, 0.2);
+    }
+
+    /* Tag Directory Styles */
+    .tags-directory {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 0.75rem;
+        margin-top: 1rem;
+    }
+
+    .tag-directory-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.25rem;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 8px;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.25s ease;
+    }
+
+    .tag-directory-item:hover {
+        background: rgba(72, 187, 120, 0.08);
+        border-color: rgba(72, 187, 120, 0.3);
+        transform: translateX(4px);
+    }
+
+    .tag-name {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    .tag-info {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .tag-count {
+        font-size: 1rem;
+        opacity: 0.6;
+    }
+
+    /* All Articles Section */
+    .all-articles-section {
+        margin: 3rem 0;
+    }
+
+    /* Back to Top Button */
+    .back-to-top-container {
+        margin: 4rem 0 2rem;
+        padding-top: 2rem;
+        border-top: 2px solid rgba(72, 187, 120, 0.2);
+        text-align: center;
+    }
+
+    .back-to-top-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem 2rem;
+        background: rgba(72, 187, 120, 0.1);
+        border: 1px solid rgba(72, 187, 120, 0.3);
+        border-radius: 8px;
+        color: rgba(72, 187, 120, 0.9);
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.25s ease;
+    }
+
+    .back-to-top-btn:hover {
+        background: rgba(72, 187, 120, 0.15);
+        border-color: rgba(72, 187, 120, 0.4);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .section-title {
+            font-size: 1.6rem;
+        }
+
+        .tags-directory {
+            grid-template-columns: 1fr;
+        }
+
+        .tag-directory-item {
+            padding: 0.85rem 1rem;
+        }
+
+        .tag-name {
+            font-size: 1rem;
+        }
+    }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Add smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+});
+</script>
+{{ end }}
+

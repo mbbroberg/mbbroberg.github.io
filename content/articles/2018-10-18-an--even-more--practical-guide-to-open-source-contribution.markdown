@@ -1,7 +1,8 @@
 ---
 date: "2018-10-18T00:00:00Z"
 tag:
-- opensource
+- devops
+- career
 title: An (even more) practical guide to open source contribution
 slug: ../practical-open-source
 ---

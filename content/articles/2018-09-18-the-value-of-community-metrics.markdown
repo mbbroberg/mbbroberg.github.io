@@ -1,7 +1,7 @@
 ---
 date: "2018-09-18T00:00:00Z"
 tag:
-- community
+- product-thinking
 title: The Value of Community Metrics
 slug: ../the-value-community-metrics
 aliases: ../value-community-metrics

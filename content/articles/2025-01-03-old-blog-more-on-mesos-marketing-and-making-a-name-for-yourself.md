@@ -7,6 +7,8 @@ filename: 2025-01-03-old-blog-more-on-mesos-marketing-and-making-a-name-for-your
 share: true
 created: 2025-01-03 Fri 2:15pm
 updated: 2025-02-13 Thu 5:23am
+tags:
+  - devops
 ---
 
 To my Operations Engineers; a few pieces of unsolicited advice:

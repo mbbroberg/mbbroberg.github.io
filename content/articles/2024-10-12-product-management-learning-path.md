@@ -3,9 +3,9 @@ title: "My Product Management Learning Path"
 slug: "../product-management-learning-path"
 date: "2024-10-12T20:46:52-05:00"
 description: A list of resources that fit my style of product thinking.
-tag:
-- career
-- product-management
+tags:
+  - career
+  - product-thinking
 ---
 
 I've been thinking a lot about my learning path as a product leader. I've been in the technology industry for over 15 years now, but rarely had the title of the job I now love. What I have learned is that the title of the job won't matter as much as the skills I choose to learn, and when I look back at my career, I have always thought like a product person.

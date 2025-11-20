@@ -2,8 +2,7 @@
 date: "2018-09-01T00:00:00Z"
 description: All the tools I know to make Markdown your default means to writing.
 tag:
-- markdown
-- guides
+- productivity
 title: How to Use Markdown Everywhere
 slug: ../markdown-everywhere
 ---

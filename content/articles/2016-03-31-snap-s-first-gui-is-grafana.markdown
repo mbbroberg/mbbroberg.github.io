@@ -1,7 +1,5 @@
 ---
 date: "2016-03-31T00:00:00Z"
-tag:
-- monitoring
 title: Snap’s first GUI is Grafana!
 slug: ../snap-gui-grafana
 ---

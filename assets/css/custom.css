@@ -314,41 +314,186 @@ table td:last-child {
     background: rgba(0, 0, 0, 0.02);
 }
 
-/* Global Typography Improvements for Readability */
-/* Improve paragraph spacing and readability across the site */
-.post__content p {
-    line-height: 1.8;
-    letter-spacing: 0.01em;
-    margin: 1.3em 0;
-}
+/* ============================================================================
+   Global Typography Improvements for Readability
+   ============================================================================
 
-.post__content p:first-child {
+   Creates a comfortable reading experience with proper spacing between:
+   - Lines (line-height)
+   - Paragraphs (margin)
+   - Words (word-spacing, subtle)
+   - Letters (letter-spacing)
+
+   Optimized for both light and dark themes with responsive adjustments.
+   ============================================================================ */
+
+/* Body text - paragraphs */
+.post__content p,
+.garden-entry p,
+article p {
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+    margin-bottom: 1.75em;
     margin-top: 0;
 }
 
-.post__content p:last-child {
+/* First paragraph - no top margin */
+.post__content p:first-child,
+.garden-entry p:first-child,
+article p:first-child {
+    margin-top: 0;
+}
+
+/* Last paragraph - no bottom margin */
+.post__content p:last-child,
+.garden-entry p:last-child,
+article p:last-child {
     margin-bottom: 0;
 }
 
-/* Improve list readability */
+/* Headings - slightly looser letter spacing for better readability */
+.post__content h1,
+.post__content h2,
+.post__content h3,
+.post__content h4,
+.post__content h5,
+.post__content h6 {
+    letter-spacing: 0.02em;
+    margin-top: 2em;
+    margin-bottom: 0.75em;
+    line-height: 1.3;
+}
+
+/* First heading - reduce top margin */
+.post__content h1:first-child,
+.post__content h2:first-child,
+.post__content h3:first-child,
+.post__content h4:first-child,
+.post__content h5:first-child,
+.post__content h6:first-child {
+    margin-top: 0;
+}
+
+/* Lists - improve readability with better spacing */
 .post__content ul,
 .post__content ol {
-    line-height: 1.8;
+    line-height: 1.75;
     letter-spacing: 0.01em;
+    margin: 1.5em 0;
+    padding-left: 2em;
 }
 
 .post__content li {
+    margin: 0.65em 0;
+}
+
+/* Nested lists - reduce spacing */
+.post__content li ul,
+.post__content li ol {
     margin: 0.5em 0;
 }
 
-/* Improve blockquote readability */
+/* Blockquotes - comfortable reading */
 .post__content blockquote {
+    line-height: 1.75;
+    letter-spacing: 0.01em;
+    margin: 2em 0;
+    padding: 1.25em 1.5em;
+}
+
+.post__content blockquote p {
+    margin: 0.75em 0;
+}
+
+.post__content blockquote p:first-child {
+    margin-top: 0;
+}
+
+.post__content blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+/* Code blocks - preserve monospace spacing */
+.post__content pre,
+.post__content code {
+    letter-spacing: normal;
+    line-height: 1.5;
+}
+
+.post__content pre {
+    margin: 1.75em 0;
+    padding: 1.25em;
+}
+
+/* Inline code - subtle spacing */
+.post__content p code,
+.post__content li code {
+    letter-spacing: -0.01em;
+}
+
+/* Tables - maintain readability */
+.post__content table {
+    line-height: 1.6;
+    margin: 2em 0;
+}
+
+.post__content table td,
+.post__content table th {
+    padding: 0.875rem 1rem;
+    letter-spacing: 0.01em;
+}
+
+/* Responsive adjustments - slightly tighter on mobile */
+@media (max-width: 768px) {
+    .post__content p,
+    .garden-entry p,
+    article p {
+        line-height: 1.7;
+        margin-bottom: 1.5em;
+    }
+
+    .post__content ul,
+    .post__content ol {
+        line-height: 1.7;
+        margin: 1.25em 0;
+    }
+
+    .post__content li {
+        margin: 0.5em 0;
+    }
+
+    .post__content blockquote {
+        line-height: 1.7;
+        margin: 1.5em 0;
+        padding: 1em 1.25em;
+    }
+
+    .post__content h1,
+    .post__content h2,
+    .post__content h3,
+    .post__content h4,
+    .post__content h5,
+    .post__content h6 {
+        margin-top: 1.5em;
+        margin-bottom: 0.65em;
+    }
+}
+
+/* Garden-specific content readability */
+.garden-archive .garden-intro {
     line-height: 1.75;
     letter-spacing: 0.01em;
 }
 
-.post__content blockquote p {
-    margin: 1em 0;
+.garden-archive .garden-intro p {
+    margin: 1.5em 0;
+}
+
+/* Article summaries and excerpts */
+.article-summary,
+.entry-summary {
+    line-height: 1.7;
+    letter-spacing: 0.01em;
 }
 
 /* ============================================================================

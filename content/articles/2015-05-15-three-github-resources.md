@@ -4,7 +4,7 @@ blog: true
 date: "2015-05-15T00:00:00Z"
 description: Getting deeper into git? Check out these links.
 tag:
-- github
+- career
 title: 3 Resources to Learn (More) about GitHub Commits
 slug: ../three-github-resources/
 ---

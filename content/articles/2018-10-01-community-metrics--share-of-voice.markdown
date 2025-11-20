@@ -1,7 +1,7 @@
 ---
 date: "2018-10-01T00:00:00Z"
 tag:
-- community
+- product-thinking
 title: 'Community Metrics: Share of Voice'
 slug: ../community-metrics-sov
 ---

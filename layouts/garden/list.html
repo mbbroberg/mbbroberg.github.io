@@ -65,36 +65,9 @@
     <!-- Enhanced browsing interface -->
     <section class="garden-browse">
 
-        <!-- Growth Stage Navigation -->
-        <div class="browse-section">
-            <h2 class="section-title">🌳 Explore the Garden</h2>
-            <p class="section-description">Navigate by growth stage</p>
-
-            <div class="browse-items">
-                {{ $states := slice "seed" "sprout" "rhizome" }}
-
-                {{ $stateCount := dict }}
-                {{ range $state := $states }}
-                {{ $count := 0 }}
-                {{ range $pages }}
-                {{ if eq .Params.state $state }}
-                {{ $count = add $count 1 }}
-                {{ end }}
-                {{ end }}
-                {{ $stateCount = merge $stateCount (dict $state $count) }}
-                {{ end }}
-
-                {{ range $state := slice "rhizome" "sprout" "seed" }}
-                <a href="#{{ $state }}" class="browse-badge growth-badge {{ $state }}">
-                    {{ if eq $state "seed" }}🌱{{ else if eq $state "sprout" }}🌿{{ else }}🫚{{ end }}
-                    {{ $state }}
-                    <span class="badge-count">{{ index $stateCount $state }}</span>
-                </a>
-                {{ end }}
-            </div>
-        </div>
         <!-- Topic Tags -->
         <div class="browse-section topics-section">
+            <h2 class="section-title">🌳 Explore the Garden</h2>
             <p class="section-description">Navigate by topic</p>
             {{ $gardenPages := where .Site.RegularPages "Section" "garden" }}
             {{ $allTags := slice }}
@@ -123,6 +96,34 @@
                     <span class="tag-info">
                         <span class="tag-count">{{ $count }} {{ if eq $count 1 }}entry{{ else }}entries{{ end }}</span>
                     </span>
+                </a>
+                {{ end }}
+            </div>
+        </div>
+
+        <!-- Growth Stage Navigation -->
+        <div class="browse-section">
+            <p class="section-description">Navigate by growth stage</p>
+
+            <div class="browse-items">
+                {{ $states := slice "seed" "sprout" "rhizome" }}
+
+                {{ $stateCount := dict }}
+                {{ range $state := $states }}
+                {{ $count := 0 }}
+                {{ range $pages }}
+                {{ if eq .Params.state $state }}
+                {{ $count = add $count 1 }}
+                {{ end }}
+                {{ end }}
+                {{ $stateCount = merge $stateCount (dict $state $count) }}
+                {{ end }}
+
+                {{ range $state := slice "rhizome" "sprout" "seed" }}
+                <a href="#{{ $state }}" class="browse-badge growth-badge {{ $state }}">
+                    {{ if eq $state "seed" }}🌱{{ else if eq $state "sprout" }}🌿{{ else }}🫚{{ end }}
+                    {{ $state }}
+                    <span class="badge-count">{{ index $stateCount $state }}</span>
                 </a>
                 {{ end }}
             </div>
@@ -780,7 +781,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0.75rem 1rem;
+        padding: 1rem 1.25rem;
         background: rgba(255, 255, 255, 0.03);
         border: 1px solid rgba(255, 255, 255, 0.08);
         border-radius: 8px;
@@ -796,8 +797,8 @@
     }
 
     .tag-name {
-        font-size: 1.05rem;
-        font-weight: 500;
+        font-size: 1.25rem;
+        font-weight: 600;
     }
 
     .tag-info {
@@ -807,7 +808,7 @@
     }
 
     .tag-count {
-        font-size: 0.9rem;
+        font-size: 1rem;
         opacity: 0.6;
     }
 

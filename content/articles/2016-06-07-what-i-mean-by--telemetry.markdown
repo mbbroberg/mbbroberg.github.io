@@ -1,7 +1,5 @@
 ---
 date: "2016-06-07T00:00:00Z"
-tag:
-- monitoring
 title: What I mean by “Telemetry”
 slug: ../what-i-mean-by-telemetry
 ---

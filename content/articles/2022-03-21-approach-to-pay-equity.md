@@ -3,7 +3,8 @@ title: My Approach to Pay Equity as a Manager
 slug: ../my-pay-equity-approach/
 date: "2022-03-21T20:02:41-05:00"
 description: "I have an increasing say on people’s job titles, responsibilities, and their salaries. Here is how I use that for good."
-tag: Leadership
+tag: 
+- career
 ---
 
 Over the years, I have had more impact on people’s job titles, responsibilities, and–importantly–their salaries. I take that responsibility as a profound opportunity to advocate for equality. Here is what I have grown to learn about the subject.

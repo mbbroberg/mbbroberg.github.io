@@ -5,6 +5,9 @@ updated: 2025-05-09 Fri 8:49pm
 title: We're not all Innovators
 slug: /were-not-all-innovators
 filename: 2016-06-06-were-not-all-innovators
+tags:
+  - career
+  - inspirations
 date: 2016-06-06
 share: true
 ---

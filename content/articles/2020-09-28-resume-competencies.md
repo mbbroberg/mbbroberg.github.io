@@ -3,8 +3,8 @@ author: mbbroberg
 blog: true
 date: "2020-09-28T00:00:00Z"
 description: This small section makes both interviewers and resume robots happy.
-tag:
-- career
+tags:
+  - career
 title: Add competencies to your resume
 slug: ../resume-competencies/
 ---

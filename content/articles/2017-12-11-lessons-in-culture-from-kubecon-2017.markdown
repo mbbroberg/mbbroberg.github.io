@@ -1,7 +1,7 @@
 ---
 date: "2017-12-11T00:00:00Z"
 tag:
-- community
+- career
 title: Lessons in Culture from KubeCon 2017
 slug: ../kubernetes-culture-kubecon-2017
 ---

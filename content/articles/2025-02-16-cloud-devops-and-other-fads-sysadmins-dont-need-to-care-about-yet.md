@@ -5,11 +5,7 @@ filename: 2025-02-16-cloud-devops-and-other-fads-sysadmins-dont-need-to-care-abo
 date: 2013-02-16
 share: true
 tags:
-  - sysadmin
-  - career
-  - cloud
-  - devops
-  - humor
+  - DevOps
 created: 2025-02-16 Sun 11:38am
 updated: 2025-02-16 Sun 11:41am
 ---
