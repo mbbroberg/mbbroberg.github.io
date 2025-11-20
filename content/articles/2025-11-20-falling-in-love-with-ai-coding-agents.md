@@ -2,7 +2,8 @@
 created: 2025-11-20 Thu 1:50pm
 updated: 2025-11-20 Thu 4:04pm
 share: true
-type: blog
+tags:
+  - ai-learning
 title: Falling in Love with AI Coding Agents
 slug: /falling-in-love-with-ai-coding-agents
 filename: 2025-11-20-falling-in-love-with-ai-coding-agents
