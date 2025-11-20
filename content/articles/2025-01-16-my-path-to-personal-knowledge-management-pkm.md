@@ -3,7 +3,7 @@ up:
 date: 2025-01-16
 updated: 2025-01-16 Thu 8:51am
 tags:
-  - note/develop🫚
+  - productivity
 aliases:
   - personal knowledge management
   - PKM

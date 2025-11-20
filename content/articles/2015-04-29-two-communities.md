@@ -4,7 +4,7 @@ blog: true
 date: "2015-04-29T00:00:00Z"
 description: What does Reddit and StackOverflow have to do with career success?
 tag:
-- community
+- career
 title: What two communities taught me about my expectations for community
 slug: /two-communities/
 ---

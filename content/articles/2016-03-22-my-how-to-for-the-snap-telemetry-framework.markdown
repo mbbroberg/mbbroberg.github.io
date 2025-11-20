@@ -1,7 +1,5 @@
 ---
 date: "2016-03-22T00:00:00Z"
-tag:
-- monitoring
 title: My How-to for the Snap Telemetry Framework
 slug: ../how-to-snap-telemetry
 ---

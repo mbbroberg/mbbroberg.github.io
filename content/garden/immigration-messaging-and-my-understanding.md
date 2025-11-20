@@ -1,6 +1,8 @@
 ---
 created: 2025-03-27 Thu 7:03pm
 updated: 2025-03-27 Thu 9:01pm
+aliases:
+  - /garden/immigration-messaging-and-my-understanding/
 title: Immigration messaging and my understanding
 slug: /immigration-messaging-and-my-understanding
 filename: immigration-messaging-and-my-understanding
@@ -8,6 +10,8 @@ date: 2025-03-27
 share: true
 type: garden
 state: sprout
+tags:
+  - cognitive-frames
 ---
 I have a brief and imperfect understanding of the debate around immigration. I welcome feedback and any good-faith discussion on the following.
 

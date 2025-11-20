@@ -2,7 +2,7 @@
 created: 2025-01-19 Sun 4:02pm
 updated: 2025-03-01 Sat 10:32pm
 tags:
-  - obsidian
+  - productivity
 title: Make Obsidian inline dataview properties prettier with this CSS
 slug: ../make-obsidian-inline-dataview-properties-prettier-with-this-css
 filename: 2025-01-19-make-obsidian-inline-dataview-properties-prettier-with-this-css

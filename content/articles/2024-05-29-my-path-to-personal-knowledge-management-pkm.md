@@ -1,12 +1,14 @@
 ---
-up: 
+up:
 created: 2024-05-29 Wed 6:41pm
 updated: 2025-01-18 Sat 4:22am
-tags: 
+tags:
+  - inspirations
+  - career
 aliases:
   - personal knowledge management
   - PKM
-cssclasses: 
+cssclasses:
 share: true
 title: My path to Personal Knowledge Management (PKM)
 slug: ../my-path-to-personal-knowledge-management-pkm

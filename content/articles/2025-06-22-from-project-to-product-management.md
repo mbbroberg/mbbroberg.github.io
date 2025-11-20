@@ -6,7 +6,7 @@ slug: /from-project-to-product-management
 filename: 2025-06-22-from-project-to-product-management
 date: 2025-06-22
 tags:
-  - product-management
+  - product-thinking
 share: true
 ---
 

@@ -1,5 +1,6 @@
 ---
-aliases: []
+aliases:
+  - /garden/personality-theories-im-familiar-with/
 tags: []
 created: 2020-11-17 Tue 12:00am
 edited: 2024-01-28 17:07:52

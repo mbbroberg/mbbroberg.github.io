@@ -1,7 +1,5 @@
 ---
 date: "2016-11-17T00:00:00Z"
-tag:
-- monitoring
 title: The Open Source Monitoring Stack at Staples
 ---
 

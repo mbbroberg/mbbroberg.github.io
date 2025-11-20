@@ -1,0 +1,120 @@
+{{- /*
+Garden Breadcrumbs Partial
+Displays tag-based navigation path for garden pages
+Example: Garden > Cognitive Frames > Etymology Reveals Implicit Cognitive Framing
+*/ -}}
+
+{{- if eq .Type "garden" -}}
+<nav class="garden-breadcrumbs" aria-label="Breadcrumb navigation">
+  <ol class="breadcrumb-list">
+
+    {{- /* Get the first tag from the page's frontmatter */ -}}
+    {{- $firstTag := "" -}}
+    {{- $tagTerm := "" -}}
+    {{- if .Params.tags -}}
+      {{- if gt (len .Params.tags) 0 -}}
+        {{- $firstTag = index .Params.tags 0 -}}
+        {{- /* Get the taxonomy term for the tag to get its title and URL */ -}}
+        {{- $tagTerm = $.Site.GetPage (printf "/tags/%s" ($firstTag | urlize)) -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- /* Display tag breadcrumb if tag exists */ -}}
+    {{- if $tagTerm -}}
+      <li class="breadcrumb-separator" aria-hidden="true">❯</li>
+      <li class="breadcrumb-item">
+        <a href="{{ $tagTerm.RelPermalink }}" class="breadcrumb-link">
+          <span class="breadcrumb-icon">🏷️</span>
+          <span class="breadcrumb-text">{{ $tagTerm.Title }}</span>
+        </a>
+      </li>
+    {{- end -}}
+
+    {{- /* Current page (if not an index page) */ -}}
+    {{- if not .IsNode -}}
+      <li class="breadcrumb-separator" aria-hidden="true">❯</li>
+      <li class="breadcrumb-item breadcrumb-current" aria-current="page">
+        <span class="breadcrumb-text">{{ .Title }}</span>
+      </li>
+    {{- end -}}
+  </ol>
+</nav>
+
+<style>
+  .garden-breadcrumbs {
+    margin: 0 0 2rem 0;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(72, 187, 120, 0.15);
+  }
+
+  .breadcrumb-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0.95rem;
+  }
+
+  .breadcrumb-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .breadcrumb-link {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+    opacity: 0.8;
+  }
+
+  .breadcrumb-link:hover {
+    background: rgba(72, 187, 120, 0.1);
+    opacity: 1;
+  }
+
+  .breadcrumb-icon {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .breadcrumb-text {
+    line-height: 1;
+  }
+
+  .breadcrumb-separator {
+    opacity: 0.5;
+    font-size: 0.85rem;
+    user-select: none;
+  }
+
+  .breadcrumb-current .breadcrumb-text {
+    font-weight: 600;
+    opacity: 1;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .breadcrumb-list {
+      font-size: 0.85rem;
+      gap: 0.35rem;
+    }
+
+    .breadcrumb-icon {
+      font-size: 0.9rem;
+    }
+
+    .breadcrumb-link {
+      padding: 0.2rem 0.4rem;
+    }
+  }
+</style>
+{{- end -}}
+

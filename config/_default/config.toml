@@ -57,3 +57,7 @@ customJs = ["js/dataview-styler.js"]
     tag = "tags"
     garden = "garden"
     state = "state"
+
+[module]
+  [[module.imports]]
+    path = "github.com/mbbroberg/hugo-garden-module"

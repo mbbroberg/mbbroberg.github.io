@@ -1,16 +1,16 @@
-author = "Matt Broberg"
+author = "Matthew Broberg"
 title = "Matthew Broberg"
-description = "Product Thinking | Systems Builder |\n Open Source Advocate | People Leader"
+description = "Product Thinking | Systems Builder | Open Source Advocate | People Leader"
 profilePicture = "images/profile.jpg"
-keywords = ""
+keywords = "product management, systems thinking, open source, digital garden, leadership, team topologies"
 favicon = "favicons/"
 # example ["css/custom.css"]
 # customCss = ["css/404.css"]
 # example ["js/custom.js"]
 #customJs = []
 mainSections = ["articles"]
-# set this to have a default image for social sharing
-#images = ["images/site-feature-image.png"]
+# Default image for social sharing (Open Graph and Twitter Cards)
+images = ["images/profile.jpg"]
 doNotLoadAnimation = false
 # Form Spree Contact Form
 #contactFormAction = "https://formspree.io/f/your-form-hash-here"

@@ -6,6 +6,8 @@ date: 2017-01-03
 blog: true
 created: 2025-01-03 Fri 2:15pm
 updated: 2025-02-13 Thu 5:47am
+tags:
+  - devops
 ---
 
 In a previous role, I wore a few different hats throughout my day as a Developer Advocate. One, that I claim no expertise in but did nevertheless, is documentation.

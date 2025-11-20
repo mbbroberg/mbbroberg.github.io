@@ -1,5 +1,6 @@
 ---
-aliases: []
+aliases:
+  - /garden/exploring-nietzsches-4-errors/
 tags:
   - inspirations
 created: 2024-07-18 Thu 1:24pm

@@ -6,8 +6,9 @@ related:
 created: 2024-04-15 Mon 12:00am
 updated: 2025-05-17 Sat 2:03pm
 tags: []
-aliases: []
-cssclasses: 
+aliases:
+  - /garden/philosophers-deleuze-and-guattari/
+cssclasses:
 edited: 2024-05-18 20:22:21
 title: Philosophers – Deleuze and Guattari
 slug: /philosophers-deleuze-and-guattari

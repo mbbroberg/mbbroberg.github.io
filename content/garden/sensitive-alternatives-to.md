@@ -1,7 +1,8 @@
 ---
 created: 2024-08-01 Thu 2:18am
 updated: 2025-05-27 Tue 9:41pm
-aliases: []
+aliases:
+  - /garden/sensitive-alternatives-to/
 tags:
   - cognitive-frames
 title: Sensitive – alternatives to

@@ -1,6 +1,8 @@
 ---
 created: 2025-06-22 Sun 4:54pm
 updated: 2025-06-22 Sun 5:03pm
+aliases:
+  - /garden/platform-product-extension-model-language/
 title: Platform Product Extension Model Language
 slug: /platform-product-extension-model-language
 filename: platform-product-extension-model-language
@@ -9,7 +11,7 @@ share: true
 type: garden
 state: sprout
 tags:
-  - platform-product
+  - platform-products
   - product-thinking
 ---
 Every platform needs a way for others to extend its capabilities to get out of the firefight of feature requests and dissatisfied users using alternatives. The naming choice signals intent and audience:
@@ -49,6 +51,6 @@ The combination of naming and maturity signaling determines whether your platfor
 Platforms that succeed make it obvious which extensions are safe to depend on and which are experiments worth trying. It's the best way I've seen to scale platform value without overbuilding core features.
 
 **Related:**
-- [A Definition of Platform Product Management](/garden/a-definition-of-platform-product-management)
-- [Platforms as Internal Products](/garden/platforms-as-internal-products)
+- [A Definition of Platform Product Management](/a-definition-of-platform-product-management)
+- [Platforms as Internal Products](/platforms-as-internal-products)
 - [From Project to Product Management](/articles/from-project-to-product-management)

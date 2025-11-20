@@ -1,6 +1,7 @@
 ---
-up: 
-aliases: []
+up:
+aliases:
+  - /garden/objectivity-my-understanding-of/
 tags:
   - cognitive-frames
 created: 2024-06-28 Fri 10:07pm

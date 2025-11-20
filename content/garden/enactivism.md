@@ -1,6 +1,8 @@
 ---
 created: 2025-05-26 Mon 2:18pm
 updated: 2025-05-26 Mon 2:30pm
+aliases:
+  - /garden/enactivism/
 title: enactivism
 slug: /enactivism
 filename: enactivism
@@ -8,7 +10,10 @@ date: 2025-05-26
 share: true
 type: garden
 state: sprout
+tags:
+  - inspirations
 ---
+
 **Enactivism** is a theory in cognitive science and philosophy of mind that fundamentally challenges how we think about knowledge, perception, and cognition.
 
 From [Enactivism \| Internet Encyclopedia of Philosophy](https://iep.utm.edu/enactivism/): 

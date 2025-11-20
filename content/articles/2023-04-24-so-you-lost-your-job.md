@@ -3,8 +3,8 @@ title: "So You Lost Your Job: Now What?"
 slug: "../so-you-lost-your-job"
 date: "2023-04-24T20:46:52-05:00"
 description: Losing a job to a layoff or firing is a natural part of a career in tech. Here are some tips to keep you moving forward.
-tag:
-- career
+tags:
+  - career
 ---
 
 Some of the most talented, thoughtful, and effective people I have ever worked with were recently laid off. It's such an emotional process, and I found myself sharing a few points that are worth writing down.

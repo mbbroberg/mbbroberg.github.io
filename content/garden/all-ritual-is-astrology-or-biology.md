@@ -1,6 +1,7 @@
 ---
-up: 
-aliases: []
+up:
+aliases:
+  - /garden/all-ritual-is-astrology-or-biology/
 tags: []
 created: 2024-11-15 Fri 10:50pm
 updated: 2025-05-09 Fri 8:26pm

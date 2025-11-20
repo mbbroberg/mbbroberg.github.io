@@ -2,6 +2,8 @@
 type: garden
 created: 2025-01-02 Thu 11:17pm
 updated: 2025-04-11 Fri 8:50pm
+aliases:
+  - /garden/etymology-reveals-implicit-cognitive-framing/
 title: Etymology reveals implicit cognitive framing
 slug: /etymology-reveals-implicit-cognitive-framing
 filename: etymology-reveals-implicit-cognitive-framing
@@ -10,7 +12,7 @@ share: true
 state: seed
 status: emerging
 tags:
-  - thoughts
+  - curiosities
 ---
 
 ## Core Pattern

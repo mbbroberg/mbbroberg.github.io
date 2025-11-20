@@ -4,9 +4,8 @@ blog: true
 date: "2020-05-03T00:00:00Z"
 description: Job hunting can be a terrible experience filled with panic. Use data
   to calm your nerves.
-tag:
-- career
-- guides
+tags:
+  - career
 title: Job hunting tips for nonlinear careers
 slug: ../nonlinear-job-hunting/
 ---

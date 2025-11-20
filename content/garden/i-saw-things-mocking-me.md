@@ -1,6 +1,8 @@
 ---
 tags:
-  - thoughts
+  - creative-writing
+aliases:
+  - /garden/i-saw-things-mocking-me/
 updated: 2025-05-27 Tue 9:46pm
 created: 2025-01-03 Fri 2:15pm
 original_created: 2013-11-19

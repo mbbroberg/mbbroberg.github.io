@@ -3,6 +3,8 @@ title: Team Boundaries as System Architecture
 date: 2025-05-27
 tags:
   - team-topologies
+aliases:
+  - /garden/team-boundaries-as-system-architecture/
 created: 2025-05-27 Tue 8:31pm
 updated: 2025-05-27 Tue 9:37pm
 slug: /team-boundaries-as-system-architecture

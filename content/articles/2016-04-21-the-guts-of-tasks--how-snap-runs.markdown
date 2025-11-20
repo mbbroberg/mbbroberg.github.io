@@ -1,7 +1,5 @@
 ---
 date: "2016-04-21T00:00:00Z"
-tag:
-- monitoring
 title: 'The Guts of Tasks: How Snap Runs'
 slug: ../snap-tasks
 ---

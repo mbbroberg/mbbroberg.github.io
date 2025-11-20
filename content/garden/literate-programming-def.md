@@ -2,7 +2,8 @@
 edited: 2024-03-16 13:17:54
 created: 2025-01-03 Fri 2:15pm
 updated: 2025-05-27 Tue 9:43pm
-aliases: []
+aliases:
+  - /garden/literate-programming-def/
 tags:
   - inspirations
 title: Literate Programming (def)

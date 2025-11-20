@@ -2,7 +2,7 @@
 blog: true
 date: "2018-09-18T00:00:00Z"
 tag:
-- community
+- product-thinking
 title: 'Community Metrics: What’s the ROI of Stickers?'
 slug: ../rio-stickers-community-metrics
 ---

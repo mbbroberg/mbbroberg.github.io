@@ -1,6 +1,8 @@
 ---
 created: 2025-06-22 Sun 4:50pm
 updated: 2025-06-22 Sun 5:08pm
+aliases:
+  - /garden/a-definition-of-platform-product-management/
 title: A Definition of Platform Product Management
 slug: /a-definition-of-platform-product-management
 filename: a-definition-of-platform-product-management
@@ -9,7 +11,7 @@ share: true
 type: garden
 state: sprout
 tags:
-  - platform-product
+  - platform-products
   - product-thinking
 ---
 From [Marty Cagan's work on platform product management](https://www.svpg.com/platform-product-management/):
@@ -36,6 +38,6 @@ This links to skills of:
 
 ---
 **Related:**
-- [Platforms as Internal Products](/garden/platforms-as-internal-products)
-- [Platform Product Extension Model Language](/garden/platform-product-extension-model-language)
+- [Platforms as Internal Products](/platforms-as-internal-products)
+- [Platform Product Extension Model Language](/platform-product-extension-model-language)
 - [From Project to Product Management](/articles/from-project-to-product-management)

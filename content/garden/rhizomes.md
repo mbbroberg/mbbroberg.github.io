@@ -1,6 +1,8 @@
 ---
-up: 
-related: 
+up:
+related:
+aliases:
+  - /garden/rhizomes/
 created: 2024-05-12 Sun 1:00pm
 updated: 2025-05-17 Sat 2:04pm
 edited: 2024-05-18 14:37:42
@@ -13,6 +15,9 @@ type: garden
 lastmod: 2025-02-22
 state: sprout
 share: true
+tags:
+  - cognitive-frames
+  - inspirations
 ---
 
 # Rhizomes
@@ -35,4 +40,4 @@ The first type is arborescence, or arborescent growth. It's so common we often d
 
 > A rhizome was defined by [Philosophers – Deleuze and Guattari](../philosophers-deleuze-and-guattari) in A Thousand Plateaus as **a nonlinear network that “connects any point to any other point”**. It contrasts a tree that represents arborescence: hierarchical structure with clear organization.
 
-![richard-giblett-mycelium-rhizome.jpg](../../static/images/richard-giblett-mycelium-rhizome.jpg)
+![richard-giblett-mycelium-rhizome.jpg](../static/images/richard-giblett-mycelium-rhizome.jpg)

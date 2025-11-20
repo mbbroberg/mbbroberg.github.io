@@ -6,6 +6,8 @@ slug: ../make-obsidian-a-digital-garden
 filename: 2025-02-22-make-obsidian-a-digital-garden
 date: 2025-02-22
 share: true
+tags:
+  - productivity
 ---
 ![richard-giblett-mycelium-rhizome.png](/images/richard-giblett-mycelium-rhizome.png)
 

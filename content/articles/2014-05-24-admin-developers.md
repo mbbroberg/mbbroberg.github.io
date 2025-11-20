@@ -2,8 +2,8 @@
 date: "2014-05-24T00:00:00Z"
 description: Are you along for the ride of operators becoming developers?
 tag:
-- github
-- community
+- devops
+- career
 title: 'My Latest Obsession: Admins becoming Developers'
 slug: ../admins-becoming-developers
 ---

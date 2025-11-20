@@ -1,6 +1,8 @@
 ---
 created: 2025-05-08 Thu 5:59am
 updated: 2025-05-11 Sun 10:07am
+aliases:
+  - /garden/not-everything-is-a-product-in-team-topologies/
 title: Not everything is a product in Team Topologies
 slug: /not-everything-is-a-product-in-team-topologies
 filename: not-everything-is-a-product-in-team-topologies
@@ -27,8 +29,8 @@ Source:
 
 
 **Related:**
-- [A Definition of Platform Product Management](/garden/a-definition-of-platform-product-management)
-- [Platforms as Internal Products](/garden/platforms-as-internal-products)
+- [A Definition of Platform Product Management](/a-definition-of-platform-product-management)
+- [Platforms as Internal Products](/platforms-as-internal-products)
 - [From Project to Product Management](/articles/from-project-to-product-management)
 
 [up:: [Applying Team Topologies to Marketing and Community](/articles/applying-team-topologies-to-marketing-and-community)]

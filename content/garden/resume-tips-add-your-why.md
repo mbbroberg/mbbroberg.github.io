@@ -8,6 +8,8 @@ date: 2025-09-09
 share: true
 type: garden
 state: seed
+tags:
+  - career
 ---
 
 Resumes can be boring to read and it comes down to the classic storytelling elements. A narrative requires a *what* and *how* to be followed, but the *why* is what makes it interesting. I continue to use this way of getting to a resume version of that storytelling: [https://www.inc.com/bill-murphy-jr/google-recruiters-say-these-5-resume-tips-including-x-y-z-formula-will-improve-your-odds-of-getting-hired-at-google.html?cid=sf01003](https://urldefense.com/v3/__https:/www.inc.com/bill-murphy-jr/google-recruiters-say-these-5-resume-tips-including-x-y-z-formula-will-improve-your-odds-of-getting-hired-at-google.html?cid=sf01003__;!!A-7_uaOk87I!sf-ekFF_VahxWqckAobvIWQOyJMHcJZoDElcNRw5W0qvZ0ojPk6D8lW4mVfxKdkXwbHy6x3g2wGFIqki9i-6rJs$)

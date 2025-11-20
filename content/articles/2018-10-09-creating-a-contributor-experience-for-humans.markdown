@@ -1,7 +1,8 @@
 ---
 date: "2018-10-09T00:00:00Z"
 tag:
-- opensource
+- devops
+- product-thinking
 title: Creating a Contributor Experience for Humans
 slug: ../contributor-experience
 ---

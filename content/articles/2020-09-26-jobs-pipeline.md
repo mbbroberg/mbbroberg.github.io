@@ -4,8 +4,8 @@ blog: true
 date: "2020-09-26T00:00:00Z"
 description: Job hunting can be a terrible experience filled with panic. Use data
   to calm your nerves.
-tag:
-- career
+tags:
+  - career
 title: Sharing the Job Hunting Pipeline Blueprint
 slug: ../jobs-pipeline/
 ---

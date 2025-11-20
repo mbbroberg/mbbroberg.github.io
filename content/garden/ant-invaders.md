@@ -1,8 +1,10 @@
 ---
 title: Ant Invaders
+aliases:
+  - /garden/ant-invaders/
 slug: /ant-invaders
 tags:
-  - thoughts
+  - creative-writing
 filename: ant-invaders
 date: 2025-03-04
 share: true

@@ -1,6 +1,8 @@
 ---
 created: 2025-06-09 Mon 12:21pm
 updated: 2025-06-09 Mon 12:28pm
+aliases:
+  - /garden/ampersand-is-began-as-a-ligature-and-is-now-a-logogram/
 title: Ampersand is began as a ligature and is now a logogram
 slug: /ampersand-is-began-as-a-ligature-and-is-now-a-logogram
 filename: ampersand-is-began-as-a-ligature-and-is-now-a-logogram
@@ -11,7 +13,7 @@ state: sprout
 ---
 I saw this on Instagram and love it – bring ampersand back to the alphabet! 
 
-![Screenshot 2025-06-09 at 12.21.37 PM.png](../../static/images/Screenshot%202025-06-09%20at%2012.21.37%20PM.png)
+![Screenshot 2025-06-09 at 12.21.37 PM.png](../static/images/Screenshot%202025-06-09%20at%2012.21.37%20PM.png)
 
 > The ampersand (&) originates as a ligature, combining the Latin letters "e" and "t" to represent "et," meaning "and," a practice dating back to ancient Roman shorthand seen in Pompeii graffiti before the 79 AD eruption of Mount Vesuvius. The oldest known `et` ligature appears as graffiti on a wall from the remains of Pompeii, documented in German graphic designer Jan Tschichold's comprehensive 1953 study of the ampersand's evolution. ([Shadycharacters](https://shadycharacters.co.uk/2011/06/the-ampersand-part-2-of-2/) | [Rizzolibookstore](https://www.rizzolibookstore.com/product/jan-tschichold-brief-history-ampersand-et-ampersands-pack))
 > 

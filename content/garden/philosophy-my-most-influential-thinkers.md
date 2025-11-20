@@ -1,12 +1,13 @@
 ---
 up:
   - "[On Being — how I think](On%20Being%20%E2%80%94%20how%20I%20think.md)"
-related: 
+related:
 created: 2024-02-21 Wed 12:00am
 updated: 2025-03-04 Tue 11:21pm
 tags: []
-aliases: []
-cssclasses: 
+aliases:
+  - /garden/philosophy-my-most-influential-thinkers/
+cssclasses:
 edited: 2024-04-07 09:55:36
 title: Philosophy — my most influential thinkers
 slug: /philosophy-my-most-influential-thinkers

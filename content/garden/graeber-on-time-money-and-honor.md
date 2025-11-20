@@ -1,6 +1,8 @@
 ---
 created: 2024-12-30 Mon 8:56am
 updated: 2025-05-11 Sun 9:14pm
+aliases:
+  - /garden/graeber-on-time-money-and-honor/
 type: garden
 template_version: 1.0.0
 title: Graeber on Time, Money, and Honor
@@ -9,6 +11,8 @@ filename: graeber-on-time-money-and-honor
 date: 2024-12-30
 share: true
 state: seed
+tags:
+  - inspirations
 ---
 
 > _Money existed, but it was not used to buy anything; important men lived their lives in pursuit of honor, which took material form in followers and treasure. Treasures were given as gifts, awarded as prizes, carried off as loot. This is no doubt how time first came to mean both "honor" and "price"_

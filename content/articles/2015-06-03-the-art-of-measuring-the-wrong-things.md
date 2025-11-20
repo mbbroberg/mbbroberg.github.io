@@ -4,6 +4,8 @@ updated: 2025-02-14 Fri 8:57pm
 title: The Art of Measuring The Wrong Things - Finding Balance in Metrics
 slug: ../the-art-of-measuring-the-wrong-things
 filename: 2015-06-03-the-art-of-measuring-the-wrong-things
+tags:
+  - product-thinking
 date: 2015-06-03
 share: true
 ---

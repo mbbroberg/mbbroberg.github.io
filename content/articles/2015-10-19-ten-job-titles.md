@@ -4,7 +4,8 @@ blog: true
 date: "2015-10-19T00:00:00Z"
 description: Find your perfect fit.
 tag:
-- github
+- career
+- devops
 title: 10 Job Titles and Why You Might Like Them (Or Won't)
 slug: ../your-next-job-title
 ---

@@ -3,8 +3,9 @@ created: 2024-04-07 Sun 07:45am
 updated: 2025-05-27 Tue 9:44pm
 tags:
   - inspirations
-aliases: []
-cssclasses: 
+aliases:
+  - /garden/philosopher-zizek-slavoj/
+cssclasses:
 edited: 2024-04-07 08:00:08
 title: Philosopher – Zizek, Slavoj
 slug: /philosopher-zizek-slavoj
