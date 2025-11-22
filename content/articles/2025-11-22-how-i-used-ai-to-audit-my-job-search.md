@@ -1,6 +1,6 @@
 ---
 created: 2025-11-22 Sat 11:17am
-updated: 2025-11-22 Sat 11:49am
+updated: 2025-11-22 Sat 11:56am
 title: How I Used AI to Audit My Job Search
 slug: /how-i-used-ai-to-audit-my-job-search
 filename: 2025-11-22-how-i-used-ai-to-audit-my-job-search
@@ -10,8 +10,8 @@ tags:
   - ai-learning
   - career
 ---
-
 ## How I Used AI to Audit My Job Search (And You Can Too)
+![career_prompt_augment_mbbroberg](../../static/images/career_prompt_augment_mbbroberg.png)
 
 I recently found myself with a pile of loosely connected materials–a dozen different resumes, LinkedIn edits, half-formed stories about my career–and no clear sense of which version of me to present to the world. 
 
@@ -104,10 +104,12 @@ The feedback was uncomfortably specific and incredibly useful.
 
 There was a set of "hard truths" that really hit home for me: 
 
-> - Hard truth #1 – You are running 4–5 different job searches at once
-> - Hard truth #2 – Your resume and LinkedIn sound like a sales deck, not a trustworthy signal
+- Hard truth #1 – You are running 4–5 different job searches at once
+- Hard truth #2 – Your resume and LinkedIn sound like a sales deck, not a trustworthy signal
 
-Which it followed with *"Bluntly: You look like you’re trying to impress me with volume and polish instead of making it easy to believe you."* 
+Which it followed with: 
+
+> *"Bluntly: You look like you’re trying to impress me with volume and polish instead of making it easy to believe you."* 
 
 Reading that turned my stomach, but also hit a note. I knew I'd gotten obsessed with optimization, but I hadn't put my finger yet on what it was costing me. This assessment crushed those points. 
 
@@ -139,15 +141,15 @@ The meta-lesson: AI can be an unflinching mirror if you give it permission to be
 
 A few tips based on what worked:
 
-**Gather everything first**: Don't do this piecemeal. Put all your materials in one place—resumes, LinkedIn drafts, project notes, anything that shows how I'm positioning myself.
+1. **Gather everything first**: Don't do this piecemeal. Put all your materials in one place—resumes, LinkedIn drafts, project notes, anything that shows how I'm positioning myself.
 
-**Be specific about your targets**: The more context you give about what roles and levels you're pursuing, the more useful the feedback. "I'm looking for product jobs" is too vague. "I'm targeting Director of Product for internal platforms at Series C companies" gives the model something to work with.
+2. **Be specific about your targets**: The more context you give about what roles and levels you're pursuing, the more useful the feedback. "I'm looking for product jobs" is too vague. "I'm targeting Director of Product for internal platforms at Series C companies" gives the model something to work with.
 
-**Actually ask for brutal honesty**: The default behavior of AI is to be helpful and encouraging. You have to explicitly tell it to stop doing that. Otherwise you'll get generic advice that makes you feel better but doesn't change anything.
+3. **Actually ask for brutal honesty**: The default behavior of AI is to be helpful and encouraging. You have to explicitly tell it to stop doing that. Otherwise you'll get generic advice that makes you feel better but doesn't change anything.
 
-**Use a tool that sees your full workspace**: I used Augment Code because it could reference my entire folder structure. Claude with Projects or ChatGPT with uploaded files would work too, Gemini might be even better these days. The key is giving it enough context to spot patterns across all your materials.
+4. **Use a tool that sees your full workspace**: I used Augment Code because it could reference my entire folder structure. Claude with Projects or ChatGPT with uploaded files would work too, Gemini might be even better these days. The key is giving it enough context to spot patterns across all your materials.
 
-**Expect to be uncomfortable** If the feedback doesn't make you a little defensive, you probably didn't push hard enough. The best insights came from the moments where I thought "wait, that's not fair" and then realized it was exactly right.
+5. **Expect to be uncomfortable** If the feedback doesn't make you a little defensive, you probably didn't push hard enough. The best insights came from the moments where I thought "wait, that's not fair" and then realized it was exactly right.
 
 ## What This Means for Job Searching in 2025
 
