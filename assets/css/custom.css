@@ -497,35 +497,40 @@ article p:last-child {
 }
 
 /* ============================================================================
-   Dark Mode Image Accessibility - Reduce harsh contrast
+   Dark Mode Image Accessibility - Intelligent brightness handling
    ============================================================================
 
    Problem: Bright white backgrounds in images create jarring contrast against
-   dark theme backgrounds, causing eye strain for readers.
+   dark theme backgrounds, causing eye strain. However, aggressive dimming makes
+   already-dark images unreadable.
 
-   Solution: Apply subtle brightness reduction and visual softening to all
-   images in dark mode while maintaining readability and information value.
+   Solution: Apply MINIMAL default dimming that works for most images, with
+   utility classes available for images that need more aggressive treatment.
 
    Features:
-   - 15% brightness reduction (0.85) for comfortable viewing
-   - 5% contrast reduction (0.95) to soften harsh whites
+   - LIGHT default dimming (90% brightness) - preserves dark images
    - Rounded corners and shadow to help images blend with dark background
    - Hover state reveals full brightness for detailed inspection
    - Smooth transitions for better UX
-   - Exceptions for profile images and already-dark images
+   - Utility classes for fine-tuned control (.dim-heavy, .dim-medium, .no-dim)
 
    Usage:
-   - Automatically applies to all images in dark mode
-   - Add class="bright-image" to images that should remain at full brightness
+   - Default: Minimal dimming applied automatically to all images
+   - Add class="dim-heavy" to very bright images (white backgrounds, screenshots)
+   - Add class="dim-medium" to moderately bright images
+   - Add class="no-dim" to images that should never be dimmed
    - Hover over any image to see it at full brightness temporarily
+
+   Philosophy: Better to under-dim by default (preserving dark images) and
+   manually tag the few truly bright images that need heavy dimming.
    ============================================================================ */
 
 .theme--dark .post__content img,
 .theme--dark .post__thumbnail,
 .theme--dark .portfolio__image,
 .theme--dark img {
-    /* Reduce brightness and contrast to soften harsh whites */
-    filter: brightness(0.65) contrast(0.75);
+    /* LIGHT default dimming - preserves readability of dark images */
+    filter: brightness(0.9) contrast(0.97);
     /* Add subtle border radius to help images blend with dark background */
     border-radius: 6px;
     /* Shadow provides visual separation without harsh edges */
@@ -544,14 +549,18 @@ article p:last-child {
     cursor: zoom-in;
 }
 
-/* Special handling for images that are already dark or transparent */
-/* Users can add a 'bright-image' class to images that need full brightness */
-.theme--dark img.bright-image {
-    filter: brightness(1) contrast(1);
+/* Special handling for images that should never be dimmed */
+/* Note: The old 'bright-image' class name was confusing - use 'no-dim' instead */
+.theme--dark img.bright-image,
+.theme--dark img.no-dim {
+    filter: none !important;
 }
 
-.theme--dark img.bright-image:hover {
-    filter: brightness(1.05) contrast(1.05);
+.theme--dark img.bright-image:hover,
+.theme--dark img.no-dim:hover {
+    filter: brightness(1.02) contrast(1.02);
+    transform: scale(1.01);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
 }
 
 /* Ensure sidebar profile image is not affected */
@@ -566,26 +575,28 @@ article p:last-child {
 }
 
 /* ============================================================================
-   Optional Image Dimming Utility Classes
+   Image Dimming Utility Classes - For Fine-Tuned Control
    ============================================================================
-   Use these classes for fine-tuned control over specific images:
+   Use these classes to override the default light dimming for specific images:
 
-   - .dim-light: Subtle dimming (90% brightness) for slightly bright images
-   - .dim-medium: Default dimming (85% brightness) - same as automatic
-   - .dim-heavy: Strong dimming (75% brightness) for very bright images
-   - .no-dim: Disable dimming entirely for specific images
+   DEFAULT (no class): Light dimming (90% brightness) - good for most images
+
+   .dim-medium: Moderate dimming (80% brightness) - for bright images
+   .dim-heavy: Strong dimming (65% brightness) - for very bright white backgrounds
+   .no-dim: No dimming at all - for dark images or images with transparency
+
+   Examples:
+   - Screenshot with white background: <img src="..." class="dim-heavy">
+   - Dark diagram or chart: <img src="..." class="no-dim">
+   - Normal photo: <img src="..."> (no class needed)
    ============================================================================ */
 
-.theme--dark img.dim-light {
-    filter: brightness(0.9) contrast(0.97) !important;
-}
-
 .theme--dark img.dim-medium {
-    filter: brightness(0.85) contrast(0.95) !important;
+    filter: brightness(0.8) contrast(0.92) !important;
 }
 
 .theme--dark img.dim-heavy {
-    filter: brightness(0.75) contrast(0.9) !important;
+    filter: brightness(0.65) contrast(0.85) !important;
 }
 
 .theme--dark img.no-dim {
@@ -593,7 +604,6 @@ article p:last-child {
 }
 
 /* Maintain hover effects for utility classes */
-.theme--dark img.dim-light:hover,
 .theme--dark img.dim-medium:hover,
 .theme--dark img.dim-heavy:hover {
     filter: brightness(1) contrast(1) !important;
