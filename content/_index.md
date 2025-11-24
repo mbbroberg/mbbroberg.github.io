@@ -6,13 +6,13 @@ layout: page
 
 <div class="homepage-intro">
 
-I specialize in making complex systems delightfully simple for developers—navigating the messy middle between Infrastructure, Security, and Business stakeholders to ship products with measurable impact.
+I'm a Director of Product Management and product & growth leader focused on cloud platform engineering, internal developer platforms, observability, and experimentation-driven growth. I specialize in making complex systems delightfully simple for developers—navigating the messy middle between infrastructure, security, and business stakeholders to ship products with measurable impact.
 
 </div>
 
 <div class="hiring-highlight">
 
-**What I'm looking for (October 2025):** Product leadership roles where I can scale AI-augmented developer experiences, design internal platform products, or transform how organizations build and ship software.
+**How I can help:** Leading product teams to scale AI-augmented developer experiences, design internal platform products, and improve how organizations build, ship, and operate software. Currently open to Director/Principal/Head roles in product, growth, and platform engineering.
 
 </div>
 
@@ -30,25 +30,37 @@ I specialize in making complex systems delightfully simple for developers—navi
 
 </div>
 
+<div class="obsession-item">
+
+**Growth & Experimentation for DevTools** — Designing funnels, instrumentation, and A/B testing programs for developer tools and internal platforms; turning product usage and community signals into roadmap and go-to-market decisions.
+
+</div>
+
 <div class="section-divider"></div>
 
 ### Product domains I love
 
 <div class="obsession-item">
 
-**Cloud platform products** — Scaled internal developer platform from pilot to 4,600+ weekly active users (92% adoption). Led $200M infrastructure portfolio: 500,000 containers, 50,000 VMs, 8PB storage serving 5,000 engineers with 99.99% reliability.
+**Cloud Platform Engineering & Internal Developer Platforms** — Scaled internal developer platform from pilot to 4,600+ weekly active users (92% adoption). Led $200M infrastructure portfolio: 500,000 containers, 50,000 VMs, 8PB storage serving 5,000 engineers with 99.99% reliability.
 
 </div>
 
 <div class="obsession-item">
 
-**AI-augmented workflows** — Integrated GenAI tools (ChatGPT, GitHub Copilot, Cursor) across enterprise infrastructure, reducing deployment time by 60% and onboarding by 50%. Built AI-assisted documentation systems cutting planning time from 2 days to 3 hours.
+**Observability & Incident Management Products** — Building telemetry and incident workflows as products, not just toolchains, to reduce MTTR and major incidents while giving SREs and executives the right signals.
 
 </div>
 
 <div class="obsession-item">
 
-**Developer-centric educational platforms** — Grew technical content platform from 10M to 22.4M visitors generating 25M in influenced pipeline. Achieved 3x deployment frequency through product-led operations and systematic friction removal.
+**AI-Augmented Workflows** — Integrated GenAI tools (ChatGPT, GitHub Copilot, Cursor) across enterprise infrastructure, reducing deployment time by 60% and onboarding by 50%. Built AI-assisted documentation systems cutting planning time from 2 days to 3 hours.
+
+</div>
+
+<div class="obsession-item">
+
+**Developer-Centric Educational Platforms** — Grew technical content platform from 10M to 22.4M visitors generating $25M in influenced pipeline. Achieved 3x deployment frequency through product-led operations and systematic friction removal.
 
 </div>
 
@@ -64,7 +76,7 @@ I specialize in making complex systems delightfully simple for developers—navi
 
 <div class="obsession-item">
 
-**Communities I've built** — Co-founded [DevRel Collective](https://devrelcollective.fun) (2,000+ members). Co-hosted [The Geek Whisperers podcast](https://geek-whisperers.com/) (140 episodes, 100K+ listeners). Designed [Opensource.com](https://opensource.com) Correspondent program, [CHAOSScast](https://podcast.chaoss.community/), and [Enable Architect](https://redhat.com/architect). Led community programs for Sensu, Snap, EMC Elect, and Basho.
+**Communities I've built** — Co-founded [DevRel Collective](https://devrelcollective.fun) (2,000+ members). Co-hosted [The Geek Whisperers podcast](https://geek-whisperers.com/) (140 episodes, 100K+ listeners). Designed [Opensource.com](https://opensource.com) Correspondent program, [CHAOSScast](https://podcast.chaoss.community/), and [Enable Architect](https://redhat.com/architect). Led community programs for Sensu, Snap, EMC Elect, and Basho. I treat communities as part of the product surface, not a separate marketing channel.
 
 </div>
 
@@ -79,10 +91,17 @@ I specialize in making complex systems delightfully simple for developers—navi
 **Learning communities** — Deep in systems thinking: [Team Topologies](https://teamtopologies.com), [Wardley Maps](https://www.wardleymaps.com/), [John Cutler](https://cutlefish.substack.com). Product management: [Melissa Perri](https://www.produxlabs.com/product-thinking), [SVPG](https://www.svpg.com/). Technology: [Kubernetes](https://kubernetes.io), [CNCF](https://www.cncf.io/), DevOps, Python, Go.
 
 </div>
-
 <div class="section-divider"></div>
 
-### Writing
+## Recent favorites
 
-Popular articles include [The right and wrong way to set Python 3 as default on a Mac](https://opensource.com/article/19/5/python-3-default-mac) and: 
+A few pieces that reflect how I think about platforms, growth, and product management:
+
+- [When Platform Products Fail – About Maps, Domains, Topologies](/articles/when-platform-products-fail-about-maps-domains-topologies) — Why internal platforms fail and how Wardley Maps, Domain-Driven Design, and Team Topologies help align them.
+
+- [Platforms as Internal Products](garden/platforms-as-internal-products) — On treating internal platforms as products that reduce cognitive load for stream-aligned teams.
+
+- [Team Topologies: Map of Content](/garden/team-topologies-map-of-content/) — The exploration of Team Topologies and how I apply it to different domains.
+
+- [Falling in Love with AI Coding Agents](/articles/falling-in-love-with-ai-coding-agents) — Reflections on generative AI and how it changes developer workflows.
 

@@ -1,0 +1,75 @@
+{{- $title := .Title }}
+{{- $description := .Description }}
+{{- if not $description }}
+  {{- $description = .Site.Params.description }}
+{{- end }}
+
+{{- /* Determine the image to use */ -}}
+{{- $image := "" -}}
+
+{{- /* Priority 1: Page frontmatter images */ -}}
+{{- if .Params.images -}}
+  {{- $image = index .Params.images 0 -}}
+{{- else -}}
+  {{- /* Priority 2: Extract first image from content */ -}}
+  {{- $content := .RawContent -}}
+  {{- $imgPattern := `!\[.*?\]\(([^)]+)\)` -}}
+  {{- $matches := findRE $imgPattern $content 1 -}}
+  {{- if $matches -}}
+    {{- $match := index $matches 0 -}}
+    {{- $imgSrc := replaceRE $imgPattern "$1" $match -}}
+    {{- $image = $imgSrc -}}
+  {{- else -}}
+    {{- /* Also check for HTML img tags */ -}}
+    {{- $htmlImgPattern := `<img[^>]+src=["']([^"']+)["']` -}}
+    {{- $htmlMatches := findRE $htmlImgPattern $content 1 -}}
+    {{- if $htmlMatches -}}
+      {{- $match := index $htmlMatches 0 -}}
+      {{- $imgSrc := replaceRE $htmlImgPattern "$1" $match -}}
+      {{- $image = $imgSrc -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Priority 3: Site default image */ -}}
+{{- if not $image -}}
+  {{- if .Site.Params.images -}}
+    {{- $image = index .Site.Params.images 0 -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Clean up and convert to absolute URL */ -}}
+{{- if $image -}}
+  {{- /* Remove static/ prefix if present (Hugo serves static files from root) */ -}}
+  {{- /* Handles: /static/, static/, ../static/, ../../static/ etc */ -}}
+  {{- $image = replaceRE `^(\.\./?)*/?static/` "" $image -}}
+  {{- if not (hasPrefix $image "http") -}}
+    {{- /* Ensure path starts with / for absURL */ -}}
+    {{- if not (hasPrefix $image "/") -}}
+      {{- $image = printf "/%s" $image -}}
+    {{- end -}}
+    {{- $image = $image | absURL -}}
+  {{- end -}}
+{{- end -}}
+
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $description }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+{{- with $image }}
+<meta property="og:image" content="{{ . }}" />
+{{- end }}
+{{- if .IsPage }}
+{{- if not .PublishDate.IsZero }}
+<meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" }}" />
+{{- else if not .Date.IsZero }}
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05-07:00" }}" />
+{{- end }}
+{{- if not .Lastmod.IsZero }}
+<meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" }}" />
+{{- end }}
+{{- end }}
+{{- with .Site.Params.facebookAppId }}
+<meta property="fb:app_id" content="{{ . }}" />
+{{- end }}
