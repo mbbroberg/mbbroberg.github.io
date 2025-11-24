@@ -1,8 +1,8 @@
 author = "Matthew Broberg"
 title = "Matthew Broberg"
-description = "Product Thinking | Systems Builder | Open Source Advocate | People Leader"
+description = "Product & growth leader in cloud platform engineering, internal developer platforms, observability, and developer experience."
 profilePicture = "images/profile.jpg"
-keywords = "product management, systems thinking, open source, digital garden, leadership, team topologies"
+keywords = "cloud platform engineering, internal developer platform, observability, incident management, developer experience, product management, growth, experimentation, team topologies, open source, digital garden"
 favicon = "favicons/"
 # example ["css/custom.css"]
 # customCss = ["css/404.css"]
@@ -10,7 +10,7 @@ favicon = "favicons/"
 #customJs = []
 mainSections = ["articles"]
 # Default image for social sharing (Open Graph and Twitter Cards)
-images = ["images/profile.jpg"]
+images = ["images/mbbrobergfun.png"]
 doNotLoadAnimation = false
 # Form Spree Contact Form
 #contactFormAction = "https://formspree.io/f/your-form-hash-here"
