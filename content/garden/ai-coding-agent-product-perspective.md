@@ -1,6 +1,6 @@
 ---
 created: 2025-12-11 Thu 10:51am
-updated: 2025-12-11 Thu 11:21am
+updated: 2025-12-11 Thu 11:35am
 share: true
 type: garden
 state: sprout
@@ -69,11 +69,11 @@ As I dig into each tool, I'm watching for:
 
 ## How This Connects
 
-I keep coming back to treating [everything as a product](/articles/work-as-a-game-both-finite-and-infinite). These tools aren't just features. They're betting on different theories about how developers want to work and what they're willing to change.
+I keep coming back to treating not everything, but [most platforms as products](https://mbbroberg.fun/garden/a-definition-of-platform-product-management/). These tools aren't just features. They're betting on different theories about how developers want to work and what they're willing to change.
 
-The [Product Operating Model](/articles/takeaways-from-transformed-by-marty-cagan) lens is useful here. Are these solving customer problems in ways that work for the business? Or building features that sound good but don't change behavior?
+The [product rather than projectl](https://mbbroberg.fun/articles/from-project-to-product-management/) lens is useful here. Are these solving customer problems in ways that work for the business? Or building features that sound good but don't change behavior?
 
-I suspect there's an [Explorer/Villager/Town Planner](/articles/on-explorers-villager-and-towns-planners-of-simon-wardley) pattern too. Explorers might try everything and build workflows around what's possible. Villagers want to productize patterns. Town Planners need standardization and support.
+I suspect there's an [Explorer/Villager/Town Planner](https://mbbroberg.fun/on-explorers-villager-and-towns-planners-of-simon-wardley/) pattern too. Explorers might try everything and build workflows around what's possible. Villagers want to productize patterns. Town Planners need standardization and support.
 
 ## What's Next
 
@@ -81,7 +81,7 @@ I'm tinkering with many of these at the same time. I'm quickly building an opini
 
 I want each teardown to follow a similar structure so you can compare across tools. But I'm also paying attention to what makes each one unique. The differences tell more than the similarities.
 
-This is going to be a living collection. As these tools evolve and as I understand them better, I'll update my thinking. That's the point of a [digital garden](/articles/make-obsidian-a-digital-garden) approach.
+This is going to be a living collection. As these tools evolve and as I understand them better, I'll update my thinking.
 
 --
 
