@@ -1,6 +1,6 @@
 ---
 created: 2025-12-11 Thu 10:51am
-updated: 2025-12-11 Thu 11:17am
+updated: 2025-12-11 Thu 11:21am
 share: true
 type: garden
 state: sprout
@@ -12,7 +12,9 @@ date: 2025-12-11
 
 # AI Coding Agents: A Product Perspective
 
-> >  Last updated: 2025-12-11
+![ai-agent-product-perspective-mbbrobergfun.png](../../static/images/ai-agent-product-perspective-mbbrobergfun.png)
+
+> Last updated: 2025-12-11  
 > *My perspective on this is changing rapidly. I'm learning new things about these tools daily.*
 
 I'm spending time with AI coding tools through a product lens rather than a feature comparison. This is the start of a series where I'll break down what these tools are actually selling, who they're built for, and what their positioning tells me about where this market is heading.
