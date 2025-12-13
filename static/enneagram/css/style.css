@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #6366f1;
+  --secondary-color: #ec4899;
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --border-color: #e2e8f0;
+  --success: #10b981;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+main {
+  flex: 1;
+  background-color: var(--surface);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: var(--border-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  transition: width 0.3s ease;
+}
+
+.question-counter {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.question-content {
+  margin: 30px 0;
+}
+
+.question-content h2 {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: var(--text-primary);
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.option-btn {
+  padding: 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--surface);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.option-btn:hover {
+  border-color: var(--primary-color);
+  background-color: #f0f4ff;
+}
+
+.option-btn.selected {
+  border-color: var(--primary-color);
+  background-color: #eef2ff;
+  font-weight: 600;
+}
+
+.option-text {
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.navigation button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navigation button:nth-child(1),
+.navigation button:nth-child(3) {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.navigation button:nth-child(1):hover,
+.navigation button:nth-child(3):hover {
+  background-color: #4f46e5;
+}
+
+.navigation button:nth-child(2) {
+  background-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.navigation button:nth-child(2):hover {
+  background-color: #cbd5e1;
+}
+
+.navigation button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.results-page {
+  text-align: center;
+}
+
+.results-page h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+
+.type-result {
+  margin: 40px 0;
+}
+
+.type-number {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+  padding: 30px;
+  background: linear-gradient(135deg, #f0f4ff, #fce7f3);
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.score-breakdown {
+  margin: 40px 0;
+  text-align: left;
+}
+
+.score-breakdown h3 {
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+.scores {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.score-item {
+  padding: 15px;
+  background-color: var(--background);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.score-value {
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.retake-btn {
+  margin-top: 30px;
+  padding: 14px 32px;
+  background-color: var(--success);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.retake-btn:hover {
+  background-color: #059669;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .type-number {
+    font-size: 3rem;
+  }
+  
+  .scores {
+    grid-template-columns: 1fr;
+  }
+  
+  .navigation {
+    flex-direction: column;
+  }
+  
+  .navigation button {
+    width: 100%;
+  }
+}
