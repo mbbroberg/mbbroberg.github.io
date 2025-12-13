@@ -3,6 +3,55 @@ let scores = initializeScores();
 let currentQuestion = 0;
 let answers = {};
 
+// Enneagram type information
+const typeInfo = {
+  1: {
+    name: "THE REFORMER",
+    description: "The Rational, Idealistic Type: Principled, Purposeful, Self-Controlled, and Perfectionistic",
+    url: "https://www.enneagraminstitute.com/type-1"
+  },
+  2: {
+    name: "THE HELPER",
+    description: "The Caring, Interpersonal Type: Demonstrative, Generous, People-Pleasing, and Possessive",
+    url: "https://www.enneagraminstitute.com/type-2"
+  },
+  3: {
+    name: "THE ACHIEVER",
+    description: "The Success-Oriented, Pragmatic Type: Adaptive, Excelling, Driven, and Image-Conscious",
+    url: "https://www.enneagraminstitute.com/type-3"
+  },
+  4: {
+    name: "THE INDIVIDUALIST",
+    description: "The Sensitive, Withdrawn Type: Expressive, Dramatic, Self-Absorbed, and Temperamental",
+    url: "https://www.enneagraminstitute.com/type-4"
+  },
+  5: {
+    name: "THE INVESTIGATOR",
+    description: "The Intense, Cerebral Type: Perceptive, Innovative, Secretive, and Isolated",
+    url: "https://www.enneagraminstitute.com/type-5"
+  },
+  6: {
+    name: "THE LOYALIST",
+    description: "The Committed, Security-Oriented Type: Engaging, Responsible, Anxious, and Suspicious",
+    url: "https://www.enneagraminstitute.com/type-6"
+  },
+  7: {
+    name: "THE ENTHUSIAST",
+    description: "The Busy, Fun-Loving Type: Spontaneous, Versatile, Distractible, and Scattered",
+    url: "https://www.enneagraminstitute.com/type-7"
+  },
+  8: {
+    name: "THE CHALLENGER",
+    description: "The Powerful, Dominating Type: Self-Confident, Decisive, Willful, and Confrontational",
+    url: "https://www.enneagraminstitute.com/type-8"
+  },
+  9: {
+    name: "THE PEACEMAKER",
+    description: "The Easygoing, Self-Effacing Type: Receptive, Reassuring, Agreeable, and Complacent",
+    url: "https://www.enneagraminstitute.com/type-9"
+  }
+};
+
 async function loadQuestions() {
   try {
     const response = await fetch('./data/questions.json');
@@ -101,16 +150,22 @@ function showResults() {
   const type = calculateType(scores);
   const wing = calculateWing(scores);
   const typeDisplay = wing > 0 ? `${type}w${wing}` : `${type}`;
-  
+  const info = typeInfo[type];
+
   const container = document.getElementById('test-container');
   container.innerHTML = `
     <div class="results-page">
       <h1>Your Enneagram Type</h1>
-      
+
       <div class="type-result">
         <div class="type-number">${typeDisplay}</div>
+        <div class="type-name">${info.name}</div>
+        <p class="type-description">${info.description}</p>
+        <a href="${info.url}" target="_blank" rel="noopener noreferrer" class="learn-more-btn">
+          Learn More About Type ${type} →
+        </a>
       </div>
-      
+
       <div class="score-breakdown">
         <h3>Score Breakdown</h3>
         <div class="scores">
@@ -123,7 +178,7 @@ function showResults() {
           }).join('')}
         </div>
       </div>
-      
+
       <button onclick="retakeTest()" class="retake-btn">Retake Test</button>
     </div>
   `;
