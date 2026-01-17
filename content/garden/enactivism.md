@@ -1,8 +1,6 @@
 ---
 created: 2025-05-26 Mon 2:18pm
-updated: 2025-05-26 Mon 2:30pm
-aliases:
-  - /garden/enactivism/
+updated: 2025-08-03 Sun 2:34pm
 title: enactivism
 slug: /enactivism
 filename: enactivism
@@ -10,10 +8,7 @@ date: 2025-05-26
 share: true
 type: garden
 state: sprout
-tags:
-  - inspirations
 ---
-
 **Enactivism** is a theory in cognitive science and philosophy of mind that fundamentally challenges how we think about knowledge, perception, and cognition.
 
 From [Enactivism \| Internet Encyclopedia of Philosophy](https://iep.utm.edu/enactivism/): 
@@ -40,6 +35,5 @@ Rather than viewing the mind as a computer that processes representations of an 
 **No Internal Representations**: Instead of storing mental pictures or models of the world, enactivists argue we create meaning through our ongoing interactions. The world itself serves as its own "representation."
 
 - The "authentic self" becomes less about finding something pre-existing and more about the quality of our engagement with others
-
 
 I'm fascinated by this term and concept. Not sure how it fits into my interests just yet though.
