@@ -3,8 +3,6 @@ title: Four Team Types for Modern Software Development
 date: 2025-05-27
 tags:
   - team-topologies
-aliases:
-  - /garden/four-team-types-for-modern-software-development/
 created: 2025-05-27 Tue 8:21pm
 updated: 2025-05-27 Tue 9:40pm
 slug: /four-team-types-for-modern-software-development
@@ -19,7 +17,7 @@ I enjoy the insights learned within enabling constraints. Team Topologies seems 
 
 - **Stream-aligned teams** deliver continuous value flow for a specific business domain. These are the core teams that everything else supports.
 
-- **[Platforms Groups](/team-topologies-updated-its-concept-of-platforms)** provide self-service capabilities that reduce cognitive load for stream-aligned teams. Think of them as internal products with their own users.
+- **[Platforms Groups](/garden/team-topologies-updated-its-concept-of-platforms)** provide self-service capabilities that reduce cognitive load for stream-aligned teams. Think of them as internal products with their own users.
 
 - **Complicated-subsystem teams** handle technically complex areas that require specialized expertise—mathematical algorithms, security protocols, or performance-critical systems.
 
