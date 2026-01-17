@@ -1,10 +1,7 @@
 ---
 created: 2025-01-03 Fri 2:15pm
 edited: 2024-01-28 11:44:58
-tags: 
-  - myths
-aliases:
-  - /garden/ethernet-comes-from-ether/
+tags: []
 up:
   - "[Etymology MOC](Etymology%20MOC.md)"
 updated: 2025-05-27 Tue 9:45pm
