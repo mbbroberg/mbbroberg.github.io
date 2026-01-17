@@ -1,8 +1,7 @@
 ---
 created: 2024-08-01 Thu 2:18am
 updated: 2025-05-27 Tue 9:41pm
-aliases:
-  - /garden/sensitive-alternatives-to/
+aliases: []
 tags:
   - cognitive-frames
 title: Sensitive – alternatives to
@@ -44,4 +43,4 @@ Better descriptors for the negative:
 
 Sensitive is not a word of much clarity in comparison to any of these.
 
-[up:: Words Frame Reality]
+[up:: [Words Frame Reality](Words%20Frame%20Reality.md)]
