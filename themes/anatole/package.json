@@ -30,11 +30,11 @@
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
-    "@release-it/conventional-changelog": "^8.0.2",
+    "@release-it/conventional-changelog": "^10.0.4",
     "husky": "^9.1.6",
     "prettier": "^3.3.3",
     "prettier-plugin-go-template": "^0.0.15",
-    "release-it": "^17.6.0",
+    "release-it": "^19.2.4",
     "shx": "^0.3.4"
   }
 }
