@@ -6,9 +6,6 @@ slug: /applying-team-topologies-to-marketing-and-community
 filename: 2025-04-29-applying-team-topologies-to-marketing-and-community
 date: 2025-04-29
 share: true
-tags:
-  - team-topologies
-  - product-thinking
 ---
 The following is a long post I've thought about for years. 
 
