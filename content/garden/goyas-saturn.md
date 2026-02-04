@@ -1,11 +1,8 @@
 ---
 up:
 created: 2024-06-30 Sun 6:37am
-updated: 2025-05-27 Tue 9:42pm
-tags:
-  - myths
-aliases:
-  - /garden/goyas-saturn/
+updated: 2025-06-23 Mon 3:37am
+aliases: []
 cssclasses:
 title: Goya’s Saturn
 slug: /goyas-saturn
