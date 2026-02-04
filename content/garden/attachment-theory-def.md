@@ -2,10 +2,8 @@
 up:
   - "[Mental Health (Therapy, Healing, Psychaedelics)](Mental%20Health%20(Therapy,%20Healing,%20Psychaedelics).md)"
 related: []
-aliases:
-  - /garden/attachment-theory-def/
 created: 2025-01-03 Fri 2:15pm
-updated: 2025-05-09 Fri 8:27pm
+updated: 2025-11-13 Thu 4:45pm
 title: Attachment Theory (def)
 slug: /attachment-theory-def
 filename: attachment-theory-def
@@ -14,8 +12,6 @@ share: true
 type: garden
 state: rhizome
 ---
-#note/done🌱 
-
 *Supports my [My Understanding of Attachment Theory](my-understanding-of-attachment-theory)*
 
 > >  Overview
