@@ -6,7 +6,6 @@ updated: 2025-04-18 Fri 4:40am
 tags: []
 aliases:
   - '"Forgiveness is the release of all hope for a better past"'
-  - /garden/forgiveness-is-the-release-of-all-hope-for-a-better-past/
 cssclasses:
 publish: false
 title: Forgiveness is the release of all hope for a better past
