@@ -17,7 +17,7 @@ I see each subsection broken out to signify the speed by which its data points a
 
 Your classic distribution of who adopts technology and how quickly.
 
-![Droplets/diffusion-of-innovation-chart-1-of-2.jpg](../../static/images/diffusion-of-innovation-chart-1-of-2.jpg)
+![diffusion-of-innovation-chart-1-of-2](../../static/images/diffusion-of-innovation-chart-1-of-2.jpg)
 
 
 [**Diffusion of Innovations**](http://en.wikipedia.org/wiki/Diffusion_of_innovations) is "a theory that seeks to explain how, why, and at what rate new ideas and technology spread." Innovation is a powerful term when well-wielded. The word brings titans to mind - Copernicus, Tesla, Einstein - those names we consider larger than life. An incredible engineer I admire, Steve Todd, has utilized the [term as a personal brand](http://stevetodd.typepad.com/). Innovation is a powerful concept, inspiring the curious to keep exploring, for there is always more to learn.
