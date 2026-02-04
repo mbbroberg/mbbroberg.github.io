@@ -7,6 +7,8 @@ slug: /i-do-believe-it
 filename: i-do-believe-it
 date: 2025-01-03
 share: true
+tags:
+  - thoughts
 type: garden
 state: sprout
 ---

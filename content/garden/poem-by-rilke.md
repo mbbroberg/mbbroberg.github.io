@@ -6,6 +6,8 @@ slug: /poem-by-rilke
 filename: poem-by-rilke
 date: 2025-04-18
 share: true
+tags:
+  - thoughts
 type: garden
 state: seed
 ---

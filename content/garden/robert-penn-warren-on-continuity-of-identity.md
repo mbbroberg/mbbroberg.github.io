@@ -6,6 +6,8 @@ slug: /robert-penn-warren-on-continuity-of-identity
 filename: robert-penn-warren-on-continuity-of-identity
 date: 2025-02-14
 share: true
+tags:
+  - thoughts
 type: garden
 state: seed
 ---

@@ -8,6 +8,9 @@ title: Exploring My Career as a Product Journey
 slug: /career-narrative-as-a-product-journey
 filename: career-as-product-journey
 date: 2025-11-23
+tags:
+  - career
+  - product-thinking
 ---
 # My Career as a Product Journey: From Advocate to Platform Leader
 

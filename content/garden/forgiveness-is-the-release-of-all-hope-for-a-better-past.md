@@ -3,7 +3,8 @@ up:
 related:
 created: 2024-08-15 Thu 10:44pm
 updated: 2025-04-18 Fri 4:40am
-tags: []
+tags:
+  - thoughts
 aliases:
   - '"Forgiveness is the release of all hope for a better past"'
 cssclasses:

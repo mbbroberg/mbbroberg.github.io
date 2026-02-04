@@ -10,6 +10,8 @@ filename: we-are-born-a-garden
 date: 2024-07-18
 lastmod: 2024-11-07
 share: true
+tags:
+  - thoughts
 state: rhizome
 ---
 # We Are Born a Garden

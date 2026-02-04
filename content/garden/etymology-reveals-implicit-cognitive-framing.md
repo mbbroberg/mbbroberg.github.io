@@ -7,6 +7,8 @@ slug: /etymology-reveals-implicit-cognitive-framing
 filename: etymology-reveals-implicit-cognitive-framing
 date: 2025-01-02
 share: true
+tags:
+  - inspirations
 state: seed
 status: emerging
 ---

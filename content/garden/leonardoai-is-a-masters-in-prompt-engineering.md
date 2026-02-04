@@ -6,6 +6,8 @@ slug: /leonardoai-is-a-masters-in-prompt-engineering
 filename: leonardoai-is-a-masters-in-prompt-engineering
 date: 2025-05-11
 share: true
+tags:
+  - ai-learning
 type: garden
 state: seed
 ---

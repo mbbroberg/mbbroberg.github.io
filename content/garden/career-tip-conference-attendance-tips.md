@@ -6,6 +6,8 @@ slug: /career-tip-conference-attendance-tips
 filename: career-tip-conference-attendance-tips
 date: 2024-06-03
 share: true
+tags:
+  - career
 type: garden
 state: sprout
 ---

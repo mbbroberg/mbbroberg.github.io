@@ -13,6 +13,8 @@ type: garden
 lastmod: 2025-02-22
 state: sprout
 share: true
+tags:
+  - thoughts
 ---
 
 # Rhizomes

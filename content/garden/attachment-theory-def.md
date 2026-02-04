@@ -9,6 +9,8 @@ slug: /attachment-theory-def
 filename: attachment-theory-def
 date: 2024-06-05
 share: true
+tags:
+  - thoughts
 type: garden
 state: rhizome
 ---

@@ -10,6 +10,8 @@ state: seed
 slug: /wild-geese-by-mary-j-oliver
 filename: wild-geese-by-mary-j-oliver
 date: 2025-12-11
+tags:
+  - thoughts
 ---
 This poem reminds me of our natural ability to heal.
 

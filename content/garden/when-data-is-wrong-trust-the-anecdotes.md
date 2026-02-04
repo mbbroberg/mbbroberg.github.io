@@ -6,6 +6,8 @@ slug: /when-data-is-wrong-trust-the-anecdotes
 filename: when-data-is-wrong-trust-the-anecdotes
 date: 2025-03-16
 share: true
+tags:
+  - product-thinking
 type: garden
 state: seed
 ---

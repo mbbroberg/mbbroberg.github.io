@@ -8,6 +8,8 @@ title: My root claude.md file
 slug: /root-claude-md-file
 filename: root-claude-md-file
 date: 2026-01-16
+tags:
+  - thoughts
 ---
 # Who You Are 
 

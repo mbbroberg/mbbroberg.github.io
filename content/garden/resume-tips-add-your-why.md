@@ -6,6 +6,8 @@ slug: /resume-tips-add-your-why
 filename: resume-tips-add-your-why
 date: 2025-09-09
 share: true
+tags:
+  - career
 type: garden
 state: seed
 ---

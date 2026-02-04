@@ -7,6 +7,8 @@ slug: /kanban-columns-for-lean-publishing-model
 filename: kanban-columns-for-lean-publishing-model
 date: 2024-06-12
 datemod: 2025-02-18
+tags:
+  - product-thinking
 type: garden
 state: sprout
 ---

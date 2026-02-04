@@ -7,6 +7,8 @@ slug: /cognitive-and-relational-proximity
 filename: cognitive-and-relational-proximity
 date: 2025-01-03
 share: true
+tags:
+  - team-topologies
 type: garden
 ---
 

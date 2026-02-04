@@ -8,6 +8,8 @@ type: garden
 state: seed
 created: 2025-01-08 Wed 5:38pm
 updated: 2025-08-03 Sun 2:56pm
+tags:
+  - product-thinking
 ---
 That’s what an outcome is according to the podcast.
 

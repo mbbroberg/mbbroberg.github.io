@@ -6,6 +6,8 @@ slug: /community-practices-i-learned-from-cathedral-and-the-bazaar
 filename: community-practices-i-learned-from-cathedral-and-the-bazaar
 date: 2025-06-22
 share: true
+tags:
+  - inspirations
 type: garden
 state: sprout
 ---

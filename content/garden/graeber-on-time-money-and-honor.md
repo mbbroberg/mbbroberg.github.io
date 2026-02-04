@@ -8,6 +8,8 @@ slug: /graeber-on-time-money-and-honor
 filename: graeber-on-time-money-and-honor
 date: 2024-12-30
 share: true
+tags:
+  - inspirations
 state: seed
 ---
 

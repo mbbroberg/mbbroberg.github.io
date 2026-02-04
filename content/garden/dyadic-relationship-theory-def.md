@@ -6,6 +6,8 @@ slug: /dyadic-relationship-theory-def
 filename: dyadic-relationship-theory-def
 date: 2025-04-18
 share: true
+tags:
+  - thoughts
 type: garden
 state: seed
 ---

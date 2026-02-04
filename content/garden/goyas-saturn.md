@@ -9,6 +9,8 @@ slug: /goyas-saturn
 filename: goyas-saturn
 date: 2024-06-30
 share: true
+tags:
+  - thoughts
 type: garden
 state: sprout
 ---
