@@ -1,7 +1,6 @@
 ---
 up: "[[ADHD MOC]]"
-aliases:
-  - /garden/adhd-timebounding-advice/
+aliases: []
 tags: []
 created: 2024-12-27 Fri 9:01am
 updated: 2025-05-09 Fri 8:25pm
