@@ -7,7 +7,7 @@ filename: platform-products-map-of-content
 date: 2026-02-03
 share: true
 type: garden
-state: evergreen
+state: rhizome
 tags:
   - platform-products
 ---
