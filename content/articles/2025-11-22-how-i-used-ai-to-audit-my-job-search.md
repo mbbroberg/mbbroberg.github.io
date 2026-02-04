@@ -1,6 +1,6 @@
 ---
 created: 2025-11-22 Sat 11:17am
-updated: 2025-11-22 Sat 11:56am
+updated: 2025-11-22 Sat 11:57am
 title: How I Used AI to Audit My Job Search
 slug: /how-i-used-ai-to-audit-my-job-search
 filename: 2025-11-22-how-i-used-ai-to-audit-my-job-search
@@ -11,7 +11,7 @@ tags:
   - career
 ---
 ## How I Used AI to Audit My Job Search (And You Can Too)
-![career_prompt_augment_mbbroberg](../../static/images/career_prompt_augment_mbbroberg.png)
+![career_prompt_augment_mbbroberg.png](../../static/images/career_prompt_augment_mbbroberg.png)
 
 I recently found myself with a pile of loosely connected materials–a dozen different resumes, LinkedIn edits, half-formed stories about my career–and no clear sense of which version of me to present to the world. 
 
