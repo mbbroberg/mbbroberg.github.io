@@ -1,8 +1,6 @@
 ---
 created: 2025-04-18 Fri 5:26am
 updated: 2025-04-18 Fri 5:27am
-aliases:
-  - /garden/dyadic-relationship-theory-def/
 title: Dyadic Relationship Theory (def)
 slug: /dyadic-relationship-theory-def
 filename: dyadic-relationship-theory-def
