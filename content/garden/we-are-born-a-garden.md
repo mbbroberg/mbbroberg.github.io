@@ -2,7 +2,8 @@
 up:
 created: 2024-07-18 Thu 1:09pm
 updated: 2025-05-11 Sun 2:18pm
-aliases: []
+aliases:
+  - /garden/we-are-born-a-garden/
 title: we are born a garden
 type: garden
 slug: /we-are-born-a-garden
@@ -11,12 +12,14 @@ date: 2024-07-18
 lastmod: 2024-11-07
 share: true
 state: rhizome
+tags:
+  - inspirations
 ---
 # We Are Born a Garden
 
 > "Become who you are." — Friedrich Nietzsche
 
-![born-a-garden.png](../../static/images/born-a-garden.png)
+![born-a-garden.png](../static/images/born-a-garden.png)
 
 ## The Soil We Begin With
 
