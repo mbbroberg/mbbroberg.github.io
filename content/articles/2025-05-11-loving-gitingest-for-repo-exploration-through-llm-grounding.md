@@ -6,9 +6,6 @@ slug: /loving-gitingest-for-repo-exploration-through-llm-grounding
 filename: 2025-05-11-loving-gitingest-for-repo-exploration-through-llm-grounding
 date: 2025-05-11
 share: true
-tags:
-  - productivity
-  - ai-learning
 ---
 # I'm Loving GitIngest for Repo Exploration through LLM Grounding
 
