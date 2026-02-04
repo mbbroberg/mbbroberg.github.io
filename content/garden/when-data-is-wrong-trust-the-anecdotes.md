@@ -1,6 +1,8 @@
 ---
 created: 2025-03-16 Sun 5:29am
 updated: 2025-03-16 Sun 5:31am
+aliases:
+  - /garden/when-data-is-wrong-trust-the-anecdotes/
 title: When data is wrong trust the anecdotes
 slug: /when-data-is-wrong-trust-the-anecdotes
 filename: when-data-is-wrong-trust-the-anecdotes
@@ -8,6 +10,9 @@ date: 2025-03-16
 share: true
 type: garden
 state: seed
+tags:
+  - product-thinking
+  - cognitive-frames
 ---
 > “When the data and the anecdotes disagree,” he said in an interview, “the anecdotes are usually right.”
 
