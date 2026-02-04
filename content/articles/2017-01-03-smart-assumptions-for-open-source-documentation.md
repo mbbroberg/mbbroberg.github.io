@@ -4,8 +4,6 @@ slug: ../devops-personas-for-open-source-documentation
 filename: 2017-01-03-smart-assumptions-for-open-source-documentation
 date: 2017-01-03
 share: true
-tags:
-  - devops
 created: 2025-01-03 Fri 2:15pm
 updated: 2025-02-13 Thu 5:47am
 ---
