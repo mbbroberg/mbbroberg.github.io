@@ -6,6 +6,8 @@ slug: /product-management-signs-of-healthy-engineering-relationships
 filename: product-management-signs-of-healthy-engineering-relationships
 date: 2025-03-16
 share: true
+tags:
+  - product-thinking
 type: garden
 state: seed
 ---

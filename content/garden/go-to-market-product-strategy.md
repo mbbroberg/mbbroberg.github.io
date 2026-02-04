@@ -4,6 +4,8 @@ slug: /go-to-market-product-strategy
 filename: go-to-market-product-strategy
 date: 2025-06-22
 share: true
+tags:
+  - product-thinking
 type: garden
 state: seed
 created: 2025-06-22 Sun 4:32pm

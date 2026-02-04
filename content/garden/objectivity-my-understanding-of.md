@@ -2,7 +2,7 @@
 up:
 aliases: []
 tags:
-  - cognitive-frames
+  - inspirations
 created: 2024-06-28 Fri 10:07pm
 updated: 2025-05-27 Tue 9:41pm
 title: Objectivity – my understanding of

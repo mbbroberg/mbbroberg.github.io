@@ -4,7 +4,7 @@ edited: 2024-05-19 17:41:26
 up:
   - "[Cognitive Frames MOC](Cognitive%20Frames%20MOC.md)"
 tags:
-  - cognitive-frames
+  - inspirations
 updated: 2025-05-27 Tue 9:41pm
 title: Freedom as more than from – my understanding of
 slug: /freedom-as-more-than-from-my-understanding-of

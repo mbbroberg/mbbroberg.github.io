@@ -6,6 +6,9 @@ slug: /not-everything-is-a-product-in-team-topologies
 filename: not-everything-is-a-product-in-team-topologies
 date: 2025-05-08
 share: true
+tags:
+  - team-topologies
+  - product-thinking
 type: garden
 state: seed
 ---

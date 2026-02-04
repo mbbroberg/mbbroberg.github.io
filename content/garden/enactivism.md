@@ -6,6 +6,8 @@ slug: /enactivism
 filename: enactivism
 date: 2025-05-26
 share: true
+tags:
+  - inspirations
 type: garden
 state: sprout
 ---

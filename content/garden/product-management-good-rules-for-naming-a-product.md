@@ -7,7 +7,7 @@ filename: product-management-good-rules-for-naming-a-product
 date: 2025-01-03
 share: true
 tags:
-  - product-management
+  - product-thinking
 type: garden
 state: sprout
 ---

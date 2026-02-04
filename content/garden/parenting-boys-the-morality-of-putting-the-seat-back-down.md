@@ -6,7 +6,7 @@ related:
 created: 2024-06-10 Mon 12:00am
 updated: 2025-08-03 Sun 2:54pm
 tags:
-  - my/words
+  - thoughts
 aliases: []
 cssclasses:
 title: Parenting Boys – The morality of putting the seat back down

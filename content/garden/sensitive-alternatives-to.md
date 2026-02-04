@@ -3,7 +3,7 @@ created: 2024-08-01 Thu 2:18am
 updated: 2025-05-27 Tue 9:41pm
 aliases: []
 tags:
-  - cognitive-frames
+  - inspirations
 title: Sensitive – alternatives to
 slug: /sensitive-alternatives-to
 filename: sensitive-alternatives-to

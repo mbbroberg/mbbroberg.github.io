@@ -2,7 +2,7 @@
 title: Running Product Pre-mortems
 date: 2025-06-27
 tags:
-  - product-management
+  - product-thinking
 created: 2024-10-17 Thu 6:26am
 updated: 2025-06-27 Fri 8:02am
 slug: /running-product-pre-mortems

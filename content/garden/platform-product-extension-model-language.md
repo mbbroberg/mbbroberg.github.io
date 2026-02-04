@@ -6,6 +6,8 @@ slug: /platform-product-extension-model-language
 filename: platform-product-extension-model-language
 date: 2025-06-22
 share: true
+tags:
+  - platform-product
 type: garden
 state: sprout
 ---

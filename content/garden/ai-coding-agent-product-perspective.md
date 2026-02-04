@@ -8,6 +8,9 @@ title: AI Coding Agent Product Perspective
 slug: /ai-coding-agent-product-perspective
 filename: ai-coding-agent-product-perspective
 date: 2025-12-11
+tags:
+  - product-thinking
+  - ai-learning
 ---
 
 # AI Coding Agents: A Product Perspective

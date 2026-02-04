@@ -7,6 +7,8 @@ slug: ../infrastructure-as-a-means-not-an-end
 filename: 2014-04-25-infrastructure-as-a-means-not-an-end
 date: 2014-04-25
 share: true
+tags:
+  - devops
 ---
 
 > *In philosophy, the term means to an end refers to any action (the means) carried out for the sole purpose of achieving something else (an end)*

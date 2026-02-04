@@ -7,7 +7,7 @@ filename: a-definition-of-platform-product-management
 date: 2025-06-22
 share: true
 tags:
-  - platform-products
+  - platform-product
 type: garden
 state: sprout
 ---
