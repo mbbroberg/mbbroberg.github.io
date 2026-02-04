@@ -1,12 +1,12 @@
 ---
 created: 2025-06-22 Sun 4:00pm
-updated: 2025-06-27 Fri 7:57am
+updated: 2025-06-27 Fri 8:03am
 title: From Project to Product Management
 slug: /from-project-to-product-management
 filename: 2025-06-22-from-project-to-product-management
 date: 2025-06-22
 tags:
-  - product-thinking
+  - product-management
 share: true
 ---
 

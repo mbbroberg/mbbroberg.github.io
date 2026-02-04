@@ -9,8 +9,6 @@ date: 2024-06-12
 datemod: 2025-02-18
 type: garden
 state: sprout
-tags:
-  - product-thinking
 ---
 
 # Kanban Columns for Lean Publishing Model

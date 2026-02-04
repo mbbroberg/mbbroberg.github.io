@@ -5,8 +5,7 @@ created: 2020-04-10 Fri 12:00am
 updated: 2025-05-27 Tue 9:43pm
 tags:
   - inspirations
-aliases:
-  - /garden/learning-demands-change/
+aliases: []
 cssclasses:
 edited: 2024-01-28 11:45:00
 title: Learning demands change
@@ -21,6 +20,7 @@ state: seed
 
 # Learning demands change
 
+> > 
 > Unlike education, learning demands change. Learning makes us incompetent just before it enables us to grasp mastery. Learning opens our eyes and changes the way we see, communicate and act.
 
 From [Seth Godin](https://www.unscrambled.sg/2020/04/18/seth-godin-you-can-learn-just-about-anything-now-so-what-did-you-learn-today/). 

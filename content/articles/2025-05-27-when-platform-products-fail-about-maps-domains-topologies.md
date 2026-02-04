@@ -3,14 +3,12 @@ title: "When Platform Products Fail: About Maps, Domains, Topologies"
 date: 2025-05-27
 tags:
   - team-topologies
-  - platform-products
-  - product-thinking
+  - wardley-maps
 created: 2025-05-27 Tue 9:15pm
-updated: 2025-05-27 Tue 9:40pm
+updated: 2026-01-22 Thu 10:37am
 slug: /when-platform-products-fail-about-maps-domains-topologies
 filename: 2025-05-27-when-platform-products-fail-about-maps-domains-topologies
 share: true
-type: blog
 ---
 # When Platform Products Fail - About Maps, Domains, Topologies
 

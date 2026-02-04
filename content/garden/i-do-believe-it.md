@@ -1,9 +1,7 @@
 ---
 edited: 2024-01-28 11:44:58
-updated: 2025-11-01 Sat 11:24am
-created: 2010-10-02 Fri 2:15pm
-aliases:
-  - /garden/i-do-believe-it/
+updated: 2025-11-01 Sat 11:26am
+created: 2025-01-03 Fri 2:15pm
 title: I do believe it
 slug: /i-do-believe-it
 filename: i-do-believe-it
@@ -11,8 +9,6 @@ date: 2025-01-03
 share: true
 type: garden
 state: sprout
-tags:
-  - creative-writing
 ---
 
 I do believe it, sweetheart. I think it works like this: They blur as they pour down, but they’re there – tight; bunched up – too tied up in knots to be heard. Only when they build up, one on top of the other, big and puffy as a marshmallow, spread out like a carpet over the big open sky, that you can see each word. If you were up there, I mean, wayyy up there, you could see them. The clouds are just words built up, coiled like a spring, ready to release. Just waiting to be let go.

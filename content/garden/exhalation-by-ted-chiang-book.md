@@ -7,8 +7,6 @@ kindle-sync:
   lastAnnotatedDate: 2025-01-02
   bookImageUrl: https://m.media-amazon.com/images/I/71rxUxpcPgL._SY160.jpg
   highlightsCount: 26
-aliases:
-  - /garden/exhalation-by-ted-chiang-book/
 created: 2025-02-13 Thu 6:21am
 updated: 2025-03-11 Tue 8:40pm
 state: seed
@@ -18,14 +16,12 @@ filename: exhalation-by-ted-chiang-book
 date: 2025-02-13
 share: true
 type: garden
-tags:
-  - inspirations
 ---
 # Exhalation
 
 My favorite book. I adore his style of intersecting science with fiction to make something more than your standard science fiction as a result. Ted Chiang also takes the much tougher road in every story, never dropping into a Black Mirror the-only-possible-outcome-of-technology-is-horrible trope. It's never simple or all positive or all negative but it's moving and human. 
 
-![Exhalation.jpg](../static/images/Exhalation.jpg)
+![Exhalation.jpg](Archivist/Assets/Exhalation.jpg)
 
 ## An incredible exploration of time travel
 

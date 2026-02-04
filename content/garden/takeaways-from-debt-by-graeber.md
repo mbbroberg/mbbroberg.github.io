@@ -1,15 +1,11 @@
 ---
 title: Takeaways from Debt by Graeber
-aliases:
-  - /garden/takeaways-from-debt-by-graeber/
 slug: /takeaways-from-debt-by-graeber
 filename: takeaways-from-debt-by-graeber
 date: 2025-07-24
 share: true
 type: garden
 state: seed
-tags:
-  - inspirations
 ---
 # Takeaways from finishing Debt: The First 5000 Years
 

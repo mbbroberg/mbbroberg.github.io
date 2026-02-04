@@ -1,8 +1,6 @@
 ---
 created: 2025-03-16 Sun 5:34am
 updated: 2025-05-11 Sun 1:44pm
-aliases:
-  - /garden/product-management-signs-of-healthy-engineering-relationships/
 title: Product Management – Signs of Healthy Engineering Relationships
 slug: /product-management-signs-of-healthy-engineering-relationships
 filename: product-management-signs-of-healthy-engineering-relationships
@@ -10,10 +8,8 @@ date: 2025-03-16
 share: true
 type: garden
 state: seed
-tags:
-  - product-thinking
 ---
-![pm-em-relationship.png](../static/images/pm-em-relationship.png)
+![pm-em-relationship.png](../../static/images/pm-em-relationship.png)
 
 Product Management requires an effective partnership with Engineering. In my leadership experience, when an organization is still transitioning from Scrummasters or Product Owners to Product Management, that relationship is especially easy to tip over with the Engineering Manager (EM). 
 
@@ -50,10 +46,4 @@ I wrote these guidelines for a past team that found it helpful.
 - Your product doesn’t know when to say “no” to a good idea
 - You are the intermediary between teams who won’t talk to each other
 - You feel frustrated, disconnected, or unmotivated regularly
-
----
-**Related:**
-- [A Definition of Platform Product Management](/a-definition-of-platform-product-management)
-- [Platforms as Internal Products](/platforms-as-internal-products)
-- [From Project to Product Management](/articles/from-project-to-product-management)
 

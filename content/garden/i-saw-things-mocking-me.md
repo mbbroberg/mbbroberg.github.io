@@ -1,10 +1,9 @@
 ---
 tags:
-  - creative-writing
-aliases:
-  - /garden/i-saw-things-mocking-me/
-updated: 2025-05-27 Tue 9:46pm
+  - thoughts
+updated: 2025-06-23 Mon 3:38am
 created: 2025-01-03 Fri 2:15pm
+date: 2013-11-19
 original_created: 2013-11-19
 title: I saw things mocking me
 slug: /i-saw-things-mocking-me

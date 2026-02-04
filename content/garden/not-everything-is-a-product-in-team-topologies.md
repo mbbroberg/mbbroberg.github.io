@@ -1,8 +1,6 @@
 ---
 created: 2025-05-08 Thu 5:59am
-updated: 2025-05-11 Sun 10:07am
-aliases:
-  - /garden/not-everything-is-a-product-in-team-topologies/
+updated: 2025-05-28 Wed 9:38am
 title: Not everything is a product in Team Topologies
 slug: /not-everything-is-a-product-in-team-topologies
 filename: not-everything-is-a-product-in-team-topologies
@@ -10,9 +8,6 @@ date: 2025-05-08
 share: true
 type: garden
 state: seed
-tags:
-  - team-topologies
-  - product-thinking
 ---
 "A fundamental misconception in product transformation is that everything must become a product."
 
@@ -27,10 +22,5 @@ Team Topologies is incredible for debugging team dysfunction. In my experience f
 Source: 
 [Project to Product Transitions: Challenges & Solutions Nobody Talks About — Team Topologies - Organizing for fast flow of value](https://teamtopologies.com/news-blogs-newsletters/2025/2/7/project-to-product-transitions-challenges-solutions)
 
-
-**Related:**
-- [A Definition of Platform Product Management](/a-definition-of-platform-product-management)
-- [Platforms as Internal Products](/platforms-as-internal-products)
-- [From Project to Product Management](/articles/from-project-to-product-management)
 
 [up:: [Applying Team Topologies to Marketing and Community](/articles/applying-team-topologies-to-marketing-and-community)]

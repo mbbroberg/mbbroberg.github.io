@@ -2,9 +2,9 @@
 title: Takeaways from reading Transformed by Marty Cagan
 date: 2025-01-03
 tags:
-  - product-thinking
+  - product-management
 created: 2025-01-03 Fri 2:15pm
-updated: 2025-02-13 Thu 6:37am
+updated: 2025-11-13 Thu 6:31pm
 slug: ../takeaways-from-transformed-by-marty-cagan
 filename: 2025-01-03-takeaways-from-transformed-by-marty-cagan
 share: true

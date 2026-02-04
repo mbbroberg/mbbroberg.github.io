@@ -1,14 +1,11 @@
 ---
 title: Work as a Game – Both Finite and Infinite
-slug: ../work-as-a-game-both-finite-and-infinite
+slug: /work-as-a-game-both-finite-and-infinite
 filename: 2025-02-26-work-as-a-game-both-finite-and-infinite
 date: 2025-02-26
 share: true
 created: 2025-02-26 Wed 6:15am
 updated: 2025-03-04 Tue 10:28pm
-tags:
-  - career
-  - inspirations
 ---
 
 ## Work as a Game: Play as Both Finite and Infinite

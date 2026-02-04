@@ -3,8 +3,6 @@ created: 2020-07-04 Sat 12:00am
 edited: 2024-05-19 17:41:26
 up:
   - "[Cognitive Frames MOC](Cognitive%20Frames%20MOC.md)"
-aliases:
-  - /garden/freedom-as-more-than-from-my-understanding-of/
 tags:
   - cognitive-frames
 updated: 2025-05-27 Tue 9:41pm
