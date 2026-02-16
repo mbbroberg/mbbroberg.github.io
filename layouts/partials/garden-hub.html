@@ -1,0 +1,1159 @@
+{{- /*
+    Garden Hub Partial - Shared between Career Garden and Curiosity Garden
+
+    Expects a dict with:
+      .Site            - the site context
+      .Pages           - filtered regular pages for this garden (by Type)
+      .GardenPages     - filtered regular pages for this garden (by Section)
+      .Subsections     - the section's .Sections for folder grouping
+      .SectionType     - "career" or "curiosity"
+      .AccentColor     - RGB tuple string, e.g. "72, 187, 120"
+      .AccentColorLight - lighter variant, e.g. "145, 219, 105"
+      .AccentColorDark  - darker variant, e.g. "47, 133, 90"
+*/ -}}
+
+{{ $pages := .Pages }}
+{{ $gardenPages := .GardenPages }}
+{{ $site := .Site }}
+{{ $subsections := .Subsections }}
+{{ $sectionType := .SectionType }}
+{{ $accent := .AccentColor }}
+{{ $accentLight := .AccentColorLight }}
+{{ $accentDark := .AccentColorDark }}
+
+<!-- Featured Content Section - Manual Curation -->
+{{ $featuredPages := where $pages "Params.featured" true }}
+{{ if $featuredPages }}
+<section class="featured-content-section">
+    <h2 class="section-title">⭐ Featured Content</h2>
+    <p class="section-description">Curated highlights from the garden</p>
+    <div class="featured-grid">
+        {{ range $featuredPages }}
+        {{ $description := "" }}
+        {{ if .Description }}
+        {{ $description = .Description }}
+        {{ else if .Summary }}
+        {{ $summary := .Summary | plainify }}
+        {{ $cleanSummary := replace $summary .Title "" }}
+        {{ $cleanSummary = replace $cleanSummary "#" "" }}
+        {{ $cleanSummary = strings.TrimSpace $cleanSummary }}
+        {{ if gt (len $cleanSummary) 20 }}
+        {{ $description = $cleanSummary }}
+        {{ end }}
+        {{ end }}
+        {{ if not $description }}
+        {{ $description = "A highlighted entry from the garden." }}
+        {{ end }}
+        <a href="{{ .RelPermalink }}" class="featured-card">
+            <div class="featured-badge">✨ Featured</div>
+            <h4>{{ .Title }}</h4>
+            <p>{{ $description | truncate 120 }}</p>
+            <div class="featured-meta">
+                <span class="growth-indicator {{ .Params.state }}">
+                    {{ if eq .Params.state "seed" }}🌱{{ else if eq .Params.state "sprout" }}🌿{{ else }}🫚{{ end }}
+                    {{ .Params.state }}
+                </span>
+                {{ if .Params.updated }}
+                {{ $dateStr := .Params.updated }}
+                {{ $dateParts := split $dateStr " " }}
+                {{ if ge (len $dateParts) 1 }}
+                {{ $justDate := index $dateParts 0 }}
+                <time>{{ dateFormat "Jan 2006" $justDate }}</time>
+                {{ end }}
+                {{ end }}
+            </div>
+        </a>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+<!-- Enhanced browsing interface -->
+<section class="garden-browse">
+
+    <!-- Topic Tags -->
+    <div class="browse-section topics-section">
+        <h2 class="section-title">🌳 Explore the Garden</h2>
+        <p class="section-description">Navigate by topic</p>
+        {{ $allTags := slice }}
+        {{ range $gardenPages }}
+        {{ range .Params.tags }}
+        {{ $allTags = $allTags | append . }}
+        {{ end }}
+        {{ end }}
+        {{ $uniqueTags := uniq $allTags }}
+
+        {{ $tagCount := dict }}
+        {{ range $tag := $uniqueTags }}
+        {{ $count := 0 }}
+        {{ range $gardenPages }}
+        {{ if in .Params.tags $tag }}
+        {{ $count = add $count 1 }}
+        {{ end }}
+        {{ end }}
+        {{ $tagCount = merge $tagCount (dict $tag $count) }}
+        {{ end }}
+
+        <div class="tags-directory">
+            {{ range $tag, $count := $tagCount }}
+            <a href="{{ $site.BaseURL }}tags/{{ $tag | urlize }}/" class="tag-directory-item" data-count="{{ $count }}">
+                <span class="tag-name">#{{ $tag }}</span>
+                <span class="tag-info">
+                    <span class="tag-count">{{ $count }} {{ if eq $count 1 }}entry{{ else }}entries{{ end }}</span>
+                </span>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+
+    <!-- Growth Stage Navigation -->
+    <div class="browse-section">
+        <p class="section-description">Navigate by growth stage</p>
+
+        <div class="browse-items">
+            {{ $states := slice "seed" "sprout" "rhizome" }}
+
+            {{ $stateCount := dict }}
+            {{ range $state := $states }}
+            {{ $count := 0 }}
+            {{ range $pages }}
+            {{ if eq .Params.state $state }}
+            {{ $count = add $count 1 }}
+            {{ end }}
+            {{ end }}
+            {{ $stateCount = merge $stateCount (dict $state $count) }}
+            {{ end }}
+
+            {{ range $state := slice "rhizome" "sprout" "seed" }}
+            <a href="#{{ $state }}" class="browse-badge growth-badge {{ $state }}">
+                {{ if eq $state "seed" }}🌱{{ else if eq $state "sprout" }}🌿{{ else }}🫚{{ end }}
+                {{ $state }}
+                <span class="badge-count">{{ index $stateCount $state }}</span>
+            </a>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+<!-- Recently Tended Section -->
+{{ $recentlyTended := first 6 (sort $pages ".Params.updated" "desc") }}
+{{ if $recentlyTended }}
+<section class="recently-tended">
+    <h2 class="section-title">🌿 Recently Tended</h2>
+    <p class="section-description">Ideas actively growing and evolving</p>
+    <div class="entries-grid compact">
+        {{ range $recentlyTended }}
+        <article class="garden-entry {{ .Params.state }} compact-card">
+            <a href="{{ .RelPermalink }}" class="entry-link-wrapper">
+                <div class="entry-header-compact">
+                    <h3 class="entry-title-compact">{{ .Title }}</h3>
+                    <span class="growth-badge-mini {{ .Params.state }}">
+                        {{ if eq .Params.state "seed" }}🌱{{ else if eq .Params.state "sprout" }}🌿{{ else }}🫚{{ end }}
+                    </span>
+                </div>
+                {{ if .Summary }}
+                <p class="entry-summary">{{ .Summary | plainify | truncate 100 }}</p>
+                {{ end }}
+                <div class="entry-metadata-compact">
+                    {{ if .Params.updated }}
+                    {{ $dateStr := .Params.updated }}
+                    {{ $dateParts := split $dateStr " " }}
+                    {{ if ge (len $dateParts) 1 }}
+                    {{ $justDate := index $dateParts 0 }}
+                    <time>{{ dateFormat "Jan 2" $justDate }}</time>
+                    {{ end }}
+                    {{ end }}
+                    {{ with .Params.tags }}
+                    <div class="tags-compact">
+                        {{ range first 2 . }}
+                        <span class="tag-mini">#{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </a>
+        </article>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
+
+<!-- Content sections by growth state -->
+{{ range $state := slice "seed" "sprout" "rhizome" }}
+<section id="{{ $state }}" class="growth-section" data-state="{{ $state }}">
+    <h2 class="growth-heading">
+        {{ if eq $state "seed" }}
+        🌱 New Growth
+        {{ else if eq $state "sprout" }}
+        🌿 Sprouting Connections
+        {{ else }}
+        🫚 Enmeshed and Interwoven
+        {{ end }}
+    </h2>
+
+    {{- /* Get all pages for this growth state */ -}}
+    {{ $statePages := where $pages "Params.state" $state }}
+
+    {{- /* Separate pages by whether they're in folders or at root */ -}}
+    {{ $folderedPages := dict }}
+    {{ $rootPages := slice }}
+
+    {{- /* Categorize pages */ -}}
+    {{ range $page := $statePages }}
+        {{ $inFolder := false }}
+        {{ range $section := $subsections }}
+            {{- /* Check if this page is in this subsection */ -}}
+            {{ if in $page.File.Path $section.File.Dir }}
+                {{ $folderTitle := $section.Title }}
+                {{ $folderPath := $section.RelPermalink }}
+                {{ $existing := index $folderedPages $folderPath }}
+                {{ if $existing }}
+                    {{ $folderedPages = merge $folderedPages (dict $folderPath (dict "title" $folderTitle "pages" ($existing.pages | append $page))) }}
+                {{ else }}
+                    {{ $folderedPages = merge $folderedPages (dict $folderPath (dict "title" $folderTitle "pages" (slice $page))) }}
+                {{ end }}
+                {{ $inFolder = true }}
+            {{ end }}
+        {{ end }}
+        {{ if not $inFolder }}
+            {{ $rootPages = $rootPages | append $page }}
+        {{ end }}
+    {{ end }}
+
+    {{- /* Display folder groups first */ -}}
+    {{ range $folderPath, $folderData := $folderedPages }}
+    <div class="folder-group">
+        <h3 class="folder-group-title">
+            <a href="{{ $folderPath }}" class="folder-group-link">
+                <span class="folder-group-icon">📁</span>
+                <span class="folder-group-name">{{ $folderData.title }}</span>
+                <span class="folder-group-count">({{ len $folderData.pages }})</span>
+            </a>
+        </h3>
+        <div class="entries-grid">
+            {{ range $folderData.pages }}
+            <article class="garden-entry {{ $state }} enhanced-card">
+                <a href="{{ .RelPermalink }}" class="entry-link-wrapper">
+                    <div class="entry-card-top">
+                        <span class="growth-badge-card {{ $state }}">
+                            {{ if eq $state "seed" }}🌱{{ else if eq $state "sprout" }}🌿{{ else }}🫚{{ end }}
+                        </span>
+                        {{- /* Connection indicators */ -}}
+                        {{ $currentPage := . }}
+                        {{ $backlinks := 0 }}
+                        {{ range $site.RegularPages }}
+                        {{ if ne . $currentPage }}
+                            {{ $linkPattern := printf "/%s/" $currentPage.File.BaseFileName }}
+                            {{ $titlePattern := $currentPage.Title }}
+                            {{ if or (in .RawContent $linkPattern) (and (in .RawContent $titlePattern) (or (in .RawContent "[[") (in .RawContent "](/"))) }}
+                            {{ $backlinks = add $backlinks 1 }}
+                            {{ end }}
+                        {{ end }}
+                        {{ end }}
+                        {{ if gt $backlinks 0 }}
+                        <span class="connection-badge" title="{{ $backlinks }} connections">🔗 {{ $backlinks }}</span>
+                        {{ end }}
+                    </div>
+                    <h3 class="entry-title">{{ .Title }}</h3>
+                    {{ if .Summary }}
+                    <p class="entry-summary">{{ .Summary | plainify | truncate 150 }}</p>
+                    {{ end }}
+                    <div class="entry-metadata">
+                        {{ if .Params.updated }}
+                        {{ $dateStr := .Params.updated }}
+                        {{ $dateParts := split $dateStr " " }}
+                        {{ if ge (len $dateParts) 1 }}
+                        {{ $justDate := index $dateParts 0 }}
+                        <time class="tended">{{ dateFormat "Jan 2, 2006" $justDate }}</time>
+                        {{ end }}
+                        {{ end }}
+                        {{ with .Params.tags }}
+                        <div class="entry-tags">
+                            {{ range first 3 . }}
+                            <span class="tag">{{ . }}</span>
+                            {{ end }}
+                        </div>
+                        {{ end }}
+                    </div>
+                </a>
+            </article>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+
+    {{- /* Display root-level pages */ -}}
+    {{ if $rootPages }}
+    <div class="entries-grid">
+        {{ range $rootPages }}
+        <article class="garden-entry {{ $state }} enhanced-card">
+            <a href="{{ .RelPermalink }}" class="entry-link-wrapper">
+                <div class="entry-card-top">
+                    <span class="growth-badge-card {{ $state }}">
+                        {{ if eq $state "seed" }}🌱{{ else if eq $state "sprout" }}🌿{{ else }}🫚{{ end }}
+                    </span>
+                    {{- /* Connection indicators */ -}}
+                    {{ $currentPage := . }}
+                    {{ $backlinks := 0 }}
+                    {{ range $site.RegularPages }}
+                    {{ if ne . $currentPage }}
+                        {{ $linkPattern := printf "/%s/" $currentPage.File.BaseFileName }}
+                        {{ $titlePattern := $currentPage.Title }}
+                        {{ if or (in .RawContent $linkPattern) (and (in .RawContent $titlePattern) (or (in .RawContent "[[") (in .RawContent "](/"))) }}
+                        {{ $backlinks = add $backlinks 1 }}
+                        {{ end }}
+                    {{ end }}
+                    {{ end }}
+                    {{ if gt $backlinks 0 }}
+                    <span class="connection-badge" title="{{ $backlinks }} connections">🔗 {{ $backlinks }}</span>
+                    {{ end }}
+                </div>
+                <h3 class="entry-title">{{ .Title }}</h3>
+                {{ if .Summary }}
+                <p class="entry-summary">{{ .Summary | plainify | truncate 150 }}</p>
+                {{ end }}
+                <div class="entry-metadata">
+                    {{ if .Params.updated }}
+                    {{ $dateStr := .Params.updated }}
+                    {{ $dateParts := split $dateStr " " }}
+                    {{ if ge (len $dateParts) 1 }}
+                    {{ $justDate := index $dateParts 0 }}
+                    <time class="tended">{{ dateFormat "Jan 2, 2006" $justDate }}</time>
+                    {{ end }}
+                    {{ end }}
+                    {{ with .Params.tags }}
+                    <div class="entry-tags">
+                        {{ range first 3 . }}
+                        <span class="tag">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+            </a>
+        </article>
+        {{ end }}
+    </div>
+    {{ end }}
+</section>
+{{ end }}
+
+<!-- Cross-garden navigation -->
+{{ if eq $sectionType "career" }}
+<div class="garden-crosslink">
+    <a href="/curiosity/">Also explore the Curiosity Garden &rarr;</a>
+</div>
+{{ else }}
+<div class="garden-crosslink">
+    <a href="/garden/">Also explore the Career Garden &rarr;</a>
+</div>
+{{ end }}
+
+<!-- Back to Top Button -->
+<div class="back-to-top-container">
+    <button class="back-to-top-btn" aria-label="Back to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        &uarr; Back to Top
+    </button>
+</div>
+
+<style>
+    :root {
+        --garden-accent: {{ $accent }};
+        --garden-accent-light: {{ $accentLight }};
+        --garden-accent-dark: {{ $accentDark }};
+    }
+
+    .garden-archive {
+        max-width: 1200px;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 1.6;
+        padding: 2rem 1rem;
+    }
+
+    .garden-intro {
+        margin: 2rem 0 3rem;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        border-left: 4px solid rgba(var(--garden-accent), 0.5);
+    }
+
+    /* Section Titles - Unified styling */
+    .section-title {
+        margin: 3rem 0 0.5rem;
+        font-size: 2rem;
+        color: rgba(var(--garden-accent), 0.9);
+        font-weight: 600;
+    }
+
+    .section-description {
+        margin: 0 0 1.5rem;
+        font-size: 1rem;
+        opacity: 0.7;
+        font-style: italic;
+    }
+
+    /* Recently Tended Section */
+    .recently-tended {
+        margin: 3rem 0;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid rgba(var(--garden-accent), 0.2);
+    }
+
+    .entries-grid.compact {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
+    .compact-card {
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 8px;
+        transition: all 0.25s ease;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .compact-card:hover {
+        transform: translateY(-2px);
+        background: rgba(255, 255, 255, 0.06);
+        border-color: rgba(var(--garden-accent), 0.2);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .compact-card .entry-link-wrapper {
+        padding: 1.5rem;
+    }
+
+    .entry-header-compact {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .entry-title-compact {
+        margin: 0;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 1.3;
+        flex: 1;
+        color: inherit;
+    }
+
+    .growth-badge-mini {
+        font-size: 1.2rem;
+        flex-shrink: 0;
+        opacity: 0.7;
+    }
+
+    .entry-summary {
+        margin: 0 0 0.75rem;
+        font-size: 1rem;
+        line-height: 1.7;
+        letter-spacing: 0.01em;
+        opacity: 0.8;
+    }
+
+    .entry-metadata-compact {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.95rem;
+        opacity: 0.6;
+        gap: 0.5rem;
+    }
+
+    .entry-metadata-compact time {
+        white-space: nowrap;
+    }
+
+    .tags-compact {
+        display: flex;
+        gap: 0.35rem;
+        flex-wrap: wrap;
+    }
+
+    .tag-mini {
+        font-size: 0.75rem;
+        opacity: 0.7;
+    }
+
+    /* Featured Content Section */
+    .featured-content-section {
+        margin: 3rem 0;
+        padding-top: 2rem;
+        border-top: 2px solid rgba(var(--garden-accent), 0.2);
+    }
+
+    .featured-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        max-width: 100%;
+        gap: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    @media (min-width: 1200px) {
+        .featured-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .featured-card {
+        display: block;
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .featured-card:hover {
+        background: rgba(255, 255, 255, 0.06);
+        border-color: rgba(var(--garden-accent), 0.3);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .featured-badge {
+        display: inline-block;
+        padding: 0.3rem 0.8rem;
+        background: rgba(var(--garden-accent), 0.2);
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        border: 1px solid rgba(var(--garden-accent), 0.3);
+    }
+
+    .moc-type .featured-badge {
+        background: rgba(var(--garden-accent), 0.25);
+        border-color: rgba(var(--garden-accent), 0.4);
+    }
+
+    .mature-type .featured-badge {
+        background: rgba(var(--garden-accent-light), 0.2);
+        border-color: rgba(var(--garden-accent-light), 0.3);
+    }
+
+    .featured-card h4 {
+        margin: 0 0 0.75rem 0;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 1.3;
+        color: inherit;
+    }
+
+    .featured-card p {
+        margin: 0 0 1rem 0;
+        opacity: 0.8;
+        font-size: 0.95rem;
+        line-height: 1.7;
+        letter-spacing: 0.01em;
+    }
+
+    .featured-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.8rem;
+        opacity: 0.7;
+    }
+
+    .growth-indicator {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+    }
+
+    .topic-count {
+        font-style: italic;
+    }
+
+    /* Unified browsing styles */
+    .garden-browse {
+        margin: 2.5rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .browse-section {
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid rgba(var(--garden-accent), 0.15);
+    }
+
+    .browse-section:last-child {
+        border-bottom: none;
+    }
+
+    .browse-heading {
+        margin: 0 0 1rem 0;
+        font-size: 1.6rem;
+        color: rgba(var(--garden-accent), 0.9);
+        font-weight: 500;
+    }
+
+    .browse-items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        align-items: center;
+    }
+
+    .browse-badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.35rem 0.8rem;
+        border-radius: 20px;
+        text-decoration: none;
+        color: inherit;
+        font-size: 1.5rem;
+        transition: all 0.2s ease;
+        border: 1px solid transparent;
+        background: rgba(255, 255, 255, 0.05);
+        cursor: pointer;
+        position: relative;
+    }
+
+    .browse-badge:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Growth badge specific styles */
+    .growth-badge.seed {
+        background: rgba(var(--garden-accent-light), 0.1);
+        border-color: rgba(var(--garden-accent-light), 0.3);
+    }
+
+    .growth-badge.seed:hover {
+        background: rgba(var(--garden-accent-light), 0.15);
+        border-color: rgba(var(--garden-accent-light), 0.4);
+    }
+
+    .growth-badge.sprout {
+        background: rgba(var(--garden-accent), 0.1);
+        border-color: rgba(var(--garden-accent), 0.3);
+    }
+
+    .growth-badge.sprout:hover {
+        background: rgba(var(--garden-accent), 0.15);
+        border-color: rgba(var(--garden-accent), 0.4);
+    }
+
+    .growth-badge.rhizome {
+        background: rgba(var(--garden-accent-dark), 0.1);
+        border-color: rgba(var(--garden-accent-dark), 0.3);
+    }
+
+    .growth-badge.rhizome:hover {
+        background: rgba(var(--garden-accent-dark), 0.15);
+        border-color: rgba(var(--garden-accent-dark), 0.4);
+    }
+
+    /* Folder Directory Styles */
+    .folders-directory {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .folder-directory-item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 1.25rem;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(var(--garden-accent), 0.15);
+        border-radius: 8px;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.25s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .folder-directory-item::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: rgba(var(--garden-accent), 0.5);
+        transform: scaleY(0);
+        transition: transform 0.25s ease;
+    }
+
+    .folder-directory-item:hover {
+        background: rgba(var(--garden-accent), 0.08);
+        border-color: rgba(var(--garden-accent), 0.4);
+        transform: translateX(4px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .folder-directory-item:hover::before {
+        transform: scaleY(1);
+    }
+
+    .folder-icon {
+        font-size: 1.5rem;
+        flex-shrink: 0;
+        opacity: 0.8;
+    }
+
+    .folder-info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .folder-name {
+        font-size: 1.1rem;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+
+    .folder-count {
+        font-size: 0.85rem;
+        opacity: 0.7;
+    }
+
+    .folder-arrow {
+        font-size: 1.2rem;
+        opacity: 0.5;
+        transition: all 0.25s ease;
+    }
+
+    .folder-directory-item:hover .folder-arrow {
+        opacity: 1;
+        transform: translateX(4px);
+    }
+
+    /* Folder Group Styles (within growth sections) */
+    .folder-group {
+        margin-bottom: 3rem;
+    }
+
+    .folder-group-title {
+        margin: 0 0 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .folder-group-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        background: rgba(var(--garden-accent), 0.08);
+        border: 1px solid rgba(var(--garden-accent), 0.2);
+        border-radius: 8px;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.25s ease;
+    }
+
+    .folder-group-link:hover {
+        background: rgba(var(--garden-accent), 0.12);
+        border-color: rgba(var(--garden-accent), 0.3);
+        transform: translateX(2px);
+    }
+
+    .folder-group-icon {
+        font-size: 1.2rem;
+        opacity: 0.8;
+    }
+
+    .folder-group-name {
+        font-weight: 600;
+    }
+
+    .folder-group-count {
+        font-size: 0.9rem;
+        opacity: 0.7;
+        font-weight: 400;
+    }
+
+    /* Tag Directory Styles */
+    .tags-directory {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 0.75rem;
+        margin-top: 1rem;
+    }
+
+    .tag-directory-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.25rem;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 8px;
+        text-decoration: none;
+        color: inherit;
+        transition: all 0.25s ease;
+    }
+
+    .tag-directory-item:hover {
+        background: rgba(var(--garden-accent), 0.08);
+        border-color: rgba(var(--garden-accent), 0.3);
+        transform: translateX(4px);
+    }
+
+    .tag-name {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    .tag-info {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .tag-count {
+        font-size: 1rem;
+        opacity: 0.6;
+    }
+
+    /* Badge count indicator */
+    .badge-count {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0.5rem;
+        font-size: 0.75rem;
+        opacity: 0.7;
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 10px;
+        min-width: 1.5rem;
+        height: 1.5rem;
+        padding: 0 0.35rem;
+    }
+
+    /* Growth section styles */
+    .growth-section {
+        margin: 3rem 0;
+        scroll-margin-top: 2rem;
+    }
+
+    .growth-heading {
+        margin: 2rem 0 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(var(--garden-accent), 0.2);
+    }
+
+    /* Enhanced card styles with improved hierarchy */
+    .enhanced-card .entry-card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .growth-badge-card {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.25rem 0.6rem;
+        border-radius: 12px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        opacity: 0.8;
+    }
+
+    .growth-badge-card.seed {
+        background: rgba(var(--garden-accent-light), 0.15);
+        border: 1px solid rgba(var(--garden-accent-light), 0.3);
+    }
+
+    .growth-badge-card.sprout {
+        background: rgba(var(--garden-accent), 0.15);
+        border: 1px solid rgba(var(--garden-accent), 0.3);
+    }
+
+    .growth-badge-card.rhizome {
+        background: rgba(var(--garden-accent-dark), 0.15);
+        border: 1px solid rgba(var(--garden-accent-dark), 0.3);
+    }
+
+    .connection-badge {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.25rem 0.6rem;
+        background: rgba(var(--garden-accent), 0.15);
+        border-radius: 12px;
+        font-size: 0.75rem;
+        font-weight: 500;
+        white-space: nowrap;
+        border: 1px solid rgba(var(--garden-accent), 0.3);
+        opacity: 0.8;
+    }
+
+    .entries-grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .garden-entry {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 8px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        overflow: hidden;
+        animation: growEntry 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        animation-fill-mode: both;
+        border-left: 4px solid transparent;
+    }
+
+    .entry-link-wrapper {
+        display: block;
+        padding: 2rem;
+        text-decoration: none;
+        color: inherit;
+        height: 100%;
+    }
+
+    .garden-entry.seed {
+        border-left-color: rgba(var(--garden-accent-light), 0.8);
+        background: rgba(var(--garden-accent-light), 0.05);
+    }
+
+    .garden-entry.sprout {
+        border-left-color: rgba(var(--garden-accent), 0.8);
+        background: rgba(var(--garden-accent), 0.05);
+    }
+
+    .garden-entry.rhizome {
+        border-left-color: rgba(var(--garden-accent-dark), 0.8);
+        background: rgba(var(--garden-accent-dark), 0.05);
+    }
+
+    .garden-entry:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Animation keyframes */
+    @keyframes growEntry {
+        from {
+            opacity: 0;
+            transform: scale(0.96);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    /* Stagger animations */
+    .garden-entry:nth-child(2) {
+        animation-delay: 0.1s;
+    }
+
+    .garden-entry:nth-child(3) {
+        animation-delay: 0.2s;
+    }
+
+    .garden-entry:nth-child(4) {
+        animation-delay: 0.3s;
+    }
+
+    .entry-title {
+        margin: 0 0 1rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.3;
+        color: inherit;
+    }
+
+    .entry-metadata {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1rem;
+        opacity: 0.7;
+        margin-top: 1.25rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .entry-metadata time {
+        white-space: nowrap;
+    }
+
+    .entry-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+    }
+
+    .tag {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.3rem 0.75rem;
+        background: rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        color: inherit;
+        font-size: 0.9rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .tag::before {
+        content: '#';
+        opacity: 0.6;
+        margin-right: 3px;
+    }
+
+    /* Cross-garden navigation */
+    .garden-crosslink {
+        margin: 2rem 0;
+        padding: 1rem 1.5rem;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .garden-crosslink a {
+        color: rgba(var(--garden-accent), 0.9);
+        text-decoration: none;
+        font-weight: 500;
+        transition: opacity 0.2s ease;
+    }
+
+    .garden-crosslink a:hover {
+        opacity: 0.8;
+    }
+
+    /* Back to Top Button */
+    .back-to-top-container {
+        margin: 4rem 0 2rem;
+        padding-top: 2rem;
+        border-top: 2px solid rgba(var(--garden-accent), 0.2);
+        text-align: center;
+    }
+
+    .back-to-top-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.75rem 2rem;
+        background: rgba(var(--garden-accent), 0.1);
+        border: 1px solid rgba(var(--garden-accent), 0.3);
+        border-radius: 8px;
+        color: rgba(var(--garden-accent), 0.9);
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.25s ease;
+    }
+
+    .back-to-top-btn:hover {
+        background: rgba(var(--garden-accent), 0.15);
+        border-color: rgba(var(--garden-accent), 0.4);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .section-title {
+            font-size: 1.6rem;
+        }
+
+        .entries-grid, .entries-grid.compact {
+            grid-template-columns: 1fr;
+        }
+
+        .garden-browse {
+            gap: 1rem;
+        }
+
+        .browse-section {
+            padding-bottom: 1rem;
+        }
+
+        .browse-items {
+            gap: 0.5rem;
+        }
+
+        .browse-badge {
+            padding: 0.25rem 0.6rem;
+            font-size: 1.2rem;
+        }
+
+        .featured-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .featured-card {
+            padding: 1.2rem;
+        }
+
+        .featured-meta {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .entry-title {
+            font-size: 1.2rem;
+        }
+
+        .entry-metadata {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .entry-card-top {
+            flex-wrap: wrap;
+        }
+
+        .folders-directory,
+        .tags-directory {
+            grid-template-columns: 1fr;
+        }
+
+        .folder-directory-item {
+            padding: 0.85rem 1rem;
+        }
+
+        .folder-name {
+            font-size: 1rem;
+        }
+    }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Add smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+});
+</script>

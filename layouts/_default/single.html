@@ -1,12 +1,12 @@
 {{ define "main" }}
 <div class="post garden-post {{ with .Site.Params.doNotLoadAnimations }} . {{ else }} animated fadeInDown {{ end }}">
   <!-- Garden Breadcrumbs -->
-  {{ if eq .Type "garden" }}
+  {{ if or (eq .Type "garden") (eq .Type "curiosity") }}
     {{ partial "garden-breadcrumbs.html" . }}
   {{ end }}
 
   <!-- Garden State Indicator (from module) -->
-  {{ if eq .Type "garden" }}
+  {{ if or (eq .Type "garden") (eq .Type "curiosity") }}
     {{ partial "garden-state-indicator.html" . }}
   {{ end }}
 
@@ -15,9 +15,9 @@
   </div>
 
   <!-- Related Content for Garden Pages -->
-  {{ if eq .Type "garden" }}
+  {{ if or (eq .Type "garden") (eq .Type "curiosity") }}
   {{ $related := .Site.RegularPages.Related . | first 6 }}
-  {{ $gardenRelated := where $related "Type" "garden" }}
+  {{ $gardenRelated := where $related "Type" "in" (slice "garden" "curiosity") }}
   {{ if $gardenRelated }}
   <div class="garden-related">
     <h3 class="related-heading">🌿 Related Growth</h3>
@@ -41,13 +41,13 @@
   {{ end }}
 
   <!-- Garden Callout (from module) -->
-  {{ if eq .Type "garden" }}
+  {{ if or (eq .Type "garden") (eq .Type "curiosity") }}
     {{ partial "garden-callout.html" . }}
   {{ end }}
 </div>
 
 <!-- Include garden CSS from module -->
-{{ if eq .Type "garden" }}
+{{ if or (eq .Type "garden") (eq .Type "curiosity") }}
   {{ $gardenCSS := resources.Get "css/garden.css" }}
   {{ if $gardenCSS }}
     {{ $gardenCSS = $gardenCSS | minify }}
@@ -56,7 +56,7 @@
 {{ end }}
 
 <!-- Custom styles for related content (your custom feature) -->
-{{ if eq .Type "garden" }}
+{{ if or (eq .Type "garden") (eq .Type "curiosity") }}
 <style>
   /* Garden Related Content */
   .garden-related {

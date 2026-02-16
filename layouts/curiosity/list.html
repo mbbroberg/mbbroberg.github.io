@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+{{- /* Check if this is a subsection */ -}}
+{{ if ne .File.Path "curiosity/_index.md" }}
+  {{ partial "garden-category-page.html" . }}
+{{ else }}
+  {{- /* This is the main Curiosity Garden page */ -}}
+<div class="garden-archive">
+    {{ with .Content }}
+    <div class="garden-intro">
+        {{ . | markdownify }}
+    </div>
+    {{ end }}
+
+    {{ partial "garden-hub.html" (dict
+        "Site" .Site
+        "Pages" (where .Site.RegularPages "Type" "curiosity")
+        "GardenPages" (where .Site.RegularPages "Section" "curiosity")
+        "Subsections" .Sections
+        "SectionType" "curiosity"
+        "AccentColor" "100, 160, 210"
+        "AccentColorLight" "140, 190, 230"
+        "AccentColorDark" "70, 120, 170"
+    ) }}
+</div>
+{{ end }}
+{{ end }}

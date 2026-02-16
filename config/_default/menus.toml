@@ -12,10 +12,23 @@
 
 
   [[main]]
-  name = "Digital Garden 🌱"
+  name = "Gardens 🌱"
   weight = 220
+  identifier = "gardens"
+
+  [[main]]
+  name = "Career"
+  parent = "gardens"
+  weight = 1
   identifier = "garden"
   url = "/garden/"
+
+  [[main]]
+  name = "Curiosity"
+  parent = "gardens"
+  weight = 2
+  identifier = "curiosity"
+  url = "/curiosity/"
 
   [[main]]
   name = "Podcasts 🎙️"
