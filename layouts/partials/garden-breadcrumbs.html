@@ -4,9 +4,23 @@ Displays tag-based navigation path for garden pages
 Example: Garden > Cognitive Frames > Etymology Reveals Implicit Cognitive Framing
 */ -}}
 
-{{- if eq .Type "garden" -}}
+{{- if or (eq .Type "garden") (eq .Type "curiosity") -}}
 <nav class="garden-breadcrumbs" aria-label="Breadcrumb navigation">
   <ol class="breadcrumb-list">
+    {{- /* Garden root link */ -}}
+    <li class="breadcrumb-item">
+      {{ if eq .Type "curiosity" }}
+      <a href="/curiosity/" class="breadcrumb-link">
+        <span class="breadcrumb-icon">🌱</span>
+        <span class="breadcrumb-text">Curiosity Garden</span>
+      </a>
+      {{ else }}
+      <a href="/garden/" class="breadcrumb-link">
+        <span class="breadcrumb-icon">🌱</span>
+        <span class="breadcrumb-text">Career Garden</span>
+      </a>
+      {{ end }}
+    </li>
 
     {{- /* Get the first tag from the page's frontmatter */ -}}
     {{- $firstTag := "" -}}
@@ -44,7 +58,7 @@ Example: Garden > Cognitive Frames > Etymology Reveals Implicit Cognitive Framin
   .garden-breadcrumbs {
     margin: 0 0 2rem 0;
     padding: 0.75rem 0;
-    border-bottom: 1px solid rgba(72, 187, 120, 0.15);
+    border-bottom: 1px solid rgba(var(--garden-accent, 72, 187, 120), 0.15);
   }
 
   .breadcrumb-list {
@@ -76,7 +90,7 @@ Example: Garden > Cognitive Frames > Etymology Reveals Implicit Cognitive Framin
   }
 
   .breadcrumb-link:hover {
-    background: rgba(72, 187, 120, 0.1);
+    background: rgba(var(--garden-accent, 72, 187, 120), 0.1);
     opacity: 1;
   }
 
