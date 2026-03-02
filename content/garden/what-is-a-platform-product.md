@@ -7,7 +7,7 @@ slug: /what-is-a-platform-product
 filename: what-is-a-platform-product
 date: 2026-03-02
 created: 2026-03-02 Mon 2:13pm
-updated: 2026-03-02 Mon 2:13pm
+updated: 2026-03-02 Mon 2:54pm
 ---
 
 Notes on researching the related but not identical terms floating around in the industry. 
@@ -61,7 +61,7 @@ More details:
 
 # Internal Developer Platform
 
-[https://internaldeveloperplatform.org/what-is-an-internal-developer-platform](https://internaldeveloperplatform.org/what-is-an-internal-developer-platform/)
+[What is an Internal Developer Platform (IDP)?](https://internaldeveloperplatform.org/what-is-an-internal-developer-platform/)
 
 > An Internal Developer Platform (IDP) is built by a platform team to build golden paths and enable developer self-service.
 
@@ -77,7 +77,7 @@ Necessary components:
 
 # Enterprise Enablement
 
-Mike Calvo's organization is working from a straightforward definition:
+One organization I worked with had a straightforward definition:
 
 > Platforms are products used to build other products
 
@@ -88,7 +88,9 @@ Mike Calvo's organization is working from a straightforward definition:
 - Functional value
 - Horizontal nature (applies to multiple apps, domains, uses)
 
-# Platform Definition by Enterprise Product
+# Platform Definition As Legacy
+
+I've seen others miss the point: 
 
 > Teams tasked with maintaining legacy “platforms”, either custom built or off-the-shelf, on which solutions are built (e.g., ERP)
 
