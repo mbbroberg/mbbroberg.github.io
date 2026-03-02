@@ -374,35 +374,38 @@ article p:last-child {
     margin-top: 0;
 }
 
-/* Lists - improve readability with better spacing */
+/* Lists - tighter spacing */
 .post__content ul,
 .post__content ol {
     line-height: 1.75;
     letter-spacing: 0.01em;
-    margin: 1.5em 0;
+    margin: 1em 0;
     padding-left: 2em;
 }
 
 .post__content li {
-    margin: 0.65em 0;
+    margin: 0.25em 0;
 }
 
 /* Nested lists - reduce spacing */
 .post__content li ul,
 .post__content li ol {
-    margin: 0.5em 0;
+    margin: 0.25em 0;
 }
 
-/* Blockquotes - comfortable reading */
+/* Blockquotes - neutral banner style */
 .post__content blockquote {
     line-height: 1.75;
     letter-spacing: 0.01em;
-    margin: 2em 0;
-    padding: 1.25em 1.5em;
+    margin: 1.25em 0;
+    padding: 0.9em 1.25em;
+    border-left: 4px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 0 6px 6px 0;
 }
 
 .post__content blockquote p {
-    margin: 0.75em 0;
+    margin: 0.5em 0;
 }
 
 .post__content blockquote p:first-child {
@@ -411,6 +414,12 @@ article p:last-child {
 
 .post__content blockquote p:last-child {
     margin-bottom: 0;
+}
+
+/* Light mode blockquote */
+.theme--light .post__content blockquote {
+    background: rgba(0, 0, 0, 0.04);
+    border-left-color: rgba(0, 0, 0, 0.2);
 }
 
 /* Code blocks - preserve monospace spacing */
@@ -455,17 +464,17 @@ article p:last-child {
     .post__content ul,
     .post__content ol {
         line-height: 1.7;
-        margin: 1.25em 0;
+        margin: 0.75em 0;
     }
 
     .post__content li {
-        margin: 0.5em 0;
+        margin: 0.2em 0;
     }
 
     .post__content blockquote {
         line-height: 1.7;
-        margin: 1.5em 0;
-        padding: 1em 1.25em;
+        margin: 1em 0;
+        padding: 0.75em 1em;
     }
 
     .post__content h1,
