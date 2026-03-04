@@ -12,9 +12,10 @@
         <p class="tag-count">{{ .Pages | len }} {{ if eq (.Pages | len) 1 }}entry{{ else }}entries{{ end }} tagged with this topic</p>
     </div>
 
-    <!-- Filter to separate articles and garden entries -->
+    <!-- Filter to separate articles, career garden, and curiosity garden -->
     {{ $gardenPages := where .Pages "Type" "garden" }}
-    {{ $otherPages := where .Pages "Type" "!=" "garden" }}
+    {{ $curiosityPages := where .Pages "Type" "curiosity" }}
+    {{ $otherPages := where .Pages "Type" "not in" (slice "garden" "curiosity") }}
 
     {{ if $otherPages }}
     <section class="tag-section articles-section">
@@ -33,8 +34,8 @@
     {{ end }}
 
     {{ if $gardenPages }}
-    <section class="tag-section garden-section">
-        <h2 class="section-heading">🌱 From the Garden</h2>
+    <section class="tag-section garden-section career-garden">
+        <h2 class="section-heading">🌱 Career Garden</h2>
         <div class="entries-grid">
             {{ range $gardenPages }}
             <article class="garden-entry {{ .Params.state }}">
@@ -66,8 +67,43 @@
     </section>
     {{ end }}
 
+    {{ if $curiosityPages }}
+    <section class="tag-section garden-section curiosity-garden">
+        <h2 class="section-heading">🔭 Curiosity Garden</h2>
+        <div class="entries-grid">
+            {{ range $curiosityPages }}
+            <article class="garden-entry curiosity {{ .Params.state }}">
+                <a href="{{ .RelPermalink }}" class="entry-link-wrapper">
+                    <div class="entry-card-top">
+                        <span class="growth-badge-card curiosity {{ .Params.state }}">
+                            {{ if eq .Params.state "seed" }}🌱{{ else if eq .Params.state "sprout" }}🌿{{ else if eq .Params.state "rhizome" }}🫚{{ else }}🌱{{ end }}
+                        </span>
+                    </div>
+                    <h3 class="entry-title">{{ .Title }}</h3>
+                    {{ if .Summary }}
+                    <p class="entry-summary">{{ .Summary | plainify | truncate 150 }}</p>
+                    {{ end }}
+                    <div class="entry-metadata">
+                        {{ if .Params.updated }}
+                        {{ $dateStr := .Params.updated }}
+                        {{ $dateParts := split $dateStr " " }}
+                        {{ if ge (len $dateParts) 1 }}
+                        {{ $justDate := index $dateParts 0 }}
+                        <time>{{ dateFormat "Jan 2, 2006" $justDate }}</time>
+                        {{ end }}
+                        {{ end }}
+                        <span class="state-label">{{ default "seed" .Params.state }}</span>
+                    </div>
+                </a>
+            </article>
+            {{ end }}
+        </div>
+    </section>
+    {{ end }}
+
     <div class="tag-footer">
-        <a href="{{ .Site.BaseURL }}garden" class="back-link">← Back to Garden</a>
+        <a href="{{ .Site.BaseURL }}garden" class="back-link career-back">&larr; Career Garden</a>
+        <a href="{{ .Site.BaseURL }}curiosity" class="back-link curiosity-back">&larr; Curiosity Garden</a>
     </div>
 </div>
 
@@ -130,13 +166,26 @@
     .section-heading {
         margin: 0 0 1.5rem;
         font-size: 1.8rem;
-        color: rgba(72, 187, 120, 0.9);
         font-weight: 600;
         padding-bottom: 0.75rem;
+    }
+
+    .career-garden .section-heading {
+        color: rgba(72, 187, 120, 0.9);
         border-bottom: 2px solid rgba(72, 187, 120, 0.2);
     }
 
-    /* Garden entries styling - matches garden list */
+    .curiosity-garden .section-heading {
+        color: rgba(100, 160, 210, 0.9);
+        border-bottom: 2px solid rgba(100, 160, 210, 0.2);
+    }
+
+    .articles-section .section-heading {
+        color: rgba(72, 187, 120, 0.9);
+        border-bottom: 2px solid rgba(72, 187, 120, 0.2);
+    }
+
+    /* Garden entries styling */
     .entries-grid {
         display: grid;
         gap: 1.5rem;
@@ -163,6 +212,22 @@
     .garden-entry.rhizome {
         border-left-color: rgba(47, 133, 90, 0.8);
         background: rgba(47, 133, 90, 0.05);
+    }
+
+    /* Curiosity garden color overrides */
+    .garden-entry.curiosity.seed {
+        border-left-color: rgba(140, 190, 230, 0.8);
+        background: rgba(140, 190, 230, 0.05);
+    }
+
+    .garden-entry.curiosity.sprout {
+        border-left-color: rgba(100, 160, 210, 0.8);
+        background: rgba(100, 160, 210, 0.05);
+    }
+
+    .garden-entry.curiosity.rhizome {
+        border-left-color: rgba(70, 120, 170, 0.8);
+        background: rgba(70, 120, 170, 0.05);
     }
 
     .garden-entry:hover {
@@ -206,6 +271,21 @@
     .growth-badge-card.rhizome {
         background: rgba(47, 133, 90, 0.15);
         border: 1px solid rgba(47, 133, 90, 0.3);
+    }
+
+    .growth-badge-card.curiosity.seed {
+        background: rgba(140, 190, 230, 0.15);
+        border: 1px solid rgba(140, 190, 230, 0.3);
+    }
+
+    .growth-badge-card.curiosity.sprout {
+        background: rgba(100, 160, 210, 0.15);
+        border: 1px solid rgba(100, 160, 210, 0.3);
+    }
+
+    .growth-badge-card.curiosity.rhizome {
+        background: rgba(70, 120, 170, 0.15);
+        border: 1px solid rgba(70, 120, 170, 0.3);
     }
 
     .entry-title {
@@ -289,26 +369,45 @@
     .tag-footer {
         margin: 3rem 0 2rem;
         padding-top: 2rem;
-        border-top: 2px solid rgba(72, 187, 120, 0.2);
+        border-top: 2px solid rgba(255, 255, 255, 0.1);
         text-align: center;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .back-link {
         display: inline-flex;
         align-items: center;
         padding: 0.75rem 1.5rem;
-        background: rgba(72, 187, 120, 0.1);
-        border: 1px solid rgba(72, 187, 120, 0.3);
         border-radius: 8px;
-        color: rgba(72, 187, 120, 0.9);
         text-decoration: none;
         font-weight: 500;
         transition: all 0.25s ease;
     }
 
-    .back-link:hover {
+    .back-link.career-back {
+        background: rgba(72, 187, 120, 0.1);
+        border: 1px solid rgba(72, 187, 120, 0.3);
+        color: rgba(72, 187, 120, 0.9);
+    }
+
+    .back-link.career-back:hover {
         background: rgba(72, 187, 120, 0.15);
         border-color: rgba(72, 187, 120, 0.4);
+        transform: translateY(-2px);
+    }
+
+    .back-link.curiosity-back {
+        background: rgba(100, 160, 210, 0.1);
+        border: 1px solid rgba(100, 160, 210, 0.3);
+        color: rgba(100, 160, 210, 0.9);
+    }
+
+    .back-link.curiosity-back:hover {
+        background: rgba(100, 160, 210, 0.15);
+        border-color: rgba(100, 160, 210, 0.4);
         transform: translateY(-2px);
     }
 

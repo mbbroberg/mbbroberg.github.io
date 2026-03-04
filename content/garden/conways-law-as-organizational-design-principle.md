@@ -3,8 +3,6 @@ title: Conway's Law as Organizational Design Principle
 date: 2025-05-27
 tags:
   - team-topologies
-aliases:
-  - /garden/conways-law-as-organizational-design-principle/
 created: 2025-05-27 Tue 8:12pm
 updated: 2025-05-27 Tue 9:38pm
 slug: /conways-law-as-organizational-design-principle

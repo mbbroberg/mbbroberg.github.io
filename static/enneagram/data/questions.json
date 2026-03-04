@@ -1,0 +1,2020 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "pair": "Type 4 vs Type 6",
+      "option1": {
+        "text": "I've been romantic and imaginative.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "I've been pragmatic and down-to-earth.",
+        "type": 6,
+        "code": "B"
+      }
+    },
+    {
+      "id": 2,
+      "pair": "Type 8 vs Type 9",
+      "option1": {
+        "text": "I have a tendency towards confrontation.",
+        "type": 8,
+        "code": "G"
+      },
+      "option2": {
+        "text": "I've tended to avoid confrontation.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 3,
+      "pair": "Type 3 vs Type 1",
+      "option1": {
+        "text": "I've been typically diplomatic, charming and ambitious.",
+        "type": 3,
+        "code": "C"
+      },
+      "option2": {
+        "text": "I've been typically direct, formal and idealistic.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 4,
+      "pair": "Type 5 vs Type 7",
+      "option1": {
+        "text": "I've tended to be focused and intense.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "I've tended to be spontaneous and fun-loving.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 5,
+      "pair": "Type 2 vs Type 4",
+      "option1": {
+        "text": "I've been a hospitable person and have enjoyed welcoming new friends into my life.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "I've been a private person and did not mix much with others.",
+        "type": 4,
+        "code": "E"
+      }
+    },
+    {
+      "id": 6,
+      "pair": "Type 6 vs Type 9",
+      "option1": {
+        "text": "It's been hard for me to relax and stop worrying about potential problems.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "It's been hard for me to get upset about potential problems.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 7,
+      "pair": "Type 8 vs Type 1",
+      "option1": {
+        "text": "I've been more of a \"street-smart\" survivor.",
+        "type": 8,
+        "code": "G"
+      },
+      "option2": {
+        "text": "I've been more of a \"high-minded\" idealist.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 8,
+      "pair": "Type 2 vs Type 5",
+      "option1": {
+        "text": "I had to show affection to people.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "I preferred to keep a certain distance from people.",
+        "type": 5,
+        "code": "H"
+      }
+    },
+    {
+      "id": 9,
+      "pair": "Type 3 vs Type 7",
+      "option1": {
+        "text": "When I've been presented with a new experience, I've usually asked myself if it would be useful to me.",
+        "type": 3,
+        "code": "C"
+      },
+      "option2": {
+        "text": "When I've been presented with a new experience, I've usually asked myself if it would be fun.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 10,
+      "pair": "Type 4 vs Type 9",
+      "option1": {
+        "text": "I've tended to focus too much on myself.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "I've tended to focus too much on others.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 11,
+      "pair": "Type 5 vs Type 8",
+      "option1": {
+        "text": "Others have relied on my insight and knowledge.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "Others have relied on my strength and determination.",
+        "type": 8,
+        "code": "G"
+      }
+    },
+    {
+      "id": 12,
+      "pair": "Type 6 vs Type 1",
+      "option1": {
+        "text": "I've come across as too insecure.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "I've come across as being too sure of myself.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 13,
+      "pair": "Type 2 vs Type 3",
+      "option1": {
+        "text": "I've been more relationship oriented than goal oriented.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "I've been more goal oriented than relationship oriented.",
+        "type": 3,
+        "code": "C"
+      }
+    },
+    {
+      "id": 14,
+      "pair": "Type 4 vs Type 7",
+      "option1": {
+        "text": "I've not been very good at speaking up for myself very well.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "I've been outspoken \u2013 I've said what others wish they had the courage to say.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 15,
+      "pair": "Type 5 vs Type 1",
+      "option1": {
+        "text": "It's been difficult for me to stop considering alternatives and do something concrete.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "It's been difficult for me to take it easy and be more flexible.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 16,
+      "pair": "Type 6 vs Type 8",
+      "option1": {
+        "text": "I've tended to be cautious and hesitant.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "I've tended to be bold and domineering.",
+        "type": 8,
+        "code": "G"
+      }
+    },
+    {
+      "id": 17,
+      "pair": "Type 9 vs Type 2",
+      "option1": {
+        "text": "My reluctance to get too involved has got me into trouble with people.",
+        "type": 9,
+        "code": "A"
+      },
+      "option2": {
+        "text": "My eagerness to have people depend on me has got me into trouble with them.",
+        "type": 2,
+        "code": "F"
+      }
+    },
+    {
+      "id": 18,
+      "pair": "Type 3 vs Type 4",
+      "option1": {
+        "text": "I've usually been able to put my feelings aside to get the job done.",
+        "type": 3,
+        "code": "C"
+      },
+      "option2": {
+        "text": "I've usually had to work through my feelings before I could act.",
+        "type": 4,
+        "code": "E"
+      }
+    },
+    {
+      "id": 19,
+      "pair": "Type 6 vs Type 7",
+      "option1": {
+        "text": "In general, I've been methodical and cautious.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "In general, I've been adventurous and taken risks.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 20,
+      "pair": "Type 2 vs Type 1",
+      "option1": {
+        "text": "I have tended to be a supportive, giving person who seeks intimacy with others.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "I have always been a serious, reserved person who likes to discuss things.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 21,
+      "pair": "Type 8 vs Type 3",
+      "option1": {
+        "text": "I've often felt the need to be a \"pillar of strength\".",
+        "type": 8,
+        "code": "G"
+      },
+      "option2": {
+        "text": "I've often felt the need to perform perfectly.",
+        "type": 3,
+        "code": "C"
+      }
+    },
+    {
+      "id": 22,
+      "pair": "Type 5 vs Type 9",
+      "option1": {
+        "text": "I've always been interested in asking tough questions and maintaining my independence.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "I've always been interested in maintaining my stability and peace of mind.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 23,
+      "pair": "Type 6 vs Type 2",
+      "option1": {
+        "text": "I've been a little cynical and skeptical.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "I've been a little mushy and sentimental.",
+        "type": 2,
+        "code": "F"
+      }
+    },
+    {
+      "id": 24,
+      "pair": "Type 7 vs Type 8",
+      "option1": {
+        "text": "I've often worried that I'm missing out on something better.",
+        "type": 7,
+        "code": "I"
+      },
+      "option2": {
+        "text": "I've often worried that if I let my guard down, someone will take advantage of me.",
+        "type": 8,
+        "code": "G"
+      }
+    },
+    {
+      "id": 25,
+      "pair": "Type 4 vs Type 1",
+      "option1": {
+        "text": "My habit of being aloof has annoyed people.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "My habit of telling people what to do has annoyed people.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 26,
+      "pair": "Type 9 vs Type 7",
+      "option1": {
+        "text": "I've tended to get anxious when there was too much excitement and stimulation.",
+        "type": 9,
+        "code": "A"
+      },
+      "option2": {
+        "text": "I've tended to get anxious when there wasn't enough excitement and stimulation.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 27,
+      "pair": "Type 6 vs Type 3",
+      "option1": {
+        "text": "I've depended on my friends, and they've known that they can depend on me.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "I've not depended on people, I've done things on my own.",
+        "type": 3,
+        "code": "C"
+      }
+    },
+    {
+      "id": 28,
+      "pair": "Type 5 vs Type 4",
+      "option1": {
+        "text": "I've tended to be distant and preoccupied.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "I've tended to be moody and self-absorbed.",
+        "type": 4,
+        "code": "E"
+      }
+    },
+    {
+      "id": 29,
+      "pair": "Type 8 vs Type 2",
+      "option1": {
+        "text": "I have liked to challenge people and \"shake them up\".",
+        "type": 8,
+        "code": "G"
+      },
+      "option2": {
+        "text": "I have liked to comfort and reassure people.",
+        "type": 2,
+        "code": "F"
+      }
+    },
+    {
+      "id": 30,
+      "pair": "Type 7 vs Type 1",
+      "option1": {
+        "text": "I have generally been an outgoing, sociable person.",
+        "type": 7,
+        "code": "I"
+      },
+      "option2": {
+        "text": "I have generally been a serious, self-disciplined person.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 31,
+      "pair": "Type 9 vs Type 3",
+      "option1": {
+        "text": "I've wanted to \"fit in\" with others \u2013 I get uncomfortable when I stand out too much.",
+        "type": 9,
+        "code": "A"
+      },
+      "option2": {
+        "text": "I've wanted to stand out from others \u2013 I feel uncomfortable when I don't stand out.",
+        "type": 3,
+        "code": "C"
+      }
+    },
+    {
+      "id": 32,
+      "pair": "Type 5 vs Type 6",
+      "option1": {
+        "text": "Pursuing my personal interests has been more important to me than having stability and security.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "Having stability and security has been more important to me than pursuing my personal interests.",
+        "type": 6,
+        "code": "B"
+      }
+    },
+    {
+      "id": 33,
+      "pair": "Type 4 vs Type 8",
+      "option1": {
+        "text": "When I've had conflicts with others, I've tended to withdraw.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "When I've had conflicts with others, I've rarely backed down.",
+        "type": 8,
+        "code": "G"
+      }
+    },
+    {
+      "id": 34,
+      "pair": "Type 9 vs Type 1",
+      "option1": {
+        "text": "I've given in too easily and let others push me around.",
+        "type": 9,
+        "code": "A"
+      },
+      "option2": {
+        "text": "I've been too uncompromising and demanding with others.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 35,
+      "pair": "Type 7 vs Type 2",
+      "option1": {
+        "text": "I've been appreciated for my unsinkable spirit and ingenuity.",
+        "type": 7,
+        "code": "I"
+      },
+      "option2": {
+        "text": "I've been appreciated for my deep caring and personal warmth.",
+        "type": 2,
+        "code": "F"
+      }
+    },
+    {
+      "id": 36,
+      "pair": "Type 3 vs Type 5",
+      "option1": {
+        "text": "I've wanted to make a good impression on others.",
+        "type": 3,
+        "code": "C"
+      },
+      "option2": {
+        "text": "I've cared little about making a good impression on others.",
+        "type": 5,
+        "code": "H"
+      }
+    },
+    {
+      "id": 37,
+      "pair": "Type 6 vs Type 4",
+      "option1": {
+        "text": "I've relied on my perseverance and common sense.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "I've relied on my imagination and moments of inspiration.",
+        "type": 4,
+        "code": "E"
+      }
+    },
+    {
+      "id": 38,
+      "pair": "Type 9 vs Type 8",
+      "option1": {
+        "text": "Basically, I've been easygoing and pleasant.",
+        "type": 9,
+        "code": "A"
+      },
+      "option2": {
+        "text": "Basically, I've been hard-driving and assertive.",
+        "type": 8,
+        "code": "G"
+      }
+    },
+    {
+      "id": 39,
+      "pair": "Type 3 vs Type 1",
+      "option1": {
+        "text": "I've worked hard to be accepted and liked.",
+        "type": 3,
+        "code": "C"
+      },
+      "option2": {
+        "text": "Being accepted and liked has not been a high priority for me.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 40,
+      "pair": "Type 5 vs Type 7",
+      "option1": {
+        "text": "In response to pressure from others, I have become more withdrawn.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "In response to pressure from others, I have become more assertive.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 41,
+      "pair": "Type 2 vs Type 4",
+      "option1": {
+        "text": "People were interested in me because I've been outgoing, engaging, and interested in them.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "People were interested in me because I've been quiet, unusual, and deep.",
+        "type": 4,
+        "code": "E"
+      }
+    },
+    {
+      "id": 42,
+      "pair": "Type 6 vs Type 9",
+      "option1": {
+        "text": "Duty and responsibility have always been important values to me.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "Harmony and acceptance have been important values for me.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 43,
+      "pair": "Type 8 vs Type 1",
+      "option1": {
+        "text": "I've tried to motivate people by making big plans and big promises.",
+        "type": 8,
+        "code": "G"
+      },
+      "option2": {
+        "text": "I've tried to motivate people by pointing out the consequences of not following my advice.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 44,
+      "pair": "Type 5 vs Type 2",
+      "option1": {
+        "text": "I have rarely been emotionally demonstrative.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "I have often been emotionally demonstrative.",
+        "type": 2,
+        "code": "F"
+      }
+    },
+    {
+      "id": 45,
+      "pair": "Type 7 vs Type 3",
+      "option1": {
+        "text": "Dealing with details has not been one of my strong points.",
+        "type": 7,
+        "code": "I"
+      },
+      "option2": {
+        "text": "I have excelled at dealing with details.",
+        "type": 3,
+        "code": "C"
+      }
+    },
+    {
+      "id": 46,
+      "pair": "Type 4 vs Type 9",
+      "option1": {
+        "text": "I've often emphasized how different I am from other people, especially my family.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "I've often said how much I have in common with most people, especially my family.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 47,
+      "pair": "Type 5 vs Type 8",
+      "option1": {
+        "text": "When things got heated, I have tended to stay on the sidelines.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "When things got heated, I have tended to get right in the middle of things.",
+        "type": 8,
+        "code": "G"
+      }
+    },
+    {
+      "id": 48,
+      "pair": "Type 6 vs Type 1",
+      "option1": {
+        "text": "I have stood by my friends, even when they were wrong.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "I have not wanted to compromise what is right, even for friendship.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 49,
+      "pair": "Type 2 vs Type 3",
+      "option1": {
+        "text": "I've been a well-intentioned supporter.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "I've been a highly motivated go-getter.",
+        "type": 3,
+        "code": "C"
+      }
+    },
+    {
+      "id": 50,
+      "pair": "Type 4 vs Type 7",
+      "option1": {
+        "text": "When troubled, I've tended to brood over my problems.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "When troubled, I've tended to find distractions for myself.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 51,
+      "pair": "Type 1 vs Type 5",
+      "option1": {
+        "text": "In general, I've had strong beliefs and a sense of how things should be.",
+        "type": 1,
+        "code": "D"
+      },
+      "option2": {
+        "text": "In general, I had serious doubts and have questioned the way things seemed to be.",
+        "type": 5,
+        "code": "H"
+      }
+    },
+    {
+      "id": 52,
+      "pair": "Type 6 vs Type 8",
+      "option1": {
+        "text": "I've created problems for others by being pessimistic and complaining.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "I've created problems for others by being bossy and controlling.",
+        "type": 8,
+        "code": "G"
+      }
+    },
+    {
+      "id": 53,
+      "pair": "Type 2 vs Type 9",
+      "option1": {
+        "text": "I've tended to act on my feelings and let the \"chips fall where they may\".",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "I've tended not to act on my feelings lest they cause more problems.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 54,
+      "pair": "Type 3 vs Type 4",
+      "option1": {
+        "text": "Being the center of attention has usually felt natural to me.",
+        "type": 3,
+        "code": "C"
+      },
+      "option2": {
+        "text": "Being the center of attention has always felt strange to me.",
+        "type": 4,
+        "code": "E"
+      }
+    },
+    {
+      "id": 55,
+      "pair": "Type 6 vs Type 7",
+      "option1": {
+        "text": "I've been careful and have tried to prepare for unforeseen problems.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "I've been spontaneous, preferring to improvise when problems arise.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 56,
+      "pair": "Type 2 vs Type 1",
+      "option1": {
+        "text": "I've become angry when others have not shown enough appreciation for what I've done for them.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "I've become angry when others have not listened to what I've told them.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 57,
+      "pair": "Type 8 vs Type 3",
+      "option1": {
+        "text": "Being independent and self-reliant has been important to me.",
+        "type": 8,
+        "code": "G"
+      },
+      "option2": {
+        "text": "Being appreciated and admired has been important to me.",
+        "type": 3,
+        "code": "C"
+      }
+    },
+    {
+      "id": 58,
+      "pair": "Type 5 vs Type 9",
+      "option1": {
+        "text": "When I've debated with friends, I've tended to be forceful in my arguments.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "When I've argued with friends, I've tended to let things go to avoid hard feelings.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 59,
+      "pair": "Type 2 vs Type 6",
+      "option1": {
+        "text": "I've often been possessive of loved ones \u2013 I've had trouble letting go.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "I've often \"tested\" loved ones to see if they were really there for me.",
+        "type": 6,
+        "code": "B"
+      }
+    },
+    {
+      "id": 60,
+      "pair": "Type 8 vs Type 7",
+      "option1": {
+        "text": "Organizing resources and making things happen has been one of my greatest strengths.",
+        "type": 8,
+        "code": "G"
+      },
+      "option2": {
+        "text": "Coming up with new ideas and getting people excited about them has been one of my greatest strengths.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 61,
+      "pair": "Type 1 vs Type 4",
+      "option1": {
+        "text": "I've tended to be driven and very hard on myself.",
+        "type": 1,
+        "code": "D"
+      },
+      "option2": {
+        "text": "I've tended to be too emotional and rather undisciplined.",
+        "type": 4,
+        "code": "E"
+      }
+    },
+    {
+      "id": 62,
+      "pair": "Type 7 vs Type 9",
+      "option1": {
+        "text": "I've tried to keep my life fast, intense, and exciting.",
+        "type": 7,
+        "code": "I"
+      },
+      "option2": {
+        "text": "I've tried to keep my life regular, stable, and peaceful.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 63,
+      "pair": "Type 6 vs Type 3",
+      "option1": {
+        "text": "Even though I've had successes, I've tended to doubt my abilities.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "Even though I had setbacks, I've had a lot of confidence in my abilities.",
+        "type": 3,
+        "code": "C"
+      }
+    },
+    {
+      "id": 64,
+      "pair": "Type 4 vs Type 5",
+      "option1": {
+        "text": "In general, I've tended to dwell on my feelings and to hold on to them for a long time.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "In general, I've tended to minimize my feelings and not pay very much attention to them.",
+        "type": 5,
+        "code": "H"
+      }
+    },
+    {
+      "id": 65,
+      "pair": "Type 2 vs Type 8",
+      "option1": {
+        "text": "I have given attention and care to many people.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "I have given direction and motivation to many people.",
+        "type": 8,
+        "code": "G"
+      }
+    },
+    {
+      "id": 66,
+      "pair": "Type 1 vs Type 7",
+      "option1": {
+        "text": "I've been a little serious and strict with myself.",
+        "type": 1,
+        "code": "D"
+      },
+      "option2": {
+        "text": "I've been a little freewheeling and permissive with myself.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 67,
+      "pair": "Type 3 vs Type 9",
+      "option1": {
+        "text": "I've been assertive and driven to excel.",
+        "type": 3,
+        "code": "C"
+      },
+      "option2": {
+        "text": "I've been modest and have been happy to go at my own pace.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 68,
+      "pair": "Type 5 vs Type 6",
+      "option1": {
+        "text": "I've been proud of my clarity and objectivity.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "I've been proud of my reliability and commitment.",
+        "type": 6,
+        "code": "B"
+      }
+    },
+    {
+      "id": 69,
+      "pair": "Type 4 vs Type 8",
+      "option1": {
+        "text": "I've spent a lot of time looking inward \u2013 understanding my feelings has been important to me.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "I've not spent a lot of time looking inward \u2013 getting things done has been important to me.",
+        "type": 8,
+        "code": "G"
+      }
+    },
+    {
+      "id": 70,
+      "pair": "Type 9 vs Type 1",
+      "option1": {
+        "text": "In general, I've thought of myself as a sunny, casual person.",
+        "type": 9,
+        "code": "A"
+      },
+      "option2": {
+        "text": "In general, I've thought of myself as a serious, dignified person.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 71,
+      "pair": "Type 7 vs Type 2",
+      "option1": {
+        "text": "I've had a quick mind and boundless energy.",
+        "type": 7,
+        "code": "I"
+      },
+      "option2": {
+        "text": "I've had a caring heart and deep devotion.",
+        "type": 2,
+        "code": "F"
+      }
+    },
+    {
+      "id": 72,
+      "pair": "Type 3 vs Type 5",
+      "option1": {
+        "text": "I've engaged in activities that had significant potential for reward and personal recognition.",
+        "type": 3,
+        "code": "C"
+      },
+      "option2": {
+        "text": "I've been willing to give up rewards and personal recognition if it meant doing work I was really interested in.",
+        "type": 5,
+        "code": "H"
+      }
+    },
+    {
+      "id": 73,
+      "pair": "Type 4 vs Type 6",
+      "option1": {
+        "text": "Fulfilling social obligations has rarely been high on my agenda.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "I have usually taken my social obligations very seriously.",
+        "type": 6,
+        "code": "B"
+      }
+    },
+    {
+      "id": 74,
+      "pair": "Type 8 vs Type 9",
+      "option1": {
+        "text": "In most situations, I have preferred to take the lead.",
+        "type": 8,
+        "code": "G"
+      },
+      "option2": {
+        "text": "In most situations, I have preferred to let someone else take the lead.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 75,
+      "pair": "Type 3 vs Type 1",
+      "option1": {
+        "text": "Over the years, my values and lifestyle have changed several times.",
+        "type": 3,
+        "code": "C"
+      },
+      "option2": {
+        "text": "Over the years, my values and lifestyle have remained fairly consistent.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 76,
+      "pair": "Type 7 vs Type 5",
+      "option1": {
+        "text": "Usually, I didn't have a lot of self-discipline.",
+        "type": 7,
+        "code": "I"
+      },
+      "option2": {
+        "text": "Usually, I didn't have a lot of connection with people.",
+        "type": 5,
+        "code": "H"
+      }
+    },
+    {
+      "id": 77,
+      "pair": "Type 4 vs Type 2",
+      "option1": {
+        "text": "I've tended to withhold my affection and have wanted others to come into my world.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "I've tended to give my affection too freely, wanting to extend myself to others.",
+        "type": 2,
+        "code": "F"
+      }
+    },
+    {
+      "id": 78,
+      "pair": "Type 6 vs Type 9",
+      "option1": {
+        "text": "I've had a tendency to think of worst-case scenarios.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "I've had a tendency to think that everything will work out for the best.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 79,
+      "pair": "Type 8 vs Type 1",
+      "option1": {
+        "text": "People have trusted me because I am confident and can take care of them.",
+        "type": 8,
+        "code": "G"
+      },
+      "option2": {
+        "text": "People have trusted me because I am fair and will do what is right.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 80,
+      "pair": "Type 5 vs Type 2",
+      "option1": {
+        "text": "I've often been so involved in my own projects that I have isolated myself from others.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "I've often been so involved with others that I've neglected my own projects.",
+        "type": 2,
+        "code": "F"
+      }
+    },
+    {
+      "id": 81,
+      "pair": "Type 3 vs Type 7",
+      "option1": {
+        "text": "When I met someone new, I was usually self-contained and reserved.",
+        "type": 3,
+        "code": "C"
+      },
+      "option2": {
+        "text": "When I met someone new, I was usually been chatty and entertaining.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 82,
+      "pair": "Type 4 vs Type 9",
+      "option1": {
+        "text": "In general, I have tended to be pessimistic.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "In general, I have tended to be optimistic.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 83,
+      "pair": "Type 5 vs Type 8",
+      "option1": {
+        "text": "I've preferred to live my own little world.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "I've preferred to let the world know that I'm here.",
+        "type": 8,
+        "code": "G"
+      }
+    },
+    {
+      "id": 84,
+      "pair": "Type 6 vs Type 1",
+      "option1": {
+        "text": "I've often been plagued by nervousness, insecurity, and doubt.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "I've often been plagued by anger, perfectionism, and impatience.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 85,
+      "pair": "Type 2 vs Type 3",
+      "option1": {
+        "text": "I realize that I have often been too personal and intimate.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "I realize that I have often been too cool and distant.",
+        "type": 3,
+        "code": "C"
+      }
+    },
+    {
+      "id": 86,
+      "pair": "Type 4 vs Type 7",
+      "option1": {
+        "text": "I've lost out because I did not feel up to taking advantage of opportunities.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "I've lost out because I've pursued too many opportunities.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 87,
+      "pair": "Type 5 vs Type 1",
+      "option1": {
+        "text": "I've tended to take a long time to get into action.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "I've tended to get into action quickly.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 88,
+      "pair": "Type 6 vs Type 8",
+      "option1": {
+        "text": "I usually have had trouble making decisions.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "I rarely have had difficulty making decisions.",
+        "type": 8,
+        "code": "G"
+      }
+    },
+    {
+      "id": 89,
+      "pair": "Type 2 vs Type 9",
+      "option1": {
+        "text": "I've had a tendency to get a little too close to people.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "I've had a tendency to not be assertive enough with people.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 90,
+      "pair": "Type 3 vs Type 4",
+      "option1": {
+        "text": "Typically, I have been even-tempered.",
+        "type": 3,
+        "code": "C"
+      },
+      "option2": {
+        "text": "Typically, I had a lot of mood swings.",
+        "type": 4,
+        "code": "E"
+      }
+    },
+    {
+      "id": 91,
+      "pair": "Type 6 vs Type 7",
+      "option1": {
+        "text": "When I wasn't sure what to do, I've often sought the advice of others.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "When I wasn't sure what to do, I've tried different things to see what worked best for me.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 92,
+      "pair": "Type 2 vs Type 1",
+      "option1": {
+        "text": "I've been worried that I would be left out of the activities of others.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "I've worried that the activities of others would distract me from what I needed to do.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 93,
+      "pair": "Type 8 vs Type 3",
+      "option1": {
+        "text": "Typically, when I got angry, I would tell people off.",
+        "type": 8,
+        "code": "G"
+      },
+      "option2": {
+        "text": "Typically, when I got angry, I became distant.",
+        "type": 3,
+        "code": "C"
+      }
+    },
+    {
+      "id": 94,
+      "pair": "Type 5 vs Type 9",
+      "option1": {
+        "text": "I've tended to have trouble falling asleep.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "I've tended to fall asleep easily.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 95,
+      "pair": "Type 2 vs Type 6",
+      "option1": {
+        "text": "I've often tried to figure out how to get closer to others.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "I've often tried to figure out what others want from me.",
+        "type": 6,
+        "code": "B"
+      }
+    },
+    {
+      "id": 96,
+      "pair": "Type 8 vs Type 7",
+      "option1": {
+        "text": "I've usually been measured, straightforward, and deliberate.",
+        "type": 8,
+        "code": "G"
+      },
+      "option2": {
+        "text": "I've usually been excitable, fast-talking, and witty.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 97,
+      "pair": "Type 4 vs Type 1",
+      "option1": {
+        "text": "Many times I didn't speak up when I saw others making a mistake.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "Many times I have helped others see that they are making a mistake.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 98,
+      "pair": "Type 7 vs Type 9",
+      "option1": {
+        "text": "For most of my life, I have been a stormy person with many volatile emotions.",
+        "type": 7,
+        "code": "I"
+      },
+      "option2": {
+        "text": "For most of my life, I have been a steady person in whom \"still waters run deep\".",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 99,
+      "pair": "Type 3 vs Type 6",
+      "option1": {
+        "text": "When I've disliked people, I've usually tried to remain cordial in spite of my feelings.",
+        "type": 3,
+        "code": "C"
+      },
+      "option2": {
+        "text": "When I've disliked people, I've usually let them know it \u2013 one way or another.",
+        "type": 6,
+        "code": "B"
+      }
+    },
+    {
+      "id": 100,
+      "pair": "Type 4 vs Type 5",
+      "option1": {
+        "text": "Much of my difficulty with people comes from being touchy and taking things too personally.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "Much of my difficulty with people has come from me not caring about social conventions.",
+        "type": 5,
+        "code": "H"
+      }
+    },
+    {
+      "id": 101,
+      "pair": "Type 2 vs Type 8",
+      "option1": {
+        "text": "My approach has been to jump in and rescue people.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "My approach has been to show people how to help themselves.",
+        "type": 8,
+        "code": "G"
+      }
+    },
+    {
+      "id": 102,
+      "pair": "Type 7 vs Type 1",
+      "option1": {
+        "text": "In general, I've enjoyed \"letting go\" and pushing theenvelope.",
+        "type": 7,
+        "code": "I"
+      },
+      "option2": {
+        "text": "In general, I did not enjoy losing control of myself very much.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 103,
+      "pair": "Type 3 vs Type 9",
+      "option1": {
+        "text": "I've been overly concerned with being better than others.",
+        "type": 3,
+        "code": "C"
+      },
+      "option2": {
+        "text": "I've been overly concerned with making things okay for others.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 104,
+      "pair": "Type 5 vs Type 6",
+      "option1": {
+        "text": "My thoughts were generally speculative, involving my imagination and curiosity.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "My thoughts were generally practical, just trying to keep things going.",
+        "type": 6,
+        "code": "B"
+      }
+    },
+    {
+      "id": 105,
+      "pair": "Type 8 vs Type 4",
+      "option1": {
+        "text": "One of my greatest assets has been my ability to take charge of situations.",
+        "type": 8,
+        "code": "G"
+      },
+      "option2": {
+        "text": "One of my greatest assets has been my ability to describe internal states.",
+        "type": 4,
+        "code": "E"
+      }
+    },
+    {
+      "id": 106,
+      "pair": "Type 1 vs Type 9",
+      "option1": {
+        "text": "I've pushed to get things done right, even if it made people uncomfortable.",
+        "type": 1,
+        "code": "D"
+      },
+      "option2": {
+        "text": "I've not liked feeling pressured, so I've not liked putting pressure on anyone else.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 107,
+      "pair": "Type 2 vs Type 7",
+      "option1": {
+        "text": "I've often taken pride in how important I am in others people's lives.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "I've often taken pride on my enthusiasm and openness to new experiences.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 108,
+      "pair": "Type 3 vs Type 5",
+      "option1": {
+        "text": "I've noticed that I often come across to others as presentable, even admirable.",
+        "type": 3,
+        "code": "C"
+      },
+      "option2": {
+        "text": "I've noticed that I often seem unusual, even strange, to others.",
+        "type": 5,
+        "code": "H"
+      }
+    },
+    {
+      "id": 109,
+      "pair": "Type 6 vs Type 4",
+      "option1": {
+        "text": "I've mostly done what I needed to do.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "I've mostly done what I wanted to do.",
+        "type": 4,
+        "code": "E"
+      }
+    },
+    {
+      "id": 110,
+      "pair": "Type 8 vs Type 9",
+      "option1": {
+        "text": "I've always enjoyed high-pressure situations, even \"difficult\", ones.",
+        "type": 8,
+        "code": "G"
+      },
+      "option2": {
+        "text": "I've always disliked being in high-pressure situations, even difficult ones.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 111,
+      "pair": "Type 3 vs Type 1",
+      "option1": {
+        "text": "I've been proud of my ability to be flexible \u2013 what's appropriate or important often changes.",
+        "type": 3,
+        "code": "C"
+      },
+      "option2": {
+        "text": "I've been proud of my ability to take a stand \u2013 to stand firm on what I believe in.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 112,
+      "pair": "Type 5 vs Type 7",
+      "option1": {
+        "text": "My style has tended toward economy and austerity.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "My style has tended toward excess and exaggeration.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 113,
+      "pair": "Type 2 vs Type 4",
+      "option1": {
+        "text": "My own health and well-being have suffered because of my strong desire to help others.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "My relationships have suffered because of my strong desire to take care of my personal needs.",
+        "type": 4,
+        "code": "E"
+      }
+    },
+    {
+      "id": 114,
+      "pair": "Type 9 vs Type 6",
+      "option1": {
+        "text": "In general, I've been too open and naive.",
+        "type": 9,
+        "code": "A"
+      },
+      "option2": {
+        "text": "In general, I've been too cautious and guarded.",
+        "type": 6,
+        "code": "B"
+      }
+    },
+    {
+      "id": 115,
+      "pair": "Type 8 vs Type 1",
+      "option1": {
+        "text": "Sometimes I've put people off by being too aggressive.",
+        "type": 8,
+        "code": "G"
+      },
+      "option2": {
+        "text": "Sometimes I have put people off by being too \"uptight\".",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 116,
+      "pair": "Type 2 vs Type 5",
+      "option1": {
+        "text": "Being of service and caring for the needs of others has been a high priority for me.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "Finding alternative ways of seeing and doing things has been a high priority for me.",
+        "type": 5,
+        "code": "H"
+      }
+    },
+    {
+      "id": 117,
+      "pair": "Type 3 vs Type 7",
+      "option1": {
+        "text": "I've been single-minded and persistent in pursuing my goals.",
+        "type": 3,
+        "code": "C"
+      },
+      "option2": {
+        "text": "I've preferred to explore different avenues and see where they lead.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 118,
+      "pair": "Type 4 vs Type 9",
+      "option1": {
+        "text": "I've often been drawn to situations that evoke deep, intense emotions.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "I've often been drawn to situations that make me feel calm and comfortable.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 119,
+      "pair": "Type 5 vs Type 8",
+      "option1": {
+        "text": "I've cared less about practical results than about pursuing my interests.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "I've been practical and expected concrete results from my work.",
+        "type": 8,
+        "code": "G"
+      }
+    },
+    {
+      "id": 120,
+      "pair": "Type 6 vs Type 1",
+      "option1": {
+        "text": "I've had a deep need to belong.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "I've had a deep need to feel balanced.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 121,
+      "pair": "Type 2 vs Type 3",
+      "option1": {
+        "text": "In the past, I've probably insisted on too much closeness in my friendships.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "In the past, I've probably kept too much distance in my relationships.",
+        "type": 3,
+        "code": "C"
+      }
+    },
+    {
+      "id": 122,
+      "pair": "Type 4 vs Type 7",
+      "option1": {
+        "text": "I've had a tendency to keep thinking about things from the past.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "I've had a tendency to always anticipate things that I'm going to do.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 123,
+      "pair": "Type 5 vs Type 1",
+      "option1": {
+        "text": "I've tended to see people as pushy and demanding.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "I've tended to see people as disorganized and irresponsible.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 124,
+      "pair": "Type 6 vs Type 8",
+      "option1": {
+        "text": "In general, I didn't have a lot of confidence in myself.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "In general, I only had confidence in myself.",
+        "type": 8,
+        "code": "G"
+      }
+    },
+    {
+      "id": 125,
+      "pair": "Type 9 vs Type 2",
+      "option1": {
+        "text": "I've probably been too passive and uninvolved.",
+        "type": 9,
+        "code": "A"
+      },
+      "option2": {
+        "text": "I've probably been too controlling and manipulative.",
+        "type": 2,
+        "code": "F"
+      }
+    },
+    {
+      "id": 126,
+      "pair": "Type 4 vs Type 3",
+      "option1": {
+        "text": "I've often been stopped in my tracks by my self-doubt.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "I've rarely let self-doubt get in my way.",
+        "type": 3,
+        "code": "C"
+      }
+    },
+    {
+      "id": 127,
+      "pair": "Type 7 vs Type 6",
+      "option1": {
+        "text": "Given a choice between something familiar and something new, I've usually chosen the new.",
+        "type": 7,
+        "code": "I"
+      },
+      "option2": {
+        "text": "I've generally chosen what I knew I already liked: why be disappointed by something I might not like?",
+        "type": 6,
+        "code": "B"
+      }
+    },
+    {
+      "id": 128,
+      "pair": "Type 2 vs Type 1",
+      "option1": {
+        "text": "I have given a lot of physical contact to reassure others about how I feel about them.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "I have generally felt that real love does not depend on physical contact.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 129,
+      "pair": "Type 8 vs Type 3",
+      "option1": {
+        "text": "When I've had to confront someone, I've often been too harsh and direct.",
+        "type": 8,
+        "code": "G"
+      },
+      "option2": {
+        "text": "When I've had to confront someone, I've often \"beaten around the bush\" too much.",
+        "type": 3,
+        "code": "C"
+      }
+    },
+    {
+      "id": 130,
+      "pair": "Type 5 vs Type 9",
+      "option1": {
+        "text": "I've been attracted to subjects that others would probably find disturbing, even frightening.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "I've preferred not to spend my time dwelling on disturbing, frightening subjects.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 131,
+      "pair": "Type 2 vs Type 6",
+      "option1": {
+        "text": "I've gotten into trouble with people by being too pushy and interfering.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "I've gotten into trouble with people by being too evasive and uncommunicative.",
+        "type": 6,
+        "code": "B"
+      }
+    },
+    {
+      "id": 132,
+      "pair": "Type 8 vs Type 7",
+      "option1": {
+        "text": "I've worried that I don't have the resources to fulfill the responsibilities I've taken on.",
+        "type": 8,
+        "code": "G"
+      },
+      "option2": {
+        "text": "I've worried that I don't have the self-discipline to focus on what really fulfills me.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 133,
+      "pair": "Type 4 vs Type 1",
+      "option1": {
+        "text": "In general, I've been a very intuitive, individualistic person.",
+        "type": 4,
+        "code": "E"
+      },
+      "option2": {
+        "text": "In general, I've been a very organized, responsible person.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 134,
+      "pair": "Type 9 vs Type 7",
+      "option1": {
+        "text": "Overcoming inertia has been one of my main problems.",
+        "type": 9,
+        "code": "A"
+      },
+      "option2": {
+        "text": "Being unable to slow down has been one of my main problems.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 135,
+      "pair": "Type 3 vs Type 6",
+      "option1": {
+        "text": "When I've felt insecure, I've reacted by becoming arrogant and dismissive.",
+        "type": 3,
+        "code": "C"
+      },
+      "option2": {
+        "text": "When I've felt insecure, I've reacted by becoming defensive and argumentative.",
+        "type": 6,
+        "code": "B"
+      }
+    },
+    {
+      "id": 136,
+      "pair": "Type 5 vs Type 4",
+      "option1": {
+        "text": "I've generally been open-minded and willing to try new approaches.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "I've generally been open and willing to share my feelings with others.",
+        "type": 4,
+        "code": "E"
+      }
+    },
+    {
+      "id": 137,
+      "pair": "Type 8 vs Type 2",
+      "option1": {
+        "text": "I've made myself out to be tougher than I really am.",
+        "type": 8,
+        "code": "G"
+      },
+      "option2": {
+        "text": "I've presented myself to others as caring more than I really do.",
+        "type": 2,
+        "code": "F"
+      }
+    },
+    {
+      "id": 138,
+      "pair": "Type 1 vs Type 7",
+      "option1": {
+        "text": "I have usually followed my conscience and reason.",
+        "type": 1,
+        "code": "D"
+      },
+      "option2": {
+        "text": "I have usually followed my feelings and impulses.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 139,
+      "pair": "Type 3 vs Type 9",
+      "option1": {
+        "text": "Serious adversity has made me feel hardened and determined.",
+        "type": 3,
+        "code": "C"
+      },
+      "option2": {
+        "text": "Serious adversity has made me feel discouraged and resigned.",
+        "type": 9,
+        "code": "A"
+      }
+    },
+    {
+      "id": 140,
+      "pair": "Type 6 vs Type 5",
+      "option1": {
+        "text": "I have usually made sure I had some sort of \"safety net\" to fall back on.",
+        "type": 6,
+        "code": "B"
+      },
+      "option2": {
+        "text": "I have usually chosen to live on the edge, depending on others as little as possible.",
+        "type": 5,
+        "code": "H"
+      }
+    },
+    {
+      "id": 141,
+      "pair": "Type 8 vs Type 4",
+      "option1": {
+        "text": "I've had to be strong for others, so I haven't had time to deal with my feelings and fears.",
+        "type": 8,
+        "code": "G"
+      },
+      "option2": {
+        "text": "I've had trouble dealing with my feelings and fears, so it's been hard for me to be strong for others.",
+        "type": 4,
+        "code": "E"
+      }
+    },
+    {
+      "id": 142,
+      "pair": "Type 9 vs Type 1",
+      "option1": {
+        "text": "I've often wondered why people focus on the negative when there is so much that is wonderful about life.",
+        "type": 9,
+        "code": "A"
+      },
+      "option2": {
+        "text": "I've often wondered why people are so happy when so much in life is messed up.",
+        "type": 1,
+        "code": "D"
+      }
+    },
+    {
+      "id": 143,
+      "pair": "Type 2 vs Type 7",
+      "option1": {
+        "text": "I've tried very hard not to be seen as a selfish person.",
+        "type": 2,
+        "code": "F"
+      },
+      "option2": {
+        "text": "I've tried very hard not to be seen as a boring person.",
+        "type": 7,
+        "code": "I"
+      }
+    },
+    {
+      "id": 144,
+      "pair": "Type 5 vs Type 3",
+      "option1": {
+        "text": "I've avoided intimacy when I was afraid of being overwhelmed by people's needs and demands.",
+        "type": 5,
+        "code": "H"
+      },
+      "option2": {
+        "text": "I've avoided intimacy when I was afraid I wouldn't live up to people's expectations of me.",
+        "type": 3,
+        "code": "C"
+      }
+    }
+  ]
+}

@@ -1,17 +1,15 @@
 ---
 title: Go-To-Market Product Strategy
-aliases:
-  - /garden/go-to-market-product-strategy/
 slug: /go-to-market-product-strategy
 filename: go-to-market-product-strategy
 date: 2025-06-22
 share: true
+tags:
+  - product-thinking
 type: garden
 state: seed
 created: 2025-06-22 Sun 4:32pm
 updated: 2025-06-22 Sun 4:34pm
-tags:
-  - product-thinking
 ---
 These are thoughts that turned to stickies that turned into my default playbook. I'll integrate them further into #product-management eventually, but for now: 
 

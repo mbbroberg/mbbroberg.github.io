@@ -3,12 +3,10 @@ title: Platforms as Internal Products
 date: 2025-05-27
 tags:
   - team-topologies
-  - platform-products
+  - platform-product
   - product-thinking
-aliases:
-  - /garden/platforms-as-internal-products/
 created: 2025-05-27 Tue 8:29pm
-updated: 2025-05-27 Tue 9:37pm
+updated: 2025-06-23 Mon 3:36am
 slug: /platforms-as-internal-products
 filename: platforms-as-internal-products
 share: true
@@ -32,9 +30,3 @@ The best platforms feel invisible to their users. Powerful enough to enable comp
 I've started asking: what's the minimum viable platform that removes friction, rather than the maximum possible platform that covers every scenario?
 
 Platform teams that think like product teams build platforms that stream-aligned teams actually want to use.
-
----
-**Related:**
-- [A Definition of Platform Product Management](/a-definition-of-platform-product-management)
-- [Platform Product Extension Model Language](/platform-product-extension-model-language)
-- [From Project to Product Management](/articles/from-project-to-product-management)

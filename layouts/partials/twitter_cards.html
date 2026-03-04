@@ -1,0 +1,72 @@
+{{- $title := .Title }}
+{{- $description := .Description }}
+{{- if not $description }}
+  {{- $description = .Site.Params.description }}
+{{- end }}
+
+{{- /* Determine the image to use */ -}}
+{{- $image := "" -}}
+
+{{- /* Priority 1: Page frontmatter images */ -}}
+{{- if .Params.images -}}
+  {{- $image = index .Params.images 0 -}}
+{{- else -}}
+  {{- /* Priority 2: Extract first image from content */ -}}
+  {{- $content := .RawContent -}}
+  {{- $imgPattern := `!\[.*?\]\(([^)]+)\)` -}}
+  {{- $matches := findRE $imgPattern $content 1 -}}
+  {{- if $matches -}}
+    {{- $match := index $matches 0 -}}
+    {{- $imgSrc := replaceRE $imgPattern "$1" $match -}}
+    {{- $image = $imgSrc -}}
+  {{- else -}}
+    {{- /* Also check for HTML img tags */ -}}
+    {{- $htmlImgPattern := `<img[^>]+src=["']([^"']+)["']` -}}
+    {{- $htmlMatches := findRE $htmlImgPattern $content 1 -}}
+    {{- if $htmlMatches -}}
+      {{- $match := index $htmlMatches 0 -}}
+      {{- $imgSrc := replaceRE $htmlImgPattern "$1" $match -}}
+      {{- $image = $imgSrc -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Priority 3: Site default image */ -}}
+{{- if not $image -}}
+  {{- if .Site.Params.images -}}
+    {{- $image = index .Site.Params.images 0 -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Clean up and convert to absolute URL */ -}}
+{{- if $image -}}
+  {{- /* Remove static/ prefix if present (Hugo serves static files from root) */ -}}
+  {{- /* Handles: /static/, static/, ../static/, ../../static/ etc */ -}}
+  {{- $image = replaceRE `^(\.\./?)*/?static/` "" $image -}}
+  {{- if not (hasPrefix $image "http") -}}
+    {{- /* Ensure path starts with / for absURL */ -}}
+    {{- if not (hasPrefix $image "/") -}}
+      {{- $image = printf "/%s" $image -}}
+    {{- end -}}
+    {{- $image = $image | absURL -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Determine card type based on image presence */ -}}
+{{- $cardType := "summary" -}}
+{{- if $image -}}
+  {{- $cardType = "summary_large_image" -}}
+{{- end -}}
+
+<meta name="twitter:card" content="{{ $cardType }}" />
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $description }}" />
+{{- with $image }}
+<meta name="twitter:image" content="{{ . }}" />
+{{- end }}
+{{- with .Site.Params.twitterSite }}
+<meta name="twitter:site" content="@{{ . }}" />
+{{- end }}
+{{- with .Site.Params.twitterCreator }}
+<meta name="twitter:creator" content="@{{ . }}" />
+{{- end }}

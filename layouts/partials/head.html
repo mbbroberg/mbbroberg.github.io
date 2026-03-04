@@ -206,12 +206,12 @@
   {{ end }}
 
 
-  <!-- Twitter Cards -->
-  {{ template "_internal/twitter_cards.html" . }}
+  <!-- Twitter Cards (custom: auto-extracts first image from content) -->
+  {{ partial "twitter_cards.html" . }}
 
 
-  <!-- Open Graph -->
-  {{ template "_internal/opengraph.html" . }}
+  <!-- Open Graph (custom: auto-extracts first image from content) -->
+  {{ partial "opengraph.html" . }}
 
 
   <!-- Schema.org-->

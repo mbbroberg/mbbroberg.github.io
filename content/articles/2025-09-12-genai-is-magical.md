@@ -1,11 +1,9 @@
 ---
 created: 2025-09-12 Fri 5:52am
-updated: 2025-09-22 Mon 8:42pm
+updated: 2025-09-22 Mon 8:46pm
 title: GenAI is magical
 slug: /genai-is-magical
 filename: 2025-09-12-genai-is-magical
-tags:
-  - ai-learning
 date: 2025-09-12
 share: true
 aliases:
