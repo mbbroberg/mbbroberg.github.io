@@ -7,6 +7,8 @@ created: 2026-04-29 Wed 7:56am
 updated: 2026-04-29 Wed 4:17pm
 ---
 
+![Gemini_Generated_Image_dhb8vpdhb8vpdhb8.png](../../static/images/Gemini_Generated_Image_dhb8vpdhb8vpdhb8.png)
+
 # Friction as a Product Feature
 
 I spent an hour on the phone last week trying to do an administrative task. Hold music. Transfer. Re-enter the SSN. Transfer again. Re-entering my phone number. By the end I wasn't angry -- I was hollowed out. The kind of tired that doesn't make sense for the size of the task.
