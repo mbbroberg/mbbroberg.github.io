@@ -41,7 +41,7 @@ jobs:
       - name: Clean public directory
         run: rm -rf public
       - name: Cache Hugo modules
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.cache/hugo
           key: ${{ runner.os }}-hugo-${{ hashFiles('**/go.mod') }}
@@ -69,4 +69,4 @@ jobs:
       steps:
         - name: Deploy to GitHub Pages
           id: deployment
-          uses: actions/deploy-pages@v4
+          uses: actions/deploy-pages@v5
