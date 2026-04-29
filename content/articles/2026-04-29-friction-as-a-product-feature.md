@@ -2,9 +2,10 @@
 title: Friction as a product feature
 slug: /friction-as-a-product-feature
 filename: 2026-04-29-friction-as-a-product-feature
+date: 2026-04-29
 share: true
 created: 2026-04-29 Wed 7:56am
-updated: 2026-04-29 Wed 4:17pm
+updated: 2026-04-29 Wed 4:20pm
 ---
 
 ![Gemini_Generated_Image_dhb8vpdhb8vpdhb8.png](../../static/images/Gemini_Generated_Image_dhb8vpdhb8vpdhb8.png)
