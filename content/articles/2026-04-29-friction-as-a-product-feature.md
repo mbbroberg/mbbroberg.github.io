@@ -1,16 +1,17 @@
 ---
-title: Friction as a product feature
+title: Friction as a Product Feature
 slug: /friction-as-a-product-feature
 filename: 2026-04-29-friction-as-a-product-feature
 date: 2026-04-29
 share: true
 created: 2026-04-29 Wed 7:56am
-updated: 2026-04-29 Wed 4:20pm
+updated: 2026-04-29 Wed 4:32pm
 ---
+
+# Friction as a Product Feature
 
 ![Gemini_Generated_Image_dhb8vpdhb8vpdhb8.png](../../static/images/Gemini_Generated_Image_dhb8vpdhb8vpdhb8.png)
 
-# Friction as a Product Feature
 
 I spent an hour on the phone last week trying to do an administrative task. Hold music. Transfer. Re-enter the SSN. Transfer again. Re-entering my phone number. By the end I wasn't angry -- I was hollowed out. The kind of tired that doesn't make sense for the size of the task.
 
