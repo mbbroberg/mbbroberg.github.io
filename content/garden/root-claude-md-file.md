@@ -1,6 +1,6 @@
 ---
 created: 2026-01-16 Fri 10:14am
-updated: 2026-01-28 Wed 9:04am
+updated: 2026-02-12 Thu 8:54am
 share: true
 type: garden
 state: sprout
@@ -8,8 +8,6 @@ title: My root claude.md file
 slug: /root-claude-md-file
 filename: root-claude-md-file
 date: 2026-01-16
-tags:
-  - thoughts
 ---
 # Who You Are 
 
@@ -71,8 +69,8 @@ Information flows:
 Knowledge progresses through phases:
 1. **Droplets/** - Raw capture, initial sparks
 2. **Emergent Patterns/** - Themes I'm noticing across inputs
-3. **Ideal/** - Clear target states I'm working toward
-4. **Experimenting/** - Testing ideas in the real world
+3. **Experimenting/** - Testing ideas in the real world
+4. **Ideal/** - Clear target states I'm working toward that Patterns and Experiments make progress toward actualizing
 
 ## Claude Files
 

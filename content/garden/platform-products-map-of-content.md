@@ -1,6 +1,6 @@
 ---
 created: 2026-02-03 Tue 6:29pm
-updated: 2026-02-04 Wed 9:28am
+updated: 2026-05-04 Mon 10:50am
 title: "Platform Products: Map of Content"
 slug: /garden/platform-products-map-of-content
 filename: platform-products-map-of-content
@@ -9,7 +9,7 @@ share: true
 type: garden
 state: rhizome
 tags:
-  - platform-products
+  - platform-product
 ---
 
 # Platform Products - Map of Content
