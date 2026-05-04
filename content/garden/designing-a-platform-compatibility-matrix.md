@@ -1,6 +1,6 @@
 ---
 created: 2026-03-25 Wed 9:52am
-updated: 2026-03-25 Wed 10:01am
+updated: 2026-03-25 Wed 10:02am
 title: Designing a Platform Compatibility Matrix
 slug: /designing-a-platform-compatibility-matrix
 filename: designing-a-platform-compatibility-matrix
