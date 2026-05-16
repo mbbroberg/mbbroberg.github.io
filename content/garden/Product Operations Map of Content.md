@@ -1,6 +1,6 @@
 ---
 created: 2024-08-03 Sat 7:30pm
-updated: 2024-08-03 Sat 7:30pm
+updated: 2026-05-15 Fri 9:32pm
 title: Product Operations - Map of Content
 aliases:
   - ProdOps MOC
@@ -72,7 +72,7 @@ This pillar scales product management value through consistent cross-functional 
 
 ## Why This Matters in Infrastructure
 
-As I worked through in my Product Operations Excellence for Infrastructure ideal state, infrastructure teams face unique ProdOps challenges:
+Infrastructure teams face unique ProdOps challenges:
 
 - Engineering-heavy contexts often lack product culture
 - Complex technical dependencies complicate prioritization
@@ -80,6 +80,7 @@ As I worked through in my Product Operations Excellence for Infrastructure ideal
 - Stakeholders span multiple technical domains with varying perspectives
 
 My experience implementing ProdOps practices in infrastructure contexts has shown that:
+
 1. Clear service boundaries are essential for measuring impact
 2. Product thinking must be translated for engineering-first cultures
 3. Success metrics differ significantly from customer-facing products
@@ -102,7 +103,7 @@ My experience implementing ProdOps practices in infrastructure contexts has show
 - Success looks like product teams spending more time on customer problems and less on administrative tasks
 - Think "APIs, not process documentation" when designing ProdOps services
 
-> "Process can be a good thing—if applied judiciously."
+Process can be a good thing if applied judiciously.
 
 ## Questions I'm Still Exploring
 
