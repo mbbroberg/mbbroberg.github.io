@@ -5,9 +5,7 @@ title: Product Operations - Map of Content
 aliases:
   - ProdOps MOC
 tags:
-  - garden
-  - prodops
-  - product-management
+  - product-thinking
 type: garden
 garden_section: career
 share: true

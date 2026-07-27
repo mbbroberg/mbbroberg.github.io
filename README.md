@@ -19,6 +19,37 @@ The site builds and deploys automatically through GitHub Actions. To add new con
   - Social links are in `config/params.toml`
   - Create a link to the new page in `config/menus.toml`
 
+
+### Publishing with Personal Section
+
+To publish a note, add this frontmatter:
+
+```yaml
+share: true
+type: curiosity  # controls destination folder: content/<type>/
+```
+
+- `share: true` — tells Enveloppe to publish the file
+- `type` — maps to the folder in this repo (e.g. `curiosity` → `content/curiosity/`, default is `content/articles/`)
+- `filename: my-slug` — optional, controls the filename/URL in the repo
+
+
+### Preferred Tags 🏷️
+
+Keep tags to this curated set — pick the closest fit rather than introducing a new one:
+
+| Tag | Use for |
+| --- | --- |
+| `product-thinking` | Product strategy, frameworks, cognitive models, ops |
+| `team-topologies` | Team design, boundaries, interaction modes, platform topologies |
+| `platform-product` | Platform-as-product, internal products, compatibility |
+| `career` | Career reflections, leadership journey, role transitions |
+| `inspirations` | Notes sparked by books, talks, or other people's work |
+| `thoughts` | Personal essays and reflections that don't fit a topic tag |
+| `ai-learning` | Working with AI tools, prompting, agent workflows |
+| `devops` | DevOps, infra, deployment, tooling notes |
+| `productivity` | PKM, Obsidian, personal workflow and tooling tips |
+
 ### Other Notes 📦
 
 - Theme updates: `git submodule update --remote --merge themes/anatole`
@@ -28,3 +59,4 @@ The site builds and deploys automatically through GitHub Actions. To add new con
 ## How I write 📝
 
 I use [Obsidian](https://obsidian.md/) for my notes and [Enveloppe](https://github.com/Enveloppe) plugin to publish to this site.
+

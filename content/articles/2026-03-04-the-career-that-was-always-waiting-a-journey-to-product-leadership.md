@@ -5,7 +5,7 @@ title: The Career That Was Always Waiting - A Journey to Product Leadership
 type: articles
 tags:
   - career
-  - product-management
+  - product-thinking
 share: true
 slug: /the-career-that-was-always-waiting-a-journey-to-product-leadership
 filename: 2026-03-04-the-career-that-was-always-waiting-a-journey-to-product-leadership

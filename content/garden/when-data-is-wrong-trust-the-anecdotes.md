@@ -12,7 +12,6 @@ type: garden
 state: seed
 tags:
   - product-thinking
-  - cognitive-frames
 ---
 > “When the data and the anecdotes disagree,” he said in an interview, “the anecdotes are usually right.”
 
