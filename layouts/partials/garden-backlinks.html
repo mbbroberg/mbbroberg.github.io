@@ -1,0 +1,67 @@
+{{- /*
+    Linked Mentions (backlinks) for garden notes
+
+    Scans all site pages' raw markdown for references to this page,
+    matching against: slug frontmatter, RelPermalink, filename, and aliases.
+    This mirrors the resolution behavior of render-link.html.
+*/ -}}
+{{ $page := . }}
+{{ $needles := slice }}
+
+{{ with $page.Params.slug }}
+  {{ $s := strings.TrimSuffix "/" . }}
+  {{ $needles = $needles | append $s }}
+  {{ if not (strings.HasPrefix $s "/") }}{{ $needles = $needles | append (printf "/%s" $s) }}{{ end }}
+  {{ $needles = $needles | append (replace $s " " "%20") }}
+{{ end }}
+
+{{ $needles = $needles | append (strings.TrimSuffix "/" $page.RelPermalink) }}
+
+{{ with $page.File }}
+  {{ $base := .ContentBaseName }}
+  {{ $needles = $needles | append $base }}
+  {{ $needles = $needles | append (replaceRE "%20" " " $base) }}
+{{ end }}
+
+{{ range $page.Params.aliases }}
+  {{ $a := strings.TrimSuffix "/" . }}
+  {{ $needles = $needles | append $a }}
+  {{ $needles = $needles | append (strings.TrimPrefix "/" $a) }}
+{{ end }}
+
+{{ $needles = uniq $needles }}
+
+{{ $mentions := slice }}
+{{ range site.RegularPages }}
+  {{ if eq .Permalink $page.Permalink }}{{ continue }}{{ end }}
+  {{ $raw := .RawContent }}
+  {{ $hit := false }}
+  {{ range $needle := $needles }}
+    {{ if and (not $hit) (in $raw $needle) }}{{ $hit = true }}{{ end }}
+  {{ end }}
+  {{ if $hit }}{{ $mentions = $mentions | append . }}{{ end }}
+{{ end }}
+
+{{ if gt (len $mentions) 0 }}
+<section class="garden-backlinks">
+  <h3 class="backlinks-heading">
+    🔗 Linked mentions
+    <span class="backlinks-count">{{ len $mentions }}</span>
+  </h3>
+  <div class="backlinks-grid">
+    {{ range $mentions }}
+    <a href="{{ .RelPermalink }}" class="backlink-card">
+      <span class="backlink-icon {{ .Params.state | default "seed" }}">
+        {{ if eq .Params.state "rhizome" }}🫚{{ else if eq .Params.state "sprout" }}🌿{{ else }}🌱{{ end }}
+      </span>
+      <span class="backlink-body">
+        <span class="backlink-title">{{ .Title }}</span>
+        {{ with .Summary }}
+        <span class="backlink-summary">{{ . | plainify | truncate 90 }}</span>
+        {{ end }}
+      </span>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

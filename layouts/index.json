@@ -1,0 +1,17 @@
+{{- $index := slice -}}
+{{- range site.RegularPages -}}
+  {{- if isset .Params "share" -}}
+    {{- if ne .Params.share true -}}{{ continue }}{{- end -}}
+  {{- end -}}
+  {{- $item := dict
+    "title" .Title
+    "href" .RelPermalink
+    "summary" (.Summary | plainify | truncate 160)
+    "state" (.Params.state | default "")
+    "section" .Section
+    "tags" (.Params.tags | default slice)
+    "content" (.Plain)
+  -}}
+  {{- $index = $index | append $item -}}
+{{- end -}}
+{{- $index | jsonify -}}

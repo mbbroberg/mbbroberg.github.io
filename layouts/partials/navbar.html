@@ -98,6 +98,13 @@
           </div>
         </li>
       {{ end }}
+      <li class="nav__list-item">
+        <div class="searchswitch">
+          <a title="Search (Cmd+K)" data-search-trigger>
+            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+          </a>
+        </div>
+      </li>
       {{ if not .Site.Params.disableThemeSwitcher }}
         <li class="nav__list-item">
           <div class="themeswitch">

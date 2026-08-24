@@ -21,6 +21,35 @@
 {{ $accentLight := .AccentColorLight }}
 {{ $accentDark := .AccentColorDark }}
 
+<!-- Recently Tended -->
+{{ $tended := slice }}
+{{ range $gardenPages }}
+  {{ $when := .Date.Format "2006-01-02" }}
+  {{ with .Params.updated }}
+    {{ $parts := split . " " }}
+    {{ if ge (len $parts) 1 }}
+      {{ $when = index $parts 0 }}
+    {{ end }}
+  {{ end }}
+  {{ $tended = $tended | append (dict "page" . "when" $when) }}
+{{ end }}
+{{ $recent := first 6 (sort $tended "when" "desc") }}
+{{ if gt (len $recent) 0 }}
+<section class="recent-tended-section">
+    <h2 class="section-title">🌱 Recently tended</h2>
+    <p class="section-description">The latest notes to grow</p>
+    <div class="recent-chips">
+        {{ range $recent }}
+        <a href="{{ .page.RelPermalink }}" class="recent-chip">
+            <span class="recent-emoji">{{ if eq .page.Params.state "rhizome" }}🫚{{ else if eq .page.Params.state "sprout" }}🌿{{ else }}🌱{{ end }}</span>
+            <span class="recent-title">{{ .page.Title }}</span>
+            <time class="recent-date">{{ dateFormat "Jan 2" .when }}</time>
+        </a>
+        {{ end }}
+    </div>
+</section>
+{{ end }}
+
 <!-- Featured Content Section - Manual Curation -->
 {{ $featuredPages := where $pages "Params.featured" true }}
 {{ if $featuredPages }}

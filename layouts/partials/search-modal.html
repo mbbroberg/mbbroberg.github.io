@@ -1,0 +1,33 @@
+{{- /* Full-text search: Fuse.js + index.json, Quartz-style Cmd/Ctrl+K */ -}}
+<div class="search-overlay" id="searchOverlay" hidden>
+  <div class="search-backdrop" data-search-close></div>
+  <div class="search-box" role="dialog" aria-modal="true" aria-label="Search">
+    <div class="search-input-row">
+      <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+      <input
+        type="text"
+        id="searchInput"
+        class="search-input"
+        placeholder="Search notes and articles…"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <kbd class="search-kbd">esc</kbd>
+    </div>
+    <ul class="search-results" id="searchResults"></ul>
+    <div class="search-empty" id="searchEmpty" hidden>No results found</div>
+    <div class="search-footer">
+      <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
+      <span><kbd>↵</kbd> open</span>
+      <span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
+{{- $fuse := resources.Get "js/fuse.min.js" | minify -}}
+{{- $search := resources.Get "js/search.js" | minify -}}
+<script>
+  window.SEARCH_INDEX_URL = "{{ "index.json" | relLangURL }}";
+</script>
+<script defer src="{{ $fuse.RelPermalink }}"></script>
+<script defer src="{{ $search.RelPermalink }}"></script>
